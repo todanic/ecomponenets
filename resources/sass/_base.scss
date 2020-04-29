@@ -1,0 +1,21 @@
+body {
+    overflow-x: hidden;
+}
+
+h1, h2, h3 {
+    font-family: 'Poppins';
+}
+
+p {
+    font-family: 'Poppins';
+}
+
+a {
+    font-family: 'Poppins';
+}
+
+@media (min-width: 1904px){
+    .container.shrink-width {
+        max-width: 1185px;
+    }
+}

@@ -1,14 +1,31 @@
+$fa-font-path:        "~font-awesome/fonts" !default;
+
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Nunito');
 
-// Variables
-@import 'variables';
-
 // Bootstrap
-@import '~bootstrap/scss/bootstrap';
+// @import '~bootstrap/scss/bootstrap';
 
 //Vuetify
 @import '~vuetify/dist/vuetify.min.css';
+
+//elements
+@import 'elements/header';
+@import 'elements/splash';
+@import 'elements/home-cat';
+@import 'elements/prefooter';
+
+//base
+@import 'base';
+
+//font awesome
+@import '~font-awesome/scss/font-awesome';
+@import '~font-awesome/scss/icons';
+@import '~font-awesome/scss/path';
+@import '~font-awesome/scss/variables';
+
+//color
+@import 'colors'
 
 
 

@@ -1,0 +1,85 @@
+.header-container {
+  border-bottom: 1px solid #222121;
+  background-color: #0e0e0e;
+}
+.header-container .menu {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.header-container .menu .menu-block {
+  list-style: none;
+  padding: 0 22px;
+}
+.header-container .menu .menu-block a {
+  color: #fff;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  transition: all 0.5s ease;
+  text-decoration: none;
+}
+.header-container .menu .menu-block a:hover {
+  color: #781212;
+  transition: 0.3s;
+}
+.header-container .menu .menu-block .submenu-wrapper {
+  position: relative;
+}
+.header-container .menu .menu-block .sub-hidden {
+  opacity: 0;
+  position: absolute;
+  transition: opacity 0.2s ease-in;
+  padding-left: 0;
+  min-width: 205px;
+  z-index: 8;
+  background-color: rgba(30, 30, 30, 0.97);
+  border-radius: 0 0 4px 4px;
+  left: -24px;
+  top: 35px;
+}
+.header-container .menu .menu-block .sub-hidden .submenu-block {
+  list-style: none;
+  padding: 12px 25px 12px;
+}
+.header-container .menu .menu-block .sub-hidden .submenu-block a {
+  text-transform: capitalize;
+}
+.header-container .menu .menu-block .sub-hidden .submenu-block a:hover {
+  color: #fff;
+}
+.header-container .menu .menu-block .sub-hidden .submenu-block:hover {
+  background-color: #313131;
+}
+.header-container .menu .menu-block.submenu:hover .sub-hidden {
+  opacity: 1;
+}
+.navbar-btn.theme--dark.v-btn:hover:before,
+.navbar-link.theme--dark.v-btn:hover:before {
+  opacity: 0;
+}
+.v-btn.navbar-btn .v-btn__content {
+  font-weight: 700;
+  font-size: 15px;
+}
+.v-btn.navbar-btn .v-btn__content:after {
+  content: "\02C5";
+  font-family: "FontAwesome";
+  display: inline-block;
+  top: 0;
+  font-size: 12px;
+  position: relative;
+  left: 6px;
+  border-top-color: transparent;
+}
+.v-btn.navbar-btn:hover .v-btn__content {
+  color: #781212;
+  transition: all 0.5s ease;
+}
+.v-btn.navbar-link .v-btn__content {
+  font-weight: 700;
+  font-size: 16px;
+}
+.v-btn.navbar-link:hover .v-btn__content {
+  color: #781212;
+  transition: 0.3s;
+}

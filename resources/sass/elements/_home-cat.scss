@@ -1,0 +1,35 @@
+.home-cat-container {
+
+    .cat-block {
+        display: block;
+        transition: all ease-in-out .3s;
+        text-decoration: none;
+
+        &:hover {
+     
+            transform: translateY(-2%);
+        }
+    }
+
+    .cat-img-block {
+
+        img {
+            border: 3px solid #888888;
+            width: 200px;
+            height: 180px;
+            border-radius: 50%;
+            max-width: calc(100% - 6px);
+        }
+    }
+
+    .cat-contents-block {
+
+        h2 {
+            color: #888888;
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: -0.25px;
+            margin-top: 12px;
+        }
+    }
+}
