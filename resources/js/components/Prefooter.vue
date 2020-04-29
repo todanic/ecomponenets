@@ -4,7 +4,7 @@
 			<v-row class="d-flex justify-center">
 				<v-col lg="3" md="3" sm="12" cols="12">
 						<h3>Products</h3>
-						<ul class="prefooter-block fa-flag">
+						<ul class="prefooter-block fa-heart">
 							<li><a href="#" class="prefooter-block-link">Prefoot</a></li>
 							<li><a href="#" class="prefooter-block-link">Link</a></li>
 							<li><a href="#" class="prefooter-block-link">Prefoot</a></li>

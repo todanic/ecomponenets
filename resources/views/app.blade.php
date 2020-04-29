@@ -16,6 +16,7 @@
         <splash></splash>
         <home-catagories></home-catagories>
         <prefooter></prefooter>
+        <footer-component></footer-component>
     </v-app>
 
         <script src="./js/app.js"></script>

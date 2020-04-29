@@ -33,6 +33,9 @@ Vue.component('home-catagories',
 Vue.component('prefooter', 
     require('./components/Prefooter.vue').default
 );
+Vue.component('footer-component', 
+    require('./components/Footer.vue').default
+);
 
 
 /**

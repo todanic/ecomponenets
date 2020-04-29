@@ -37795,6 +37795,49 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Footer.vue?vue&type=template&id=61a7c374&name=footer-component&":
+/*!*******************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Footer.vue?vue&type=template&id=61a7c374&name=footer-component& ***!
+  \*******************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "v-container",
+    { staticClass: "footer-container pa-0", attrs: { fluid: "" } },
+    [
+      _c(
+        "v-container",
+        [
+          _c("v-col", { staticClass: "footer-block text-center pa-0" }, [
+            _c("p", [
+              _vm._v(
+                "© " + _vm._s(new Date().getFullYear()) + " All Rights Reserved"
+              )
+            ])
+          ])
+        ],
+        1
+      )
+    ],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Header.vue?vue&type=template&id=1f42fb90&name=header-component&":
 /*!*******************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Header.vue?vue&type=template&id=1f42fb90&name=header-component& ***!
@@ -38188,7 +38231,7 @@ var render = function() {
                 [
                   _c("h3", [_vm._v("Products")]),
                   _vm._v(" "),
-                  _c("ul", { staticClass: "prefooter-block fa-flag" }, [
+                  _c("ul", { staticClass: "prefooter-block fa-heart" }, [
                     _c("li", [
                       _c(
                         "a",
@@ -92172,6 +92215,7 @@ Vue.component('header-component', __webpack_require__(/*! ./components/Header.vu
 Vue.component('splash', __webpack_require__(/*! ./components/Splash.vue */ "./resources/js/components/Splash.vue")["default"]);
 Vue.component('home-catagories', __webpack_require__(/*! ./components/HomeCategories.vue */ "./resources/js/components/HomeCategories.vue")["default"]);
 Vue.component('prefooter', __webpack_require__(/*! ./components/Prefooter.vue */ "./resources/js/components/Prefooter.vue")["default"]);
+Vue.component('footer-component', __webpack_require__(/*! ./components/Footer.vue */ "./resources/js/components/Footer.vue")["default"]);
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -92227,6 +92271,59 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 //     cluster: process.env.MIX_PUSHER_APP_CLUSTER,
 //     encrypted: true
 // });
+
+/***/ }),
+
+/***/ "./resources/js/components/Footer.vue":
+/*!********************************************!*\
+  !*** ./resources/js/components/Footer.vue ***!
+  \********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Footer_vue_vue_type_template_id_61a7c374_name_footer_component___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Footer.vue?vue&type=template&id=61a7c374&name=footer-component& */ "./resources/js/components/Footer.vue?vue&type=template&id=61a7c374&name=footer-component&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+var script = {}
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__["default"])(
+  script,
+  _Footer_vue_vue_type_template_id_61a7c374_name_footer_component___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Footer_vue_vue_type_template_id_61a7c374_name_footer_component___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/Footer.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/Footer.vue?vue&type=template&id=61a7c374&name=footer-component&":
+/*!*************************************************************************************************!*\
+  !*** ./resources/js/components/Footer.vue?vue&type=template&id=61a7c374&name=footer-component& ***!
+  \*************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Footer_vue_vue_type_template_id_61a7c374_name_footer_component___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./Footer.vue?vue&type=template&id=61a7c374&name=footer-component& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Footer.vue?vue&type=template&id=61a7c374&name=footer-component&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Footer_vue_vue_type_template_id_61a7c374_name_footer_component___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Footer_vue_vue_type_template_id_61a7c374_name_footer_component___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
 
 /***/ }),
 
@@ -92513,7 +92610,7 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-throw new Error("Module build failed (from ./node_modules/css-loader/index.js):\nModuleBuildError: Module build failed (from ./node_modules/sass-loader/dist/cjs.js):\nSassError: Undefined variable.\n  ╷\n8 │             content: $fa-var-arrows;\r\n  │                      ^^^^^^^^^^^^^^\n  ╵\n  resources\\sass\\elements\\_prefooter.scss 8:22  @import\n  C:\\XAMPP\\htdocs\\eomponents\\resources\\sass\\app.scss 16:9                                    root stylesheet\n    at runLoaders (C:\\XAMPP\\htdocs\\eomponents\\node_modules\\webpack\\lib\\NormalModule.js:316:20)\n    at C:\\XAMPP\\htdocs\\eomponents\\node_modules\\loader-runner\\lib\\LoaderRunner.js:367:11\n    at C:\\XAMPP\\htdocs\\eomponents\\node_modules\\loader-runner\\lib\\LoaderRunner.js:233:18\n    at context.callback (C:\\XAMPP\\htdocs\\eomponents\\node_modules\\loader-runner\\lib\\LoaderRunner.js:111:13)\n    at render (C:\\XAMPP\\htdocs\\eomponents\\node_modules\\sass-loader\\dist\\index.js:73:7)\n    at Function.call$2 (C:\\XAMPP\\htdocs\\eomponents\\node_modules\\sass\\sass.dart.js:87203:16)\n    at _render_closure1.call$2 (C:\\XAMPP\\htdocs\\eomponents\\node_modules\\sass\\sass.dart.js:76994:12)\n    at _RootZone.runBinary$3$3 (C:\\XAMPP\\htdocs\\eomponents\\node_modules\\sass\\sass.dart.js:25521:18)\n    at _RootZone.runBinary$3 (C:\\XAMPP\\htdocs\\eomponents\\node_modules\\sass\\sass.dart.js:25525:19)\n    at _FutureListener.handleError$1 (C:\\XAMPP\\htdocs\\eomponents\\node_modules\\sass\\sass.dart.js:23975:19)\n    at _Future__propagateToListeners_handleError.call$0 (C:\\XAMPP\\htdocs\\eomponents\\node_modules\\sass\\sass.dart.js:24271:40)\n    at Object._Future__propagateToListeners (C:\\XAMPP\\htdocs\\eomponents\\node_modules\\sass\\sass.dart.js:3500:88)\n    at _Future._completeError$2 (C:\\XAMPP\\htdocs\\eomponents\\node_modules\\sass\\sass.dart.js:24099:9)\n    at _AsyncAwaitCompleter.completeError$2 (C:\\XAMPP\\htdocs\\eomponents\\node_modules\\sass\\sass.dart.js:23491:12)\n    at Object._asyncRethrow (C:\\XAMPP\\htdocs\\eomponents\\node_modules\\sass\\sass.dart.js:3256:17)\n    at C:\\XAMPP\\htdocs\\eomponents\\node_modules\\sass\\sass.dart.js:13326:20\n    at _wrapJsFunctionForAsync_closure.$protected (C:\\XAMPP\\htdocs\\eomponents\\node_modules\\sass\\sass.dart.js:3279:15)\n    at _wrapJsFunctionForAsync_closure.call$2 (C:\\XAMPP\\htdocs\\eomponents\\node_modules\\sass\\sass.dart.js:23512:12)\n    at _awaitOnObject_closure0.call$2 (C:\\XAMPP\\htdocs\\eomponents\\node_modules\\sass\\sass.dart.js:23504:25)\n    at _RootZone.runBinary$3$3 (C:\\XAMPP\\htdocs\\eomponents\\node_modules\\sass\\sass.dart.js:25521:18)\n    at _RootZone.runBinary$3 (C:\\XAMPP\\htdocs\\eomponents\\node_modules\\sass\\sass.dart.js:25525:19)\n    at _FutureListener.handleError$1 (C:\\XAMPP\\htdocs\\eomponents\\node_modules\\sass\\sass.dart.js:23975:19)\n    at _Future__propagateToListeners_handleError.call$0 (C:\\XAMPP\\htdocs\\eomponents\\node_modules\\sass\\sass.dart.js:24271:40)\n    at Object._Future__propagateToListeners (C:\\XAMPP\\htdocs\\eomponents\\node_modules\\sass\\sass.dart.js:3500:88)\n    at _Future._completeError$2 (C:\\XAMPP\\htdocs\\eomponents\\node_modules\\sass\\sass.dart.js:24099:9)\n    at _AsyncAwaitCompleter.completeError$2 (C:\\XAMPP\\htdocs\\eomponents\\node_modules\\sass\\sass.dart.js:23491:12)\n    at Object._asyncRethrow (C:\\XAMPP\\htdocs\\eomponents\\node_modules\\sass\\sass.dart.js:3256:17)\n    at C:\\XAMPP\\htdocs\\eomponents\\node_modules\\sass\\sass.dart.js:15981:20\n    at _wrapJsFunctionForAsync_closure.$protected (C:\\XAMPP\\htdocs\\eomponents\\node_modules\\sass\\sass.dart.js:3279:15)\n    at _wrapJsFunctionForAsync_closure.call$2 (C:\\XAMPP\\htdocs\\eomponents\\node_modules\\sass\\sass.dart.js:23512:12)\n    at _awaitOnObject_closure0.call$2 (C:\\XAMPP\\htdocs\\eomponents\\node_modules\\sass\\sass.dart.js:23504:25)\n    at _RootZone.runBinary$3$3 (C:\\XAMPP\\htdocs\\eomponents\\node_modules\\sass\\sass.dart.js:25521:18)\n    at _RootZone.runBinary$3 (C:\\XAMPP\\htdocs\\eomponents\\node_modules\\sass\\sass.dart.js:25525:19)\n    at _FutureListener.handleError$1 (C:\\XAMPP\\htdocs\\eomponents\\node_modules\\sass\\sass.dart.js:23975:19)\n    at _Future__propagateToListeners_handleError.call$0 (C:\\XAMPP\\htdocs\\eomponents\\node_modules\\sass\\sass.dart.js:24271:40)\n    at Object._Future__propagateToListeners (C:\\XAMPP\\htdocs\\eomponents\\node_modules\\sass\\sass.dart.js:3500:88)");
+// removed by extract-text-webpack-plugin
 
 /***/ }),
 
