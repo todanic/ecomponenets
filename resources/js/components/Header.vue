@@ -11,7 +11,7 @@
                     <ul class="menu pl-0">
                         <li class="menu-block submenu">
                             <div class="submenu-wrapper">
-                                <a href="#">dropdown</a>
+                                <a href="#">Products</a>
                                 <ul class="sub-hidden">
                                     <li class="submenu-block"><a href="#">Submenu</a></li>
                                     <li class="submenu-block"><a href="#">Submenu</a></li>
@@ -21,10 +21,10 @@
                             </div>
                         </li>
                         <li class="menu-block">
-                            <a href="#">dropdown</a>
+                            <a href="#">About us</a>
                         </li>
                         <li class="menu-block">
-                            <a href="#">dropdown</a>
+                            <a href="#">Contact us</a>
                         </li>
                         <li class="menu-block">
                             <a href="#">dropdown</a>

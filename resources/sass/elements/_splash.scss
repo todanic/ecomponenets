@@ -1,6 +1,28 @@
+.splash-container {
+  border-bottom: 1px solid #222121;
+  border-top: 1px solid #222121;
 
+  .carousel-block {
+      overflow: visible;
 
-// .v-sheet.carousel-sheet {
-//     background: url('images/splash-bg.png') no-repeat center;
-    
-// }
+    .v-carousel__controls {
+        bottom: -85px;
+        padding: 32px 0 52px 0;
+        background-color: $secondary-black;
+
+      .v-btn--icon.v-size--small {
+        height: 12px;
+        width: 12px;
+      }
+    }
+  }
+
+  .v-btn:before {
+    opacity: 0.3;
+  }
+
+  .v-btn:not(.v-btn--text):not(.v-btn--outlined).v-btn--active:before {
+    opacity: 0.8;
+  }
+}
+

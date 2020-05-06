@@ -36,6 +36,12 @@ Vue.component('prefooter',
 Vue.component('footer-component', 
     require('./components/Footer.vue').default
 );
+Vue.component('home-contact-component', 
+    require('./components/HomeContactComponent.vue').default
+);
+Vue.component('base-contact-component', 
+    require('./components/BaseContactComponent.vue').default
+);
 
 
 /**

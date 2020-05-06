@@ -1,0 +1,15 @@
+.contact-container {
+  background-color: $secondary-black;
+
+  h2 {
+    font-size: 3rem;
+    color: #fff;
+
+    span {
+      color: $primary-red;
+    }
+  }
+}
+.contact-dialog {
+  background-color: #fff;
+}

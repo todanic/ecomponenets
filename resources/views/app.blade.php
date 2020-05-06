@@ -15,6 +15,7 @@
         <header-component></header-component>
         <splash></splash>
         <home-catagories></home-catagories>
+        <home-contact-component></home-contact-component>
         <prefooter></prefooter>
         <footer-component></footer-component>
     </v-app>

@@ -18,16 +18,16 @@ body {
 h1,
 h2,
 h3 {
-  font-family: "Poppins";
+  font-family: 'Poppins';
 }
 
 p {
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-size: 1.5rem;
 }
 
 a {
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-size: 1.5rem;
 }
 
@@ -46,7 +46,7 @@ a {
  * -------------------------- */
 
 @font-face {
-  font-family: "FontAwesome";
+  font-family: 'FontAwesome';
   src: url(/fonts/vendor/font-awesome/fontawesome-webfont.eot?674f50d287a8c48dc19ba404d20fe713);
   src: url(/fonts/vendor/font-awesome/fontawesome-webfont.eot?674f50d287a8c48dc19ba404d20fe713) format("embedded-opentype"), url(/fonts/vendor/font-awesome/fontawesome-webfont.woff2?af7ae505a9eed503f8b8e6982036873e) format("woff2"), url(/fonts/vendor/font-awesome/fontawesome-webfont.woff?fee66e712a8a08eef5805a46892932ad) format("woff"), url(/fonts/vendor/font-awesome/fontawesome-webfont.ttf?b06871f281fee6b241d60582ae9369b9) format("truetype"), url(/fonts/vendor/font-awesome/fontawesome-webfont.svg?912ec66d7572ff821749319396470bde) format("svg");
   font-weight: normal;
@@ -65,7 +65,7 @@ a {
 /* makes the font 33% larger relative to the icon container */
 
 .fa-lg {
-  font-size: 1.3333333333em;
+  font-size: 1.33333333em;
   line-height: 0.75em;
   vertical-align: -15%;
 }
@@ -87,13 +87,13 @@ a {
 }
 
 .fa-fw {
-  width: 1.2857142857em;
+  width: 1.28571429em;
   text-align: center;
 }
 
 .fa-ul {
   padding-left: 0;
-  margin-left: 2.1428571429em;
+  margin-left: 2.14285714em;
   list-style-type: none;
 }
 
@@ -103,20 +103,20 @@ a {
 
 .fa-li {
   position: absolute;
-  left: -2.1428571429em;
-  width: 2.1428571429em;
-  top: 0.1428571429em;
+  left: -2.14285714em;
+  width: 2.14285714em;
+  top: 0.14285714em;
   text-align: center;
 }
 
 .fa-li.fa-lg {
-  left: -1.8571428571em;
+  left: -1.85714286em;
 }
 
 .fa-border {
-  padding: 0.2em 0.25em 0.15em;
+  padding: .2em .25em .15em;
   border: solid 0.08em #eee;
-  border-radius: 0.1em;
+  border-radius: .1em;
 }
 
 .fa-pull-left {
@@ -128,11 +128,11 @@ a {
 }
 
 .fa.fa-pull-left {
-  margin-right: 0.3em;
+  margin-right: .3em;
 }
 
 .fa.fa-pull-right {
-  margin-left: 0.3em;
+  margin-left: .3em;
 }
 
 /* Deprecated as of 4.4.0 */
@@ -146,11 +146,11 @@ a {
 }
 
 .fa.pull-left {
-  margin-right: 0.3em;
+  margin-right: .3em;
 }
 
 .fa.pull-right {
-  margin-left: 0.3em;
+  margin-left: .3em;
 }
 
 .fa-spin {
@@ -3082,7 +3082,6 @@ a {
 }
 
 .header-container {
-  border-bottom: 1px solid #222121;
   background-color: #0e0e0e;
 }
 
@@ -3101,7 +3100,7 @@ a {
   font-size: 1.5rem;
   text-transform: uppercase;
   font-weight: 700;
-  transition: all 0.5s ease;
+  transition: all .5s ease;
   text-decoration: none;
 }
 
@@ -3171,7 +3170,7 @@ a {
 
 .v-btn.navbar-btn:hover .v-btn__content {
   color: #781212;
-  transition: all 0.5s ease;
+  transition: all .5s ease;
 }
 
 .v-btn.navbar-link .v-btn__content {
@@ -3184,9 +3183,42 @@ a {
   transition: 0.3s;
 }
 
+.splash-container {
+  border-bottom: 1px solid #222121;
+  border-top: 1px solid #222121;
+}
+
+.splash-container .carousel-block {
+  overflow: visible;
+}
+
+.splash-container .carousel-block .v-carousel__controls {
+  bottom: -85px;
+  padding: 32px 0 52px 0;
+  background-color: #0A0A0A;
+}
+
+.splash-container .carousel-block .v-carousel__controls .v-btn--icon.v-size--small {
+  height: 12px;
+  width: 12px;
+}
+
+.splash-container .v-btn:before {
+  opacity: 0.3;
+}
+
+.splash-container .v-btn:not(.v-btn--text):not(.v-btn--outlined).v-btn--active:before {
+  opacity: 0.8;
+}
+
+.home-cat-container {
+  background: url("/eomponents/public/images/shadow.png") no-repeat center top;
+  margin-top: 84px;
+}
+
 .home-cat-container .cat-block {
   display: block;
-  transition: all ease-in-out 0.3s;
+  transition: all ease-in-out .3s;
   text-decoration: none;
 }
 
@@ -3211,7 +3243,7 @@ a {
 }
 
 .prefooter-container {
-  background-color: #121214;
+  background-color: #0E0E0E;
 }
 
 .prefooter-container .prefooter-block {
@@ -3231,7 +3263,7 @@ a {
 .prefooter-container .prefooter-block .prefooter-block-link {
   color: #888888;
   text-decoration: none;
-  transition: all 0.5s ease;
+  transition: all .5s ease;
 }
 
 .prefooter-container .prefooter-block .prefooter-block-link:hover {
@@ -3246,5 +3278,22 @@ a {
   color: #5e5e5e;
   margin-bottom: 0;
   font-size: 1.1rem;
+}
+
+.contact-container {
+  background-color: #0A0A0A;
+}
+
+.contact-container h2 {
+  font-size: 3rem;
+  color: #fff;
+}
+
+.contact-container h2 span {
+  color: #781212;
+}
+
+.contact-dialog {
+  background-color: #fff;
 }
 

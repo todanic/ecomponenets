@@ -5,7 +5,7 @@
                 <v-col class="pb-11" lg="3" md="4" sm="6" cols="6">
                     <a href="#" class="cat-block">
                         <div class="cat-img-block">
-                            <img src="images/home-img.jpg" alt="">
+                            <img src="images/splash2.png" alt="">
                         </div>
                         <div class="cat-contents-block">
                             <h2>Cable</h2>
@@ -15,7 +15,7 @@
                 <v-col class="pb-11" lg="3" md="4" sm="6" cols="6">
                     <a href="#" class="cat-block">
                         <div class="cat-img-block">
-                            <img src="images/home-img.jpg" alt="">
+                            <img src="images/splash2.png" alt="">
                         </div>
                         <div class="cat-contents-block">
                             <h2>Naslov</h2>
@@ -25,7 +25,7 @@
                 <v-col class="pb-11" lg="3" md="4" sm="6" cols="6">
                     <a href="#" class="cat-block">
                         <div class="cat-img-block">
-                            <img src="images/home-img.jpg" alt="">
+                            <img src="images/splash2.png" alt="">
                         </div>
                         <div class="cat-contents-block">
                             <h2>Naslov</h2>
@@ -35,7 +35,7 @@
                 <v-col class="pb-11" lg="3" md="4" sm="6" cols="6">
                     <a href="#" class="cat-block">
                         <div class="cat-img-block">
-                            <img src="images/home-img.jpg" alt="">
+                            <img src="images/splash2.png" alt="">
                         </div>
                         <div class="cat-contents-block">
                             <h2>Naslov</h2>
@@ -45,7 +45,7 @@
                 <v-col class="pb-11" lg="3" md="4" sm="6" cols="6">
                     <a href="#" class="cat-block">
                         <div class="cat-img-block">
-                            <img src="images/home-img.jpg" alt="">
+                            <img src="images/splash2.png" alt="">
                         </div>
                         <div class="cat-contents-block">
                             <h2>Naslov</h2>
@@ -55,7 +55,7 @@
                 <v-col class="pb-11" lg="3" md="4" sm="6" cols="6">
                     <a href="#" class="cat-block">
                         <div class="cat-img-block">
-                            <img src="images/home-img.jpg" alt="">
+                            <img src="images/splash2.png" alt="">
                         </div>
                         <div class="cat-contents-block">
                             <h2>Naslov</h2>
@@ -65,7 +65,7 @@
                  <v-col class="pb-11" lg="3" md="4" sm="6" cols="6">
                     <a href="#" class="cat-block">
                         <div class="cat-img-block">
-                            <img src="images/home-img.jpg" alt="">
+                            <img src="images/splash2.png" alt="">
                         </div>
                         <div class="cat-contents-block">
                             <h2>Naslov</h2>
@@ -75,7 +75,7 @@
                  <v-col class="pb-11" lg="3" md="4" sm="6" cols="6">
                     <a href="#" class="cat-block">
                         <div class="cat-img-block">
-                            <img src="images/home-img.jpg" alt="">
+                            <img src="images/splash2.png" alt="">
                         </div>
                         <div class="cat-contents-block">
                             <h2>Naslov</h2>

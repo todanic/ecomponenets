@@ -1,3 +1,6 @@
-.v-sheet.carousel-sheet {
-  background: url("images/splash-bg.png") no-repeat center;
+.splash-container .carousel-block {
+  overflow: visible;
+}
+.splash-container .carousel-block .v-carousel__controls {
+  bottom: -50px;
 }
