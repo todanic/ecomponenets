@@ -3,22 +3,14 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        
         <link rel="stylesheet" type="text/css" href="{{asset('css/app.css')}}">
         <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
         
-        <title>Laravel</title>
+        <title>Ecomponents</title>
     </head>
     <body>
 
-    <v-app id="app">
-        <header-component></header-component>
-        <splash></splash>
-        <home-catagories></home-catagories>
-        <home-contact-component></home-contact-component>
-        <prefooter></prefooter>
-        <footer-component></footer-component>
-    </v-app>
+    <div id="app"></div>
 
         <script src="./js/app.js"></script>
     </body>
