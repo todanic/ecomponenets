@@ -4,7 +4,7 @@
 		<header-component></header-component>
     <router-view></router-view>
 		<prefooter></prefooter>
-		<footer-component></footer-component> -->
+		<footer-component></footer-component>
 	</v-content>
 </v-app>
 </template>

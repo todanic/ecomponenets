@@ -2,83 +2,63 @@
     <v-container flud class="home-cat-container">
         <v-container class="shrink-width">
             <v-row class="text-center">
-                <v-col class="pb-11" lg="3" md="4" sm="6" cols="6">
+                <v-col class="pb-11" lg="4" md="4" sm="6" cols="6">
                     <a href="#" class="cat-block">
                         <div class="cat-img-block">
-                            <img src="images/splash2.png" alt="">
+                            <img src="images/splash1.jpeg" alt="">
                         </div>
                         <div class="cat-contents-block">
-                            <h2>Cable</h2>
+                            <h2>Wires and cables</h2>
                         </div>
                     </a>
                 </v-col>
-                <v-col class="pb-11" lg="3" md="4" sm="6" cols="6">
+                <v-col class="pb-11" lg="4" md="4" sm="6" cols="6">
                     <a href="#" class="cat-block">
                         <div class="cat-img-block">
-                            <img src="images/splash2.png" alt="">
+                            <img src="images/splash2.jpeg" alt="">
                         </div>
                         <div class="cat-contents-block">
-                            <h2>Naslov</h2>
+                            <h2>Connectors & electronic components</h2>
                         </div>
                     </a>
                 </v-col>
-                <v-col class="pb-11" lg="3" md="4" sm="6" cols="6">
+                <v-col class="pb-11" lg="4" md="4" sm="6" cols="6">
                     <a href="#" class="cat-block">
                         <div class="cat-img-block">
-                            <img src="images/splash2.png" alt="">
+                            <img src="images/splash1.jpeg" alt="">
                         </div>
                         <div class="cat-contents-block">
-                            <h2>Naslov</h2>
+                            <h2>PCBs</h2>
                         </div>
                     </a>
                 </v-col>
-                <v-col class="pb-11" lg="3" md="4" sm="6" cols="6">
+                <v-col class="pb-11" lg="4" md="4" sm="6" cols="6">
                     <a href="#" class="cat-block">
                         <div class="cat-img-block">
-                            <img src="images/splash2.png" alt="">
+                            <img src="images/splash2.jpeg" alt="">
                         </div>
                         <div class="cat-contents-block">
-                            <h2>Naslov</h2>
+                            <h2>LEDs</h2>
                         </div>
                     </a>
                 </v-col>
-                <v-col class="pb-11" lg="3" md="4" sm="6" cols="6">
+                <v-col class="pb-11" lg="4" md="4" sm="6" cols="6">
                     <a href="#" class="cat-block">
                         <div class="cat-img-block">
-                            <img src="images/splash2.png" alt="">
+                            <img src="images/splash3.jpeg" alt="">
                         </div>
                         <div class="cat-contents-block">
-                            <h2>Naslov</h2>
+                            <h2>Cable accessories</h2>
                         </div>
                     </a>
                 </v-col>
-                <v-col class="pb-11" lg="3" md="4" sm="6" cols="6">
+                <v-col class="pb-11" lg="4" md="4" sm="6" cols="6">
                     <a href="#" class="cat-block">
                         <div class="cat-img-block">
-                            <img src="images/splash2.png" alt="">
+                            <img src="images/splash4.jpeg" alt="">
                         </div>
                         <div class="cat-contents-block">
-                            <h2>Naslov</h2>
-                        </div>
-                    </a>
-                </v-col>
-                 <v-col class="pb-11" lg="3" md="4" sm="6" cols="6">
-                    <a href="#" class="cat-block">
-                        <div class="cat-img-block">
-                            <img src="images/splash2.png" alt="">
-                        </div>
-                        <div class="cat-contents-block">
-                            <h2>Naslov</h2>
-                        </div>
-                    </a>
-                </v-col>
-                 <v-col class="pb-11" lg="3" md="4" sm="6" cols="6">
-                    <a href="#" class="cat-block">
-                        <div class="cat-img-block">
-                            <img src="images/splash2.png" alt="">
-                        </div>
-                        <div class="cat-contents-block">
-                            <h2>Naslov</h2>
+                            <h2>Hardware</h2>
                         </div>
                     </a>
                 </v-col>

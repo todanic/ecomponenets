@@ -1,4 +1,4 @@
-<template>
+<template class="home-view">
 <div>
   <splash></splash>
 	<home-catagories></home-catagories>
@@ -9,7 +9,9 @@
 export default {
   name: 'HomeView',
   data () {
-   //
+    return {
+      
+    }
   }
 };
 </script>

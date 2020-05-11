@@ -1,14 +1,21 @@
 .prefooter-container {
     background-color: #0E0E0E;
 
+    h3 {
+        color: #fff;
+        font-size: 2rem;
+        margin-bottom: 15px;
+    }
+
     .prefooter-block {
         list-style: none;
+        padding-left: 0;
 
         li:before {
-            content: $fa-var-arrows;
+            content: '\f192';
             font-family: "FontAwesome";
             font-size: 8px;
-            color: #c7a681;
+            color: #781212;
             margin-right: 10px;
             top: -1px;
             position: relative;

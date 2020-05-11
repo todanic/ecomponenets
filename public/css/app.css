@@ -3236,7 +3236,6 @@ a {
 
 .home-cat-container .cat-contents-block h2 {
   color: #888888;
-  text-transform: uppercase;
   font-weight: 700;
   letter-spacing: -0.25px;
   margin-top: 12px;
@@ -3246,15 +3245,22 @@ a {
   background-color: #0E0E0E;
 }
 
+.prefooter-container h3 {
+  color: #fff;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
 .prefooter-container .prefooter-block {
   list-style: none;
+  padding-left: 0;
 }
 
 .prefooter-container .prefooter-block li:before {
-  content: "\F047";
+  content: '\F192';
   font-family: "FontAwesome";
   font-size: 8px;
-  color: #c7a681;
+  color: #781212;
   margin-right: 10px;
   top: -1px;
   position: relative;
