@@ -340,6 +340,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {};
@@ -490,7 +494,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'WiresCables',
-  data: function data() {}
+  data: function data() {
+    return {};
+  }
 });
 
 /***/ }),
@@ -1251,6 +1257,30 @@ render._withStripped = true
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Connectors.vue?vue&type=template&id=1a21ef71&name=connectors&":
+/*!*****************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Connectors.vue?vue&type=template&id=1a21ef71&name=connectors& ***!
+  \*****************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("p", [_vm._v("TESTETSTES")])
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Footer.vue?vue&type=template&id=61a7c374&name=footer-component&":
 /*!*******************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Footer.vue?vue&type=template&id=61a7c374&name=footer-component& ***!
@@ -1460,17 +1490,28 @@ var render = function() {
                   attrs: { lg: "4", md: "4", sm: "6", cols: "6" }
                 },
                 [
-                  _c("a", { staticClass: "cat-block", attrs: { href: "#" } }, [
-                    _c("div", { staticClass: "cat-img-block" }, [
-                      _c("img", {
-                        attrs: { src: "images/splash1.jpeg", alt: "" }
-                      })
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "cat-contents-block" }, [
-                      _c("h2", [_vm._v("Wires and cables")])
-                    ])
-                  ])
+                  _c(
+                    "a",
+                    { staticClass: "cat-block", attrs: { href: "#" } },
+                    [
+                      _c("div", { staticClass: "cat-img-block" }, [
+                        _c("img", {
+                          attrs: { src: "images/splash1.jpeg", alt: "" }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c(
+                        "router-link",
+                        { attrs: { to: "/wholesale/wires-cables" } },
+                        [
+                          _c("div", { staticClass: "cat-contents-block" }, [
+                            _c("h2", [_vm._v("Wires and cables")])
+                          ])
+                        ]
+                      )
+                    ],
+                    1
+                  )
                 ]
               ),
               _vm._v(" "),
@@ -1481,17 +1522,30 @@ var render = function() {
                   attrs: { lg: "4", md: "4", sm: "6", cols: "6" }
                 },
                 [
-                  _c("a", { staticClass: "cat-block", attrs: { href: "#" } }, [
-                    _c("div", { staticClass: "cat-img-block" }, [
-                      _c("img", {
-                        attrs: { src: "images/splash2.jpeg", alt: "" }
-                      })
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "cat-contents-block" }, [
-                      _c("h2", [_vm._v("Connectors & electronic components")])
-                    ])
-                  ])
+                  _c(
+                    "a",
+                    { staticClass: "cat-block", attrs: { href: "#" } },
+                    [
+                      _c("div", { staticClass: "cat-img-block" }, [
+                        _c("img", {
+                          attrs: { src: "images/splash2.jpeg", alt: "" }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c(
+                        "router-link",
+                        { attrs: { to: "/wholesale/connectors" } },
+                        [
+                          _c("div", { staticClass: "cat-contents-block" }, [
+                            _c("h2", [
+                              _vm._v("Connectors & electronic components")
+                            ])
+                          ])
+                        ]
+                      )
+                    ],
+                    1
+                  )
                 ]
               ),
               _vm._v(" "),
@@ -1651,7 +1705,14 @@ var render = function() {
                               _c(
                                 "v-btn",
                                 _vm._g(
-                                  { attrs: { "x-large": "", rounded: "" } },
+                                  {
+                                    staticClass: "home-contact-btn",
+                                    attrs: {
+                                      outlined: "",
+                                      "x-large": "",
+                                      rounded: ""
+                                    }
+                                  },
                                   on
                                 ),
                                 [_vm._v("Contact us")]
@@ -58852,6 +58913,38 @@ var app = new vue__WEBPACK_IMPORTED_MODULE_0___default.a({
 
 /***/ }),
 
+/***/ "./resources/js/components/AdditionsForCables.vue":
+/*!********************************************************!*\
+  !*** ./resources/js/components/AdditionsForCables.vue ***!
+  \********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+var render, staticRenderFns
+var script = {}
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_0__["default"])(
+  script,
+  render,
+  staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+component.options.__file = "resources/js/components/AdditionsForCables.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
 /***/ "./resources/js/components/BaseContactComponent.vue":
 /*!**********************************************************!*\
   !*** ./resources/js/components/BaseContactComponent.vue ***!
@@ -58921,6 +59014,59 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/components/Connectors.vue":
+/*!************************************************!*\
+  !*** ./resources/js/components/Connectors.vue ***!
+  \************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Connectors_vue_vue_type_template_id_1a21ef71_name_connectors___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Connectors.vue?vue&type=template&id=1a21ef71&name=connectors& */ "./resources/js/components/Connectors.vue?vue&type=template&id=1a21ef71&name=connectors&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+var script = {}
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__["default"])(
+  script,
+  _Connectors_vue_vue_type_template_id_1a21ef71_name_connectors___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Connectors_vue_vue_type_template_id_1a21ef71_name_connectors___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/Connectors.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/Connectors.vue?vue&type=template&id=1a21ef71&name=connectors&":
+/*!***********************************************************************************************!*\
+  !*** ./resources/js/components/Connectors.vue?vue&type=template&id=1a21ef71&name=connectors& ***!
+  \***********************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Connectors_vue_vue_type_template_id_1a21ef71_name_connectors___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./Connectors.vue?vue&type=template&id=1a21ef71&name=connectors& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Connectors.vue?vue&type=template&id=1a21ef71&name=connectors&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Connectors_vue_vue_type_template_id_1a21ef71_name_connectors___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Connectors_vue_vue_type_template_id_1a21ef71_name_connectors___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
 /***/ "./resources/js/components/Footer.vue":
 /*!********************************************!*\
   !*** ./resources/js/components/Footer.vue ***!
@@ -58971,6 +59117,38 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Footer_vue_vue_type_template_id_61a7c374_name_footer_component___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
+
+/***/ }),
+
+/***/ "./resources/js/components/Hardware.vue":
+/*!**********************************************!*\
+  !*** ./resources/js/components/Hardware.vue ***!
+  \**********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+var render, staticRenderFns
+var script = {}
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_0__["default"])(
+  script,
+  render,
+  staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+component.options.__file = "resources/js/components/Hardware.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
@@ -59178,6 +59356,70 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_HomeContactComponent_vue_vue_type_template_id_39ee8aa7_name_contact_component___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
+
+/***/ }),
+
+/***/ "./resources/js/components/Led.vue":
+/*!*****************************************!*\
+  !*** ./resources/js/components/Led.vue ***!
+  \*****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+var render, staticRenderFns
+var script = {}
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_0__["default"])(
+  script,
+  render,
+  staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+component.options.__file = "resources/js/components/Led.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/Pcbs.vue":
+/*!******************************************!*\
+  !*** ./resources/js/components/Pcbs.vue ***!
+  \******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+var render, staticRenderFns
+var script = {}
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_0__["default"])(
+  script,
+  render,
+  staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+component.options.__file = "resources/js/components/Pcbs.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
@@ -59404,9 +59646,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _views_AboutUsView_vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../views/AboutUsView.vue */ "./resources/views/AboutUsView.vue");
 /* harmony import */ var _views_ProductionView_vue__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../views/ProductionView.vue */ "./resources/views/ProductionView.vue");
 /* harmony import */ var _components_WiresCables_vue__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/WiresCables.vue */ "./resources/js/components/WiresCables.vue");
-/* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm.js");
-/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
-/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _components_Connectors_vue__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/Connectors.vue */ "./resources/js/components/Connectors.vue");
+/* harmony import */ var _components_Hardware_vue__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/Hardware.vue */ "./resources/js/components/Hardware.vue");
+/* harmony import */ var _components_Led_vue__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/Led.vue */ "./resources/js/components/Led.vue");
+/* harmony import */ var _components_Pcbs_vue__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/Pcbs.vue */ "./resources/js/components/Pcbs.vue");
+/* harmony import */ var _components_AdditionsForCables_vue__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/AdditionsForCables.vue */ "./resources/js/components/AdditionsForCables.vue");
+/* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm.js");
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_12__);
 
 
 
@@ -59415,7 +59662,12 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-vue__WEBPACK_IMPORTED_MODULE_7___default.a.use(vue_router__WEBPACK_IMPORTED_MODULE_6__["default"]);
+
+
+
+
+
+vue__WEBPACK_IMPORTED_MODULE_12___default.a.use(vue_router__WEBPACK_IMPORTED_MODULE_11__["default"]);
 var routes = [{
   path: '/',
   component: _views_HomeView_vue__WEBPACK_IMPORTED_MODULE_0__["default"],
@@ -59427,6 +59679,21 @@ var routes = [{
   children: [{
     path: 'wires-cables',
     component: _components_WiresCables_vue__WEBPACK_IMPORTED_MODULE_5__["default"]
+  }, {
+    path: 'connectors',
+    component: _components_Connectors_vue__WEBPACK_IMPORTED_MODULE_6__["default"]
+  }, {
+    path: 'pcbs',
+    component: _components_Pcbs_vue__WEBPACK_IMPORTED_MODULE_9__["default"]
+  }, {
+    path: 'led',
+    component: _components_Led_vue__WEBPACK_IMPORTED_MODULE_8__["default"]
+  }, {
+    path: 'cable-accessories',
+    component: _components_AdditionsForCables_vue__WEBPACK_IMPORTED_MODULE_10__["default"]
+  }, {
+    path: 'harware',
+    component: _components_Hardware_vue__WEBPACK_IMPORTED_MODULE_7__["default"]
   }]
 }, {
   path: '/contact-us',
@@ -59441,7 +59708,7 @@ var routes = [{
   component: _views_AboutUsView_vue__WEBPACK_IMPORTED_MODULE_3__["default"],
   name: 'AboutUs'
 }];
-var router = new vue_router__WEBPACK_IMPORTED_MODULE_6__["default"]({
+var router = new vue_router__WEBPACK_IMPORTED_MODULE_11__["default"]({
   mode: 'history',
   routes: routes
 });

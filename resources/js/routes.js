@@ -4,6 +4,11 @@ import ContactUs from '../views/ContactUsView.vue';
 import AboutUs from '../views/AboutUsView.vue';
 import Production from '../views/ProductionView.vue';
 import WiresCables from './components/WiresCables.vue';
+import Connectors from './components/Connectors.vue';
+import Hardware from './components/Hardware.vue';
+import Led from './components/Led.vue';
+import Pcbs from './components/Pcbs.vue';
+import AdditionsForCables  from './components/AdditionsForCables.vue';
 import VueRouter from 'vue-router';
 import Vue from 'vue';
 
@@ -23,7 +28,27 @@ export const routes = [
 			{
 				path: 'wires-cables',
 				component: WiresCables
-			}
+			},
+			{
+				path: 'connectors',
+				component: Connectors
+			},
+			{
+				path: 'pcbs',
+				component: Pcbs
+			},
+			{
+				path: 'led',
+				component: Led
+			},
+			{
+				path: 'cable-accessories',
+				component: AdditionsForCables
+			},
+			{
+				path: 'harware',
+				component: Hardware
+			},
 		]
 	},
 	{

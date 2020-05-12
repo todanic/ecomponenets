@@ -3290,6 +3290,25 @@ a {
   background-color: #0A0A0A;
 }
 
+.contact-container .home-contact-btn {
+  border: 2px solid #781212;
+  font-size: 1.6rem;
+  font-family: 'Poppins';
+}
+
+.contact-container .home-contact-btn:hover:before {
+  background-color: #781212;
+  opacity: 1;
+}
+
+.contact-container .home-contact-btn.v-btn:before {
+  transition: 0.4s ease-in-out;
+}
+
+.contact-container .home-contact-btn .v-btn__content {
+  color: #fff;
+}
+
 .contact-container h2 {
   font-size: 3rem;
   color: #fff;

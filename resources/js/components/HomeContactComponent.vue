@@ -8,7 +8,7 @@
         <v-col cols="12" class="text-center">
           <v-dialog content-class="contact-dialog" max-width="680px">
             <template v-slot:activator="{ on }">
-              <v-btn x-large rounded v-on="on">Contact us</v-btn>
+              <v-btn outlined class="home-contact-btn" x-large rounded v-on="on">Contact us</v-btn>
             </template>
            <base-contact-component></base-contact-component>
           </v-dialog>

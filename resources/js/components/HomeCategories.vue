@@ -7,9 +7,11 @@
                         <div class="cat-img-block">
                             <img src="images/splash1.jpeg" alt="">
                         </div>
-                        <div class="cat-contents-block">
-                            <h2>Wires and cables</h2>
-                        </div>
+                        <router-link to="/wholesale/wires-cables">
+                            <div class="cat-contents-block">
+                                <h2>Wires and cables</h2>
+                            </div>
+                        </router-link>
                     </a>
                 </v-col>
                 <v-col class="pb-11" lg="4" md="4" sm="6" cols="6">
@@ -17,9 +19,11 @@
                         <div class="cat-img-block">
                             <img src="images/splash2.jpeg" alt="">
                         </div>
-                        <div class="cat-contents-block">
-                            <h2>Connectors & electronic components</h2>
-                        </div>
+                        <router-link to="/wholesale/connectors">
+                            <div class="cat-contents-block">
+                                <h2>Connectors & electronic components</h2>
+                            </div>
+                        </router-link>
                     </a>
                 </v-col>
                 <v-col class="pb-11" lg="4" md="4" sm="6" cols="6">

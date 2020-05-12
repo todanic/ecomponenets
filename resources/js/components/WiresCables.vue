@@ -7,7 +7,9 @@
 export default {
 	name: 'WiresCables',
 	data () {
-
+		return {
+			
+		}
 	}
 }
 </script>

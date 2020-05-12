@@ -7,6 +7,8 @@ use Illuminate\Http\Request;
 class AppController extends Controller
 {
     public function index() {
-        return view('app');
+        var_dump(__('home.welcome'));
+        var_dump(23423);
+        // return view('app');
     }
 }

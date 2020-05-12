@@ -1,6 +1,25 @@
 .contact-container {
   background-color: $secondary-black;
 
+  .home-contact-btn {
+    border: 2px solid $primary-red;
+    font-size: 1.6rem;
+    font-family: 'Poppins';
+
+    &:hover:before {
+      background-color: $primary-red;
+      opacity: 1;
+    }
+
+    &.v-btn:before {
+      transition: 0.4s ease-in-out;
+    }
+
+    .v-btn__content {
+      color: #fff;
+    }
+  }
+
   h2 {
     font-size: 3rem;
     color: #fff;
