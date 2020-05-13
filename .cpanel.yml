@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/bzkioq27j5ff/public_html/ecomponents
+    - /bin/cp -R * $DEPLOYPATH
