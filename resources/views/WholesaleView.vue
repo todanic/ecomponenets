@@ -1,9 +1,7 @@
 <template name="wholesale-view">
 	<v-container fluid class="wholesale-view-container">
-		<v-container>
-			<v-row>
-				<router-view></router-view>
-			</v-row>
+		<v-container class="shrink-width">
+			<router-view></router-view>
 		</v-container>
 	</v-container>
 </template>

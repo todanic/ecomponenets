@@ -2,22 +2,22 @@
   background: url("/eomponents/public/images/shadow.png") no-repeat center top;
   margin-top: 84px;
 }
-.home-cat-container .cat-block {
+.round-block {
   display: block;
   transition: all ease-in-out 0.3s;
   text-decoration: none;
 }
-.home-cat-container .cat-block:hover {
+.round-block:hover {
   transform: translateY(-2%);
 }
-.home-cat-container .cat-img-block img {
+.round-img-block img {
   border: 3px solid #888888;
   width: 200px;
   height: 180px;
   border-radius: 50%;
   max-width: calc(100% - 6px);
 }
-.home-cat-container .cat-contents-block h2 {
+.round-contents-block h2 {
   color: #888888;
   font-weight: 700;
   letter-spacing: -0.25px;

@@ -9,6 +9,7 @@ import Vue from 'vue';
 import Vuetify from 'vuetify';
 import routes  from './routes';
 import App from './App.vue'
+import AOS from 'aos'
 
 Vue.use(Vuetify);
 
@@ -53,6 +54,11 @@ Vue.component('base-contact-component',
  */
 
 const app = new Vue({
+    created() {
+        AOS.init({
+            once: true
+        });
+    },
     vuetify: new Vuetify(),
     router: routes,
     render: h => h(App)

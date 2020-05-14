@@ -1,36 +1,37 @@
 .home-cat-container {
     background: url('/eomponents/public/images/shadow.png') no-repeat center top;
     margin-top: 84px;
+}
 
-    .cat-block {
-        display: block;
-        transition: all ease-in-out .3s;
-        text-decoration: none;
+.round-block {
+    display: block;
+    transition: all ease-in-out .3s;
+    text-decoration: none;
 
-        &:hover {
-     
-            transform: translateY(-2%);
-        }
+    &:hover {
+ 
+        transform: translateY(-2%);
     }
+}
 
-    .cat-img-block {
+.round-img-block {
 
-        img {
-            border: 3px solid #888888;
-            width: 200px;
-            height: 180px;
-            border-radius: 50%;
-            max-width: calc(100% - 6px);
-        }
+    img {
+        border: 3px solid #888888;
+        width: 200px;
+        height: 180px;
+        border-radius: 50%;
+        max-width: calc(100% - 6px);
     }
+}
 
-    .cat-contents-block {
 
-        h2 {
-            color: #888888;
-            font-weight: 700;
-            letter-spacing: -0.25px;
-            margin-top: 12px;
-        }
+.round-contents-block {
+
+    h2 {
+        color: #888888;
+        font-weight: 700;
+        letter-spacing: -0.25px;
+        margin-top: 12px;
     }
 }
