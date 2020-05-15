@@ -6,13 +6,23 @@ body {
     overflow-x: hidden;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     font-family: 'Poppins';
+    color: $primary-text;
+}
+
+h4 {
+    font-size: 2rem;
 }
 
 p {
     font-family: 'Poppins';
     font-size: 1.5rem;
+    color: $secondary-text;
+}
+
+ul li {
+    font-family: 'Poppins';
 }
 
 a {

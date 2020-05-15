@@ -17,13 +17,24 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-family: 'Poppins';
+  color: #888888;
+}
+
+h4 {
+  font-size: 2rem;
 }
 
 p {
   font-family: 'Poppins';
   font-size: 1.5rem;
+  color: #5a5853;
+}
+
+ul li {
+  font-family: 'Poppins';
 }
 
 a {
@@ -3327,8 +3338,38 @@ a {
   color: #781212;
 }
 
-.wholesale-view-container h3.wholesale-subcat-title {
+.wholesale-view-container h3 {
   font-size: 2.4rem;
+}
+
+.wholesale-view-container h3 span {
+  color: #781212;
+}
+
+.wholesale-view-container .wholesale-subcat-info h3 {
+  text-transform: uppercase;
+}
+
+.wholesale-view-container .wholesale-subcat-info ul {
+  list-style: none;
+}
+
+.wholesale-view-container .wholesale-subcat-info ul li {
+  font-size: 1.6rem;
+  color: #5a5853;
+}
+
+.wholesale-view-container .wholesale-subcat-info ul li:before {
+  content: '\F192';
+  font-family: "FontAwesome";
+  font-size: 8px;
+  color: #781212;
+  margin-right: 10px;
+  top: -1px;
+  position: relative;
+}
+
+.wholesale-view-container h4 {
   color: #888888;
 }
 

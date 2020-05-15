@@ -5,8 +5,41 @@
 		color: $primary-red;
 	}
 
-	h3.wholesale-subcat-title {
+	h3 {
 		font-size: 2.4rem;
+
+		span {
+			color: $primary-red;
+		}
+	}
+
+	.wholesale-subcat-info {
+
+		h3 {
+			text-transform: uppercase;
+		}
+
+		ul {
+			list-style: none;
+
+			li {
+				font-size: 1.6rem;
+				color: $secondary-text;
+
+				&:before {
+					content: '\f192';
+					font-family: "FontAwesome";
+					font-size: 8px;
+					color: #781212;
+					margin-right: 10px;
+					top: -1px;
+					position: relative;
+				}
+			}
+		}
+	}
+
+	h4 {
 		color: $primary-text;
 	}
 }

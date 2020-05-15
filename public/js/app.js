@@ -549,6 +549,159 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'WiresCables',
   data: function data() {
@@ -2151,7 +2304,8 @@ var render = function() {
             [
               _c("v-col", { attrs: { cols: "12" } }, [
                 _c("h3", { staticClass: "wholesale-subcat-title mb-5" }, [
-                  _vm._v("Wires and cables subcategories")
+                  _vm._v("Wires and "),
+                  _c("span", [_vm._v("cables categories")])
                 ])
               ]),
               _vm._v(" "),
@@ -2189,7 +2343,7 @@ var render = function() {
                 [
                   _c(
                     "a",
-                    { staticClass: "round-block", attrs: { href: "#" } },
+                    { staticClass: "round-block", attrs: { href: "#cables" } },
                     [
                       _c("div", { staticClass: "round-img-block" }, [
                         _c("img", {
@@ -2237,6 +2391,7 @@ var render = function() {
           _vm._v(" "),
           _c(
             "v-row",
+            { attrs: { id: "wires" } },
             [
               _c("v-col", { attrs: { cols: "12" } }, [
                 _c("h2", { staticClass: "subcat-title mb-5" }, [
@@ -2246,14 +2401,12 @@ var render = function() {
               _vm._v(" "),
               _c(
                 "v-col",
-                {
-                  attrs: { id: "wires", lg: "6", md: "6", sm: "6", cols: "6" }
-                },
+                { attrs: { lg: "8", md: "8", sm: "8", cols: "8" } },
                 [
                   _c("v-img", {
-                    staticClass: "subcat-img ml-auto",
+                    staticClass: "subcat-img ma-auto",
                     attrs: {
-                      "max-width": "400px",
+                      "max-width": "500px",
                       src: "/images/splash1.jpeg",
                       alt: ""
                     }
@@ -2262,17 +2415,335 @@ var render = function() {
                 1
               ),
               _vm._v(" "),
-              _c("v-col", { attrs: { lg: "6", md: "6", sm: "6", cols: "6" } }, [
-                _c("h3", [_vm._v("LIY wires for electronics")]),
-                _vm._v(" "),
-                _c("p", [
-                  _vm._v("vast range help with making the right choice")
+              _c(
+                "v-col",
+                {
+                  staticClass: "text-left",
+                  attrs: { lg: "4", md: "4", sm: "4", cols: "4" }
+                },
+                [
+                  _c("h3", [
+                    _vm._v("LIY wires "),
+                    _c("span", [_vm._v("for electronics")])
+                  ]),
+                  _vm._v(" "),
+                  _c("p", { staticClass: "mb-4" }, [
+                    _vm._v("vast range help with making the right choice")
+                  ]),
+                  _vm._v(" "),
+                  _c("p", { staticClass: "mb-0" }, [
+                    _vm._v(
+                      "special offer - measuring cables to required length"
+                    )
+                  ])
+                ]
+              )
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "v-row",
+            { staticClass: "wholesale-subcat-info" },
+            [
+              _c("v-col", { attrs: { cols: "12" } }, [
+                _c("h3", { staticClass: "mt-5" }, [
+                  _vm._v("\n\t\t\t\t\tLiy\n\t\t\t\t")
+                ])
+              ]),
+              _vm._v(" "),
+              _c("v-col", { staticClass: "text-left", attrs: { cols: "12" } }, [
+                _c("h4", { staticClass: "mb-2" }, [
+                  _vm._v(
+                    "\n\t\t\t\t\tConductors with various cross-sections\n\t\t\t\t"
+                  )
                 ]),
                 _vm._v(" "),
-                _c("p", [
-                  _vm._v("special offer - measuring cables to required length")
+                _c("ul", [
+                  _c("li", [
+                    _vm._v(
+                      "\n\t\t\t\t\t\tConductors with different cross-sectional areas for different uses \n\t\t\t\t\t"
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _vm._v(
+                      "\n\t\t\t\t\t\t0,14mm2; 0,25mm2; 0,34mm2........ 1mm2; 1,5mm2; 2,5mm2;..........10mm2 or 28AWG, 24AWG, 22AWG…….18AWG, 16AWG, 14AWG... \n\t\t\t\t\t"
+                    )
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("v-col", { staticClass: "text-left", attrs: { cols: "12" } }, [
+                _c("h4", { staticClass: "mb-2" }, [_vm._v("Colored wires")]),
+                _vm._v(" "),
+                _c("ul", [
+                  _c("li", [
+                    _vm._v(
+                      "\n\t\t\t\t\t\tA wide specter of colors and shades  \n\t\t\t\t\t"
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _vm._v(
+                      "\n\t\t\t\t\t\tTwo-colored wires with vertical stripe or ring stripe \n\t\t\t\t\t"
+                    )
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("v-col", { staticClass: "text-left", attrs: { cols: "12" } }, [
+                _c("h4", { staticClass: "mb-2" }, [
+                  _vm._v("\n\t\t\t\t\tStandard \n\t\t\t\t")
+                ]),
+                _vm._v(" "),
+                _c("ul", [
+                  _c("li", [
+                    _vm._v(
+                      "\n\t\t\t\t\t\tConductors manufactured by standards for European and American markets (VDE, UL, cUL...)  \n\t\t\t\t\t"
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _vm._v(
+                      "\n\t\t\t\t\t\tConductors of many different structures and materials, tested for \n\t\t\t\t\t\tfunctioning in out-of-ordinary circumstances (high temperature, moisture, indoor/outdoor use...) \n\t\t\t\t\t"
+                    )
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("p", { staticClass: "mt-5" }, [
+                  _vm._v("*for certain conductors ")
                 ])
               ])
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "v-row",
+            { staticClass: "wholesale-additional-info" },
+            [
+              _c("v-col", { staticClass: "mb-8 mt-4", attrs: { cols: "12" } }, [
+                _c("h4", [
+                  _vm._v(
+                    "\n\t\t\t\t\tMulti-core cables to fit all your needs\n\t\t\t\t"
+                  )
+                ]),
+                _vm._v(" "),
+                _c("p", { staticClass: "mb-2" }, [_vm._v("Large choice")]),
+                _vm._v(" "),
+                _c("p", { staticClass: "mb-2" }, [
+                  _vm._v("Help with choosing the right cable")
+                ]),
+                _vm._v(" "),
+                _c("p", { staticClass: "mb-2" }, [
+                  _vm._v("Special-offer - measuring cables to required length")
+                ])
+              ])
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c("v-divider", { staticClass: "pb-10" }),
+          _vm._v(" "),
+          _c(
+            "v-row",
+            { attrs: { id: "cables" } },
+            [
+              _c("v-col", { attrs: { cols: "12" } }, [
+                _c("h2", { staticClass: "subcat-title mb-5" }, [
+                  _vm._v("Cables")
+                ])
+              ]),
+              _vm._v(" "),
+              _c(
+                "v-col",
+                { attrs: { lg: "8", md: "8", sm: "8", cols: "8" } },
+                [
+                  _c("v-img", {
+                    staticClass: "subcat-img ma-auto",
+                    attrs: {
+                      "max-width": "500px",
+                      src: "/images/splash3.jpeg",
+                      alt: ""
+                    }
+                  })
+                ],
+                1
+              )
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "v-row",
+            { staticClass: "wholesale-subcat-info" },
+            [
+              _c("v-col", { attrs: { cols: "12" } }, [
+                _c("h3", { staticClass: "mt-5" }, [
+                  _vm._v(
+                    "\n\t\t\t\t\t\tMulti-core LIYY, LIY-CY, signal, control and power cables\n\t\t\t\t\t"
+                  )
+                ])
+              ]),
+              _vm._v(" "),
+              _c("v-col", { staticClass: "text-left", attrs: { cols: "12" } }, [
+                _c("h4", { staticClass: "mb-2" }, [
+                  _vm._v("\n\t\t\t\t\t\tMulti-core cables\n\t\t\t\t\t")
+                ]),
+                _vm._v(" "),
+                _c("ul", [
+                  _c("li", [
+                    _vm._v(
+                      "\n\t\t\t\t\t\t\tCables with two or more cores with different cross-sections and colors\n\t\t\t\t\t\t"
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _vm._v(
+                      "\n\t\t\t\t\t\t\tWe offer multi-core cables with all configurations - 2x0,25mm2 ; 2x0,34mm2… 5x0,25mm2, 5x0,34mm2….. \n\t\t\t\t\t\t the same goes for UL certified cables in \n\t\t\t\t\t\t\twhich case the configurations are marked in the following way - 2x24AWG; 2x22AWG….. 5x24AWG; 5x22AWG etc. \n\t\t\t\t\t\t"
+                    )
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("v-col", { staticClass: "text-left", attrs: { cols: "12" } }, [
+                _c("h4", { staticClass: "mb-2" }, [_vm._v("ColPower cables")]),
+                _vm._v(" "),
+                _c("ul", [
+                  _c("li", [
+                    _vm._v(
+                      "\n\t\t\t\t\t\t\tAll kinds of power cables for different currents\n\t\t\t\t\t\t"
+                    )
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("p", { staticClass: "mt-5" }, [
+                  _vm._v("*for certain conductors ")
+                ])
+              ])
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "v-row",
+            { staticClass: "wholesale-additional-info" },
+            [
+              _c("v-col", { staticClass: "mb-8 mt-4", attrs: { cols: "12" } }, [
+                _c("h4", [
+                  _vm._v("\n\t\t\t\t\t\tCable assemblies\n\t\t\t\t\t")
+                ]),
+                _vm._v(" "),
+                _c("p", { staticClass: "mb-2" }, [
+                  _vm._v("Wide assortment of cable assemblies")
+                ]),
+                _vm._v(" "),
+                _c("p", { staticClass: "mb-2" }, [
+                  _vm._v("Stay connected at any moment")
+                ]),
+                _vm._v(" "),
+                _c("p", { staticClass: "mb-2" }, [
+                  _vm._v("Posibility of special order")
+                ])
+              ]),
+              _vm._v(" "),
+              _c("v-col", { attrs: { cols: "12" } }, [
+                _c("h3", { staticClass: "mt-5" }, [
+                  _vm._v(
+                    "\n\t\t\t\t\tReady-made cable assemblies that you need all the time \n\t\t\t\t"
+                  )
+                ])
+              ]),
+              _vm._v(" "),
+              _c(
+                "v-col",
+                { staticClass: "text-left", attrs: { cols: "12" } },
+                [
+                  _c(
+                    "v-row",
+                    { staticClass: "wholesale-subcat-info" },
+                    [
+                      _c("v-col", { attrs: { cols: "12" } }, [
+                        _c("h4", { staticClass: "mb-2" }, [
+                          _vm._v("\n\t\t\t\t\t\t\t\tUSB cables\n\t\t\t\t\t\t\t")
+                        ]),
+                        _vm._v(" "),
+                        _c("ul", [
+                          _c("li", [
+                            _vm._v(
+                              "\n\t\t\t\t\t\t\t\t\tWe offer USB cables of different colors and lengths, with the connectors combinations that work for you. \n\t\t\t\t\t\t\t\t"
+                            )
+                          ]),
+                          _vm._v(" "),
+                          _c("li", [
+                            _vm._v(
+                              "\n\t\t\t\t\t\t\t\t\tCombinations:\n\t\t\t\t\t\t\t\t\t"
+                            ),
+                            _c("p", { staticClass: "mb-0 ml-5" }, [
+                              _vm._v(
+                                "Type A male – Type A female (extension USB type A cable with or without screws for mounting"
+                              )
+                            ]),
+                            _vm._v(" "),
+                            _c("p", { staticClass: "mb-0 ml-5" }, [
+                              _vm._v(
+                                "Type A – Type B, Type B mini, Type B micr"
+                              )
+                            ]),
+                            _vm._v(" "),
+                            _c("p", { staticClass: "mb-0 ml-5" }, [
+                              _vm._v("Type A – Type")
+                            ]),
+                            _vm._v(" "),
+                            _c("p", { staticClass: "mb-0 ml-5" }, [
+                              _vm._v("and others... ")
+                            ])
+                          ]),
+                          _vm._v(" "),
+                          _c("li", [
+                            _vm._v(
+                              "\n\t\t\t\t\t\t\t\t\tAngled connectors (90 degrees, left angle, right angle, etc…) \n\t\t\t\t\t\t\t\t"
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("v-col", { attrs: { cols: "12" } }, [
+                        _c("h4", { staticClass: "mb-2" }, [
+                          _vm._v(
+                            "\n\t\t\t\t\t\t\t\tAudio and video cables\n\t\t\t\t\t\t\t"
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("ul", [
+                          _c("li", [
+                            _vm._v(
+                              "\n\t\t\t\t\t\t\t\t\tMonitor cables for all of your screen types (HDMI, DVI, DP, VGA…)\n\t\t\t\t\t\t\t\t"
+                            )
+                          ]),
+                          _vm._v(" "),
+                          _c("li", [
+                            _vm._v(
+                              "\n\t\t\t\t\t\t\t\t\tAudio cables (with speaker jacks and other connectors) \n\t\t\t\t\t\t\t\t"
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("v-col", { attrs: { cols: "12" } }, [
+                        _c("h4", { staticClass: "mb-2" }, [
+                          _vm._v(
+                            "\n\t\t\t\t\t\t\t\tAnd others per your request... \n\t\t\t\t\t\t\t"
+                          )
+                        ])
+                      ])
+                    ],
+                    1
+                  )
+                ],
+                1
+              )
             ],
             1
           )
@@ -59950,7 +60421,13 @@ var routes = [{
 }];
 var router = new vue_router__WEBPACK_IMPORTED_MODULE_11__["default"]({
   mode: 'history',
-  routes: routes
+  routes: routes,
+  scrollBehavior: function scrollBehavior() {
+    return {
+      x: 0,
+      y: 0
+    };
+  }
 });
 /* harmony default export */ __webpack_exports__["default"] = (router);
 
