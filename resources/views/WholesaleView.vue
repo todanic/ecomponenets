@@ -1,8 +1,6 @@
 <template name="wholesale-view">
 	<v-container fluid class="wholesale-view-container">
-		<v-container class="shrink-width">
-			<router-view></router-view>
-		</v-container>
+		<router-view></router-view>
 	</v-container>
 </template>
 <script>

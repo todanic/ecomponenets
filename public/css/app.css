@@ -9,6 +9,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -23,18 +24,31 @@ h4 {
   color: #888888;
 }
 
+h1 span,
+h2 span,
+h3 span,
+h4 span {
+  color: #781212;
+}
+
+h1 {
+  font-size: 3.2rem;
+  text-transform: uppercase;
+}
+
 h4 {
   font-size: 2rem;
 }
 
 p {
   font-family: 'Poppins';
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   color: #5a5853;
 }
 
 ul li {
   font-family: 'Poppins';
+  font-size: 1.6rem;
 }
 
 a {
@@ -3336,6 +3350,7 @@ a {
 .wholesale-view-container h2.subcat-title {
   font-size: 3rem;
   color: #781212;
+  text-transform: uppercase;
 }
 
 .wholesale-view-container h3 {
@@ -3343,6 +3358,14 @@ a {
 }
 
 .wholesale-view-container h3 span {
+  color: #781212;
+}
+
+.wholesale-view-container .wholesale-click-picture {
+  font-size: 1.8rem;
+}
+
+.wholesale-view-container .wholesale-click-picture span {
   color: #781212;
 }
 

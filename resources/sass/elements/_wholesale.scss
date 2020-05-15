@@ -3,10 +3,19 @@
 	h2.subcat-title {
 		font-size: 3rem;
 		color: $primary-red;
+		text-transform: uppercase;
 	}
 
 	h3 {
 		font-size: 2.4rem;
+
+		span {
+			color: $primary-red;
+		}
+	}
+
+	.wholesale-click-picture {
+		font-size: 1.8rem;
 
 		span {
 			color: $primary-red;

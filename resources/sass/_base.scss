@@ -1,5 +1,6 @@
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth
 }
 
 body {
@@ -9,6 +10,15 @@ body {
 h1, h2, h3, h4 {
     font-family: 'Poppins';
     color: $primary-text;
+
+    span {
+        color: $primary-red;
+    }
+}
+
+h1 {
+    font-size: 3.2rem;
+    text-transform: uppercase;
 }
 
 h4 {
@@ -17,12 +27,13 @@ h4 {
 
 p {
     font-family: 'Poppins';
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     color: $secondary-text;
 }
 
 ul li {
     font-family: 'Poppins';
+    font-size: 1.6rem;
 }
 
 a {
