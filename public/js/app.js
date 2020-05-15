@@ -471,8 +471,6 @@ __webpack_require__.r(__webpack_exports__);
   data: function data() {
     return {
       images: [{
-        src: '/images/splash1.jpeg'
-      }, {
         src: '/images/splash2.jpeg'
       }, {
         src: '/images/splash3.jpeg'
@@ -1657,9 +1655,10 @@ var render = function() {
             { attrs: { lg: "7", md: "7", sm: "12", cols: "12" } },
             [
               _c("v-img", {
-                staticClass: "subcat-img ma-auto",
+                staticClass: "subcat-img",
                 attrs: {
-                  "max-width": "500px",
+                  "max-width": "600px",
+                  "max-height": "400px",
                   src: "/images/connectors.jpeg",
                   alt: ""
                 }
@@ -1775,9 +1774,10 @@ var render = function() {
             { attrs: { lg: "7", md: "7", sm: "12", cols: "12" } },
             [
               _c("v-img", {
-                staticClass: "subcat-img ma-auto",
+                staticClass: "subcat-img",
                 attrs: {
-                  "max-width": "500px",
+                  "max-width": "600px",
+                  "max-height": "400px",
                   src: "/images/connectors.jpeg",
                   alt: ""
                 }
@@ -1910,9 +1910,10 @@ var render = function() {
             { attrs: { lg: "7", md: "7", sm: "12", cols: "12" } },
             [
               _c("v-img", {
-                staticClass: "subcat-img ma-auto",
+                staticClass: "subcat-img",
                 attrs: {
-                  "max-width": "500px",
+                  "max-width": "600px",
+                  "max-height": "400px",
                   src: "/images/connectors.jpeg",
                   alt: ""
                 }
@@ -2489,6 +2490,35 @@ render._withStripped = true
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Led.vue?vue&type=template&id=18de3c70&name=led&":
+/*!***************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Led.vue?vue&type=template&id=18de3c70&name=led& ***!
+  \***************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "v-container",
+    { staticClass: "shrink-width connectors-container text-center" },
+    [_c("v-row")],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Pcbs.vue?vue&type=template&id=38e37e6f&name=pcbs&":
 /*!*****************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Pcbs.vue?vue&type=template&id=38e37e6f&name=pcbs& ***!
@@ -2504,7 +2534,107 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div")
+  return _c(
+    "v-container",
+    { staticClass: "shrink-width connectors-container text-center" },
+    [
+      _c(
+        "v-row",
+        { attrs: { id: "pcbs" } },
+        [
+          _c("v-col", { attrs: { cols: "12" } }, [
+            _c("h2", { staticClass: "subcat-title mb-5" }, [_vm._v("PCBs")])
+          ]),
+          _vm._v(" "),
+          _c(
+            "v-col",
+            { attrs: { lg: "7", md: "7", sm: "12", cols: "12" } },
+            [
+              _c("v-img", {
+                staticClass: "subcat-img",
+                attrs: {
+                  "max-width": "600px",
+                  "max-height": "400px",
+                  src: "/images/connectors.jpeg",
+                  alt: ""
+                }
+              })
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "v-col",
+            {
+              staticClass: "text-left",
+              attrs: { lg: "5", md: "5", sm: "12", cols: "12" }
+            },
+            [
+              _c("h3", { staticClass: "mb-5" }, [
+                _vm._v("PCB "),
+                _c("span", [_vm._v("design")])
+              ]),
+              _vm._v(" "),
+              _c("p", { staticClass: "mb-0" }, [_vm._v("Rapid prototyping")]),
+              _vm._v(" "),
+              _c("p", { staticClass: "mb-0" }, [_vm._v("Serial production")]),
+              _vm._v(" "),
+              _c("p", { staticClass: "mb-0" }, [
+                _vm._v("Filling of PCB with SMT components")
+              ])
+            ]
+          )
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "v-row",
+        { staticClass: "wholesale-subcat-info mt-6" },
+        [
+          _c("v-col", { staticClass: "text-left", attrs: { cols: "12" } }, [
+            _c("h4", { staticClass: "mb-2" }, [
+              _vm._v("\n\t\t\t\tAssistance with design \n\t\t\t")
+            ]),
+            _vm._v(" "),
+            _c("ul", [
+              _c("li", [
+                _vm._v("\n\t\t\t\t\tDesign per customer request\n\t\t\t\t")
+              ]),
+              _vm._v(" "),
+              _c("li", [_vm._v("\n\t\t\t\t\tMaking documentation\n\t\t\t\t")]),
+              _vm._v(" "),
+              _c("li", [_vm._v("\n\t\t\t\t\tElectronic design \n\t\t\t\t")]),
+              _vm._v(" "),
+              _c("li", [_vm._v("\n\t\t\t\t\tPCB design\n\t\t\t\t")]),
+              _vm._v(" "),
+              _c("li", [_vm._v("\n\t\t\t\t\tQuick prototyping\n\t\t\t\t")])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("v-col", { staticClass: "text-left", attrs: { cols: "12" } }, [
+            _c("h4", { staticClass: "mb-2" }, [_vm._v("Proudction")]),
+            _vm._v(" "),
+            _c("ul", [
+              _c("li", [
+                _vm._v(
+                  "\n\t\t\t\t\tManual and robotized serial production \n\t\t\t\t"
+                )
+              ]),
+              _vm._v(" "),
+              _c("li", [_vm._v("\n\t\t\t\t\tControl and testing\n\t\t\t\t")]),
+              _vm._v(" "),
+              _c("li", [_vm._v("\n\t\t\t\t\tQuality guaranteed\n\t\t\t\t")]),
+              _vm._v(" "),
+              _c("li", [_vm._v("\n\t\t\t\t\tAffordable prices\n\t\t\t\t")])
+            ])
+          ])
+        ],
+        1
+      )
+    ],
+    1
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -2929,9 +3059,10 @@ var render = function() {
             { attrs: { lg: "8", md: "8", sm: "8", cols: "8" } },
             [
               _c("v-img", {
-                staticClass: "subcat-img ma-auto",
+                staticClass: "subcat-img",
                 attrs: {
-                  "max-width": "500px",
+                  "max-width": "600px",
+                  "max-height": "400px",
                   src: "/images/splash1.jpeg",
                   alt: ""
                 }
@@ -3082,9 +3213,10 @@ var render = function() {
             { attrs: { lg: "8", md: "8", sm: "8", cols: "8" } },
             [
               _c("v-img", {
-                staticClass: "subcat-img ma-auto",
+                staticClass: "subcat-img",
                 attrs: {
-                  "max-width": "500px",
+                  "max-width": "600px",
+                  "max-height": "400px",
                   src: "/images/splash3.jpeg",
                   alt: ""
                 }
@@ -60727,17 +60859,18 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
-var render, staticRenderFns
+/* harmony import */ var _Led_vue_vue_type_template_id_18de3c70_name_led___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Led.vue?vue&type=template&id=18de3c70&name=led& */ "./resources/js/components/Led.vue?vue&type=template&id=18de3c70&name=led&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
 var script = {}
 
 
 /* normalize component */
 
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_0__["default"])(
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__["default"])(
   script,
-  render,
-  staticRenderFns,
+  _Led_vue_vue_type_template_id_18de3c70_name_led___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Led_vue_vue_type_template_id_18de3c70_name_led___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
   null,
@@ -60745,8 +60878,28 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
   
 )
 
+/* hot reload */
+if (false) { var api; }
 component.options.__file = "resources/js/components/Led.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/Led.vue?vue&type=template&id=18de3c70&name=led&":
+/*!*********************************************************************************!*\
+  !*** ./resources/js/components/Led.vue?vue&type=template&id=18de3c70&name=led& ***!
+  \*********************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Led_vue_vue_type_template_id_18de3c70_name_led___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./Led.vue?vue&type=template&id=18de3c70&name=led& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Led.vue?vue&type=template&id=18de3c70&name=led&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Led_vue_vue_type_template_id_18de3c70_name_led___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Led_vue_vue_type_template_id_18de3c70_name_led___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
 
 /***/ }),
 

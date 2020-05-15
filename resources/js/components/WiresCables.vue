@@ -43,7 +43,7 @@
 				<h2 class="subcat-title mb-5">Wires</h2>
 			</v-col>
 			<v-col lg="8" md="8" sm="8" cols="8">
-				<v-img  class="subcat-img ma-auto" max-width="500px" src="/images/splash1.jpeg" alt=""></v-img>
+				<v-img  class="subcat-img" max-width="600px" max-height="400px" src="/images/splash1.jpeg" alt=""></v-img>
 			</v-col>
 			<v-col lg="4" md="4" sm="4" cols="4" class="text-left">
 				<h3>LIY wires <span>for electronics</span></h3>
@@ -115,7 +115,7 @@
 				<h2 class="subcat-title mb-5">Cables</h2>
 			</v-col>
 			<v-col lg="8" md="8" sm="8" cols="8">
-				<v-img  class="subcat-img ma-auto" max-width="500px" src="/images/splash3.jpeg" alt=""></v-img>
+				<v-img  class="subcat-img" max-width="600px" max-height="400px" src="/images/splash3.jpeg" alt=""></v-img>
 			</v-col>
 		</v-row>
 		<v-row class="wholesale-subcat-info">

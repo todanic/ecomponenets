@@ -43,7 +43,7 @@
 					<h2 class="subcat-title mb-5">Connectors</h2>
 				</v-col>
 				<v-col lg="7" md="7" sm="12" cols="12">
-					<v-img  class="subcat-img ma-auto" max-width="500px" src="/images/connectors.jpeg" alt=""></v-img>
+					<v-img  class="subcat-img" max-width="600px" max-height="400px" src="/images/connectors.jpeg" alt=""></v-img>
 				</v-col>
 				<v-col lg="5" md="5" sm="12" cols="12" class="text-left">
 					<h3 class="mb-5">Connectors for <span>every connection type</span></h3>
@@ -98,7 +98,7 @@
 					<h2 class="subcat-title mb-5">Terminals</h2>
 				</v-col>
 				<v-col lg="7" md="7" sm="12" cols="12">
-					<v-img  class="subcat-img ma-auto" max-width="500px" src="/images/connectors.jpeg" alt=""></v-img>
+					<v-img  class="subcat-img" max-width="600px" max-height="400px" src="/images/connectors.jpeg" alt=""></v-img>
 				</v-col>
 				<v-col lg="5" md="5" sm="12" cols="12" class="text-left">
 					<h3 class="mb-5">Terminal for <span>every wire end</span></h3>
@@ -159,7 +159,7 @@
 					<h2 class="subcat-title mb-5">Electronic components</h2>
 				</v-col>
 				<v-col lg="7" md="7" sm="12" cols="12">
-					<v-img  class="subcat-img ma-auto" max-width="500px" src="/images/connectors.jpeg" alt=""></v-img>
+					<v-img  class="subcat-img" max-width="600px" max-height="400px" src="/images/connectors.jpeg" alt=""></v-img>
 				</v-col>
 				<v-col lg="5" md="5" sm="12" cols="12" class="text-left">
 					<h3 class="mb-5">All electronic <span>components in one place</span></h3>
