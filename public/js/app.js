@@ -116,6 +116,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'app',
   data: function data() {
@@ -135,8 +136,6 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-//
-//
 //
 //
 //
@@ -837,7 +836,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'HomeView',
   data: function data() {
@@ -884,10 +882,85 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'WholesaleView',
   data: function data() {
-    return {};
+    return {
+      isParent: true
+    };
+  },
+  updated: function updated() {
+    this.isParent = typeof this.$refs.childRout === 'undefined';
+  },
+  mounted: function mounted() {
+    this.isParent = typeof this.$refs.childRout === 'undefined';
   }
 });
 
@@ -1386,9 +1459,169 @@ var render = function() {
           _vm._v(" "),
           _c("router-view"),
           _vm._v(" "),
+          _c("home-contact-component"),
+          _vm._v(" "),
           _c("prefooter"),
           _vm._v(" "),
           _c("footer-component")
+        ],
+        1
+      )
+    ],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/AdditionsForCables.vue?vue&type=template&id=13934073&name=additions-for-cables&":
+/*!***********************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/AdditionsForCables.vue?vue&type=template&id=13934073&name=additions-for-cables& ***!
+  \***********************************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "v-container",
+    { staticClass: "shrink-width connectors-container text-center" },
+    [
+      _c(
+        "v-row",
+        { attrs: { id: "pcbs" } },
+        [
+          _c("v-col", { attrs: { cols: "12" } }, [
+            _c("h2", { staticClass: "subcat-title mb-5" }, [
+              _vm._v("Cable accessories")
+            ])
+          ]),
+          _vm._v(" "),
+          _c(
+            "v-col",
+            { attrs: { lg: "7", md: "7", sm: "12", cols: "12" } },
+            [
+              _c("v-img", {
+                staticClass: "subcat-img",
+                attrs: {
+                  "max-width": "600px",
+                  "max-height": "400px",
+                  src: "/images/connectors.jpeg",
+                  alt: ""
+                }
+              })
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "v-col",
+            {
+              staticClass: "text-left",
+              attrs: { lg: "5", md: "5", sm: "12", cols: "12" }
+            },
+            [
+              _c("h3", { staticClass: "mb-5" }, [
+                _vm._v("Everything you need for "),
+                _c("span", [_vm._v("flawless cable assembly and isolation")])
+              ]),
+              _vm._v(" "),
+              _c("p", { staticClass: "mb-0" }, [
+                _vm._v("PVC cable ties and holders")
+              ]),
+              _vm._v(" "),
+              _c("p", { staticClass: "mb-0" }, [_vm._v("PVC tubes")]),
+              _vm._v(" "),
+              _c("p", { staticClass: "mb-0" }, [
+                _vm._v(
+                  "Everything you need for neat wiring and marking in one place"
+                )
+              ])
+            ]
+          )
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "v-row",
+        { staticClass: "wholesale-subcat-info" },
+        [
+          _c("v-col", { attrs: { cols: "12" } }, [
+            _c("h3", { staticClass: "mt-5" }, [
+              _vm._v("\n\t\t\t\t\tCable accessories\t\t\t\t\t\n\t\t\t\t")
+            ])
+          ]),
+          _vm._v(" "),
+          _c("v-col", { staticClass: "text-left", attrs: { cols: "12" } }, [
+            _c("h4", { staticClass: "mb-2" }, [
+              _vm._v("\n\t\t\t\t\tCable ties and cable holders\n\t\t\t\t")
+            ]),
+            _vm._v(" "),
+            _c("ul", { staticClass: "pl-0" }, [
+              _c("li", [
+                _vm._v(
+                  "\n\t\t\t\t\t\tCable ties different dimension and colors for fixing cables  \n\t\t\t\t\t"
+                )
+              ]),
+              _vm._v(" "),
+              _c("li", [
+                _vm._v(
+                  "\n\t\t\t\t\t\tHolders and cable mounts for easier cable handling\n\t\t\t\t\t"
+                )
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("v-col", { staticClass: "text-left", attrs: { cols: "12" } }, [
+            _c("h4", { staticClass: "mb-2" }, [
+              _vm._v("\n\t\t\t\t\tIsolation program\n\t\t\t\t")
+            ]),
+            _vm._v(" "),
+            _c("ul", { staticClass: "pl-0" }, [
+              _c("li", [
+                _vm._v(
+                  "\n\t\t\t\t\t\tHeatshrinking tubes different sizes and scales, for wires and cables isolation  \n\t\t\t\t\t"
+                )
+              ]),
+              _vm._v(" "),
+              _c("li", [
+                _vm._v(
+                  "\n\t\t\t\t\t\tPVC tubes different sizes and dimensions \n\t\t\t\t\t"
+                )
+              ]),
+              _vm._v(" "),
+              _c("li", [
+                _vm._v(
+                  "\n\t\t\t\t\t\tRibbed PVC tubes, PVC chains and others\n\t\t\t\t\t"
+                )
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("v-col", { staticClass: "text-left", attrs: { cols: "12" } }, [
+            _c("h4", { staticClass: "mb-2" }, [
+              _vm._v("\n\t\t\t\t\tAlternative offer\n\t\t\t\t")
+            ]),
+            _vm._v(" "),
+            _c("ul", { staticClass: "pl-0" }, [
+              _c("li", [
+                _vm._v(
+                  "\n\t\t\t\t\t\teComponents also offers alternative models of connectors, manufactured by our Chinese partners if your project demands lower priced, but still very reliable components  \n\t\t\t\t\t"
+                )
+              ])
+            ])
+          ])
         ],
         1
       )
@@ -1424,26 +1657,23 @@ var render = function() {
       _c(
         "v-row",
         [
-          _c(
-            "v-col",
-            { attrs: { cols: "6" } },
-            [
-              _c("v-icon", [_vm._v("fas fa-phone")]),
-              _vm._v(" "),
-              _c("p", [_vm._v("+381 6995 4448")]),
-              _vm._v(" "),
-              _c("p", [_vm._v("Cara Lazara 2")]),
-              _vm._v(" "),
-              _c("p", [_vm._v("Srbobran 21480")]),
-              _vm._v(" "),
-              _c("p", [_vm._v("Serbia")])
-            ],
-            1
-          ),
+          _c("v-col", { attrs: { cols: "4" } }, [
+            _c(
+              "p",
+              [_c("v-icon", [_vm._v("fa-phone")]), _vm._v(" +381 6995 4448")],
+              1
+            ),
+            _vm._v(" "),
+            _c("p", [_vm._v("Cara Lazara 2")]),
+            _vm._v(" "),
+            _c("p", [_vm._v("Srbobran 21480")]),
+            _vm._v(" "),
+            _c("p", [_vm._v("Serbia")])
+          ]),
           _vm._v(" "),
           _c(
             "v-col",
-            { attrs: { cols: "6" } },
+            { attrs: { cols: "8" } },
             [
               _c(
                 "v-row",
@@ -1489,6 +1719,7 @@ var render = function() {
                     [
                       _c("v-file-input", {
                         attrs: {
+                          "prepend-icon": "",
                           accept: "image/*",
                           filled: "",
                           outlined: "",
@@ -1501,10 +1732,13 @@ var render = function() {
                   _vm._v(" "),
                   _c(
                     "v-col",
+                    { staticClass: "text-right", attrs: { cols: "12" } },
                     [
-                      _c("v-btn", { attrs: { color: "#781212" } }, [
-                        _vm._v("\n            Send\n          ")
-                      ])
+                      _c(
+                        "v-btn",
+                        { attrs: { color: "#781212", large: "", dark: "" } },
+                        [_vm._v("\n            Send\n          ")]
+                      )
                     ],
                     1
                   )
@@ -1711,7 +1945,7 @@ var render = function() {
               _vm._v("\n\t\t\t\t\tManufacturers and configurations \n\t\t\t\t")
             ]),
             _vm._v(" "),
-            _c("ul", [
+            _c("ul", { staticClass: "pl-0" }, [
               _c("li", [
                 _vm._v(
                   "\n\t\t\t\t\t\tBroad selection of connectors of world’s renowned manufacturers such as Molex, TE Connectivity, JST…  \n\t\t\t\t\t"
@@ -1731,7 +1965,7 @@ var render = function() {
               _vm._v("Crimp contacts and connector housings ")
             ]),
             _vm._v(" "),
-            _c("ul", [
+            _c("ul", { staticClass: "pl-0" }, [
               _c("li", [
                 _vm._v(
                   "\n\t\t\t\t\t\tWith every connector we offer it’s corresponding crimp contacts suitable for conductors of different thickness, as well as connector backshells for the connectors that use them  \n\t\t\t\t\t"
@@ -1745,7 +1979,7 @@ var render = function() {
               _vm._v("\n\t\t\t\t\tAlternative offer\n\t\t\t\t")
             ]),
             _vm._v(" "),
-            _c("ul", [
+            _c("ul", { staticClass: "pl-0" }, [
               _c("li", [
                 _vm._v(
                   "\n\t\t\t\t\t\teComponents also offers alternative models of connectors, manufactured by our Chinese partners if your project demands lower priced, but still very reliable components  \n\t\t\t\t\t"
@@ -1826,7 +2060,7 @@ var render = function() {
               _vm._v("\n\t\t\t\t\tTypes of terminals\n\t\t\t\t")
             ]),
             _vm._v(" "),
-            _c("ul", [
+            _c("ul", { staticClass: "pl-0" }, [
               _c("li", [
                 _vm._v(
                   "\n\t\t\t\t\t\tWe offer the following types of terminals:\n\t\t\t\t\t\t"
@@ -1867,7 +2101,7 @@ var render = function() {
               _vm._v("Crimp contacts and connector housings ")
             ]),
             _vm._v(" "),
-            _c("ul", [
+            _c("ul", { staticClass: "pl-0" }, [
               _c("li", [
                 _vm._v(
                   "\n\t\t\t\t\t\tWith every connector we offer it’s corresponding crimp contacts suitable for conductors of different thickness, as well as connector backshells for the connectors that use them  \n\t\t\t\t\t"
@@ -1881,7 +2115,7 @@ var render = function() {
               _vm._v("\n\t\t\t\t\tAlternative offer\n\t\t\t\t")
             ]),
             _vm._v(" "),
-            _c("ul", [
+            _c("ul", { staticClass: "pl-0" }, [
               _c("li", [
                 _vm._v(
                   "\n\t\t\t\t\t\teComponents also offers alternative models of connectors, manufactured by our Chinese partners if your project demands lower priced, but still very reliable components  \n\t\t\t\t\t"
@@ -1958,7 +2192,7 @@ var render = function() {
               _vm._v("\n\t\t\t\tLarge choice \n\t\t\t")
             ]),
             _vm._v(" "),
-            _c("ul", [
+            _c("ul", { staticClass: "pl-0" }, [
               _c("li", [_vm._v("\n\t\t\t\t\tLarge choice  \n\t\t\t\t")]),
               _vm._v(" "),
               _c("li", [
@@ -1972,7 +2206,7 @@ var render = function() {
           _c("v-col", { staticClass: "text-left", attrs: { cols: "12" } }, [
             _c("h4", { staticClass: "mb-2" }, [_vm._v("Quantities")]),
             _vm._v(" "),
-            _c("ul", [
+            _c("ul", { staticClass: "pl-0" }, [
               _c("li", [
                 _vm._v(
                   "\n\t\t\t\t\tWe can supply you with electronic components starting from few pieces to thousands of pieces \n\t\t\t\t"
@@ -2021,6 +2255,110 @@ var render = function() {
               _vm._v(
                 "© " + _vm._s(new Date().getFullYear()) + " All Rights Reserved"
               )
+            ])
+          ])
+        ],
+        1
+      )
+    ],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Hardware.vue?vue&type=template&id=7599c753&name=hardware&":
+/*!*************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Hardware.vue?vue&type=template&id=7599c753&name=hardware& ***!
+  \*************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "v-container",
+    { staticClass: "shrink-width harware-container text-center" },
+    [
+      _c(
+        "v-row",
+        { attrs: { id: "led" } },
+        [
+          _c("v-col", { attrs: { cols: "12" } }, [
+            _c("h2", { staticClass: "subcat-title mb-5" }, [_vm._v("Hardware")])
+          ]),
+          _vm._v(" "),
+          _c(
+            "v-col",
+            { attrs: { lg: "7", md: "7", sm: "12", cols: "12" } },
+            [
+              _c("v-img", {
+                staticClass: "subcat-img",
+                attrs: {
+                  "max-width": "600px",
+                  "max-height": "400px",
+                  src: "/images/connectors.jpeg",
+                  alt: ""
+                }
+              })
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "v-col",
+            {
+              staticClass: "text-left",
+              attrs: { lg: "5", md: "5", sm: "12", cols: "12" }
+            },
+            [
+              _c("h3", { staticClass: "mb-5" }, [
+                _vm._v("Hardware components "),
+                _c("span", [_vm._v("for many devices")])
+              ]),
+              _vm._v(" "),
+              _c("p", { staticClass: "mb-0" }, [_vm._v("Metal housings")]),
+              _vm._v(" "),
+              _c("p", { staticClass: "mb-0" }, [_vm._v("Power supply")])
+            ]
+          )
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "v-row",
+        { staticClass: "wholesale-subcat-info mt-6" },
+        [
+          _c("v-col", { staticClass: "text-left", attrs: { cols: "12" } }, [
+            _c("ul", { staticClass: "pl-0" }, [
+              _c("li", [
+                _vm._v(
+                  "\n\t\t\t\t\tPossible procurement of different parts for deviecs, like built-in monitors, touch screen monitors, LED panels, power supplies, Bluetooth modules, antennas, amplifier, and many other parts that you require. \n\t\t\t\t"
+                )
+              ]),
+              _vm._v(" "),
+              _c("li", [
+                _vm._v(
+                  "\n\t\t\t\t\tRetail and bulk procuring from European and American distributers, as well as from our Chinese partners at good prices with short delivery time  \n\t\t\t\t"
+                )
+              ]),
+              _vm._v(" "),
+              _c("li", [
+                _vm._v(
+                  "\n\t\t\t\t\tMetal housings, plexiglass parts and other\n\t\t\t\t"
+                )
+              ])
             ])
           ])
         ],
@@ -2323,7 +2661,7 @@ var render = function() {
                     "router-link",
                     {
                       staticClass: "round-block",
-                      attrs: { to: "wholesale/able-accessories" }
+                      attrs: { to: "wholesale/cable-accessories" }
                     },
                     [
                       _c("div", { staticClass: "round-img-block" }, [
@@ -2507,8 +2845,105 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "v-container",
-    { staticClass: "shrink-width connectors-container text-center" },
-    [_c("v-row")],
+    { staticClass: "shrink-width led-container text-center" },
+    [
+      _c(
+        "v-row",
+        { attrs: { id: "led" } },
+        [
+          _c("v-col", { attrs: { cols: "12" } }, [
+            _c("h2", { staticClass: "subcat-title mb-5" }, [
+              _vm._v("Led program")
+            ])
+          ]),
+          _vm._v(" "),
+          _c(
+            "v-col",
+            { attrs: { lg: "7", md: "7", sm: "12", cols: "12" } },
+            [
+              _c("v-img", {
+                staticClass: "subcat-img",
+                attrs: {
+                  "max-width": "600px",
+                  "max-height": "400px",
+                  src: "/images/connectors.jpeg",
+                  alt: ""
+                }
+              })
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "v-col",
+            {
+              staticClass: "text-left",
+              attrs: { lg: "5", md: "5", sm: "12", cols: "12" }
+            },
+            [
+              _c("h3", { staticClass: "mb-5" }, [
+                _vm._v("Led "),
+                _c("span", [_vm._v("lighthing")])
+              ]),
+              _vm._v(" "),
+              _c("p", { staticClass: "mb-0" }, [
+                _vm._v("Wide range of every connection type")
+              ]),
+              _vm._v(" "),
+              _c("p", { staticClass: "mb-0" }, [
+                _vm._v(
+                  "Possible mounting of cables and connectors on LED strips and modules for easier connection"
+                )
+              ]),
+              _vm._v(" "),
+              _c("p", { staticClass: "mb-0" }, [
+                _vm._v("Easy mounting (3M strip)")
+              ])
+            ]
+          )
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "v-row",
+        { staticClass: "wholesale-subcat-info mt-6" },
+        [
+          _c("v-col", { staticClass: "text-left", attrs: { cols: "12" } }, [
+            _c("ul", { staticClass: "pl-0" }, [
+              _c("li", [
+                _vm._v(
+                  "\n\t\t\t\t\tDiverse assortment of LED strips and modules \n\t\t\t\t"
+                )
+              ]),
+              _vm._v(" "),
+              _c("li", [
+                _vm._v(
+                  "\n\t\t\t\t\tStrips with different number of LEDs per meter (30LED/m, 60LED/m…)\n\t\t\t\t"
+                )
+              ]),
+              _vm._v(" "),
+              _c("li", [
+                _vm._v("\n\t\t\t\t\tOne-coloured and RGB strips \n\t\t\t\t")
+              ]),
+              _vm._v(" "),
+              _c("li", [
+                _vm._v(
+                  "\n\t\t\t\t\tDifferent LEDs dimension (3030, 3528, 5050 and other) \n\t\t\t\t"
+                )
+              ]),
+              _vm._v(" "),
+              _c("li", [
+                _vm._v(
+                  "\n\t\t\t\t\tStrips with different certificates IP protection (Without protection, impact resistant, dust, water (glued) and other)\n\t\t\t\t"
+                )
+              ])
+            ])
+          ])
+        ],
+        1
+      )
+    ],
     1
   )
 }
@@ -3109,7 +3544,7 @@ var render = function() {
               _vm._v("\n\t\t\t\tConductors with various cross-sections\n\t\t\t")
             ]),
             _vm._v(" "),
-            _c("ul", [
+            _c("ul", { staticClass: "pl-0" }, [
               _c("li", [
                 _vm._v(
                   "\n\t\t\t\t\tConductors with different cross-sectional areas for different uses \n\t\t\t\t"
@@ -3127,7 +3562,7 @@ var render = function() {
           _c("v-col", { staticClass: "text-left", attrs: { cols: "12" } }, [
             _c("h4", { staticClass: "mb-2" }, [_vm._v("Colored wires")]),
             _vm._v(" "),
-            _c("ul", [
+            _c("ul", { staticClass: "pl-0" }, [
               _c("li", [
                 _vm._v(
                   "\n\t\t\t\t\tA wide specter of colors and shades  \n\t\t\t\t"
@@ -3147,7 +3582,7 @@ var render = function() {
               _vm._v("\n\t\t\t\tStandard \n\t\t\t")
             ]),
             _vm._v(" "),
-            _c("ul", [
+            _c("ul", { staticClass: "pl-0" }, [
               _c("li", [
                 _vm._v(
                   "\n\t\t\t\t\tConductors manufactured by standards for European and American markets (VDE, UL, cUL...)  \n\t\t\t\t"
@@ -3245,7 +3680,7 @@ var render = function() {
               _vm._v("\n\t\t\t\tMulti-core cables\n\t\t\t")
             ]),
             _vm._v(" "),
-            _c("ul", [
+            _c("ul", { staticClass: "pl-0" }, [
               _c("li", [
                 _vm._v(
                   "\n\t\t\t\t\tCables with two or more cores with different cross-sections and colors\n\t\t\t\t"
@@ -3263,7 +3698,7 @@ var render = function() {
           _c("v-col", { staticClass: "text-left", attrs: { cols: "12" } }, [
             _c("h4", { staticClass: "mb-2" }, [_vm._v("ColPower cables")]),
             _vm._v(" "),
-            _c("ul", [
+            _c("ul", { staticClass: "pl-0" }, [
               _c("li", [
                 _vm._v(
                   "\n\t\t\t\t\tAll kinds of power cables for different currents\n\t\t\t\t"
@@ -3326,7 +3761,7 @@ var render = function() {
                       _vm._v("\n\t\t\t\t\t\tUSB cables\n\t\t\t\t\t")
                     ]),
                     _vm._v(" "),
-                    _c("ul", [
+                    _c("ul", { staticClass: "pl-0" }, [
                       _c("li", [
                         _vm._v(
                           "\n\t\t\t\t\t\t\tWe offer USB cables of different colors and lengths, with the connectors combinations that work for you. \n\t\t\t\t\t\t"
@@ -3367,7 +3802,7 @@ var render = function() {
                       _vm._v("\n\t\t\t\t\t\tAudio and video cables\n\t\t\t\t\t")
                     ]),
                     _vm._v(" "),
-                    _c("ul", [
+                    _c("ul", { staticClass: "pl-0" }, [
                       _c("li", [
                         _vm._v(
                           "\n\t\t\t\t\t\t\tMonitor cables for all of your screen types (HDMI, DVI, DP, VGA…)\n\t\t\t\t\t\t"
@@ -3606,17 +4041,7 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    [
-      _c("splash"),
-      _vm._v(" "),
-      _c("home-catagories"),
-      _vm._v(" "),
-      _c("home-contact-component")
-    ],
-    1
-  )
+  return _c("div", [_c("splash"), _vm._v(" "), _c("home-catagories")], 1)
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -3667,7 +4092,214 @@ var render = function() {
   return _c(
     "v-container",
     { staticClass: "wholesale-view-container", attrs: { fluid: "" } },
-    [_c("router-view")],
+    [
+      _c(
+        "v-container",
+        {
+          directives: [
+            {
+              name: "show",
+              rawName: "v-show",
+              value: _vm.isParent,
+              expression: "isParent"
+            }
+          ],
+          staticClass: "shrink-width"
+        },
+        [
+          _c(
+            "v-row",
+            { staticClass: "text-center" },
+            [
+              _c("v-col", { attrs: { cols: "12" } }, [
+                _c("h1", { staticClass: "mb-8" }, [
+                  _vm._v("Whole"),
+                  _c("span", [_vm._v("sale")])
+                ])
+              ]),
+              _vm._v(" "),
+              _c(
+                "v-col",
+                {
+                  staticClass: "pb-11",
+                  attrs: { lg: "4", md: "4", sm: "6", cols: "6" }
+                },
+                [
+                  _c(
+                    "router-link",
+                    {
+                      staticClass: "round-block",
+                      attrs: { to: "/wholesale/wires-cables" }
+                    },
+                    [
+                      _c("div", { staticClass: "round-img-block" }, [
+                        _c("img", {
+                          attrs: { src: "/images/splash1.jpeg", alt: "" }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "round-contents-block" }, [
+                        _c("h2", [_vm._v("Wires and cables")])
+                      ])
+                    ]
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "v-col",
+                {
+                  staticClass: "pb-11",
+                  attrs: { lg: "4", md: "4", sm: "6", cols: "6" }
+                },
+                [
+                  _c(
+                    "router-link",
+                    {
+                      staticClass: "round-block",
+                      attrs: { to: "/wholesale/connectors" }
+                    },
+                    [
+                      _c("div", { staticClass: "round-img-block" }, [
+                        _c("img", {
+                          attrs: { src: "/images/splash2.jpeg", alt: "" }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "round-contents-block" }, [
+                        _c("h2", [_vm._v("Connectors & electronic components")])
+                      ])
+                    ]
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "v-col",
+                {
+                  staticClass: "pb-11",
+                  attrs: { lg: "4", md: "4", sm: "6", cols: "6" }
+                },
+                [
+                  _c(
+                    "router-link",
+                    {
+                      staticClass: "round-block",
+                      attrs: { to: "/wholesale/pcbs" }
+                    },
+                    [
+                      _c("div", { staticClass: "round-img-block" }, [
+                        _c("img", {
+                          attrs: { src: "/images/splash1.jpeg", alt: "" }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "round-contents-block" }, [
+                        _c("h2", [_vm._v("PCBs")])
+                      ])
+                    ]
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "v-col",
+                {
+                  staticClass: "pb-11",
+                  attrs: { lg: "4", md: "4", sm: "6", cols: "6" }
+                },
+                [
+                  _c(
+                    "router-link",
+                    {
+                      staticClass: "round-block",
+                      attrs: { to: "/wholesale/led" }
+                    },
+                    [
+                      _c("div", { staticClass: "round-img-block" }, [
+                        _c("img", {
+                          attrs: { src: "/images/splash2.jpeg", alt: "" }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "round-contents-block" }, [
+                        _c("h2", [_vm._v("LEDs")])
+                      ])
+                    ]
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "v-col",
+                {
+                  staticClass: "pb-11",
+                  attrs: { lg: "4", md: "4", sm: "6", cols: "6" }
+                },
+                [
+                  _c(
+                    "router-link",
+                    {
+                      staticClass: "round-block",
+                      attrs: { to: "wholesale/cable-accessories" }
+                    },
+                    [
+                      _c("div", { staticClass: "round-img-block" }, [
+                        _c("img", {
+                          attrs: { src: "/images/splash3.jpeg", alt: "" }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "round-contents-block" }, [
+                        _c("h2", [_vm._v("Cable accessories")])
+                      ])
+                    ]
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "v-col",
+                {
+                  staticClass: "pb-11",
+                  attrs: { lg: "4", md: "4", sm: "6", cols: "6" }
+                },
+                [
+                  _c(
+                    "router-link",
+                    {
+                      staticClass: "round-block",
+                      attrs: { to: "wholesale/hardware" }
+                    },
+                    [
+                      _c("div", { staticClass: "round-img-block" }, [
+                        _c("img", {
+                          attrs: { src: "/images/splash4.jpeg", alt: "" }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "round-contents-block" }, [
+                        _c("h2", [_vm._v("Hardware")])
+                      ])
+                    ]
+                  )
+                ],
+                1
+              )
+            ],
+            1
+          )
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c("router-view", { ref: "childRout" })
+    ],
     1
   )
 }
@@ -60413,17 +61045,18 @@ var app = new vue__WEBPACK_IMPORTED_MODULE_0___default.a({
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
-var render, staticRenderFns
+/* harmony import */ var _AdditionsForCables_vue_vue_type_template_id_13934073_name_additions_for_cables___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./AdditionsForCables.vue?vue&type=template&id=13934073&name=additions-for-cables& */ "./resources/js/components/AdditionsForCables.vue?vue&type=template&id=13934073&name=additions-for-cables&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
 var script = {}
 
 
 /* normalize component */
 
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_0__["default"])(
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__["default"])(
   script,
-  render,
-  staticRenderFns,
+  _AdditionsForCables_vue_vue_type_template_id_13934073_name_additions_for_cables___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _AdditionsForCables_vue_vue_type_template_id_13934073_name_additions_for_cables___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
   null,
@@ -60431,8 +61064,28 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
   
 )
 
+/* hot reload */
+if (false) { var api; }
 component.options.__file = "resources/js/components/AdditionsForCables.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/AdditionsForCables.vue?vue&type=template&id=13934073&name=additions-for-cables&":
+/*!*****************************************************************************************************************!*\
+  !*** ./resources/js/components/AdditionsForCables.vue?vue&type=template&id=13934073&name=additions-for-cables& ***!
+  \*****************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_AdditionsForCables_vue_vue_type_template_id_13934073_name_additions_for_cables___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./AdditionsForCables.vue?vue&type=template&id=13934073&name=additions-for-cables& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/AdditionsForCables.vue?vue&type=template&id=13934073&name=additions-for-cables&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_AdditionsForCables_vue_vue_type_template_id_13934073_name_additions_for_cables___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_AdditionsForCables_vue_vue_type_template_id_13934073_name_additions_for_cables___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
 
 /***/ }),
 
@@ -60620,17 +61273,18 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
-var render, staticRenderFns
+/* harmony import */ var _Hardware_vue_vue_type_template_id_7599c753_name_hardware___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Hardware.vue?vue&type=template&id=7599c753&name=hardware& */ "./resources/js/components/Hardware.vue?vue&type=template&id=7599c753&name=hardware&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
 var script = {}
 
 
 /* normalize component */
 
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_0__["default"])(
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__["default"])(
   script,
-  render,
-  staticRenderFns,
+  _Hardware_vue_vue_type_template_id_7599c753_name_hardware___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Hardware_vue_vue_type_template_id_7599c753_name_hardware___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
   null,
@@ -60638,8 +61292,28 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
   
 )
 
+/* hot reload */
+if (false) { var api; }
 component.options.__file = "resources/js/components/Hardware.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/Hardware.vue?vue&type=template&id=7599c753&name=hardware&":
+/*!*******************************************************************************************!*\
+  !*** ./resources/js/components/Hardware.vue?vue&type=template&id=7599c753&name=hardware& ***!
+  \*******************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Hardware_vue_vue_type_template_id_7599c753_name_hardware___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./Hardware.vue?vue&type=template&id=7599c753&name=hardware& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Hardware.vue?vue&type=template&id=7599c753&name=hardware&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Hardware_vue_vue_type_template_id_7599c753_name_hardware___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Hardware_vue_vue_type_template_id_7599c753_name_hardware___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
 
 /***/ }),
 
@@ -61225,7 +61899,7 @@ var routes = [{
     path: 'cable-accessories',
     component: _components_AdditionsForCables_vue__WEBPACK_IMPORTED_MODULE_10__["default"]
   }, {
-    path: 'harware',
+    path: 'hardware',
     component: _components_Hardware_vue__WEBPACK_IMPORTED_MODULE_7__["default"]
   }]
 }, {

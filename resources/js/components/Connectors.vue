@@ -62,7 +62,7 @@
 					<h4 class="mb-2">
 						Manufacturers and configurations 
 					</h4>
-					<ul>
+					<ul class="pl-0">
 						<li>
 							Broad selection of connectors of world’s renowned manufacturers such as Molex, TE Connectivity, JST…  
 						</li>
@@ -73,7 +73,7 @@
 				</v-col>
 				<v-col cols="12" class="text-left">
 					<h4 class="mb-2">Crimp contacts and connector housings </h4>
-					<ul>
+					<ul class="pl-0">
 						<li>
 							With every connector we offer it’s corresponding crimp contacts suitable for conductors of different thickness, as well as connector backshells for the connectors that use them  
 						</li>
@@ -83,7 +83,7 @@
 					<h4 class="mb-2">
 						Alternative offer
 					</h4>
-					<ul>
+					<ul class="pl-0">
 						<li>
 							eComponents also offers alternative models of connectors, manufactured by our Chinese partners if your project demands lower priced, but still very reliable components  
 						</li>
@@ -117,7 +117,7 @@
 					<h4 class="mb-2">
 						Types of terminals
 					</h4>
-					<ul>
+					<ul class="pl-0">
 						<li>
 							We offer the following types of terminals:
 							<p class="mb-0 ml-5">- Fork terminals (M3, M4, M5…) </p>
@@ -134,7 +134,7 @@
 				</v-col>
 				<v-col cols="12" class="text-left">
 					<h4 class="mb-2">Crimp contacts and connector housings </h4>
-					<ul>
+					<ul class="pl-0">
 						<li>
 							With every connector we offer it’s corresponding crimp contacts suitable for conductors of different thickness, as well as connector backshells for the connectors that use them  
 						</li>
@@ -144,7 +144,7 @@
 					<h4 class="mb-2">
 						Alternative offer
 					</h4>
-					<ul>
+					<ul class="pl-0">
 						<li>
 							eComponents also offers alternative models of connectors, manufactured by our Chinese partners if your project demands lower priced, but still very reliable components  
 						</li>
@@ -173,7 +173,7 @@
 				<h4 class="mb-2">
 					Large choice 
 				</h4>
-				<ul>
+				<ul class="pl-0">
 					<li>
 						Large choice  
 					</li>
@@ -184,7 +184,7 @@
 			</v-col>
 			<v-col cols="12" class="text-left">
 				<h4 class="mb-2">Quantities</h4>
-				<ul>
+				<ul class="pl-0">
 					<li>
 						We can supply you with electronic components starting from few pieces to thousands of pieces 
 					</li>

@@ -46,7 +46,7 @@ export const routes = [
 				component: AdditionsForCables
 			},
 			{
-				path: 'harware',
+				path: 'hardware',
 				component: Hardware
 			},
 		]

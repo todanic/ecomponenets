@@ -1,14 +1,13 @@
 <template name="component-name">
    <v-container>
     <v-row>
-      <v-col cols="6">
-        <v-icon>fas fa-phone</v-icon>
-        <p>+381 6995 4448</p>
+      <v-col cols="4">
+        <p><v-icon>fa-phone</v-icon> +381 6995 4448</p>
         <p>Cara Lazara 2</p>
         <p>Srbobran 21480</p>
         <p>Serbia</p>
       </v-col>
-      <v-col cols="6">
+      <v-col cols="8">
         <v-row>
           <v-col cols="6">
           <v-text-field label="First name">
@@ -31,12 +30,11 @@
           </v-text-field>
           </v-col>
           <v-col cols="12">
-            <v-file-input accept="image/*" filled outlined label="Upload image">
-
+            <v-file-input prepend-icon="" accept="image/*" filled outlined label="Upload image">
             </v-file-input>
           </v-col>
-          <v-col>
-            <v-btn color="#781212">
+          <v-col cols="12" class="text-right">
+            <v-btn color="#781212" large dark>
               Send
             </v-btn>
           </v-col>

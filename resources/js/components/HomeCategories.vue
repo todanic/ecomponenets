@@ -43,7 +43,7 @@
 								</router-link>
 							</v-col>
 							<v-col class="pb-11" lg="4" md="4" sm="6" cols="6">
-								<router-link to="wholesale/able-accessories" class="round-block">
+								<router-link to="wholesale/cable-accessories" class="round-block">
 									<div class="round-img-block">
 											<img src="images/splash3.jpeg" alt="">
 									</div>

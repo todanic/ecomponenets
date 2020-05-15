@@ -61,7 +61,7 @@
 				<h4 class="mb-2">
 					Conductors with various cross-sections
 				</h4>
-				<ul>
+				<ul class="pl-0">
 					<li>
 						Conductors with different cross-sectional areas for different uses 
 					</li>
@@ -72,7 +72,7 @@
 			</v-col>
 			<v-col cols="12" class="text-left">
 				<h4 class="mb-2">Colored wires</h4>
-				<ul>
+				<ul class="pl-0">
 					<li>
 						A wide specter of colors and shades  
 					</li>
@@ -85,7 +85,7 @@
 				<h4 class="mb-2">
 					Standard 
 				</h4>
-				<ul>
+				<ul class="pl-0">
 					<li>
 						Conductors manufactured by standards for European and American markets (VDE, UL, cUL...)  
 					</li>
@@ -128,7 +128,7 @@
 				<h4 class="mb-2">
 					Multi-core cables
 				</h4>
-				<ul>
+				<ul class="pl-0">
 					<li>
 						Cables with two or more cores with different cross-sections and colors
 					</li>
@@ -141,7 +141,7 @@
 			</v-col>
 			<v-col cols="12" class="text-left">
 				<h4 class="mb-2">ColPower cables</h4>
-				<ul>
+				<ul class="pl-0">
 					<li>
 						All kinds of power cables for different currents
 					</li>
@@ -172,7 +172,7 @@
 						<h4 class="mb-2">
 							USB cables
 						</h4>
-						<ul>
+						<ul class="pl-0">
 							<li>
 								We offer USB cables of different colors and lengths, with the connectors combinations that work for you. 
 							</li>
@@ -192,7 +192,7 @@
 						<h4 class="mb-2">
 							Audio and video cables
 						</h4>
-						<ul>
+						<ul class="pl-0">
 							<li>
 								Monitor cables for all of your screen types (HDMI, DVI, DP, VGA…)
 							</li>
