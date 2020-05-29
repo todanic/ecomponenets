@@ -10,6 +10,7 @@ body {
 h1, h2, h3, h4 {
     font-family: 'Poppins';
     color: $primary-text;
+    letter-spacing: 4px;
 
     span {
         color: $primary-red;
@@ -23,22 +24,26 @@ h1 {
 
 h4 {
     font-size: 2rem;
+    letter-spacing: 2px;
 }
 
 p {
     font-family: 'Poppins';
     font-size: 1.6rem;
     color: $secondary-text;
+    letter-spacing: 2px;
 }
 
 ul li {
     font-family: 'Poppins';
     font-size: 1.6rem;
+    letter-spacing: 2px;
 }
 
 a {
     font-family: 'Poppins';
     font-size: 1.5rem;
+    letter-spacing: 2px;
 }
 
 @media (min-width: 1904px){

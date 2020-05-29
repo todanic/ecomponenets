@@ -246,15 +246,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -1802,11 +1793,16 @@ var render = function() {
                 "a",
                 { staticClass: "round-block", attrs: { href: "#connectors" } },
                 [
-                  _c("div", { staticClass: "round-img-block" }, [
-                    _c("img", {
-                      attrs: { src: "/images/splash4.jpeg", alt: "" }
-                    })
-                  ]),
+                  _c(
+                    "div",
+                    { staticClass: "round-img-block" },
+                    [
+                      _c("v-img", {
+                        attrs: { src: "/images/splash4.jpeg", alt: "" }
+                      })
+                    ],
+                    1
+                  ),
                   _vm._v(" "),
                   _c("div", { staticClass: "round-contents-block" }, [
                     _c("h2", [_vm._v("Connectors")])
@@ -1827,11 +1823,16 @@ var render = function() {
                 "a",
                 { staticClass: "round-block", attrs: { href: "#terminals" } },
                 [
-                  _c("div", { staticClass: "round-img-block" }, [
-                    _c("img", {
-                      attrs: { src: "/images/splash3.jpeg", alt: "" }
-                    })
-                  ]),
+                  _c(
+                    "div",
+                    { staticClass: "round-img-block" },
+                    [
+                      _c("v-img", {
+                        attrs: { src: "/images/splash3.jpeg", alt: "" }
+                      })
+                    ],
+                    1
+                  ),
                   _vm._v(" "),
                   _c("div", { staticClass: "round-contents-block" }, [
                     _c("h2", [_vm._v("Terminals")])
@@ -1855,11 +1856,16 @@ var render = function() {
                   attrs: { href: "#electronicComponents" }
                 },
                 [
-                  _c("div", { staticClass: "round-img-block" }, [
-                    _c("img", {
-                      attrs: { src: "/images/splash1.jpeg", alt: "" }
-                    })
-                  ]),
+                  _c(
+                    "div",
+                    { staticClass: "round-img-block" },
+                    [
+                      _c("v-img", {
+                        attrs: { src: "/images/splash1.jpeg", alt: "" }
+                      })
+                    ],
+                    1
+                  ),
                   _vm._v(" "),
                   _c("div", { staticClass: "round-contents-block" }, [
                     _c("h2", [_vm._v("Electronic components")])
@@ -2404,15 +2410,24 @@ var render = function() {
               _c(
                 "v-col",
                 {
-                  staticClass: "header-logo-col text-center",
+                  staticClass: "header-logo-col d-flex justify-center",
                   attrs: { lg: "12", md: "12", sm: "12", cols: "12" }
                 },
                 [
-                  _c("router-link", { attrs: { to: "/" } }, [
-                    _c("img", {
-                      attrs: { src: "/images/logo.png", alt: "logo" }
-                    })
-                  ])
+                  _c(
+                    "router-link",
+                    { attrs: { to: "/" } },
+                    [
+                      _c("v-img", {
+                        attrs: {
+                          "max-width": "350px",
+                          src: "/images/logo.png",
+                          alt: "logo"
+                        }
+                      })
+                    ],
+                    1
+                  )
                 ],
                 1
               )
@@ -2431,18 +2446,16 @@ var render = function() {
                 },
                 [
                   _c("ul", { staticClass: "menu pl-0 justify-center" }, [
-                    _c("li", { staticClass: "menu-block submenu" }, [
-                      _c(
-                        "div",
-                        { staticClass: "submenu-wrapper" },
-                        [
-                          _c("router-link", { attrs: { to: "/" } }, [
-                            _vm._v("Home")
-                          ])
-                        ],
-                        1
-                      )
-                    ]),
+                    _c(
+                      "li",
+                      { staticClass: "menu-block" },
+                      [
+                        _c("router-link", { attrs: { to: "/" } }, [
+                          _vm._v("Home")
+                        ])
+                      ],
+                      1
+                    ),
                     _vm._v(" "),
                     _c(
                       "li",
@@ -2548,11 +2561,20 @@ var render = function() {
                       attrs: { to: "/wholesale/wires-cables" }
                     },
                     [
-                      _c("div", { staticClass: "round-img-block" }, [
-                        _c("img", {
-                          attrs: { src: "images/splash1.jpeg", alt: "" }
-                        })
-                      ]),
+                      _c(
+                        "div",
+                        { staticClass: "round-img-block" },
+                        [
+                          _c("v-img", {
+                            attrs: {
+                              "max-width": "280px",
+                              src: "images/splash1.jpeg",
+                              alt: ""
+                            }
+                          })
+                        ],
+                        1
+                      ),
                       _vm._v(" "),
                       _c("div", { staticClass: "round-contents-block" }, [
                         _c("h2", [_vm._v("Wires and cables")])
@@ -2577,11 +2599,20 @@ var render = function() {
                       attrs: { to: "/wholesale/connectors" }
                     },
                     [
-                      _c("div", { staticClass: "round-img-block" }, [
-                        _c("img", {
-                          attrs: { src: "images/splash2.jpeg", alt: "" }
-                        })
-                      ]),
+                      _c(
+                        "div",
+                        { staticClass: "round-img-block" },
+                        [
+                          _c("v-img", {
+                            attrs: {
+                              "max-width": "280px",
+                              src: "images/splash2.jpeg",
+                              alt: ""
+                            }
+                          })
+                        ],
+                        1
+                      ),
                       _vm._v(" "),
                       _c("div", { staticClass: "round-contents-block" }, [
                         _c("h2", [_vm._v("Connectors & electronic components")])
@@ -2606,11 +2637,20 @@ var render = function() {
                       attrs: { to: "/wholesale/pcbs" }
                     },
                     [
-                      _c("div", { staticClass: "round-img-block" }, [
-                        _c("img", {
-                          attrs: { src: "images/splash1.jpeg", alt: "" }
-                        })
-                      ]),
+                      _c(
+                        "div",
+                        { staticClass: "round-img-block" },
+                        [
+                          _c("v-img", {
+                            attrs: {
+                              "max-width": "280px",
+                              src: "images/splash1.jpeg",
+                              alt: ""
+                            }
+                          })
+                        ],
+                        1
+                      ),
                       _vm._v(" "),
                       _c("div", { staticClass: "round-contents-block" }, [
                         _c("h2", [_vm._v("PCBs")])
@@ -2635,11 +2675,20 @@ var render = function() {
                       attrs: { to: "/wholesale/led" }
                     },
                     [
-                      _c("div", { staticClass: "round-img-block" }, [
-                        _c("img", {
-                          attrs: { src: "images/splash2.jpeg", alt: "" }
-                        })
-                      ]),
+                      _c(
+                        "div",
+                        { staticClass: "round-img-block" },
+                        [
+                          _c("v-img", {
+                            attrs: {
+                              "max-width": "280px",
+                              src: "images/splash2.jpeg",
+                              alt: ""
+                            }
+                          })
+                        ],
+                        1
+                      ),
                       _vm._v(" "),
                       _c("div", { staticClass: "round-contents-block" }, [
                         _c("h2", [_vm._v("LEDs")])
@@ -2664,11 +2713,20 @@ var render = function() {
                       attrs: { to: "wholesale/cable-accessories" }
                     },
                     [
-                      _c("div", { staticClass: "round-img-block" }, [
-                        _c("img", {
-                          attrs: { src: "images/splash3.jpeg", alt: "" }
-                        })
-                      ]),
+                      _c(
+                        "div",
+                        { staticClass: "round-img-block" },
+                        [
+                          _c("v-img", {
+                            attrs: {
+                              "max-width": "280px",
+                              src: "images/splash3.jpeg",
+                              alt: ""
+                            }
+                          })
+                        ],
+                        1
+                      ),
                       _vm._v(" "),
                       _c("div", { staticClass: "round-contents-block" }, [
                         _c("h2", [_vm._v("Cable accessories")])
@@ -2693,11 +2751,20 @@ var render = function() {
                       attrs: { to: "wholesale/hardware" }
                     },
                     [
-                      _c("div", { staticClass: "round-img-block" }, [
-                        _c("img", {
-                          attrs: { src: "images/splash4.jpeg", alt: "" }
-                        })
-                      ]),
+                      _c(
+                        "div",
+                        { staticClass: "round-img-block" },
+                        [
+                          _c("v-img", {
+                            attrs: {
+                              "max-width": "280px",
+                              src: "images/splash4.jpeg",
+                              alt: ""
+                            }
+                          })
+                        ],
+                        1
+                      ),
                       _vm._v(" "),
                       _c("div", { staticClass: "round-contents-block" }, [
                         _c("h2", [_vm._v("Hardware")])
@@ -3402,18 +3469,27 @@ var render = function() {
             "v-col",
             {
               staticClass: "pb-11",
-              attrs: { lg: "4", md: "4", sm: "6", cols: "6" }
+              attrs: { lg: "4", md: "4", sm: "12", cols: "12" }
             },
             [
               _c(
                 "a",
                 { staticClass: "round-block", attrs: { href: "#wires" } },
                 [
-                  _c("div", { staticClass: "round-img-block" }, [
-                    _c("img", {
-                      attrs: { src: "/images/splash4.jpeg", alt: "" }
-                    })
-                  ]),
+                  _c(
+                    "div",
+                    { staticClass: "round-img-block" },
+                    [
+                      _c("v-img", {
+                        attrs: {
+                          "max-width": "280px",
+                          src: "/images/splash4.jpeg",
+                          alt: ""
+                        }
+                      })
+                    ],
+                    1
+                  ),
                   _vm._v(" "),
                   _c("div", { staticClass: "round-contents-block" }, [
                     _c("h2", [_vm._v("Wires")])
@@ -3427,18 +3503,27 @@ var render = function() {
             "v-col",
             {
               staticClass: "pb-11",
-              attrs: { lg: "4", md: "4", sm: "6", cols: "6" }
+              attrs: { lg: "4", md: "4", sm: "12", cols: "12" }
             },
             [
               _c(
                 "a",
                 { staticClass: "round-block", attrs: { href: "#cables" } },
                 [
-                  _c("div", { staticClass: "round-img-block" }, [
-                    _c("img", {
-                      attrs: { src: "/images/splash3.jpeg", alt: "" }
-                    })
-                  ]),
+                  _c(
+                    "div",
+                    { staticClass: "round-img-block" },
+                    [
+                      _c("v-img", {
+                        attrs: {
+                          "max-width": "280px",
+                          src: "/images/splash3.jpeg",
+                          alt: ""
+                        }
+                      })
+                    ],
+                    1
+                  ),
                   _vm._v(" "),
                   _c("div", { staticClass: "round-contents-block" }, [
                     _c("h2", [_vm._v("Cables")])
@@ -3452,7 +3537,7 @@ var render = function() {
             "v-col",
             {
               staticClass: "pb-11",
-              attrs: { lg: "4", md: "4", sm: "6", cols: "6" }
+              attrs: { lg: "4", md: "6", sm: "12", cols: "12" }
             },
             [
               _c(
@@ -3462,11 +3547,20 @@ var render = function() {
                   attrs: { href: "#readyMadeCables" }
                 },
                 [
-                  _c("div", { staticClass: "round-img-block" }, [
-                    _c("img", {
-                      attrs: { src: "/images/splash1.jpeg", alt: "" }
-                    })
-                  ]),
+                  _c(
+                    "div",
+                    { staticClass: "round-img-block" },
+                    [
+                      _c("v-img", {
+                        attrs: {
+                          "max-width": "280px",
+                          src: "/images/splash1.jpeg",
+                          alt: ""
+                        }
+                      })
+                    ],
+                    1
+                  ),
                   _vm._v(" "),
                   _c("div", { staticClass: "round-contents-block" }, [
                     _c("h2", [_vm._v("Ready-made cables/Cables assemlies")])
@@ -3491,7 +3585,7 @@ var render = function() {
           _vm._v(" "),
           _c(
             "v-col",
-            { attrs: { lg: "8", md: "8", sm: "8", cols: "8" } },
+            { attrs: { lg: "8", md: "8", sm: "12", cols: "12" } },
             [
               _c("v-img", {
                 staticClass: "subcat-img",
@@ -3510,7 +3604,7 @@ var render = function() {
             "v-col",
             {
               staticClass: "text-left",
-              attrs: { lg: "4", md: "4", sm: "4", cols: "4" }
+              attrs: { lg: "4", md: "4", sm: "12", cols: "12" }
             },
             [
               _c("h3", [
@@ -3645,7 +3739,7 @@ var render = function() {
           _vm._v(" "),
           _c(
             "v-col",
-            { attrs: { lg: "8", md: "8", sm: "8", cols: "8" } },
+            { attrs: { lg: "8", md: "8", sm: "12", cols: "12" } },
             [
               _c("v-img", {
                 staticClass: "subcat-img",
@@ -3836,7 +3930,7 @@ var render = function() {
                     "v-col",
                     {
                       staticClass: "text-center",
-                      attrs: { lg: "6", md: "6", sm: "6", cols: "6" }
+                      attrs: { lg: "6", md: "6", sm: "8", cols: "8" }
                     },
                     [
                       _c("p", [
@@ -3857,11 +3951,21 @@ var render = function() {
                           attrs: { to: "/production" }
                         },
                         [
-                          _c("div", { staticClass: "round-img-block" }, [
-                            _c("img", {
-                              attrs: { src: "/images/cable.jpg", alt: "" }
-                            })
-                          ])
+                          _c(
+                            "div",
+                            { staticClass: "round-img-block" },
+                            [
+                              _c("v-img", {
+                                attrs: {
+                                  "max-width": "200px",
+                                  "max-height": "180px",
+                                  src: "/images/cable.jpg",
+                                  alt: ""
+                                }
+                              })
+                            ],
+                            1
+                          )
                         ]
                       )
                     ],
@@ -4122,7 +4226,7 @@ var render = function() {
                 "v-col",
                 {
                   staticClass: "pb-11",
-                  attrs: { lg: "4", md: "4", sm: "6", cols: "6" }
+                  attrs: { lg: "4", md: "4", sm: "12", cols: "12" }
                 },
                 [
                   _c(
@@ -4132,11 +4236,20 @@ var render = function() {
                       attrs: { to: "/wholesale/wires-cables" }
                     },
                     [
-                      _c("div", { staticClass: "round-img-block" }, [
-                        _c("img", {
-                          attrs: { src: "/images/splash1.jpeg", alt: "" }
-                        })
-                      ]),
+                      _c(
+                        "div",
+                        { staticClass: "round-img-block" },
+                        [
+                          _c("v-img", {
+                            attrs: {
+                              "max-width": "280px",
+                              src: "/images/splash1.jpeg",
+                              alt: ""
+                            }
+                          })
+                        ],
+                        1
+                      ),
                       _vm._v(" "),
                       _c("div", { staticClass: "round-contents-block" }, [
                         _c("h2", [_vm._v("Wires and cables")])
@@ -4151,7 +4264,7 @@ var render = function() {
                 "v-col",
                 {
                   staticClass: "pb-11",
-                  attrs: { lg: "4", md: "4", sm: "6", cols: "6" }
+                  attrs: { lg: "4", md: "4", sm: "12", cols: "12" }
                 },
                 [
                   _c(
@@ -4161,11 +4274,20 @@ var render = function() {
                       attrs: { to: "/wholesale/connectors" }
                     },
                     [
-                      _c("div", { staticClass: "round-img-block" }, [
-                        _c("img", {
-                          attrs: { src: "/images/splash2.jpeg", alt: "" }
-                        })
-                      ]),
+                      _c(
+                        "div",
+                        { staticClass: "round-img-block" },
+                        [
+                          _c("v-img", {
+                            attrs: {
+                              "max-width": "280px",
+                              src: "/images/splash2.jpeg",
+                              alt: ""
+                            }
+                          })
+                        ],
+                        1
+                      ),
                       _vm._v(" "),
                       _c("div", { staticClass: "round-contents-block" }, [
                         _c("h2", [_vm._v("Connectors & electronic components")])
@@ -4180,7 +4302,7 @@ var render = function() {
                 "v-col",
                 {
                   staticClass: "pb-11",
-                  attrs: { lg: "4", md: "4", sm: "6", cols: "6" }
+                  attrs: { lg: "4", md: "4", sm: "12", cols: "12" }
                 },
                 [
                   _c(
@@ -4190,11 +4312,20 @@ var render = function() {
                       attrs: { to: "/wholesale/pcbs" }
                     },
                     [
-                      _c("div", { staticClass: "round-img-block" }, [
-                        _c("img", {
-                          attrs: { src: "/images/splash1.jpeg", alt: "" }
-                        })
-                      ]),
+                      _c(
+                        "div",
+                        { staticClass: "round-img-block" },
+                        [
+                          _c("v-img", {
+                            attrs: {
+                              "max-width": "280px",
+                              src: "/images/splash1.jpeg",
+                              alt: ""
+                            }
+                          })
+                        ],
+                        1
+                      ),
                       _vm._v(" "),
                       _c("div", { staticClass: "round-contents-block" }, [
                         _c("h2", [_vm._v("PCBs")])
@@ -4209,7 +4340,7 @@ var render = function() {
                 "v-col",
                 {
                   staticClass: "pb-11",
-                  attrs: { lg: "4", md: "4", sm: "6", cols: "6" }
+                  attrs: { lg: "4", md: "4", sm: "12", cols: "12" }
                 },
                 [
                   _c(
@@ -4219,11 +4350,20 @@ var render = function() {
                       attrs: { to: "/wholesale/led" }
                     },
                     [
-                      _c("div", { staticClass: "round-img-block" }, [
-                        _c("img", {
-                          attrs: { src: "/images/splash2.jpeg", alt: "" }
-                        })
-                      ]),
+                      _c(
+                        "div",
+                        { staticClass: "round-img-block" },
+                        [
+                          _c("v-img", {
+                            attrs: {
+                              "max-width": "280px",
+                              src: "/images/splash2.jpeg",
+                              alt: ""
+                            }
+                          })
+                        ],
+                        1
+                      ),
                       _vm._v(" "),
                       _c("div", { staticClass: "round-contents-block" }, [
                         _c("h2", [_vm._v("LEDs")])
@@ -4238,7 +4378,7 @@ var render = function() {
                 "v-col",
                 {
                   staticClass: "pb-11",
-                  attrs: { lg: "4", md: "4", sm: "6", cols: "6" }
+                  attrs: { lg: "4", md: "4", sm: "12", cols: "12" }
                 },
                 [
                   _c(
@@ -4248,11 +4388,20 @@ var render = function() {
                       attrs: { to: "wholesale/cable-accessories" }
                     },
                     [
-                      _c("div", { staticClass: "round-img-block" }, [
-                        _c("img", {
-                          attrs: { src: "/images/splash3.jpeg", alt: "" }
-                        })
-                      ]),
+                      _c(
+                        "div",
+                        { staticClass: "round-img-block" },
+                        [
+                          _c("v-img", {
+                            attrs: {
+                              "max-width": "280px",
+                              src: "/images/splash3.jpeg",
+                              alt: ""
+                            }
+                          })
+                        ],
+                        1
+                      ),
                       _vm._v(" "),
                       _c("div", { staticClass: "round-contents-block" }, [
                         _c("h2", [_vm._v("Cable accessories")])
@@ -4267,7 +4416,7 @@ var render = function() {
                 "v-col",
                 {
                   staticClass: "pb-11",
-                  attrs: { lg: "4", md: "4", sm: "6", cols: "6" }
+                  attrs: { lg: "4", md: "4", sm: "12", cols: "12" }
                 },
                 [
                   _c(
@@ -4277,11 +4426,20 @@ var render = function() {
                       attrs: { to: "wholesale/hardware" }
                     },
                     [
-                      _c("div", { staticClass: "round-img-block" }, [
-                        _c("img", {
-                          attrs: { src: "/images/splash4.jpeg", alt: "" }
-                        })
-                      ]),
+                      _c(
+                        "div",
+                        { staticClass: "round-img-block" },
+                        [
+                          _c("v-img", {
+                            attrs: {
+                              "max-width": "280px",
+                              src: "/images/splash4.jpeg",
+                              alt: ""
+                            }
+                          })
+                        ],
+                        1
+                      ),
                       _vm._v(" "),
                       _c("div", { staticClass: "round-contents-block" }, [
                         _c("h2", [_vm._v("Hardware")])

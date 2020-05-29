@@ -2,26 +2,17 @@
     <v-container fluid class="header-container">
         <v-container class="pa-0 shrink-width">
             <v-row>
-                <v-col  class="header-logo-col text-center" lg="12" md="12" sm="12" cols="12">
+                <v-col class="header-logo-col d-flex justify-center" lg="12" md="12" sm="12" cols="12">
                     <router-link to="/">
-                         <img src="/images/logo.png" alt="logo">
+                        <v-img max-width="350px" src="/images/logo.png" alt="logo"></v-img>
                     </router-link>
                 </v-col>
             </v-row>
             <v-row>
                 <v-col class="pt-6" lg="12" md="12" sm="12" cols="12">
                     <ul class="menu pl-0 justify-center">
-                        <li class="menu-block submenu">
-                            <div class="submenu-wrapper">
-                                <router-link to="/">Home</router-link>
-                                <!-- <a href="/">Home</a> -->
-                                <!-- <ul class="sub-hidden">
-                                    <li class="submenu-block"><a href="#">Submenu</a></li>
-                                    <li class="submenu-block"><a href="#">Submenu</a></li>
-                                    <li class="submenu-block"><a href="#">Submenu</a></li>
-                                    <li class="submenu-block"><a href="#">Submenu</a></li>
-                                </ul> -->
-                            </div>
+                        <li class="menu-block">
+                            <router-link to="/">Home</router-link>
                         </li>
                         <li class="menu-block">
                             <router-link to="/wholesale">Wholesale</router-link>

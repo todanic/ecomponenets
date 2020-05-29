@@ -9,19 +9,16 @@
     text-decoration: none;
 
     &:hover {
- 
         transform: translateY(-2%);
     }
 }
 
 .round-img-block {
 
-    img {
+    .v-image {
         border: 3px solid #888888;
-        width: 200px;
-        height: 180px;
         border-radius: 50%;
-        max-width: calc(100% - 6px);
+        margin: 0 auto;
     }
 }
 

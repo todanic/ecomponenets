@@ -7,7 +7,7 @@
 				<v-col class="pb-11" lg="4" md="4" sm="6" cols="6">
 					<a href="#connectors" class="round-block">
 						<div class="round-img-block">
-							<img src="/images/splash4.jpeg" alt="">
+							<v-img src="/images/splash4.jpeg" alt=""></v-img>
 						</div>
 						<div class="round-contents-block">
 								<h2>Connectors</h2>
@@ -17,7 +17,7 @@
 					<v-col class="pb-11" lg="4" md="4" sm="6" cols="6">
 						<a href="#terminals" class="round-block">
 						<div class="round-img-block">
-							<img src="/images/splash3.jpeg" alt="">
+							<v-img src="/images/splash3.jpeg" alt=""></v-img>
 						</div>
 						<div class="round-contents-block">
 								<h2>Terminals</h2>
@@ -27,7 +27,7 @@
 					<v-col class="pb-11" lg="4" md="4" sm="6" cols="6">
 						<a href="#electronicComponents" class="round-block">
 						<div class="round-img-block">
-							<img src="/images/splash1.jpeg" alt="">
+							<v-img src="/images/splash1.jpeg" alt=""></v-img>
 						</div>
 						<div class="round-contents-block">
 								<h2>Electronic components</h2>

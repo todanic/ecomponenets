@@ -22,6 +22,7 @@ h3,
 h4 {
   font-family: 'Poppins';
   color: #888888;
+  letter-spacing: 4px;
 }
 
 h1 span,
@@ -38,22 +39,26 @@ h1 {
 
 h4 {
   font-size: 2rem;
+  letter-spacing: 2px;
 }
 
 p {
   font-family: 'Poppins';
   font-size: 1.6rem;
   color: #5a5853;
+  letter-spacing: 2px;
 }
 
 ul li {
   font-family: 'Poppins';
   font-size: 1.6rem;
+  letter-spacing: 2px;
 }
 
 a {
   font-family: 'Poppins';
   font-size: 1.5rem;
+  letter-spacing: 2px;
 }
 
 @media (min-width: 1904px) {
@@ -3251,12 +3256,10 @@ a {
   transform: translateY(-2%);
 }
 
-.round-img-block img {
+.round-img-block .v-image {
   border: 3px solid #888888;
-  width: 200px;
-  height: 180px;
   border-radius: 50%;
-  max-width: calc(100% - 6px);
+  margin: 0 auto;
 }
 
 .round-contents-block h2 {

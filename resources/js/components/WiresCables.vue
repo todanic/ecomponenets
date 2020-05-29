@@ -4,30 +4,30 @@
 			<v-col cols="12">
 				<h3 class="wholesale-subcat-title mb-5">Wires and <span>cables categories</span></h3>
 			</v-col>
-			<v-col class="pb-11" lg="4" md="4" sm="6" cols="6">
+			<v-col class="pb-11" lg="4" md="4" sm="12" cols="12">
 				<a href="#wires" class="round-block">
 					<div class="round-img-block">
-						<img src="/images/splash4.jpeg" alt="">
+						<v-img max-width="280px" src="/images/splash4.jpeg" alt=""></v-img>
 					</div>
 					<div class="round-contents-block">
 							<h2>Wires</h2>
 					</div>
 				</a>
 			</v-col>
-				<v-col class="pb-11" lg="4" md="4" sm="6" cols="6">
+				<v-col class="pb-11" lg="4" md="4" sm="12" cols="12">
 					<a href="#cables" class="round-block">
 					<div class="round-img-block">
-						<img src="/images/splash3.jpeg" alt="">
+						<v-img max-width="280px" src="/images/splash3.jpeg" alt=""></v-img>
 					</div>
 					<div class="round-contents-block">
 							<h2>Cables</h2>
 					</div>
 				</a>
 			</v-col>
-				<v-col class="pb-11" lg="4" md="4" sm="6" cols="6">
+				<v-col class="pb-11" lg="4" md="6" sm="12" cols="12">
 					<a href="#readyMadeCables" class="round-block">
 					<div class="round-img-block">
-						<img src="/images/splash1.jpeg" alt="">
+						<v-img max-width="280px" src="/images/splash1.jpeg" alt=""></v-img>
 					</div>
 					<div class="round-contents-block">
 							<h2>Ready-made cables/Cables assemlies</h2>
@@ -42,10 +42,10 @@
 			<v-col cols="12">
 				<h2 class="subcat-title mb-5">Wires</h2>
 			</v-col>
-			<v-col lg="8" md="8" sm="8" cols="8">
+			<v-col lg="8" md="8" sm="12" cols="12">
 				<v-img  class="subcat-img" max-width="600px" max-height="400px" src="/images/splash1.jpeg" alt=""></v-img>
 			</v-col>
-			<v-col lg="4" md="4" sm="4" cols="4" class="text-left">
+			<v-col lg="4" md="4" sm="12" cols="12" class="text-left">
 				<h3>LIY wires <span>for electronics</span></h3>
 				<p class="mb-4">vast range help with making the right choice</p>
 				<p class="mb-0">special offer - measuring cables to required length</p>
@@ -114,7 +114,7 @@
 			<v-col cols="12">
 				<h2 class="subcat-title mb-5">Cables</h2>
 			</v-col>
-			<v-col lg="8" md="8" sm="8" cols="8">
+			<v-col lg="8" md="8" sm="12" cols="12">
 				<v-img  class="subcat-img" max-width="600px" max-height="400px" src="/images/splash3.jpeg" alt=""></v-img>
 			</v-col>
 		</v-row>
@@ -208,7 +208,7 @@
 					</v-col>
 				</v-row>
 				<v-row class="justify-center mt-5">
-					<v-col class="text-center" lg="6" md="6" sm="6" cols="6">
+					<v-col class="text-center" lg="6" md="6" sm="8" cols="8">
 						<p>
 							We also offer wire and cable harness manufacture per your design - from smaller cable harness to bigger
 							and more comples cable systems.
@@ -217,10 +217,10 @@
 							Click the <span>picture for more details</span>
 						</p>
 						<router-link to="/production" class="round-block">
-						<div class="round-img-block">
-							<img src="/images/cable.jpg" alt="">
-						</div>
-					</router-link>
+							<div class="round-img-block">
+								<v-img max-width="200px" max-height="180px" src="/images/cable.jpg" alt=""></v-img>
+							</div>
+						</router-link>
 					</v-col>
 				</v-row>
 			</v-col>
