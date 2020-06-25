@@ -2567,8 +2567,9 @@ var render = function() {
                         [
                           _c("v-img", {
                             attrs: {
-                              "max-width": "280px",
-                              src: "images/splash1.jpeg",
+                              "max-width": "260px",
+                              height: "220px",
+                              src: "images/wires-cables/thumbnail.jpg",
                               alt: ""
                             }
                           })
@@ -2605,8 +2606,9 @@ var render = function() {
                         [
                           _c("v-img", {
                             attrs: {
-                              "max-width": "280px",
-                              src: "images/splash2.jpeg",
+                              "max-width": "260px",
+                              height: "220px",
+                              src: "images/connectors/thumbnail.jpg",
                               alt: ""
                             }
                           })
@@ -2643,7 +2645,8 @@ var render = function() {
                         [
                           _c("v-img", {
                             attrs: {
-                              "max-width": "280px",
+                              "max-width": "260px",
+                              height: "220px",
                               src: "images/splash1.jpeg",
                               alt: ""
                             }
@@ -2681,7 +2684,8 @@ var render = function() {
                         [
                           _c("v-img", {
                             attrs: {
-                              "max-width": "280px",
+                              "max-width": "260px",
+                              height: "220px",
                               src: "images/splash2.jpeg",
                               alt: ""
                             }
@@ -2719,8 +2723,9 @@ var render = function() {
                         [
                           _c("v-img", {
                             attrs: {
-                              "max-width": "280px",
-                              src: "images/splash3.jpeg",
+                              "max-width": "260px",
+                              height: "220px",
+                              src: "images/cable-accessories/thumbnail.jpg",
                               alt: ""
                             }
                           })
@@ -2757,7 +2762,8 @@ var render = function() {
                         [
                           _c("v-img", {
                             attrs: {
-                              "max-width": "280px",
+                              "max-width": "260px",
+                              height: "220px",
                               src: "images/splash4.jpeg",
                               alt: ""
                             }

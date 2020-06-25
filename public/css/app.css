@@ -3242,7 +3242,7 @@ a {
 }
 
 .home-cat-container {
-  background: url("/eomponents/public/images/shadow.png") no-repeat center top;
+  background: url("/images/shadow.png") no-repeat center top;
   margin-top: 84px;
 }
 
@@ -3335,6 +3335,7 @@ a {
 
 .contact-container .home-contact-btn .v-btn__content {
   color: #fff;
+  font-size: 1.4rem;
 }
 
 .contact-container h2 {
