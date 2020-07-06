@@ -1,6 +1,10 @@
 .header-container {
     background-color: #0e0e0e;
     
+    .header-collapse-menu {
+        display: none;
+    }
+
     .menu {
         display: flex;
         flex-flow: row nowrap;
@@ -113,3 +117,51 @@
     } 
 }
 
+@media screen and (max-width: 768px) {
+
+    .header-container {
+
+        .header-logo-col .v-image {
+            max-width: 230px !important;
+        }
+
+        .header-collapse-menu {
+            display: block;
+
+            span {
+                font-family: 'FontAwesome';
+                display: inline-block;
+                
+                &:after {
+                    content: '\f0c9';
+                    color: #fff;
+                    font-size: 28px;
+                }
+            }
+        }
+
+        .menu {
+            visibility: hidden;
+            opacity: 0;
+            position: absolute;
+            z-index: 1000;
+            background: #0E0E0E;
+            flex-direction: column;
+            left: 0;
+            right: 0;
+            height: 300px;
+            transition: all 0.3s;
+            transform: translateX(-500px);
+
+            &.active {
+               visibility: visible;
+               opacity: 1;
+               transform: translateX(0);
+            }
+
+            .menu-block {
+                flex-basis: 100%;
+            }
+        }
+    }
+}

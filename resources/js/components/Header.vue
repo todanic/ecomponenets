@@ -9,8 +9,11 @@
                 </v-col>
             </v-row>
             <v-row>
-                <v-col class="pt-6" lg="12" md="12" sm="12" cols="12">
-                    <ul class="menu pl-0 justify-center">
+                <v-col :class="{'pt-6': !$vuetify.breakpoint.xs, 'text-right pt-0 pb-0': $vuetify.breakpoint.xs}" lg="12" md="12" sm="12" cols="12">
+                    <div class="header-collapse-menu">
+                        <span @click="toggleMenu()"></span>
+                    </div>
+                    <ul class="menu pl-0 justify-center" :class="{active: isActive}">>
                         <li class="menu-block">
                             <router-link to="/">Home</router-link>
                         </li>
@@ -32,17 +35,6 @@
                         </li>
                     </ul>
                 </v-col>
-                <!-- <v-col class="text-right pt-5" lg="5" md="5" sm="5" cols="5">
-                    <v-btn class="navbar-link" text dark>
-                        LINK
-                    </v-btn>
-                    <v-btn class="navbar-link" text dark>
-                        LINK
-                    </v-btn>
-                    <v-btn class="navbar-link" text dark>
-                        LINK
-                    </v-btn>
-                </v-col> -->
             </v-row>
         </v-container>
     </v-container>
@@ -57,6 +49,12 @@
                 { title: 'Click Me' },
                 { title: 'Click Me 2' },
             ],
+						isActive: false
         }),
+        methods: {
+					toggleMenu() {
+						this.isActive = !this.isActive;
+					}
+				}
     }
 </script>

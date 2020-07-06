@@ -16,10 +16,10 @@
 .round-img-block {
 
     .v-image {
-        border: 3px solid #888888;
-        border-radius: 50%;
-        margin: 0 auto;
-    }
+			border: 3px solid #888888;
+			border-radius: 50%;
+			margin: 0 auto;
+	}
 }
 
 
@@ -31,4 +31,15 @@
         letter-spacing: -0.25px;
         margin-top: 12px;
     }
+}
+
+@media screen and (max-width: 768px) {
+	
+	.round-img-block {
+
+		.v-image {
+				height: 150px !important;
+				max-width: 220px !important;
+		}
+	}
 }

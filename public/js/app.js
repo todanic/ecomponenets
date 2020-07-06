@@ -238,14 +238,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -257,8 +249,14 @@ __webpack_require__.r(__webpack_exports__);
         title: 'Click Me'
       }, {
         title: 'Click Me 2'
-      }]
+      }],
+      isActive: false
     };
+  },
+  methods: {
+    toggleMenu: function toggleMenu() {
+      this.isActive = !this.isActive;
+    }
   }
 });
 
@@ -2441,66 +2439,87 @@ var render = function() {
               _c(
                 "v-col",
                 {
-                  staticClass: "pt-6",
+                  class: {
+                    "pt-6": !_vm.$vuetify.breakpoint.xs,
+                    "text-right pt-0 pb-0": _vm.$vuetify.breakpoint.xs
+                  },
                   attrs: { lg: "12", md: "12", sm: "12", cols: "12" }
                 },
                 [
-                  _c("ul", { staticClass: "menu pl-0 justify-center" }, [
-                    _c(
-                      "li",
-                      { staticClass: "menu-block" },
-                      [
-                        _c("router-link", { attrs: { to: "/" } }, [
-                          _vm._v("Home")
-                        ])
-                      ],
-                      1
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "li",
-                      { staticClass: "menu-block" },
-                      [
-                        _c("router-link", { attrs: { to: "/wholesale" } }, [
-                          _vm._v("Wholesale")
-                        ])
-                      ],
-                      1
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "li",
-                      { staticClass: "menu-block" },
-                      [
-                        _c("router-link", { attrs: { to: "/production" } }, [
-                          _vm._v("Production")
-                        ])
-                      ],
-                      1
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "li",
-                      { staticClass: "menu-block" },
-                      [
-                        _c("router-link", { attrs: { to: "/about-us" } }, [
-                          _vm._v("About us")
-                        ])
-                      ],
-                      1
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "li",
-                      { staticClass: "menu-block" },
-                      [
-                        _c("router-link", { attrs: { to: "/contact-us" } }, [
-                          _vm._v("Contact us")
-                        ])
-                      ],
-                      1
-                    )
-                  ])
+                  _c("div", { staticClass: "header-collapse-menu" }, [
+                    _c("span", {
+                      on: {
+                        click: function($event) {
+                          return _vm.toggleMenu()
+                        }
+                      }
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "ul",
+                    {
+                      staticClass: "menu pl-0 justify-center",
+                      class: { active: _vm.isActive }
+                    },
+                    [
+                      _vm._v(">\n                    "),
+                      _c(
+                        "li",
+                        { staticClass: "menu-block" },
+                        [
+                          _c("router-link", { attrs: { to: "/" } }, [
+                            _vm._v("Home")
+                          ])
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "li",
+                        { staticClass: "menu-block" },
+                        [
+                          _c("router-link", { attrs: { to: "/wholesale" } }, [
+                            _vm._v("Wholesale")
+                          ])
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "li",
+                        { staticClass: "menu-block" },
+                        [
+                          _c("router-link", { attrs: { to: "/production" } }, [
+                            _vm._v("Production")
+                          ])
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "li",
+                        { staticClass: "menu-block" },
+                        [
+                          _c("router-link", { attrs: { to: "/about-us" } }, [
+                            _vm._v("About us")
+                          ])
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "li",
+                        { staticClass: "menu-block" },
+                        [
+                          _c("router-link", { attrs: { to: "/contact-us" } }, [
+                            _vm._v("Contact us")
+                          ])
+                        ],
+                        1
+                      )
+                    ]
+                  )
                 ]
               )
             ],
