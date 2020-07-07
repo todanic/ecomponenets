@@ -31,6 +31,9 @@ Vue.component('header-component',
 Vue.component('splash', 
     require('./components/Splash.vue').default
 );
+Vue.component('why-us', 
+    require('./components/WhyUs.vue').default
+);
 Vue.component('home-catagories', 
     require('./components/HomeCategories.vue').default
 );

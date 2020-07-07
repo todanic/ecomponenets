@@ -1,7 +1,7 @@
-<template name="component-name">
+<template>
    <v-container>
     <v-row>
-      <v-col cols="4">
+      <v-col class="contact-container__col" cols="4">
         <p><v-icon>fa-phone</v-icon> +381 6995 4448</p>
         <p>Cara Lazara 2</p>
         <p>Srbobran 21480</p>

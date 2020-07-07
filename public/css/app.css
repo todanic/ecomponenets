@@ -22,7 +22,6 @@ h3,
 h4 {
   font-family: 'Poppins';
   color: #888888;
-  letter-spacing: 4px;
 }
 
 h1 span,
@@ -35,6 +34,11 @@ h4 span {
 h1 {
   font-size: 3.2rem;
   text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+h2 {
+  letter-spacing: 3px;
 }
 
 h4 {
@@ -46,7 +50,7 @@ p {
   font-family: 'Poppins';
   font-size: 1.6rem;
   color: #5a5853;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 
 ul li {
@@ -3272,8 +3276,8 @@ a {
 }
 
 .splash-container .carousel-block .v-carousel__controls {
-  bottom: -85px;
-  padding: 32px 0 52px 0;
+  bottom: -49px;
+  padding: 20px 0 29px 0;
   background-color: #0A0A0A;
 }
 
@@ -3292,7 +3296,7 @@ a {
 
 .home-cat-container {
   background: url("/images/shadow.png") no-repeat center top;
-  margin-top: 84px;
+  margin-top: 48px;
 }
 
 .round-block {
@@ -3407,6 +3411,11 @@ a {
   background-color: #fff;
 }
 
+.contact-dialog p {
+  font-size: 1.4rem;
+  margin-bottom: 0;
+}
+
 .wholesale-view-container h2.subcat-title {
   font-size: 3rem;
   color: #781212;
@@ -3454,5 +3463,22 @@ a {
 
 .wholesale-view-container h4 {
   color: #888888;
+}
+
+.why-us-container h2 {
+  font-size: 3rem;
+  margin-bottom: 40px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.why-us-container h3 {
+  font-size: 1.8rem;
+  margin: 14px 0;
+  color: #781212;
+}
+
+.why-us-container p {
+  font-size: 1.3rem;
 }
 

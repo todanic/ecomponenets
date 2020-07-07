@@ -1,5 +1,5 @@
-<template name="contact-component">
-<v-container fluid class="contact-container">
+<template>
+  <v-container fluid class="contact-container">
     <v-container>
       <v-row>
         <v-col cols="12" class="text-center" daTa-aos="fade-down" data-aos-delay="100" data-aos-easing="ease-in-out">

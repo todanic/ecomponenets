@@ -30,7 +30,7 @@
 						<v-img max-width="280px" src="/images/splash1.jpeg" alt=""></v-img>
 					</div>
 					<div class="round-contents-block">
-							<h2>Ready-made cables/Cables assemlies</h2>
+							<h2>Ready-made cables/Cables assemblies</h2>
 					</div>
 				</a>
 			</v-col>
@@ -47,8 +47,9 @@
 			</v-col>
 			<v-col lg="4" md="4" sm="12" cols="12" class="text-left">
 				<h3>LIY wires <span>for electronics</span></h3>
-				<p class="mb-4">vast range help with making the right choice</p>
-				<p class="mb-0">special offer - measuring cables to required length</p>
+				<p class="mb-4">Vast range</p>
+				<p class="mb-0">Help with making the right choice</p>
+				<p class="mb-0">Special offer - measuring cables to required length</p>
 			</v-col>
 		</v-row>
 		<v-row class="wholesale-subcat-info">
@@ -97,16 +98,6 @@
 				<p class="mt-5">*for certain conductors </p>
 			</v-col>
 		</v-row>
-		<v-row class="wholesale-additional-info">
-			<v-col cols="12" class="mb-8 mt-4 mt-0">
-				<h4>
-					Multi-core cables to fit all your needs
-				</h4>
-				<p class="mb-2">Large choice</p>
-				<p class="mb-2">Help with choosing the right cable</p>
-				<p class="mb-2">Special-offer - measuring cables to required length</p>
-			</v-col>
-		</v-row>
 
 		<v-divider class="pb-10"></v-divider>
 
@@ -116,6 +107,12 @@
 			</v-col>
 			<v-col lg="8" md="8" sm="12" cols="12">
 				<v-img  class="subcat-img" max-width="600px" max-height="400px" src="/images/splash3.jpeg" alt=""></v-img>
+			</v-col>
+			<v-col lg="4" md="4" sm="12" cols="12" class="text-left">
+				<h3>Multi-core cables to <span>fit all your needs</span></h3>
+				<p class="mb-4">Large choice</p>
+				<p class="mb-0">Help with choosing the right cable</p>
+				<p class="mb-0">Special-offer - measuring cables to required length</p>
 			</v-col>
 		</v-row>
 		<v-row class="wholesale-subcat-info">
