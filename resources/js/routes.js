@@ -2,7 +2,7 @@ import Home from '../views/HomeView.vue';
 import WholeSale from '../views/WholesaleView.vue';
 import ContactUs from '../views/ContactUsView.vue';
 import AboutUs from '../views/AboutUsView.vue';
-import Production from '../views/ProductionView.vue';
+import WiresAndHarnessView from '../views/WiresAndHarnessView.vue';
 import WiresCables from './components/WiresCables.vue';
 import Connectors from './components/Connectors.vue';
 import Hardware from './components/Hardware.vue';
@@ -57,9 +57,9 @@ export const routes = [
 		name: 'ContactUs'
 	},
 	{
-		path:'/production',
-		component: Production,
-		name: 'Production'
+		path:'/wires-and-harness',
+		component: WiresAndHarnessView,
+		name: 'WiresAndHarnessView'
 	},
 	{
 		path:'/about-us',

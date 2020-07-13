@@ -22,7 +22,7 @@
                             <!-- <a href="#">Wholesale</a> -->
                         </li>
                         <li class="menu-block">
-                             <router-link to="/production">Production</router-link>
+                             <router-link to="/wires-and-harness">Wire and cable harnessing</router-link>
                             <!-- <a href="#">Production</a> -->
                         </li>
                         <li class="menu-block">

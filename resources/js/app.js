@@ -34,6 +34,9 @@ Vue.component('splash',
 Vue.component('why-us', 
     require('./components/WhyUs.vue').default
 );
+Vue.component('wire-and-harness', 
+    require('./components/WireAndHarnessComponent.vue').default
+);
 Vue.component('home-catagories', 
     require('./components/HomeCategories.vue').default
 );

@@ -1,0 +1,33 @@
+.wire-harness-container {
+
+	h2 {
+		font-size: 3rem;
+		color: #fff;
+		text-shadow: 1px 1px #000000;
+	}
+
+	p {
+		color: #fff;
+	}
+
+	.wire-harness-container__btn {
+    border: 2px solid $primary-red;
+    font-size: 1.6rem;
+    font-family: 'Poppins';
+
+    &:hover:before {
+      background-color: $primary-red;
+      opacity: 1;
+    }
+
+    &.v-btn:before {
+      transition: 0.4s ease-in-out;
+    }
+
+    .v-btn__content a {
+      color: #fff;
+			font-size: 1.4rem;
+			text-decoration: none;
+    }
+  }
+}

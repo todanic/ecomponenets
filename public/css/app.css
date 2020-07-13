@@ -3331,6 +3331,7 @@ a {
 
 .prefooter-container {
   background-color: #0E0E0E;
+  border-top: 1px solid #3e3e3e;
 }
 
 .prefooter-container h3 {
@@ -3480,5 +3481,36 @@ a {
 
 .why-us-container p {
   font-size: 1.3rem;
+}
+
+.wire-harness-container h2 {
+  font-size: 3rem;
+  color: #fff;
+  text-shadow: 1px 1px #000000;
+}
+
+.wire-harness-container p {
+  color: #fff;
+}
+
+.wire-harness-container .wire-harness-container__btn {
+  border: 2px solid #781212;
+  font-size: 1.6rem;
+  font-family: 'Poppins';
+}
+
+.wire-harness-container .wire-harness-container__btn:hover:before {
+  background-color: #781212;
+  opacity: 1;
+}
+
+.wire-harness-container .wire-harness-container__btn.v-btn:before {
+  transition: 0.4s ease-in-out;
+}
+
+.wire-harness-container .wire-harness-container__btn .v-btn__content a {
+  color: #fff;
+  font-size: 1.4rem;
+  text-decoration: none;
 }
 

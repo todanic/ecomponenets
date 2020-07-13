@@ -531,6 +531,50 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/WireAndHarnessComponent.vue?vue&type=script&lang=js&":
+/*!**********************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/WireAndHarnessComponent.vue?vue&type=script&lang=js& ***!
+  \**********************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: 'WireAndHarnessComponent'
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/WiresCables.vue?vue&type=script&lang=js&":
 /*!**********************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/WiresCables.vue?vue&type=script&lang=js& ***!
@@ -884,31 +928,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'HomeView',
-  data: function data() {
-    return {};
-  }
-});
-
-/***/ }),
-
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/views/ProductionView.vue?vue&type=script&lang=js&":
-/*!*****************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/views/ProductionView.vue?vue&type=script&lang=js& ***!
-  \*****************************************************************************************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-//
-//
-//
-//
-//
-/* harmony default export */ __webpack_exports__["default"] = ({
-  name: 'ProductionView',
   data: function data() {
     return {};
   }
@@ -1009,6 +1031,103 @@ __webpack_require__.r(__webpack_exports__);
   },
   mounted: function mounted() {
     this.isParent = typeof this.$refs.childRout === 'undefined';
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/views/WiresAndHarnessView.vue?vue&type=script&lang=js&":
+/*!**********************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/views/WiresAndHarnessView.vue?vue&type=script&lang=js& ***!
+  \**********************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: 'WiresAndHarnessView',
+  data: function data() {
+    return {};
   }
 });
 
@@ -2553,9 +2672,11 @@ var render = function() {
                         "li",
                         { staticClass: "menu-block" },
                         [
-                          _c("router-link", { attrs: { to: "/production" } }, [
-                            _vm._v("Production")
-                          ])
+                          _c(
+                            "router-link",
+                            { attrs: { to: "/wires-and-harness" } },
+                            [_vm._v("Wire and cable harnessing")]
+                          )
                         ],
                         1
                       ),
@@ -3729,6 +3850,107 @@ render._withStripped = true
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/WireAndHarnessComponent.vue?vue&type=template&id=64997cf8&":
+/*!**************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/WireAndHarnessComponent.vue?vue&type=template&id=64997cf8& ***!
+  \**************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "v-container",
+    { staticClass: "wire-harness-container pa-0", attrs: { fluid: "" } },
+    [
+      _c(
+        "v-parallax",
+        { attrs: { src: "images/splash1.jpg" } },
+        [
+          _c(
+            "v-container",
+            { staticClass: "shrink-width" },
+            [
+              _c(
+                "v-row",
+                [
+                  _c(
+                    "v-col",
+                    {
+                      staticClass: "text-center",
+                      attrs: { lg: "12", md: "12", sm: "12", cols: "12" }
+                    },
+                    [
+                      _c("h2", { staticClass: "mb-4" }, [
+                        _vm._v("Wire and \n\t\t\t\t\t\t"),
+                        _c("span", [_vm._v("cable harnessing")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "v-col",
+                    { attrs: { lg: "12", md: "12", sm: "12", cols: "12" } },
+                    [
+                      _c("p", [
+                        _vm._v(
+                          "\n\t\t\t\t\t\tWe offer our customers and partners in different industries\n\t\t\t\t\t\ttailor-made solutions in the field of wire harnesses. Home appliance\n\t\t\t\t\t\tindustry, gaming and vending machines industry and many other rely\n\t\t\t\t\t\ton us to bring their designs to life. Be it a single wire or a\n\t\t\t\t\t\tcomplex wire harness system – we got you covered! \n\t\t\t\t\t"
+                        )
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "v-col",
+                    {
+                      staticClass: "text-center",
+                      attrs: { lg: "12", md: "12", sm: "12", cols: "12" }
+                    },
+                    [
+                      _c(
+                        "v-btn",
+                        {
+                          staticClass: "wire-harness-container__btn",
+                          attrs: { outlined: "", "x-large": "", rounded: "" }
+                        },
+                        [
+                          _c(
+                            "router-link",
+                            { attrs: { to: "/wires-and-harness" } },
+                            [_vm._v("Read more")]
+                          )
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  )
+                ],
+                1
+              )
+            ],
+            1
+          )
+        ],
+        1
+      )
+    ],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/WiresCables.vue?vue&type=template&id=5b0d5ee9&name=wires-cables&":
 /*!********************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/WiresCables.vue?vue&type=template&id=5b0d5ee9&name=wires-cables& ***!
@@ -4442,36 +4664,12 @@ var render = function() {
       _vm._v(" "),
       _c("home-catagories"),
       _vm._v(" "),
-      _c("v-divider"),
+      _c("wire-and-harness"),
       _vm._v(" "),
       _c("why-us")
     ],
     1
   )
-}
-var staticRenderFns = []
-render._withStripped = true
-
-
-
-/***/ }),
-
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/views/ProductionView.vue?vue&type=template&id=06f54717&name=production-view&":
-/*!******************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/views/ProductionView.vue?vue&type=template&id=06f54717&name=production-view& ***!
-  \******************************************************************************************************************************************************************************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("div")
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -4759,6 +4957,200 @@ var render = function() {
       ),
       _vm._v(" "),
       _c("router-view", { ref: "childRout" })
+    ],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/views/WiresAndHarnessView.vue?vue&type=template&id=7a2579c3&name=wires-and-harness-view&":
+/*!******************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/views/WiresAndHarnessView.vue?vue&type=template&id=7a2579c3&name=wires-and-harness-view& ***!
+  \******************************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "v-container",
+    {
+      staticClass: "wires-and-harness-container shrink-width",
+      attrs: { fluid: "" }
+    },
+    [
+      _c(
+        "v-container",
+        [
+          _c(
+            "v-row",
+            [
+              _c(
+                "v-col",
+                {
+                  staticClass: "text-center",
+                  attrs: { lg: "12", md: "12", sm: "12", cols: "12" }
+                },
+                [
+                  _c("h1", { staticClass: "mb-4" }, [
+                    _vm._v("Wire and \n\t\t\t\t\t"),
+                    _c("span", [_vm._v("cable harnessing")])
+                  ])
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "v-col",
+                { attrs: { lg: "12", md: "12", sm: "12", cols: "12" } },
+                [
+                  _c("p", [
+                    _vm._v(
+                      "\n\t\t\t\t\tWe offer our customers and partners in different industries tailor-made solutions in the field of \n\t\t\t\t\twire harnesses. Home appliance industry, gaming and vending machines industry and many \n\t\t\t\t\tother rely on us to bring their designs to life. Be it a single wire or a complex wire harness \n\t\t\t\t\tsystem – we got you covered! \n\t\t\t\t"
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("br"),
+                  _vm._v(" "),
+                  _c("p", [
+                    _vm._v(
+                      "\n\t\t\t\t\tWe offer services that cover everything from prototyping to series manufacture. Being also the \n\t\t\t\t\tsupplier of electronic components eComponents offers a wide variety of cable harness \n\t\t\t\t\tsolutions with different combinations of connectors, conductors, cable accessories etc. \n\t\t\t\t\tAll of our cable assemblies are customized, incorporating custom lengths, colors and special \n\t\t\t\t\tpin-outs in our designs – per customer request. \n\t\t\t\t"
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("br"),
+                  _vm._v(" "),
+                  _c("p", [
+                    _vm._v(
+                      "\n\t\t\t\t\teComponents offers development and manufacture of wire harnesses, including: \n\t\t\t\t"
+                    )
+                  ])
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "v-col",
+                { attrs: { lg: "12", md: "12", sm: "12", cols: "12" } },
+                [
+                  _c("p", [
+                    _c("span", [_vm._v("Prototyping")]),
+                    _vm._v(
+                      " – we can make fully functional prototypes based off of your design - be it a \n\t\t\t\t\tdescription or a photo (if possible); or a technical drawing or reverse-engineering a \n\t\t\t\t\tsample. We also offer help with choosing the right connectors, conductors and other \n\t\t\t\t\tparts for your product. \n\t\t\t\t"
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("v-img", {
+                    staticClass: "ml-auto mr-auto",
+                    attrs: {
+                      "max-width": "650px",
+                      "max-height": "450px",
+                      src: "images/wiress-and-harness/prototype.jpg"
+                    }
+                  })
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "v-col",
+                {
+                  staticClass: "mt-6",
+                  attrs: { lg: "12", md: "12", sm: "12", cols: "12" }
+                },
+                [
+                  _c("p", [
+                    _c("span", [_vm._v("Documenting")]),
+                    _vm._v(
+                      " – we can make detailed documentation including drawings, BOMs and \n\t\t\t\t\tother information about the product you need. Once we define your wire harness and \n\t\t\t\t\tassign it an article number you can easily order it anytime or make changes to it as easy \n\t\t\t\t\tas referencing it to our technicians. \n\t\t\t\t"
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("v-img", {
+                    staticClass: "ml-auto mr-auto",
+                    attrs: {
+                      "max-width": "650px",
+                      "max-height": "450px",
+                      src: "images/wiress-and-harness/annotation.jpg"
+                    }
+                  })
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "v-col",
+                { attrs: { lg: "12", md: "12", sm: "12", cols: "12" } },
+                [
+                  _c("p", [
+                    _c("span", [_vm._v("Manufacture")]),
+                    _vm._v(
+                      " – we can produce wire harnesses in greater quantities with no loss in \n\t\t\t\t\tquality and with great attention to detail. This applies to the simplest of cables as well as \n\t\t\t\t\tthe more complex cable systems. We offer classic plug-in contacts with (or without) \n\t\t\t\t\thousings on conductors of many different cross-sectional areas, colors, qualities, \n\t\t\t\t\tstandards and certifications. \n\t\t\t\t"
+                    )
+                  ])
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "v-col",
+                { attrs: { lg: "12", md: "12", sm: "12", cols: "12" } },
+                [
+                  _c("p", [
+                    _c("span", [_vm._v("Quality control")]),
+                    _vm._v(
+                      " – we send you the cable harnesses only after they have been thoroughly \n\t\t\t\t\ttested by our quality control. This is very important to us, and we know it is very \n\t\t\t\t\timportant to our customers. \n\t\t\t\t"
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("v-img", {
+                    staticClass: "ml-auto mr-auto",
+                    attrs: {
+                      "max-width": "650px",
+                      "max-height": "450px",
+                      src: "images/wiress-and-harness/clipboard.jpg"
+                    }
+                  })
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "v-col",
+                {
+                  staticClass: "mt-10",
+                  attrs: { lg: "12", md: "12", sm: "12", cols: "12" }
+                },
+                [
+                  _c("p", [
+                    _vm._v(
+                      "\n\t\t\t\t\tWith experience and the “know-how” in combination with professional equipment and \n\t\t\t\t\tdevotion to helping our customers do incredible things, we are able to create custom and \n\t\t\t\t\tinnovative products that can fulfil all your needs. \n\t\t\t\t"
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("br"),
+                  _vm._v(" "),
+                  _c("p", [
+                    _vm._v(
+                      "\n\t\t\t\t\tPlease use the contact form bellow to contact us today and… MAKE IT WORK! \n\t\t\t\t"
+                    )
+                  ])
+                ]
+              )
+            ],
+            1
+          )
+        ],
+        1
+      )
     ],
     1
   )
@@ -61471,6 +61863,7 @@ vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vuetify__WEBPACK_IMPORTED_MODULE_
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('header-component', __webpack_require__(/*! ./components/Header.vue */ "./resources/js/components/Header.vue")["default"]);
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('splash', __webpack_require__(/*! ./components/Splash.vue */ "./resources/js/components/Splash.vue")["default"]);
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('why-us', __webpack_require__(/*! ./components/WhyUs.vue */ "./resources/js/components/WhyUs.vue")["default"]);
+vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('wire-and-harness', __webpack_require__(/*! ./components/WireAndHarnessComponent.vue */ "./resources/js/components/WireAndHarnessComponent.vue")["default"]);
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('home-catagories', __webpack_require__(/*! ./components/HomeCategories.vue */ "./resources/js/components/HomeCategories.vue")["default"]);
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('prefooter', __webpack_require__(/*! ./components/Prefooter.vue */ "./resources/js/components/Prefooter.vue")["default"]);
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('footer-component', __webpack_require__(/*! ./components/Footer.vue */ "./resources/js/components/Footer.vue")["default"]);
@@ -62298,6 +62691,75 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/components/WireAndHarnessComponent.vue":
+/*!*************************************************************!*\
+  !*** ./resources/js/components/WireAndHarnessComponent.vue ***!
+  \*************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _WireAndHarnessComponent_vue_vue_type_template_id_64997cf8___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./WireAndHarnessComponent.vue?vue&type=template&id=64997cf8& */ "./resources/js/components/WireAndHarnessComponent.vue?vue&type=template&id=64997cf8&");
+/* harmony import */ var _WireAndHarnessComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./WireAndHarnessComponent.vue?vue&type=script&lang=js& */ "./resources/js/components/WireAndHarnessComponent.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _WireAndHarnessComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _WireAndHarnessComponent_vue_vue_type_template_id_64997cf8___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _WireAndHarnessComponent_vue_vue_type_template_id_64997cf8___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/WireAndHarnessComponent.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/WireAndHarnessComponent.vue?vue&type=script&lang=js&":
+/*!**************************************************************************************!*\
+  !*** ./resources/js/components/WireAndHarnessComponent.vue?vue&type=script&lang=js& ***!
+  \**************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_WireAndHarnessComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./WireAndHarnessComponent.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/WireAndHarnessComponent.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_WireAndHarnessComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/WireAndHarnessComponent.vue?vue&type=template&id=64997cf8&":
+/*!********************************************************************************************!*\
+  !*** ./resources/js/components/WireAndHarnessComponent.vue?vue&type=template&id=64997cf8& ***!
+  \********************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_WireAndHarnessComponent_vue_vue_type_template_id_64997cf8___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./WireAndHarnessComponent.vue?vue&type=template&id=64997cf8& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/WireAndHarnessComponent.vue?vue&type=template&id=64997cf8&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_WireAndHarnessComponent_vue_vue_type_template_id_64997cf8___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_WireAndHarnessComponent_vue_vue_type_template_id_64997cf8___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
 /***/ "./resources/js/components/WiresCables.vue":
 /*!*************************************************!*\
   !*** ./resources/js/components/WiresCables.vue ***!
@@ -62381,7 +62843,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _views_WholesaleView_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../views/WholesaleView.vue */ "./resources/views/WholesaleView.vue");
 /* harmony import */ var _views_ContactUsView_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../views/ContactUsView.vue */ "./resources/views/ContactUsView.vue");
 /* harmony import */ var _views_AboutUsView_vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../views/AboutUsView.vue */ "./resources/views/AboutUsView.vue");
-/* harmony import */ var _views_ProductionView_vue__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../views/ProductionView.vue */ "./resources/views/ProductionView.vue");
+/* harmony import */ var _views_WiresAndHarnessView_vue__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../views/WiresAndHarnessView.vue */ "./resources/views/WiresAndHarnessView.vue");
 /* harmony import */ var _components_WiresCables_vue__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/WiresCables.vue */ "./resources/js/components/WiresCables.vue");
 /* harmony import */ var _components_Connectors_vue__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/Connectors.vue */ "./resources/js/components/Connectors.vue");
 /* harmony import */ var _components_Hardware_vue__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/Hardware.vue */ "./resources/js/components/Hardware.vue");
@@ -62437,9 +62899,9 @@ var routes = [{
   component: _views_ContactUsView_vue__WEBPACK_IMPORTED_MODULE_2__["default"],
   name: 'ContactUs'
 }, {
-  path: '/production',
-  component: _views_ProductionView_vue__WEBPACK_IMPORTED_MODULE_4__["default"],
-  name: 'Production'
+  path: '/wires-and-harness',
+  component: _views_WiresAndHarnessView_vue__WEBPACK_IMPORTED_MODULE_4__["default"],
+  name: 'WiresAndHarnessView'
 }, {
   path: '/about-us',
   component: _views_AboutUsView_vue__WEBPACK_IMPORTED_MODULE_3__["default"],
@@ -62677,75 +63139,6 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/views/ProductionView.vue":
-/*!********************************************!*\
-  !*** ./resources/views/ProductionView.vue ***!
-  \********************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _ProductionView_vue_vue_type_template_id_06f54717_name_production_view___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ProductionView.vue?vue&type=template&id=06f54717&name=production-view& */ "./resources/views/ProductionView.vue?vue&type=template&id=06f54717&name=production-view&");
-/* harmony import */ var _ProductionView_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ProductionView.vue?vue&type=script&lang=js& */ "./resources/views/ProductionView.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
-
-
-
-
-
-/* normalize component */
-
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
-  _ProductionView_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _ProductionView_vue_vue_type_template_id_06f54717_name_production_view___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _ProductionView_vue_vue_type_template_id_06f54717_name_production_view___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
-  false,
-  null,
-  null,
-  null
-  
-)
-
-/* hot reload */
-if (false) { var api; }
-component.options.__file = "resources/views/ProductionView.vue"
-/* harmony default export */ __webpack_exports__["default"] = (component.exports);
-
-/***/ }),
-
-/***/ "./resources/views/ProductionView.vue?vue&type=script&lang=js&":
-/*!*********************************************************************!*\
-  !*** ./resources/views/ProductionView.vue?vue&type=script&lang=js& ***!
-  \*********************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ProductionView_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../node_modules/babel-loader/lib??ref--4-0!../../node_modules/vue-loader/lib??vue-loader-options!./ProductionView.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/views/ProductionView.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ProductionView_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
-
-/***/ }),
-
-/***/ "./resources/views/ProductionView.vue?vue&type=template&id=06f54717&name=production-view&":
-/*!************************************************************************************************!*\
-  !*** ./resources/views/ProductionView.vue?vue&type=template&id=06f54717&name=production-view& ***!
-  \************************************************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ProductionView_vue_vue_type_template_id_06f54717_name_production_view___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../node_modules/vue-loader/lib??vue-loader-options!./ProductionView.vue?vue&type=template&id=06f54717&name=production-view& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/views/ProductionView.vue?vue&type=template&id=06f54717&name=production-view&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ProductionView_vue_vue_type_template_id_06f54717_name_production_view___WEBPACK_IMPORTED_MODULE_0__["render"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ProductionView_vue_vue_type_template_id_06f54717_name_production_view___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
-
-
-
-/***/ }),
-
 /***/ "./resources/views/WholesaleView.vue":
 /*!*******************************************!*\
   !*** ./resources/views/WholesaleView.vue ***!
@@ -62810,6 +63203,75 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_WholesaleView_vue_vue_type_template_id_ee586a8c_name_wholesale_view___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_WholesaleView_vue_vue_type_template_id_ee586a8c_name_wholesale_view___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/views/WiresAndHarnessView.vue":
+/*!*************************************************!*\
+  !*** ./resources/views/WiresAndHarnessView.vue ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _WiresAndHarnessView_vue_vue_type_template_id_7a2579c3_name_wires_and_harness_view___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./WiresAndHarnessView.vue?vue&type=template&id=7a2579c3&name=wires-and-harness-view& */ "./resources/views/WiresAndHarnessView.vue?vue&type=template&id=7a2579c3&name=wires-and-harness-view&");
+/* harmony import */ var _WiresAndHarnessView_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./WiresAndHarnessView.vue?vue&type=script&lang=js& */ "./resources/views/WiresAndHarnessView.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _WiresAndHarnessView_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _WiresAndHarnessView_vue_vue_type_template_id_7a2579c3_name_wires_and_harness_view___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _WiresAndHarnessView_vue_vue_type_template_id_7a2579c3_name_wires_and_harness_view___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/views/WiresAndHarnessView.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/views/WiresAndHarnessView.vue?vue&type=script&lang=js&":
+/*!**************************************************************************!*\
+  !*** ./resources/views/WiresAndHarnessView.vue?vue&type=script&lang=js& ***!
+  \**************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_WiresAndHarnessView_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../node_modules/babel-loader/lib??ref--4-0!../../node_modules/vue-loader/lib??vue-loader-options!./WiresAndHarnessView.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/views/WiresAndHarnessView.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_WiresAndHarnessView_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/views/WiresAndHarnessView.vue?vue&type=template&id=7a2579c3&name=wires-and-harness-view&":
+/*!************************************************************************************************************!*\
+  !*** ./resources/views/WiresAndHarnessView.vue?vue&type=template&id=7a2579c3&name=wires-and-harness-view& ***!
+  \************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_WiresAndHarnessView_vue_vue_type_template_id_7a2579c3_name_wires_and_harness_view___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../node_modules/vue-loader/lib??vue-loader-options!./WiresAndHarnessView.vue?vue&type=template&id=7a2579c3&name=wires-and-harness-view& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/views/WiresAndHarnessView.vue?vue&type=template&id=7a2579c3&name=wires-and-harness-view&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_WiresAndHarnessView_vue_vue_type_template_id_7a2579c3_name_wires_and_harness_view___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_WiresAndHarnessView_vue_vue_type_template_id_7a2579c3_name_wires_and_harness_view___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
