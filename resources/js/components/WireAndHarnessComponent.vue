@@ -1,6 +1,6 @@
 <template>
 	<v-container fluid class="wire-harness-container pa-0">
-		<v-parallax src="images/splash1.jpg">
+		<v-parallax src="images/parallax.jpg">
 			<v-container class="shrink-width">
 				<v-row>
 					<v-col class="text-center" lg="12" md="12" sm="12" cols="12">

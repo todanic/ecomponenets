@@ -2850,7 +2850,7 @@ var render = function() {
                             attrs: {
                               "max-width": "240px",
                               height: "180px",
-                              src: "images/splash1.jpeg",
+                              src: "images/splash1.jpg",
                               alt: ""
                             }
                           })
@@ -3871,7 +3871,7 @@ var render = function() {
     [
       _c(
         "v-parallax",
-        { attrs: { src: "images/splash1.jpg" } },
+        { attrs: { src: "images/parallax.jpg" } },
         [
           _c(
             "v-container",
