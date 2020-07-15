@@ -4,8 +4,8 @@
 			<v-container class="shrink-width">
 				<v-row>
 					<v-col class="text-center" lg="12" md="12" sm="12" cols="12">
-						<h2 class="mb-4">Wire and 
-							<span>cable harnessing</span>
+						<h2 class="mb-4">
+							Wire and cable harnessing 
 						</h2>
 					</v-col>
 					<v-col lg="12" md="12" sm="12" cols="12">

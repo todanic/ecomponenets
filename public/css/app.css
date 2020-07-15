@@ -3137,7 +3137,7 @@ a {
   color: #fff;
   font-size: 1.5rem;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 500;
   transition: all .5s ease;
   text-decoration: none;
 }
@@ -3317,7 +3317,7 @@ a {
 
 .round-contents-block h2 {
   color: #888888;
-  font-weight: 700;
+  font-weight: 500;
   letter-spacing: -0.25px;
   margin-top: 12px;
 }
@@ -3486,7 +3486,11 @@ a {
 .wire-harness-container h2 {
   font-size: 3rem;
   color: #fff;
-  text-shadow: 1px 1px #000000;
+}
+
+.wire-harness-container .v-parallax__image {
+  -webkit-filter: brightness(45%);
+          filter: brightness(45%);
 }
 
 .wire-harness-container p {
@@ -3512,5 +3516,10 @@ a {
   color: #fff;
   font-size: 1.4rem;
   text-decoration: none;
+}
+
+.wires-and-harness-container p span {
+  color: #781212;
+  font-size: 1.8rem;
 }
 

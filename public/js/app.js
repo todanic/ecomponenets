@@ -459,7 +459,7 @@ __webpack_require__.r(__webpack_exports__);
   data: function data() {
     return {
       images: [{
-        src: '/images/splash2.jpeg'
+        src: '/images/splash2.jpg'
       }, {
         src: '/images/splash3.jpeg'
       }, {
@@ -2889,7 +2889,7 @@ var render = function() {
                             attrs: {
                               "max-width": "240px",
                               height: "180px",
-                              src: "images/splash2.jpeg",
+                              src: "images/splash2.jpg",
                               alt: ""
                             }
                           })
@@ -3888,8 +3888,9 @@ var render = function() {
                     },
                     [
                       _c("h2", { staticClass: "mb-4" }, [
-                        _vm._v("Wire and \n\t\t\t\t\t\t"),
-                        _c("span", [_vm._v("cable harnessing")])
+                        _vm._v(
+                          "\n\t\t\t\t\t\tWire and cable harnessing \n\t\t\t\t\t"
+                        )
                       ])
                     ]
                   ),

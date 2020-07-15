@@ -10,7 +10,7 @@
  export default {
         data: () => ({
             images: [
-                { src: '/images/splash2.jpeg' },
+                { src: '/images/splash2.jpg' },
                 { src: '/images/splash3.jpeg' },
                 { src: '/images/splash4.jpeg' },
             ],

@@ -35,7 +35,7 @@
 							<v-col class="pb-11" lg="4" md="4" sm="6" cols="6">
 								<router-link to="/wholesale/led" class="round-block">
 											<div class="round-img-block">
-													<v-img max-width="240px" height="180px" src="images/splash2.jpeg" alt=""></v-img>
+													<v-img max-width="240px" height="180px" src="images/splash2.jpg" alt=""></v-img>
 											</div>
 											<div class="round-contents-block">
 													<h2>LEDs</h2>

@@ -3,8 +3,11 @@
 	h2 {
 		font-size: 3rem;
 		color: #fff;
-		text-shadow: 1px 1px #000000;
 	}
+
+  .v-parallax__image {
+    filter: brightness(45%);
+  }
 
 	p {
 		color: #fff;
@@ -28,6 +31,17 @@
       color: #fff;
 			font-size: 1.4rem;
 			text-decoration: none;
+    }
+  }
+}
+
+.wires-and-harness-container {
+
+  p {
+
+    span {
+      color: $primary-red;
+      font-size: 1.8rem;
     }
   }
 }
