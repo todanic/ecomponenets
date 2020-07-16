@@ -7,7 +7,7 @@
 			<v-col class="pb-11" lg="4" md="4" sm="12" cols="12">
 				<a href="#wires" class="round-block">
 					<div class="round-img-block">
-						<v-img max-width="280px" src="/images/splash4.jpeg" alt=""></v-img>
+						<v-img max-width="280px" src="/images/wires-cables/wires/wire1.jpg" alt=""></v-img>
 					</div>
 					<div class="round-contents-block">
 							<h2>Wires</h2>
@@ -17,7 +17,7 @@
 				<v-col class="pb-11" lg="4" md="4" sm="12" cols="12">
 					<a href="#cables" class="round-block">
 					<div class="round-img-block">
-						<v-img max-width="280px" src="/images/splash3.jpeg" alt=""></v-img>
+						<v-img max-width="280px" src="/images/wires-cables/cables/cable1.jpg" alt=""></v-img>
 					</div>
 					<div class="round-contents-block">
 							<h2>Cables</h2>
@@ -27,7 +27,7 @@
 				<v-col class="pb-11" lg="4" md="6" sm="12" cols="12">
 					<a href="#readyMadeCables" class="round-block">
 					<div class="round-img-block">
-						<v-img max-width="280px" src="/images/splash1.jpeg" alt=""></v-img>
+						<v-img max-width="280px" src="/images/wires-cables/ready-made-cables/ready-made-cable-gallery.jpg" alt=""></v-img>
 					</div>
 					<div class="round-contents-block">
 							<h2>Ready-made cables/Cables assemblies</h2>
@@ -43,7 +43,7 @@
 				<h2 class="subcat-title mb-5">Wires</h2>
 			</v-col>
 			<v-col lg="8" md="8" sm="12" cols="12">
-				<v-img  class="subcat-img" max-width="600px" max-height="400px" src="/images/splash1.jpeg" alt=""></v-img>
+				<v-img  class="subcat-img" max-width="600px" max-height="400px" src="/images/wires-cables/wires/wire1.jpg" alt=""></v-img>
 			</v-col>
 			<v-col lg="4" md="4" sm="12" cols="12" class="text-left">
 				<h3>LIY wires <span>for electronics</span></h3>
@@ -98,6 +98,9 @@
 				<p class="mt-5">*for certain conductors </p>
 			</v-col>
 		</v-row>
+		<v-row>
+			<base-miny-gallery :galleryImages="wireImages"></base-miny-gallery>
+		</v-row>
 
 		<v-divider class="pb-10"></v-divider>
 
@@ -106,7 +109,7 @@
 				<h2 class="subcat-title mb-5">Cables</h2>
 			</v-col>
 			<v-col lg="8" md="8" sm="12" cols="12">
-				<v-img  class="subcat-img" max-width="600px" max-height="400px" src="/images/splash3.jpeg" alt=""></v-img>
+				<v-img  class="subcat-img" max-width="600px" max-height="400px" src="/images/wires-cables/cables/cable2.jpg" alt=""></v-img>
 			</v-col>
 			<v-col lg="4" md="4" sm="12" cols="12" class="text-left">
 				<h3>Multi-core cables to <span>fit all your needs</span></h3>
@@ -154,7 +157,9 @@
 				<p class="mb-2">Posibility of special order</p>
 			</v-col>
 		</v-row>
-
+		<v-row>
+			<base-miny-gallery :galleryImages="cableImages"></base-miny-gallery>
+		</v-row>
 		<v-divider class="pb-10"></v-divider>
 		
 		<v-row id="readyMadeCables">
@@ -204,6 +209,9 @@
 						</h4>
 					</v-col>
 				</v-row>
+				<v-row>
+					<base-miny-gallery :galleryImages="readyMadeCableImages"></base-miny-gallery>
+				</v-row>
 				<v-row class="justify-center mt-5">
 					<v-col class="text-center" lg="6" md="6" sm="8" cols="8">
 						<p>
@@ -213,9 +221,9 @@
 						<p class="wholesale-click-picture">
 							Click the <span>picture for more details</span>
 						</p>
-						<router-link to="/production" class="round-block">
+						<router-link to="/wires-and-harness" class="round-block">
 							<div class="round-img-block">
-								<v-img max-width="200px" max-height="180px" src="/images/cable.jpg" alt=""></v-img>
+								<v-img max-width="200px" max-height="180px" src="/images/wires-cables/ready-made-cables/ready-made-cable.jpg" alt=""></v-img>
 							</div>
 						</router-link>
 					</v-col>
@@ -229,7 +237,19 @@ export default {
 	name: 'WiresCables',
 	data () {
 		return {
-			
+			wireImages: [
+					{ src: '/images/wires-cables/wires/wire1.jpg' },
+					{ src: '/images/wires-cables/wires/wire2.jpg' },
+					{ src: '/images/wires-cables/wires/wire3.jpg' },
+			],
+			cableImages: [
+				{ src: '/images/wires-cables/cables/cable1.jpg' },
+				{ src: '/images/wires-cables/cables/cable2.jpg' },
+				{ src: '/images/wires-cables/cables/cable3.jpg' },
+			],
+			readyMadeCableImages: [
+				{ src: '/images/wires-cables/ready-made-cables/ready-made-cable-gallery.jpg' },
+			],
 		}
 	}
 }

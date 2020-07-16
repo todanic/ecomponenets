@@ -71,7 +71,7 @@ export const routes = [
 const router = new VueRouter({
   mode: 'history',
 	routes,
-	scrollBehavior () {
+	scrollBehavior (to, from, savedPositio) {
     return { x: 0, y: 0 };
   }
 })

@@ -1,0 +1,36 @@
+.base-miny-gallery {
+	
+	.base-miny-gallery__slide-image {
+		cursor: pointer;
+		border: 3px solid #888888;
+		transition: all ease-in .3s;
+
+		&:hover {
+			transform: translateY(-2%);
+		}
+	}
+
+	.v-card {
+		box-shadow: none !important;
+	}
+}
+
+.base-miny-gallery__dialog {
+	position: relative;
+
+	.base-miny-gallery__dialog-btn {
+		position: absolute;
+		top: 3px;
+		right: 3px;
+		min-width: 0 !important;
+
+		
+		.v-icon {
+			font-size: 22px;
+		}
+	}
+}
+
+.theme--light.v-btn:not(.v-btn--flat):not(.v-btn--text):not(.v-btn--outlined) {
+	background-color: transparent;
+}

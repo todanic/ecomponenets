@@ -22,6 +22,10 @@
 		}
 	}
 
+	.round-img-block {
+		display: inline-block;
+	}
+	
 	.wholesale-subcat-info {
 
 		h3 {
@@ -50,5 +54,22 @@
 
 	h4 {
 		color: $primary-text;
+	}
+
+	.mini-gallery-slide {
+		
+		.v-slide-group__prev .v-icon:before {
+			content: '\f060';
+			font-family: "FontAwesome";
+			font-size: 18px;
+			color: $primary-red;
+		}
+
+		.v-slide-group__next .v-icon:before {
+			content: '\f061';
+			font-family: "FontAwesome";
+			font-size: 18px;
+			color: $primary-red;
+		}
 	}
 }

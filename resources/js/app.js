@@ -37,6 +37,9 @@ Vue.component('why-us',
 Vue.component('wire-and-harness', 
     require('./components/WireAndHarnessComponent.vue').default
 );
+Vue.component('base-miny-gallery', 
+    require('./components/BaseMinyGallery.vue').default
+);
 Vue.component('home-catagories', 
     require('./components/HomeCategories.vue').default
 );

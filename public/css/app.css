@@ -41,6 +41,10 @@ h2 {
   letter-spacing: 3px;
 }
 
+h3 {
+  letter-spacing: 2px;
+}
+
 h4 {
   font-size: 2rem;
   letter-spacing: 2px;
@@ -3300,7 +3304,7 @@ a {
 }
 
 .round-block {
-  display: block;
+  display: inline-block;
   transition: all ease-in-out .3s;
   text-decoration: none;
 }
@@ -3439,6 +3443,10 @@ a {
   color: #781212;
 }
 
+.wholesale-view-container .round-img-block {
+  display: inline-block;
+}
+
 .wholesale-view-container .wholesale-subcat-info h3 {
   text-transform: uppercase;
 }
@@ -3464,6 +3472,20 @@ a {
 
 .wholesale-view-container h4 {
   color: #888888;
+}
+
+.wholesale-view-container .mini-gallery-slide .v-slide-group__prev .v-icon:before {
+  content: '\F060';
+  font-family: "FontAwesome";
+  font-size: 18px;
+  color: #781212;
+}
+
+.wholesale-view-container .mini-gallery-slide .v-slide-group__next .v-icon:before {
+  content: '\F061';
+  font-family: "FontAwesome";
+  font-size: 18px;
+  color: #781212;
 }
 
 .why-us-container h2 {
@@ -3521,5 +3543,38 @@ a {
 .wires-and-harness-container p span {
   color: #781212;
   font-size: 1.8rem;
+}
+
+.base-miny-gallery .base-miny-gallery__slide-image {
+  cursor: pointer;
+  border: 3px solid #888888;
+  transition: all ease-in .3s;
+}
+
+.base-miny-gallery .base-miny-gallery__slide-image:hover {
+  transform: translateY(-2%);
+}
+
+.base-miny-gallery .v-card {
+  box-shadow: none !important;
+}
+
+.base-miny-gallery__dialog {
+  position: relative;
+}
+
+.base-miny-gallery__dialog .base-miny-gallery__dialog-btn {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  min-width: 0 !important;
+}
+
+.base-miny-gallery__dialog .base-miny-gallery__dialog-btn .v-icon {
+  font-size: 22px;
+}
+
+.theme--light.v-btn:not(.v-btn--flat):not(.v-btn--text):not(.v-btn--outlined) {
+  background-color: transparent;
 }
 
