@@ -27,7 +27,7 @@
 				<v-col class="pb-11" lg="4" md="6" sm="12" cols="12">
 					<a href="#readyMadeCables" class="round-block">
 					<div class="round-img-block">
-						<v-img max-width="280px" src="/images/wires-cables/ready-made-cables/ready-made-cable-gallery.jpg" alt=""></v-img>
+						<v-img max-width="280px" src="/images/wires-cables/ready-made-cables/ready-made-cables-thumb.jpg" alt=""></v-img>
 					</div>
 					<div class="round-contents-block">
 							<h2>Ready-made cables/Cables assemblies</h2>
@@ -223,7 +223,7 @@
 						</p>
 						<router-link to="/wires-and-harness" class="round-block">
 							<div class="round-img-block">
-								<v-img max-width="200px" max-height="180px" src="/images/wires-cables/ready-made-cables/ready-made-cable.jpg" alt=""></v-img>
+								<v-img max-width="200px" max-height="180px" src="/images/wires-cables/ready-made-cable.jpg" alt=""></v-img>
 							</div>
 						</router-link>
 					</v-col>
@@ -248,7 +248,7 @@ export default {
 				{ src: '/images/wires-cables/cables/cable3.jpg' },
 			],
 			readyMadeCableImages: [
-				{ src: '/images/wires-cables/ready-made-cables/ready-made-cable-gallery.jpg' },
+				{ src: '/images/wires-cables/ready-made-cables/ready-made-cables.jpg' },
 			],
 		}
 	}

@@ -5,7 +5,7 @@
 				<h2 class="subcat-title mb-5">Cable accessories</h2>
 			</v-col>
 			<v-col lg="7" md="7" sm="12" cols="12">
-				<v-img  class="subcat-img" max-width="600px" max-height="400px" src="/images/connectors.jpeg" alt=""></v-img>
+				<v-img  class="subcat-img" max-width="600px" max-height="400px" src="/images/cable-accessories/accessories.jpg" alt=""></v-img>
 			</v-col>
 			<v-col lg="5" md="5" sm="12" cols="12" class="text-left">
 				<h3 class="mb-5">Everything you need for <span>flawless cable assembly and isolation</span></h3>
@@ -60,5 +60,25 @@
 					</ul>
 				</v-col>
 			</v-row>
+			<v-row>
+				<base-miny-gallery :galleryImages="accessoriesImages"></base-miny-gallery>
+			</v-row>
 	</v-container>
 </template>
+<script>
+export default {
+	name: 'AdditionsForCables',
+	data() {
+		return {
+				accessoriesImages: [
+					{ src: '/images/cable-accessories/accessories2.jpg' },
+					{ src: '/images/cable-accessories/accessories3.jpg' },
+					{ src: '/images/cable-accessories/accessories4.jpg' },
+					{ src: '/images/cable-accessories/accessories5.jpg' },
+					{ src: '/images/cable-accessories/accessories6.jpg' },
+					{ src: '/images/cable-accessories/accessories7.jpg' },
+			],
+		}
+	}
+}
+</script>

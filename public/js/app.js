@@ -127,6 +127,105 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/AdditionsForCables.vue?vue&type=script&lang=js&":
+/*!*****************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/AdditionsForCables.vue?vue&type=script&lang=js& ***!
+  \*****************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: 'AdditionsForCables',
+  data: function data() {
+    return {
+      accessoriesImages: [{
+        src: '/images/cable-accessories/accessories2.jpg'
+      }, {
+        src: '/images/cable-accessories/accessories3.jpg'
+      }, {
+        src: '/images/cable-accessories/accessories4.jpg'
+      }, {
+        src: '/images/cable-accessories/accessories5.jpg'
+      }, {
+        src: '/images/cable-accessories/accessories6.jpg'
+      }, {
+        src: '/images/cable-accessories/accessories7.jpg'
+      }]
+    };
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/BaseContactComponent.vue?vue&type=script&lang=js&":
 /*!*******************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/BaseContactComponent.vue?vue&type=script&lang=js& ***!
@@ -239,6 +338,258 @@ __webpack_require__.r(__webpack_exports__);
     CloseDialog: function CloseDialog() {
       this.minyGalleryModel = false;
     }
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Connectors.vue?vue&type=script&lang=js&":
+/*!*********************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Connectors.vue?vue&type=script&lang=js& ***!
+  \*********************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: 'Connectors',
+  data: function data() {
+    return {
+      connectorImages: [{
+        src: '/images/connectors/sub-connectors/connector2.jpg'
+      }, {
+        src: '/images/connectors/sub-connectors/connector3.jpg'
+      }, {
+        src: '/images/connectors/sub-connectors/connector4.jpg'
+      }, {
+        src: '/images/connectors/sub-connectors/connector5.jpg'
+      }, {
+        src: '/images/connectors/sub-connectors/connector6.jpg'
+      }, {
+        src: '/images/connectors/sub-connectors/connector7.jpg'
+      }, {
+        src: '/images/connectors/sub-connectors/connector8.jpg'
+      }, {
+        src: '/images/connectors/sub-connectors/connector9.jpg'
+      }, {
+        src: '/images/connectors/sub-connectors/connector10.jpg'
+      }, {
+        src: '/images/connectors/sub-connectors/connector11.jpg'
+      }],
+      terminalImages: [{
+        src: '/images/connectors/terminals/terminals2.jpg'
+      }, {
+        src: '/images/connectors/terminals/terminals3.jpg'
+      }, {
+        src: '/images/connectors/terminals/terminals4.jpg'
+      }, {
+        src: '/images/connectors/terminals/terminals5.jpg'
+      }, {
+        src: '/images/connectors/terminals/terminals6.jpg'
+      }, {
+        src: '/images/connectors/terminals/terminals7.jpg'
+      }]
+    };
   }
 });
 
@@ -508,10 +859,21 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'Pcbs',
   data: function data() {
-    return {};
+    return {
+      pcbsImages: [{
+        src: '/images/pcbs/pcbs4.jpg'
+      }, {
+        src: '/images/pcbs/pcbs2.jpg'
+      }, {
+        src: '/images/pcbs/pcbs3.jpg'
+      }]
+    };
   }
 });
 
@@ -971,7 +1333,7 @@ __webpack_require__.r(__webpack_exports__);
         src: '/images/wires-cables/cables/cable3.jpg'
       }],
       readyMadeCableImages: [{
-        src: '/images/wires-cables/ready-made-cables/ready-made-cable-gallery.jpg'
+        src: '/images/wires-cables/ready-made-cables/ready-made-cables.jpg'
       }]
     };
   }
@@ -1843,7 +2205,7 @@ var render = function() {
                 attrs: {
                   "max-width": "600px",
                   "max-height": "400px",
-                  src: "/images/connectors.jpeg",
+                  src: "/images/cable-accessories/accessories.jpg",
                   alt: ""
                 }
               })
@@ -1949,6 +2311,16 @@ var render = function() {
               ])
             ])
           ])
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "v-row",
+        [
+          _c("base-miny-gallery", {
+            attrs: { galleryImages: _vm.accessoriesImages }
+          })
         ],
         1
       )
@@ -2127,12 +2499,15 @@ var render = function() {
                 return [
                   _c(
                     "v-sheet",
-                    { attrs: { width: "100%" } },
+                    {
+                      staticClass: "base-miny-gallery__dialog-sheet",
+                      attrs: { width: "100%" }
+                    },
                     [
                       _c(
                         "v-slide-group",
                         {
-                          staticClass: "base-miny-gallery__slide pa-4",
+                          staticClass: "base-miny-gallery__slide pa-0",
                           attrs: { "show-arrows": "" },
                           model: {
                             value: _vm.model,
@@ -2273,7 +2648,8 @@ var render = function() {
                       _c("v-img", {
                         attrs: {
                           "max-width": "280px",
-                          src: "/images/splash4.jpeg",
+                          src:
+                            "/images/connectors/sub-connectors/connectors.jpg",
                           alt: ""
                         }
                       })
@@ -2307,7 +2683,7 @@ var render = function() {
                       _c("v-img", {
                         attrs: {
                           "max-width": "280px",
-                          src: "/images/splash3.jpeg",
+                          src: "/images/connectors/terminals/terminals.jpg",
                           alt: ""
                         }
                       })
@@ -2384,7 +2760,7 @@ var render = function() {
                 attrs: {
                   "max-width": "600px",
                   "max-height": "400px",
-                  src: "/images/connectors.jpeg",
+                  src: "/images/connectors/sub-connectors/connectors.jpg",
                   alt: ""
                 }
               })
@@ -2482,6 +2858,16 @@ var render = function() {
         1
       ),
       _vm._v(" "),
+      _c(
+        "v-row",
+        [
+          _c("base-miny-gallery", {
+            attrs: { galleryImages: _vm.connectorImages }
+          })
+        ],
+        1
+      ),
+      _vm._v(" "),
       _c("v-divider", { staticClass: "mb-10 mt-6" }),
       _vm._v(" "),
       _c(
@@ -2503,7 +2889,7 @@ var render = function() {
                 attrs: {
                   "max-width": "600px",
                   "max-height": "400px",
-                  src: "/images/connectors.jpeg",
+                  src: "/images/connectors/terminals/terminals.jpg",
                   alt: ""
                 }
               })
@@ -2614,6 +3000,16 @@ var render = function() {
               ])
             ])
           ])
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "v-row",
+        [
+          _c("base-miny-gallery", {
+            attrs: { galleryImages: _vm.terminalImages }
+          })
         ],
         1
       ),
@@ -3059,7 +3455,7 @@ var render = function() {
                 "v-col",
                 {
                   staticClass: "pb-11",
-                  attrs: { lg: "4", md: "4", sm: "6", cols: "6" }
+                  attrs: { lg: "4", md: "4", sm: "6", cols: "12" }
                 },
                 [
                   _c(
@@ -3098,7 +3494,7 @@ var render = function() {
                 "v-col",
                 {
                   staticClass: "pb-11",
-                  attrs: { lg: "4", md: "4", sm: "6", cols: "6" }
+                  attrs: { lg: "4", md: "4", sm: "6", cols: "12" }
                 },
                 [
                   _c(
@@ -3137,7 +3533,7 @@ var render = function() {
                 "v-col",
                 {
                   staticClass: "pb-11",
-                  attrs: { lg: "4", md: "4", sm: "6", cols: "6" }
+                  attrs: { lg: "4", md: "4", sm: "6", cols: "12" }
                 },
                 [
                   _c(
@@ -3155,7 +3551,7 @@ var render = function() {
                             attrs: {
                               "max-width": "240px",
                               height: "180px",
-                              src: "images/splash1.jpg",
+                              src: "/images/pcbs/pcbs.jpg",
                               alt: ""
                             }
                           })
@@ -3176,7 +3572,7 @@ var render = function() {
                 "v-col",
                 {
                   staticClass: "pb-11",
-                  attrs: { lg: "4", md: "4", sm: "6", cols: "6" }
+                  attrs: { lg: "4", md: "4", sm: "6", cols: "12" }
                 },
                 [
                   _c(
@@ -3215,7 +3611,7 @@ var render = function() {
                 "v-col",
                 {
                   staticClass: "pb-11",
-                  attrs: { lg: "4", md: "4", sm: "6", cols: "6" }
+                  attrs: { lg: "4", md: "4", sm: "6", cols: "12" }
                 },
                 [
                   _c(
@@ -3254,7 +3650,7 @@ var render = function() {
                 "v-col",
                 {
                   staticClass: "pb-11",
-                  attrs: { lg: "4", md: "4", sm: "6", cols: "6" }
+                  attrs: { lg: "4", md: "4", sm: "6", cols: "12" }
                 },
                 [
                   _c(
@@ -3571,7 +3967,7 @@ var render = function() {
                 attrs: {
                   "max-width": "600px",
                   "max-height": "400px",
-                  src: "/images/connectors.jpeg",
+                  src: "/images/pcbs/pcbs.jpg",
                   alt: ""
                 }
               })
@@ -3646,6 +4042,12 @@ var render = function() {
             ])
           ])
         ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "v-row",
+        [_c("base-miny-gallery", { attrs: { galleryImages: _vm.pcbsImages } })],
         1
       )
     ],
@@ -4376,7 +4778,7 @@ var render = function() {
                         attrs: {
                           "max-width": "280px",
                           src:
-                            "/images/wires-cables/ready-made-cables/ready-made-cable-gallery.jpg",
+                            "/images/wires-cables/ready-made-cables/ready-made-cables-thumb.jpg",
                           alt: ""
                         }
                       })
@@ -4803,7 +5205,7 @@ var render = function() {
                                   "max-width": "200px",
                                   "max-height": "180px",
                                   src:
-                                    "/images/wires-cables/ready-made-cables/ready-made-cable.jpg",
+                                    "/images/wires-cables/ready-made-cable.jpg",
                                   alt: ""
                                 }
                               })
@@ -5075,7 +5477,7 @@ var render = function() {
                           _c("v-img", {
                             attrs: {
                               "max-width": "280px",
-                              src: "/images/splash1.jpeg",
+                              src: "images/wires-cables/thumbnail.jpg",
                               alt: ""
                             }
                           })
@@ -5113,7 +5515,7 @@ var render = function() {
                           _c("v-img", {
                             attrs: {
                               "max-width": "280px",
-                              src: "/images/splash2.jpeg",
+                              src: "images/connectors/thumbnail.jpg",
                               alt: ""
                             }
                           })
@@ -5151,7 +5553,7 @@ var render = function() {
                           _c("v-img", {
                             attrs: {
                               "max-width": "280px",
-                              src: "/images/splash1.jpeg",
+                              src: "/images/pcbs/pcbs.jpg",
                               alt: ""
                             }
                           })
@@ -5227,7 +5629,7 @@ var render = function() {
                           _c("v-img", {
                             attrs: {
                               "max-width": "280px",
-                              src: "/images/splash3.jpeg",
+                              src: "images/cable-accessories/thumbnail.jpg",
                               alt: ""
                             }
                           })
@@ -62233,15 +62635,17 @@ var app = new vue__WEBPACK_IMPORTED_MODULE_0___default.a({
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _AdditionsForCables_vue_vue_type_template_id_13934073_name_additions_for_cables___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./AdditionsForCables.vue?vue&type=template&id=13934073&name=additions-for-cables& */ "./resources/js/components/AdditionsForCables.vue?vue&type=template&id=13934073&name=additions-for-cables&");
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony import */ var _AdditionsForCables_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./AdditionsForCables.vue?vue&type=script&lang=js& */ "./resources/js/components/AdditionsForCables.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
-var script = {}
+
+
 
 
 /* normalize component */
 
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__["default"])(
-  script,
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _AdditionsForCables_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
   _AdditionsForCables_vue_vue_type_template_id_13934073_name_additions_for_cables___WEBPACK_IMPORTED_MODULE_0__["render"],
   _AdditionsForCables_vue_vue_type_template_id_13934073_name_additions_for_cables___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
@@ -62255,6 +62659,20 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 if (false) { var api; }
 component.options.__file = "resources/js/components/AdditionsForCables.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/AdditionsForCables.vue?vue&type=script&lang=js&":
+/*!*********************************************************************************!*\
+  !*** ./resources/js/components/AdditionsForCables.vue?vue&type=script&lang=js& ***!
+  \*********************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_AdditionsForCables_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./AdditionsForCables.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/AdditionsForCables.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_AdditionsForCables_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
@@ -62424,15 +62842,17 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Connectors_vue_vue_type_template_id_1a21ef71_name_connectors___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Connectors.vue?vue&type=template&id=1a21ef71&name=connectors& */ "./resources/js/components/Connectors.vue?vue&type=template&id=1a21ef71&name=connectors&");
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony import */ var _Connectors_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Connectors.vue?vue&type=script&lang=js& */ "./resources/js/components/Connectors.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
-var script = {}
+
+
 
 
 /* normalize component */
 
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__["default"])(
-  script,
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _Connectors_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
   _Connectors_vue_vue_type_template_id_1a21ef71_name_connectors___WEBPACK_IMPORTED_MODULE_0__["render"],
   _Connectors_vue_vue_type_template_id_1a21ef71_name_connectors___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
@@ -62446,6 +62866,20 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 if (false) { var api; }
 component.options.__file = "resources/js/components/Connectors.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/Connectors.vue?vue&type=script&lang=js&":
+/*!*************************************************************************!*\
+  !*** ./resources/js/components/Connectors.vue?vue&type=script&lang=js& ***!
+  \*************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Connectors_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./Connectors.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Connectors.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Connectors_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 

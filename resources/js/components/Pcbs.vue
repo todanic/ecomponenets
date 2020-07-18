@@ -5,7 +5,7 @@
 				<h2 class="subcat-title mb-5">PCBs</h2>
 			</v-col>
 			<v-col lg="7" md="7" sm="12" cols="12">
-				<v-img  class="subcat-img" max-width="600px" max-height="400px" src="/images/connectors.jpeg" alt=""></v-img>
+				<v-img  class="subcat-img" max-width="600px" max-height="400px" src="/images/pcbs/pcbs.jpg" alt=""></v-img>
 			</v-col>
 			<v-col lg="5" md="5" sm="12" cols="12" class="text-left">
 				<h3 class="mb-5">PCB <span>design</span></h3>
@@ -55,6 +55,9 @@
 				</ul>
 			</v-col>
 		</v-row>
+			<v-row>
+			<base-miny-gallery :galleryImages="pcbsImages"></base-miny-gallery>
+		</v-row>
 	</v-container>
 </template>
 <script>
@@ -62,7 +65,11 @@ export default {
 	name: 'Pcbs',
 	data() {
 		return {
-			
+				pcbsImages: [
+					{ src: '/images/pcbs/pcbs4.jpg' },
+					{ src: '/images/pcbs/pcbs2.jpg' },
+					{ src: '/images/pcbs/pcbs3.jpg' },
+			],
 		}
 	}
 }

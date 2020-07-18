@@ -2,8 +2,8 @@
 	<div class="base-miny-gallery">
 		<v-dialog v-model="minyGalleryModel" content-class="base-miny-gallery__dialog" max-width="800px">
 			<template v-slot:activator="{ on }">
-				<v-sheet width="100%">
-					<v-slide-group class="base-miny-gallery__slide pa-4" v-model="model" show-arrows>
+				<v-sheet width="100%" class="base-miny-gallery__dialog-sheet">
+					<v-slide-group class="base-miny-gallery__slide pa-0" v-model="model" show-arrows>
 						<v-slide-item v-for="image in galleryImages" :key="image.src">
 							<v-card tile width="300px" class="ma-4 ml-0" >
 								<v-img class="base-miny-gallery__slide-image" v-on="on" @click="GetImageSrc(image.src)" :src="image.src"></v-img>

@@ -8,7 +8,7 @@
 				<v-col class="pb-11" lg="4" md="4" sm="12" cols="12">
 					<router-link to="/wholesale/wires-cables" class="round-block">
 						<div class="round-img-block">
-							<v-img max-width="280px" src="/images/splash1.jpeg" alt=""></v-img>
+							<v-img max-width="280px" src="images/wires-cables/thumbnail.jpg" alt=""></v-img>
 						</div>
 						<div class="round-contents-block">
 								<h2>Wires and cables</h2>
@@ -18,7 +18,7 @@
 				<v-col class="pb-11" lg="4" md="4" sm="12" cols="12">
 					<router-link to="/wholesale/connectors" class="round-block">
 							<div class="round-img-block">
-									<v-img max-width="280px" src="/images/splash2.jpeg" alt=""></v-img>
+									<v-img max-width="280px" src="images/connectors/thumbnail.jpg" alt=""></v-img>
 							</div>
 							<div class="round-contents-block">
 									<h2>Connectors & electronic components</h2>
@@ -28,7 +28,7 @@
 				<v-col class="pb-11" lg="4" md="4" sm="12" cols="12">
 						<router-link to="/wholesale/pcbs" class="round-block">
 							<div class="round-img-block">
-									<v-img max-width="280px" src="/images/splash1.jpeg" alt=""></v-img>
+									<v-img max-width="280px" src="/images/pcbs/pcbs.jpg" alt=""></v-img>
 							</div>
 							<div class="round-contents-block">
 									<h2>PCBs</h2>
@@ -48,7 +48,7 @@
 				<v-col class="pb-11" lg="4" md="4" sm="12" cols="12">
 					<router-link to="wholesale/cable-accessories" class="round-block">
 						<div class="round-img-block">
-								<v-img max-width="280px" src="/images/splash3.jpeg" alt=""></v-img>
+								<v-img max-width="280px" src="images/cable-accessories/thumbnail.jpg" alt=""></v-img>
 						</div>
 						<div class="round-contents-block">
 								<h2>Cable accessories</h2>

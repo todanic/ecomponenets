@@ -7,7 +7,7 @@
 				<v-col class="pb-11" lg="4" md="4" sm="6" cols="6">
 					<a href="#connectors" class="round-block">
 						<div class="round-img-block">
-							<v-img max-width="280px" src="/images/splash4.jpeg" alt=""></v-img>
+							<v-img max-width="280px" src="/images/connectors/sub-connectors/connectors.jpg" alt=""></v-img>
 						</div>
 						<div class="round-contents-block">
 								<h2>Connectors</h2>
@@ -17,7 +17,7 @@
 					<v-col class="pb-11" lg="4" md="4" sm="6" cols="6">
 						<a href="#terminals" class="round-block">
 						<div class="round-img-block">
-							<v-img max-width="280px" src="/images/splash3.jpeg" alt=""></v-img>
+							<v-img max-width="280px" src="/images/connectors/terminals/terminals.jpg" alt=""></v-img>
 						</div>
 						<div class="round-contents-block">
 								<h2>Terminals</h2>
@@ -43,7 +43,7 @@
 					<h2 class="subcat-title mb-5">Connectors</h2>
 				</v-col>
 				<v-col lg="7" md="7" sm="12" cols="12">
-					<v-img  class="subcat-img" max-width="600px" max-height="400px" src="/images/connectors.jpeg" alt=""></v-img>
+					<v-img  class="subcat-img" max-width="600px" max-height="400px" src="/images/connectors/sub-connectors/connectors.jpg" alt=""></v-img>
 				</v-col>
 				<v-col lg="5" md="5" sm="12" cols="12" class="text-left">
 					<h3 class="mb-5">Connectors for <span>every connection type</span></h3>
@@ -90,7 +90,9 @@
 					</ul>
 				</v-col>
 			</v-row>
-
+			<v-row>
+				<base-miny-gallery :galleryImages="connectorImages"></base-miny-gallery>
+			</v-row>
 			<v-divider class="mb-10 mt-6"></v-divider>
 
 			<v-row id="terminals">
@@ -98,7 +100,7 @@
 					<h2 class="subcat-title mb-5">Terminals</h2>
 				</v-col>
 				<v-col lg="7" md="7" sm="12" cols="12">
-					<v-img  class="subcat-img" max-width="600px" max-height="400px" src="/images/connectors.jpeg" alt=""></v-img>
+					<v-img  class="subcat-img" max-width="600px" max-height="400px" src="/images/connectors/terminals/terminals.jpg" alt=""></v-img>
 				</v-col>
 				<v-col lg="5" md="5" sm="12" cols="12" class="text-left">
 					<h3 class="mb-5">Terminal for <span>every wire end</span></h3>
@@ -151,7 +153,9 @@
 					</ul>
 				</v-col>
 			</v-row>
-
+				<v-row>
+				<base-miny-gallery :galleryImages="terminalImages"></base-miny-gallery>
+			</v-row>
 			<v-divider class="mb-10 mt-6"></v-divider>
 
 			<v-row id="electronicComponents">
@@ -193,3 +197,32 @@
 		</v-row>
 	</v-container>
 </template>
+<script>
+export default {
+	name: 'Connectors',
+	data() {
+		return {
+				connectorImages: [
+					{ src: '/images/connectors/sub-connectors/connector2.jpg' },
+					{ src: '/images/connectors/sub-connectors/connector3.jpg' },
+					{ src: '/images/connectors/sub-connectors/connector4.jpg' },
+					{ src: '/images/connectors/sub-connectors/connector5.jpg' },
+					{ src: '/images/connectors/sub-connectors/connector6.jpg' },
+					{ src: '/images/connectors/sub-connectors/connector7.jpg' },
+					{ src: '/images/connectors/sub-connectors/connector8.jpg' },
+					{ src: '/images/connectors/sub-connectors/connector9.jpg' },
+					{ src: '/images/connectors/sub-connectors/connector10.jpg' },
+					{ src: '/images/connectors/sub-connectors/connector11.jpg' },
+			],
+				terminalImages: [
+					{ src: '/images/connectors/terminals/terminals2.jpg' },
+					{ src: '/images/connectors/terminals/terminals3.jpg' },
+					{ src: '/images/connectors/terminals/terminals4.jpg' },
+					{ src: '/images/connectors/terminals/terminals5.jpg' },
+					{ src: '/images/connectors/terminals/terminals6.jpg' },
+					{ src: '/images/connectors/terminals/terminals7.jpg' },
+			],
+		}
+	}
+}
+</script>
