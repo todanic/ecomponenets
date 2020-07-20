@@ -3,6 +3,7 @@ import WholeSale from '../views/WholesaleView.vue';
 import ContactUs from '../views/ContactUsView.vue';
 import AboutUs from '../views/AboutUsView.vue';
 import WiresAndHarnessView from '../views/WiresAndHarnessView.vue';
+import Gallery from '../views/GalleryView.vue';
 import WiresCables from './components/WiresCables.vue';
 import Connectors from './components/Connectors.vue';
 import Hardware from './components/Hardware.vue';
@@ -55,6 +56,11 @@ export const routes = [
 		path:'/contact-us',
 		component: ContactUs,
 		name: 'ContactUs'
+	},
+	{
+		path:'/gallery',
+		component: Gallery,
+		name: 'GalleryView'
 	},
 	{
 		path:'/wires-and-harness',

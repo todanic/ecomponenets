@@ -53,6 +53,7 @@
 						housings on conductors of many different cross-sectional areas, colors, qualities, 
 						standards and certifications. 
 					</p>
+					<v-img class="ml-auto mr-auto mb-6 mt-6" max-width="650px" max-height="450px" src="images/wiress-and-harness/what-to-know.jpg"></v-img>
 				</v-col>
 				<v-col lg="12" md="12" sm="12" cols="12">
 					<p>

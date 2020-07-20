@@ -40,6 +40,9 @@ Vue.component('wire-and-harness',
 Vue.component('base-miny-gallery', 
     require('./components/BaseMinyGallery.vue').default
 );
+Vue.component('base-gallery', 
+    require('./components/BaseGallery.vue').default
+);
 Vue.component('home-catagories', 
     require('./components/HomeCategories.vue').default
 );

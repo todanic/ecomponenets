@@ -22,6 +22,10 @@
                             <!-- <a href="#">Wholesale</a> -->
                         </li>
                         <li class="menu-block">
+                            <router-link to="/gallery">Gallery</router-link>
+                            <!-- <a href="#">Wholesale</a> -->
+                        </li>
+                        <li class="menu-block">
                              <router-link to="/wires-and-harness">Wire and cable harnessing</router-link>
                             <!-- <a href="#">Production</a> -->
                         </li>

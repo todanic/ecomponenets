@@ -3551,16 +3551,11 @@ a {
 
 .base-miny-gallery .base-miny-gallery__slide-image {
   cursor: pointer;
-  border: 3px solid #888888;
-  transition: all ease-in .3s;
+  transition: all .3s;
 }
 
 .base-miny-gallery .base-miny-gallery__slide-image:hover {
-  transform: translateY(-2%);
-}
-
-.base-miny-gallery .v-card {
-  box-shadow: none !important;
+  transform: scale(1.1);
 }
 
 .base-miny-gallery .v-slide-group__next {
@@ -3583,23 +3578,71 @@ a {
   color: #781212;
 }
 
-.base-miny-gallery__dialog {
-  position: relative;
+.base-miny-gallery .v-slide-group__wrapper {
+  padding-left: 15px;
 }
 
-.base-miny-gallery__dialog .base-miny-gallery__dialog-btn {
+.base-miny-gallery__dialog,
+.base-gallery-row__dialog {
+  position: relative;
+  box-shadow: none;
+}
+
+.base-miny-gallery__dialog .v-card,
+.base-gallery-row__dialog .v-card {
+  box-shadow: none !important;
+}
+
+.base-gallery__dialog-btn {
   position: absolute;
-  top: 3px;
-  right: 3px;
+  top: 0;
+  right: 35px;
   min-width: 0 !important;
 }
 
-.base-miny-gallery__dialog .base-miny-gallery__dialog-btn .v-icon {
-  font-size: 22px;
+.base-gallery__dialog-btn:hover::before {
+  opacity: 0 !important;
+}
+
+.base-gallery__dialog-btn .v-icon {
+  font-size: 16px;
+  border: 2px solid;
+  border-radius: 50%;
+  padding: 5px 7px;
+  font-weight: 700;
+}
+
+.base-miny-gallery__dialog-sheet-inner .v-slide-group__next {
+  min-width: 38px;
+}
+
+.base-miny-gallery__dialog-sheet-inner .v-slide-group__next .v-icon:before {
+  font-family: 'FontAwesome';
+  content: '\F061';
+  color: #781212;
+}
+
+.base-miny-gallery__dialog-sheet-inner .v-slide-group__prev {
+  min-width: 38px;
+}
+
+.base-miny-gallery__dialog-sheet-inner .v-slide-group__prev .v-icon:before {
+  font-family: 'FontAwesome';
+  content: '\F060';
+  color: #781212;
 }
 
 .theme--light.v-btn:not(.v-btn--flat):not(.v-btn--text):not(.v-btn--outlined) {
   background-color: transparent;
+}
+
+.base-gallery-row .base-gallery-row__dialog-image {
+  transition: all 0.3s;
+}
+
+.base-gallery-row .base-gallery-row__dialog-image:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }
 
 @media screen and (max-width: 768px) {
