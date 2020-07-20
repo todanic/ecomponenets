@@ -342,7 +342,8 @@ __webpack_require__.r(__webpack_exports__);
       var _this = this;
 
       this.imageSrc = src;
-      var counter = 0;
+      var counter = 0; //Set clicked image as active image
+
       this.galleryImages.forEach(function (element) {
         if (element.src == src) {
           _this.model = counter;
@@ -3739,31 +3740,18 @@ var render = function() {
                         "li",
                         { staticClass: "menu-block" },
                         [
-                          _c("router-link", { attrs: { to: "/" } }, [
-                            _vm._v("Home")
-                          ])
-                        ],
-                        1
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "li",
-                        { staticClass: "menu-block" },
-                        [
-                          _c("router-link", { attrs: { to: "/wholesale" } }, [
-                            _vm._v("Wholesale")
-                          ])
-                        ],
-                        1
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "li",
-                        { staticClass: "menu-block" },
-                        [
-                          _c("router-link", { attrs: { to: "/gallery" } }, [
-                            _vm._v("Gallery")
-                          ])
+                          _c(
+                            "router-link",
+                            {
+                              attrs: { to: "/" },
+                              nativeOn: {
+                                click: function($event) {
+                                  return _vm.toggleMenu()
+                                }
+                              }
+                            },
+                            [_vm._v("Home")]
+                          )
                         ],
                         1
                       ),
@@ -3774,7 +3762,54 @@ var render = function() {
                         [
                           _c(
                             "router-link",
-                            { attrs: { to: "/wires-and-harness" } },
+                            {
+                              attrs: { to: "/wholesale" },
+                              nativeOn: {
+                                click: function($event) {
+                                  return _vm.toggleMenu()
+                                }
+                              }
+                            },
+                            [_vm._v("Wholesale")]
+                          )
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "li",
+                        { staticClass: "menu-block" },
+                        [
+                          _c(
+                            "router-link",
+                            {
+                              attrs: { to: "/gallery" },
+                              nativeOn: {
+                                click: function($event) {
+                                  return _vm.toggleMenu()
+                                }
+                              }
+                            },
+                            [_vm._v("Gallery")]
+                          )
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "li",
+                        { staticClass: "menu-block" },
+                        [
+                          _c(
+                            "router-link",
+                            {
+                              attrs: { to: "/wires-and-harness" },
+                              nativeOn: {
+                                click: function($event) {
+                                  return _vm.toggleMenu()
+                                }
+                              }
+                            },
                             [_vm._v("Wire and cable harnessing")]
                           )
                         ],
@@ -3785,9 +3820,18 @@ var render = function() {
                         "li",
                         { staticClass: "menu-block" },
                         [
-                          _c("router-link", { attrs: { to: "/about-us" } }, [
-                            _vm._v("About us")
-                          ])
+                          _c(
+                            "router-link",
+                            {
+                              attrs: { to: "/about-us" },
+                              nativeOn: {
+                                click: function($event) {
+                                  return _vm.toggleMenu()
+                                }
+                              }
+                            },
+                            [_vm._v("About us")]
+                          )
                         ],
                         1
                       ),
@@ -3796,9 +3840,18 @@ var render = function() {
                         "li",
                         { staticClass: "menu-block" },
                         [
-                          _c("router-link", { attrs: { to: "/contact-us" } }, [
-                            _vm._v("Contact us")
-                          ])
+                          _c(
+                            "router-link",
+                            {
+                              attrs: { to: "/contact-us" },
+                              nativeOn: {
+                                click: function($event) {
+                                  return _vm.toggleMenu()
+                                }
+                              }
+                            },
+                            [_vm._v("Contact us")]
+                          )
                         ],
                         1
                       )

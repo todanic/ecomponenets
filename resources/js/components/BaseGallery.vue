@@ -45,7 +45,7 @@ export default {
 		GetImageSrc: function(src) {
 			this.imageSrc = src;
 			var counter = 0;
-
+			//Set clicked image as active image
 			this.galleryImages.forEach(element => {
 				if(element.src == src) {
 					this.model = counter;
@@ -58,6 +58,5 @@ export default {
 			this.galleryModel = false;
 		}
 	}
-
 }
 </script>

@@ -15,26 +15,26 @@
                     </div>
                     <ul class="menu pl-0 justify-center" :class="{active: isActive}">>
                         <li class="menu-block">
-                            <router-link to="/">Home</router-link>
+                            <router-link @click.native="toggleMenu()" to="/">Home</router-link>
                         </li>
                         <li class="menu-block">
-                            <router-link to="/wholesale">Wholesale</router-link>
+                            <router-link @click.native="toggleMenu()" to="/wholesale">Wholesale</router-link>
                             <!-- <a href="#">Wholesale</a> -->
                         </li>
                         <li class="menu-block">
-                            <router-link to="/gallery">Gallery</router-link>
+                            <router-link @click.native="toggleMenu()" to="/gallery">Gallery</router-link>
                             <!-- <a href="#">Wholesale</a> -->
                         </li>
                         <li class="menu-block">
-                             <router-link to="/wires-and-harness">Wire and cable harnessing</router-link>
+                             <router-link @click.native="toggleMenu()" to="/wires-and-harness">Wire and cable harnessing</router-link>
                             <!-- <a href="#">Production</a> -->
                         </li>
                         <li class="menu-block">
-                             <router-link to="/about-us">About us</router-link>
+                             <router-link @click.native="toggleMenu()" to="/about-us">About us</router-link>
                             <!-- <a href="#">About us</a> -->
                         </li>
                          <li class="menu-block">
-                            <router-link to="/contact-us">Contact us</router-link>
+                            <router-link @click.native="toggleMenu()" to="/contact-us">Contact us</router-link>
                             <!-- <a href="#">Contact us</a> -->
                         </li>
                     </ul>
