@@ -6,19 +6,15 @@
         <h2 class="mb-5">Have <span>questions?</span></h2>
         </v-col>
         <v-col cols="12" class="text-center">
-          <v-dialog content-class="contact-dialog" max-width="680px">
-            <template v-slot:activator="{ on }">
-              <v-btn outlined class="home-contact-btn" x-large rounded v-on="on">Contact us</v-btn>
-            </template>
-           <base-contact-component></base-contact-component>
-          </v-dialog>
+          <router-link class="prefooter-block-link" to="/contact-us">
+            <v-btn outlined class="home-contact-btn" x-large rounded>Contact us</v-btn>
+          </router-link>
         </v-col>
       </v-row>
     </v-container>
   </v-container>
 </template>
 <script>
-import BaseContactComponent from './BaseContactComponent'
 
 export default {
   name: 'HomeContactComponent'

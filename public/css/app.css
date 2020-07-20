@@ -57,6 +57,11 @@ p {
   letter-spacing: 1px;
 }
 
+p span {
+  color: #781212;
+  font-size: 1.8rem;
+}
+
 ul li {
   font-family: 'Poppins';
   font-size: 1.6rem;
@@ -3421,6 +3426,23 @@ a {
   margin-bottom: 0;
 }
 
+.contact-us-container .v-input .v-label,
+.contact-us-container .v-file-input .v-file-input__text {
+  font-size: 1.2rem;
+  font-family: 'Poppins';
+}
+
+.contact-us-container .v-icon {
+  font-size: 1.8rem;
+  margin-right: 8px;
+  margin-top: 5px;
+  vertical-align: baseline;
+}
+
+.contact-us-container .v-text-field__details {
+  display: none;
+}
+
 .wholesale-view-container h2.subcat-title {
   font-size: 3rem;
   color: #781212;
@@ -3596,7 +3618,7 @@ a {
 .base-gallery__dialog-btn {
   position: absolute;
   top: 0;
-  right: 35px;
+  right: 25px;
   min-width: 0 !important;
 }
 

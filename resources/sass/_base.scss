@@ -40,6 +40,11 @@ p {
     font-size: 1.6rem;
     color: $secondary-text;
     letter-spacing: 1px;
+
+    span {
+        color: $primary-red;
+        font-size: 1.8rem;
+    }
 }
 
 ul li {

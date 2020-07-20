@@ -55,9 +55,6 @@ Vue.component('footer-component',
 Vue.component('home-contact-component', 
     require('./components/HomeContactComponent.vue').default
 );
-Vue.component('base-contact-component', 
-    require('./components/BaseContactComponent.vue').default
-);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

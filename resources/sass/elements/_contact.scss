@@ -38,3 +38,22 @@
     margin-bottom: 0;
   }
 }
+
+.contact-us-container {
+
+  .v-input .v-label, .v-file-input .v-file-input__text {
+    font-size: 1.2rem;
+    font-family: 'Poppins';
+  }
+  
+  .v-icon {
+    font-size: 1.8rem;
+    margin-right: 8px;
+    margin-top: 5px;
+    vertical-align: baseline;
+  }
+
+  .v-text-field__details {
+    display: none;
+  }
+}
