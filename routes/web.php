@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AppController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,10 +14,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('app');
-// });
-
 // Route::get('/{any}', 'AppController@index')->where('any', '.*');
 
 // Route::get('{any}/{locale}', function ($locale) {
@@ -28,6 +25,5 @@ use Illuminate\Support\Facades\Route;
 
 // //     //
 // });
-Route::get('{any}', function () { 
-    return view('app'); 
-})->where('any', '.*'); 
+Route::get('{any}', 'AppController@index')->where('any', '.*');
+Route::post('{any}', 'AppController@index')->where('any', '.*'); 
