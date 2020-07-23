@@ -27,7 +27,7 @@
 					<v-col class="pb-11" lg="4" md="4" sm="6" cols="6">
 						<a href="#electronicComponents" class="round-block">
 						<div class="round-img-block">
-							<v-img max-width="280px" src="/images/splash1.jpeg" alt=""></v-img>
+							<v-img max-width="280px" src="/images/splash1.jpg" alt=""></v-img>
 						</div>
 						<div class="round-contents-block">
 								<h2>Electronic components</h2>

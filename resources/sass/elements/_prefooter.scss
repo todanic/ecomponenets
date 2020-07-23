@@ -16,7 +16,7 @@
             content: '\f192';
             font-family: "FontAwesome";
             font-size: 8px;
-            color: #781212;
+            color: $primary-color;
             margin-right: 10px;
             top: -1px;
             position: relative;
@@ -28,7 +28,7 @@
             transition: all .5s ease;
 
             &:hover {
-                color: #781212;
+                color: $primary-color;
             }
         }
     }

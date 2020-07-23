@@ -28,7 +28,7 @@ h1 span,
 h2 span,
 h3 span,
 h4 span {
-  color: #781212;
+  color: #0C6D75;
 }
 
 h1 {
@@ -58,7 +58,7 @@ p {
 }
 
 p span {
-  color: #781212;
+  color: #0C6D75;
   font-size: 1.8rem;
 }
 
@@ -3139,7 +3139,7 @@ a {
 
 .header-container .menu .menu-block {
   list-style: none;
-  padding: 0 22px;
+  padding: 0 14px;
 }
 
 .header-container .menu .menu-block a {
@@ -3152,7 +3152,7 @@ a {
 }
 
 .header-container .menu .menu-block a:hover {
-  color: #781212;
+  color: #0C6D75;
   transition: 0.3s;
 }
 
@@ -3303,6 +3303,16 @@ a {
   opacity: 0.8;
 }
 
+@media screen and (max-width: 768px) {
+  .splash-container .carousel-block {
+    height: 400px !important;
+  }
+
+  .splash-container .carousel-block .v-image {
+    height: 400px !important;
+  }
+}
+
 .home-cat-container {
   background: url("/images/shadow.png") no-repeat center top;
   margin-top: 48px;
@@ -3358,7 +3368,7 @@ a {
   content: '\F192';
   font-family: "FontAwesome";
   font-size: 8px;
-  color: #781212;
+  color: #0C6D75;
   margin-right: 10px;
   top: -1px;
   position: relative;
@@ -3371,7 +3381,7 @@ a {
 }
 
 .prefooter-container .prefooter-block .prefooter-block-link:hover {
-  color: #781212;
+  color: #0C6D75;
 }
 
 .footer-container {
@@ -3389,13 +3399,13 @@ a {
 }
 
 .contact-container .home-contact-btn {
-  border: 2px solid #781212;
+  border: 2px solid #0C6D75;
   font-size: 1.6rem;
   font-family: 'Poppins';
 }
 
 .contact-container .home-contact-btn:hover:before {
-  background-color: #781212;
+  background-color: #0C6D75;
   opacity: 1;
 }
 
@@ -3414,7 +3424,7 @@ a {
 }
 
 .contact-container h2 span {
-  color: #781212;
+  color: #0C6D75;
 }
 
 .contact-dialog {
@@ -3445,7 +3455,7 @@ a {
 
 .wholesale-view-container h2.subcat-title {
   font-size: 3rem;
-  color: #781212;
+  color: #0C6D75;
   text-transform: uppercase;
 }
 
@@ -3454,7 +3464,7 @@ a {
 }
 
 .wholesale-view-container h3 span {
-  color: #781212;
+  color: #0C6D75;
 }
 
 .wholesale-view-container .wholesale-click-picture {
@@ -3462,7 +3472,7 @@ a {
 }
 
 .wholesale-view-container .wholesale-click-picture span {
-  color: #781212;
+  color: #0C6D75;
 }
 
 .wholesale-view-container .round-img-block {
@@ -3500,14 +3510,14 @@ a {
   content: '\F060';
   font-family: "FontAwesome";
   font-size: 18px;
-  color: #781212;
+  color: #0C6D75;
 }
 
 .wholesale-view-container .mini-gallery-slide .v-slide-group__next .v-icon:before {
   content: '\F061';
   font-family: "FontAwesome";
   font-size: 18px;
-  color: #781212;
+  color: #0C6D75;
 }
 
 .why-us-container h2 {
@@ -3520,7 +3530,7 @@ a {
 .why-us-container h3 {
   font-size: 1.8rem;
   margin: 14px 0;
-  color: #781212;
+  color: #0C6D75;
 }
 
 .why-us-container p {
@@ -3542,13 +3552,13 @@ a {
 }
 
 .wire-harness-container .wire-harness-container__btn {
-  border: 2px solid #781212;
+  border: 2px solid #0C6D75;
   font-size: 1.6rem;
   font-family: 'Poppins';
 }
 
 .wire-harness-container .wire-harness-container__btn:hover:before {
-  background-color: #781212;
+  background-color: #0C6D75;
   opacity: 1;
 }
 
@@ -3563,7 +3573,7 @@ a {
 }
 
 .wires-and-harness-container p span {
-  color: #781212;
+  color: #0C6D75;
   font-size: 1.8rem;
 }
 
@@ -3587,7 +3597,7 @@ a {
 .base-miny-gallery .v-slide-group__next .v-icon:before {
   font-family: 'FontAwesome';
   content: '\F061';
-  color: #781212;
+  color: #0C6D75;
 }
 
 .base-miny-gallery .v-slide-group__prev {
@@ -3597,7 +3607,7 @@ a {
 .base-miny-gallery .v-slide-group__prev .v-icon:before {
   font-family: 'FontAwesome';
   content: '\F060';
-  color: #781212;
+  color: #0C6D75;
 }
 
 .base-miny-gallery .v-slide-group__wrapper {
@@ -3641,7 +3651,7 @@ a {
 .base-miny-gallery__dialog-sheet-inner .v-slide-group__next .v-icon:before {
   font-family: 'FontAwesome';
   content: '\F061';
-  color: #781212;
+  color: #0C6D75;
 }
 
 .base-miny-gallery__dialog-sheet-inner .v-slide-group__prev {
@@ -3651,7 +3661,7 @@ a {
 .base-miny-gallery__dialog-sheet-inner .v-slide-group__prev .v-icon:before {
   font-family: 'FontAwesome';
   content: '\F060';
-  color: #781212;
+  color: #0C6D75;
 }
 
 .theme--light.v-btn:not(.v-btn--flat):not(.v-btn--text):not(.v-btn--outlined) {

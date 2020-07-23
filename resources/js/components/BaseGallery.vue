@@ -12,7 +12,7 @@
 			<v-sheet width="100%" class="base-miny-gallery__dialog-sheet-inner" color="transparent">
 				<v-slide-group class="pa-0" v-model="model" center-active show-arrows>
 					<v-slide-item v-slot:default="{ active, toggle }" v-for="image in galleryImages" :key="image.src">
-						<v-card tile width="800px" max-height="600px" class="ma-4 ml-4" color="transparent" >
+						<v-card tile max-width="800px" max-height="600px" class="ma-4 ml-4" color="transparent" >
 							<v-img @click="toggle" :src="image.src"></v-img>
 						</v-card>
 					</v-slide-item>

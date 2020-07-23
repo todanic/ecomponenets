@@ -38,7 +38,7 @@
 						data-aos-delay="100" 
 						data-aos-easing="ease-in-out" 
 						class="mt-10" 
-						src="/images/logo-black.png"
+						src="/images/logo-name.png"
 						 max-width="200px">
 					</v-img>
 					<p>

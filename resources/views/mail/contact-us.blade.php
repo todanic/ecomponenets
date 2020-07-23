@@ -5,7 +5,11 @@
 	</head>
 	<body>
 		<div>
-		<h1>Hello, {{ $name }}</h1>
+			<h3>First name: {{ $name }}</h3>
+			<h3>Phone {{ $phone }}</h3>
+			<h3>Country: {{ $country }}</h3>
+			<h3>Email: {{ $email }}</h3>
+			<h3>{{ $messages }}</h3>
 		</div>
 	</body>
 </html>

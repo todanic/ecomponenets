@@ -14,13 +14,16 @@
 						</ul>
 				</v-col>
 				<v-col lg="4" md="6" sm="12" cols="12">
-						<h3>Learn more</h3>
+					<h3>Learn more</h3>
 						<ul class="prefooter-block">
 							<li><router-link class="prefooter-block-link" to="/contact-us">Contact us</router-link></li>
 							<li><router-link class="prefooter-block-link" to="/about-us">About us</router-link></li>
 							<li><router-link class="prefooter-block-link" to="/gallery">Gallery</router-link></li>
 							<li><router-link class="prefooter-block-link" to="/wires-and-harness">Wire and cable harnessing</router-link></li>
 						</ul>
+						<router-link to="/">
+								<v-img max-width="200px" class="mt-6" src="images/logo-name.png"></v-img>
+						</router-link>
 				</v-col>
 			</v-row>
 		</v-container>

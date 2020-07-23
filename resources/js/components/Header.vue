@@ -2,13 +2,14 @@
     <v-container fluid class="header-container">
         <v-container class="pa-0 shrink-width">
             <v-row>
-                <v-col class="header-logo-col d-flex justify-center" lg="12" md="12" sm="12" cols="12">
+              
+            </v-row>
+            <v-row class="align-center">
+                  <v-col class="header-logo-col d-flex justify-center pa-0" lg="12" md="12" sm="12" cols="12">
                     <router-link to="/">
-                        <v-img max-width="350px" src="/images/logo.png" alt="logo"></v-img>
+                        <v-img max-width="180px" src="/images/logo-mod.png" alt="logo"></v-img>
                     </router-link>
                 </v-col>
-            </v-row>
-            <v-row>
                 <v-col :class="{'pt-6': !$vuetify.breakpoint.xs, 'text-right pt-0 pb-0': $vuetify.breakpoint.xs}" lg="12" md="12" sm="12" cols="12">
                     <div class="header-collapse-menu">
                         <span @click="toggleMenu()"></span>

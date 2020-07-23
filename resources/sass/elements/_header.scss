@@ -11,7 +11,7 @@
 
         .menu-block {
             list-style: none;
-            padding: 0 22px;
+            padding: 0 14px;
 
             a {
                color: #fff;
@@ -22,7 +22,7 @@
                text-decoration: none;
 
                &:hover {
-                    color: #781212;
+                    color: $primary-color;
                     transition: 0.3s;
                }
             }

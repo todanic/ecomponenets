@@ -12,7 +12,7 @@ h1, h2, h3, h4 {
     color: $primary-text;
 
     span {
-        color: $primary-red;
+        color: $primary-color;
     }
 }
 
@@ -42,7 +42,7 @@ p {
     letter-spacing: 1px;
 
     span {
-        color: $primary-red;
+        color: $primary-color;
         font-size: 1.8rem;
     }
 }

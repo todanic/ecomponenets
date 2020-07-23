@@ -16,6 +16,6 @@ class EmailListener
      */
     public function handle(EmailEvent $event)
     {
-        dispatch(new SendEmailNotification($event->email));
+        dispatch(new SendEmailNotification($event->email, $event->name, $event->phone, $event->country, $event->messages));
     }
 }

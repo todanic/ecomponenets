@@ -8,8 +8,10 @@
 import Vue from 'vue';
 import Vuetify from 'vuetify';
 import routes  from './routes';
-import App from './App.vue'
-import AOS from 'aos'
+import App from './App.vue';
+import AOS from 'aos';
+var axios = require('axios');
+
 
 Vue.use(Vuetify);
 

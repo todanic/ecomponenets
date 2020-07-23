@@ -12,11 +12,19 @@ class SendEmailNotification implements ShouldQueue
 {
 	use Queueable, InteractsWithQueue;
 
-		protected $email;
+        protected $email;
+        protected $name;
+        protected $country;
+        protected $phone;
+        protected $messages;
 
-    public function __construct($email)
+    public function __construct($email, $name, $phone, $country, $messages)
     {
         $this->email = $email;
+        $this->name = $name;
+        $this->phone = $phone;
+        $this->country = $country;
+        $this->messages = $messages;
     }
 
     /**
@@ -26,6 +34,7 @@ class SendEmailNotification implements ShouldQueue
      */
     public function handle()
     {
-		Mail::to($this->email)->send(new Email());
+        //env variable!
+		Mail::to($this->email)->send(new Email($this->name, $this->email, $this->phone, $this->country, $this->messages));
     }
 }

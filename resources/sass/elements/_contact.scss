@@ -2,12 +2,12 @@
   background-color: $secondary-black;
 
   .home-contact-btn {
-    border: 2px solid $primary-red;
+    border: 2px solid $primary-color;
     font-size: 1.6rem;
     font-family: 'Poppins';
 
     &:hover:before {
-      background-color: $primary-red;
+      background-color: $primary-color;
       opacity: 1;
     }
 
@@ -26,7 +26,7 @@
     color: #fff;
 
     span {
-      color: $primary-red;
+      color: $primary-color;
     }
   }
 }

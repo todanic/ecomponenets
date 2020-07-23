@@ -26,3 +26,13 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+
+  .splash-container .carousel-block {
+    height: 400px !important;
+
+    .v-image {
+      height: 400px !important;
+    }
+  }
+}
