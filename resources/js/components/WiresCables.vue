@@ -47,7 +47,7 @@
 			</v-col>
 			<v-col lg="4" md="4" sm="12" cols="12" class="text-left">
 				<h3>LIY wires <span>for electronics</span></h3>
-				<p class="mb-4">Vast range</p>
+				<p class="mb-0">Vast range</p>
 				<p class="mb-0">Help with making the right choice</p>
 				<p class="mb-0">Special offer - measuring cables to required length</p>
 			</v-col>
@@ -113,7 +113,7 @@
 			</v-col>
 			<v-col lg="4" md="4" sm="12" cols="12" class="text-left">
 				<h3>Multi-core cables to <span>fit all your needs</span></h3>
-				<p class="mb-4">Large choice</p>
+				<p class="mb-0">Large choice</p>
 				<p class="mb-0">Help with choosing the right cable</p>
 				<p class="mb-0">Special-offer - measuring cables to required length</p>
 			</v-col>

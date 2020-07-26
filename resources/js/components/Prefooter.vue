@@ -22,7 +22,7 @@
 							<li><router-link class="prefooter-block-link" to="/wires-and-harness">Wire and cable harnessing</router-link></li>
 						</ul>
 						<router-link to="/">
-								<v-img max-width="200px" class="mt-6" src="images/logo-name.png"></v-img>
+								<v-img max-width="200px" class="mt-6" src="/images/logo-name.png"></v-img>
 						</router-link>
 				</v-col>
 			</v-row>

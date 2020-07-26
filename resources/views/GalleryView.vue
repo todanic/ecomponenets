@@ -1,5 +1,6 @@
 <template>
 <v-container fluid>
+	<v-divider class="mb-10"></v-divider>
 	<v-container class="shrink-width">
 		<base-gallery :galleryImages="galleryImages"></base-gallery>
 	</v-container>

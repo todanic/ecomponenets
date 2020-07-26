@@ -18,7 +18,7 @@
 					</v-slide-item>
 				</v-slide-group>
 				<v-btn class="base-gallery__dialog-btn" width="40px" height="30px" tile depressed @click="CloseDialog()">
-					<v-icon color="#781212">X</v-icon>
+					<v-icon color="#000080">X</v-icon>
 				</v-btn>
 			</v-sheet>
 		</v-dialog>

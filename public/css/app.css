@@ -28,7 +28,7 @@ h1 span,
 h2 span,
 h3 span,
 h4 span {
-  color: #0C6D75;
+  color: #000080;
 }
 
 h1 {
@@ -58,7 +58,7 @@ p {
 }
 
 p span {
-  color: #0C6D75;
+  color: #000080;
   font-size: 1.8rem;
 }
 
@@ -3124,10 +3124,6 @@ a {
   clip: auto;
 }
 
-.header-container {
-  background-color: #0e0e0e;
-}
-
 .header-container .header-collapse-menu {
   display: none;
 }
@@ -3143,7 +3139,7 @@ a {
 }
 
 .header-container .menu .menu-block a {
-  color: #fff;
+  color: #0e0e0e;
   font-size: 1.5rem;
   text-transform: uppercase;
   font-weight: 500;
@@ -3152,7 +3148,7 @@ a {
 }
 
 .header-container .menu .menu-block a:hover {
-  color: #0C6D75;
+  color: #000080;
   transition: 0.3s;
 }
 
@@ -3277,7 +3273,6 @@ a {
 
 .splash-container {
   border-bottom: 1px solid #222121;
-  border-top: 1px solid #222121;
 }
 
 .splash-container .carousel-block {
@@ -3368,7 +3363,7 @@ a {
   content: '\F192';
   font-family: "FontAwesome";
   font-size: 8px;
-  color: #0C6D75;
+  color: #000080;
   margin-right: 10px;
   top: -1px;
   position: relative;
@@ -3381,7 +3376,7 @@ a {
 }
 
 .prefooter-container .prefooter-block .prefooter-block-link:hover {
-  color: #0C6D75;
+  color: #000080;
 }
 
 .footer-container {
@@ -3399,13 +3394,13 @@ a {
 }
 
 .contact-container .home-contact-btn {
-  border: 2px solid #0C6D75;
+  border: 2px solid #000080;
   font-size: 1.6rem;
   font-family: 'Poppins';
 }
 
 .contact-container .home-contact-btn:hover:before {
-  background-color: #0C6D75;
+  background-color: #000080;
   opacity: 1;
 }
 
@@ -3424,7 +3419,7 @@ a {
 }
 
 .contact-container h2 span {
-  color: #0C6D75;
+  color: #000080;
 }
 
 .contact-dialog {
@@ -3455,7 +3450,7 @@ a {
 
 .wholesale-view-container h2.subcat-title {
   font-size: 3rem;
-  color: #0C6D75;
+  color: #000080;
   text-transform: uppercase;
 }
 
@@ -3464,7 +3459,7 @@ a {
 }
 
 .wholesale-view-container h3 span {
-  color: #0C6D75;
+  color: #000080;
 }
 
 .wholesale-view-container .wholesale-click-picture {
@@ -3472,7 +3467,7 @@ a {
 }
 
 .wholesale-view-container .wholesale-click-picture span {
-  color: #0C6D75;
+  color: #000080;
 }
 
 .wholesale-view-container .round-img-block {
@@ -3510,14 +3505,14 @@ a {
   content: '\F060';
   font-family: "FontAwesome";
   font-size: 18px;
-  color: #0C6D75;
+  color: #000080;
 }
 
 .wholesale-view-container .mini-gallery-slide .v-slide-group__next .v-icon:before {
   content: '\F061';
   font-family: "FontAwesome";
   font-size: 18px;
-  color: #0C6D75;
+  color: #000080;
 }
 
 .why-us-container h2 {
@@ -3530,7 +3525,7 @@ a {
 .why-us-container h3 {
   font-size: 1.8rem;
   margin: 14px 0;
-  color: #0C6D75;
+  color: #000080;
 }
 
 .why-us-container p {
@@ -3552,13 +3547,13 @@ a {
 }
 
 .wire-harness-container .wire-harness-container__btn {
-  border: 2px solid #0C6D75;
+  border: 2px solid #000080;
   font-size: 1.6rem;
   font-family: 'Poppins';
 }
 
 .wire-harness-container .wire-harness-container__btn:hover:before {
-  background-color: #0C6D75;
+  background-color: #000080;
   opacity: 1;
 }
 
@@ -3573,7 +3568,7 @@ a {
 }
 
 .wires-and-harness-container p span {
-  color: #0C6D75;
+  color: #000080;
   font-size: 1.8rem;
 }
 
@@ -3597,7 +3592,7 @@ a {
 .base-miny-gallery .v-slide-group__next .v-icon:before {
   font-family: 'FontAwesome';
   content: '\F061';
-  color: #0C6D75;
+  color: #000080;
 }
 
 .base-miny-gallery .v-slide-group__prev {
@@ -3607,7 +3602,7 @@ a {
 .base-miny-gallery .v-slide-group__prev .v-icon:before {
   font-family: 'FontAwesome';
   content: '\F060';
-  color: #0C6D75;
+  color: #000080;
 }
 
 .base-miny-gallery .v-slide-group__wrapper {
@@ -3651,7 +3646,7 @@ a {
 .base-miny-gallery__dialog-sheet-inner .v-slide-group__next .v-icon:before {
   font-family: 'FontAwesome';
   content: '\F061';
-  color: #0C6D75;
+  color: #000080;
 }
 
 .base-miny-gallery__dialog-sheet-inner .v-slide-group__prev {
@@ -3661,7 +3656,7 @@ a {
 .base-miny-gallery__dialog-sheet-inner .v-slide-group__prev .v-icon:before {
   font-family: 'FontAwesome';
   content: '\F060';
-  color: #0C6D75;
+  color: #000080;
 }
 
 .theme--light.v-btn:not(.v-btn--flat):not(.v-btn--text):not(.v-btn--outlined) {
@@ -3681,5 +3676,14 @@ a {
   .base-miny-gallery .v-card {
     width: 250px !important;
   }
+}
+
+.image {
+  float: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border: 1px solid #ebebeb;
+  margin: 5px;
 }
 

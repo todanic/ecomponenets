@@ -35,7 +35,7 @@
 							<v-col class="pb-11" lg="4" md="4" sm="6" cols="12">
 								<router-link to="/wholesale/led" class="round-block">
 											<div class="round-img-block">
-													<v-img max-width="240px" height="180px" src="images/splash2.jpg" alt=""></v-img>
+													<v-img max-width="240px" height="180px" src="images/led/led.jpg" alt=""></v-img>
 											</div>
 											<div class="round-contents-block">
 													<h2>LEDs</h2>
@@ -55,7 +55,7 @@
 							<v-col class="pb-11" lg="4" md="4" sm="6" cols="12">
 								<router-link to="wholesale/hardware" class="round-block">
 									<div class="round-img-block">
-											<v-img max-width="240px" height="180px" src="images/splash4.jpeg" alt=""></v-img>
+											<v-img max-width="240px" height="180px" src="images/hardware/hardware.jpg" alt=""></v-img>
 									</div>
 									<div class="round-contents-block">
 											<h2>Hardware</h2>

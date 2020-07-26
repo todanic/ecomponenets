@@ -1,5 +1,6 @@
 <template name="wholesale-view">
 	<v-container fluid class="wholesale-view-container">
+		<v-divider class="mb-10"></v-divider>
 		<v-container v-show="isParent" class="shrink-width">
 			<v-row class="text-center">
 				<v-col cols="12">
@@ -38,11 +39,12 @@
 				<v-col class="pb-11" lg="4" md="4" sm="12" cols="12">
 					<router-link to="/wholesale/led" class="round-block">
 								<div class="round-img-block">
-										<v-img max-width="280px" src="/images/splash2.jpeg" alt=""></v-img>
+										<v-img max-width="280px" height="228px" src="/images/led/led.jpg" alt=""></v-img>
+										<div class="round-contents-block">
+											<h2>LEDs</h2>
+										</div>
 								</div>
-								<div class="round-contents-block">
-										<h2>LEDs</h2>
-								</div>
+							
 					</router-link>
 				</v-col>
 				<v-col class="pb-11" lg="4" md="4" sm="12" cols="12">
@@ -58,7 +60,7 @@
 				<v-col class="pb-11" lg="4" md="4" sm="12" cols="12">
 					<router-link to="wholesale/hardware" class="round-block">
 						<div class="round-img-block">
-								<v-img max-width="280px" src="/images/splash4.jpeg" alt=""></v-img>
+								<v-img max-width="280px" src="/images/hardware/hardware.jpg" alt=""></v-img>
 						</div>
 						<div class="round-contents-block">
 								<h2>Hardware</h2>
