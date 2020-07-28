@@ -46,16 +46,9 @@ export default {
 	data() {
 		return {
 				ledImages: [
-					{ src: '/images/led/led.jpg' },
-					{ src: '/images/led/led2.jpg' },
-					{ src: '/images/led/led3.jpg' },
-					{ src: '/images/led/led4.jpg' },
-					{ src: '/images/led/led5.jpg' },
-					{ src: '/images/led/led6.jpg' },
-					{ src: '/images/led/led7.jpg' },
-					{ src: '/images/led/led8.jpg' },
-					{ src: '/images/led/led9.jpg' },
-					{ src: '/images/led/led10.jpg' },
+					'/images/led/led.jpg',
+					'/images/led/led2.jpg',
+					'/images/led/led3.jpg',
 			],
 		}
 	}

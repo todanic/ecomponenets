@@ -1,119 +1,21 @@
-.base-miny-gallery {
-	width: 100%;
-
-	.base-miny-gallery__slide-image {
-		cursor: pointer;
-		transition: all .3s;
-
-		&:hover {
-			transform: scale(1.1);
-		}
-	}
-
-	.v-slide-group__next {
-		min-width: 38px;
-
-		.v-icon:before {
-			font-family: 'FontAwesome';
-			content: '\f061';
-			color: $primary-color;
-		}
-	}
-
-	.v-slide-group__prev {
-		min-width: 38px;
-
-		.v-icon:before {
-			font-family: 'FontAwesome';
-			content: '\f060';
-			color: $primary-color;
-		}
-	}
-
-	.v-slide-group__wrapper {
-		padding-left: 15px;
-	}
-}
-
-.base-miny-gallery__dialog, .base-gallery-row__dialog {
-	position: relative;
-	// overflow: visible;
-	box-shadow: none;
-
-	.v-card {
-		box-shadow: none !important;
-	}
-}
-
-.base-gallery__dialog-btn {
-	position: absolute;
-	top: 0;
-	right: 25px;
-	min-width: 0 !important;
-
-	&:hover::before {
-		opacity: 0 !important;
-	}
-
-	.v-icon {
-		font-size: 16px;
-		border: 2px solid;
-		border-radius: 50%;
-		padding: 5px 7px;
-		font-weight: 700;
-	}
-}
-
-.base-miny-gallery__dialog-sheet-inner {
-
-	.v-slide-group__next {
-		min-width: 38px;
-
-		.v-icon:before {
-			font-family: 'FontAwesome';
-			content: '\f061';
-			color: $primary-color;
-		}
-	}
-
-	.v-slide-group__prev {
-		min-width: 38px;
-
-		.v-icon:before {
-			font-family: 'FontAwesome';
-			content: '\f060';
-			color: $primary-color;
-		}
-	}
-}
-
-.theme--light.v-btn:not(.v-btn--flat):not(.v-btn--text):not(.v-btn--outlined) {
-	background-color: transparent;
-}
-
-.base-gallery-row {
-	
-	.base-gallery-row__dialog-image {
-		transition: all 0.3s;
-
-		&:hover {
-			cursor: pointer;
-			transform: scale(1.1);
-		}
-	}
-}
-
-@media screen and (max-width: 768px) {
-	.base-miny-gallery .v-card {
-		width: 250px !important;
-	}
-}
-
-.image {
+.gallery-image {
 	float: left;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
 	border: 1px solid #ebebeb;
 	margin: 5px;
+	transition: all 0.3s;
+
+	&:hover {
+		cursor: pointer;
+		transform: scale(1.1);
+	}
+}
+
+@media screen and (max-width: 768px) {
+	
+	.gallery-image {
+		width: 150px !important;
+	}
 }

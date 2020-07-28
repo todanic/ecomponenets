@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Nunito);@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Nunito);@import url(https://fonts.googleapis.com/css2?family=Poppins&display=swap);@charset "UTF-8";
 /*!
 * Vuetify v2.2.22
 * Forged by John Leider
@@ -3142,7 +3142,7 @@ a {
   color: #0e0e0e;
   font-size: 1.5rem;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 600;
   transition: all .5s ease;
   text-decoration: none;
 }
@@ -3242,7 +3242,7 @@ a {
 
   .header-container .header-collapse-menu span:after {
     content: '\F0C9';
-    color: #fff;
+    color: #000080;
     font-size: 28px;
   }
 
@@ -3268,6 +3268,14 @@ a {
 
   .header-container .menu .menu-block {
     flex-basis: 100%;
+  }
+
+  .header-container .menu .menu-block a {
+    color: #fff;
+  }
+
+  .header-container .header-logo-col .v-image {
+    max-width: 150px !important;
   }
 }
 
@@ -3572,118 +3580,24 @@ a {
   font-size: 1.8rem;
 }
 
-.base-miny-gallery {
-  width: 100%;
-}
-
-.base-miny-gallery .base-miny-gallery__slide-image {
-  cursor: pointer;
-  transition: all .3s;
-}
-
-.base-miny-gallery .base-miny-gallery__slide-image:hover {
-  transform: scale(1.1);
-}
-
-.base-miny-gallery .v-slide-group__next {
-  min-width: 38px;
-}
-
-.base-miny-gallery .v-slide-group__next .v-icon:before {
-  font-family: 'FontAwesome';
-  content: '\F061';
-  color: #000080;
-}
-
-.base-miny-gallery .v-slide-group__prev {
-  min-width: 38px;
-}
-
-.base-miny-gallery .v-slide-group__prev .v-icon:before {
-  font-family: 'FontAwesome';
-  content: '\F060';
-  color: #000080;
-}
-
-.base-miny-gallery .v-slide-group__wrapper {
-  padding-left: 15px;
-}
-
-.base-miny-gallery__dialog,
-.base-gallery-row__dialog {
-  position: relative;
-  box-shadow: none;
-}
-
-.base-miny-gallery__dialog .v-card,
-.base-gallery-row__dialog .v-card {
-  box-shadow: none !important;
-}
-
-.base-gallery__dialog-btn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  min-width: 0 !important;
-}
-
-.base-gallery__dialog-btn:hover::before {
-  opacity: 0 !important;
-}
-
-.base-gallery__dialog-btn .v-icon {
-  font-size: 16px;
-  border: 2px solid;
-  border-radius: 50%;
-  padding: 5px 7px;
-  font-weight: 700;
-}
-
-.base-miny-gallery__dialog-sheet-inner .v-slide-group__next {
-  min-width: 38px;
-}
-
-.base-miny-gallery__dialog-sheet-inner .v-slide-group__next .v-icon:before {
-  font-family: 'FontAwesome';
-  content: '\F061';
-  color: #000080;
-}
-
-.base-miny-gallery__dialog-sheet-inner .v-slide-group__prev {
-  min-width: 38px;
-}
-
-.base-miny-gallery__dialog-sheet-inner .v-slide-group__prev .v-icon:before {
-  font-family: 'FontAwesome';
-  content: '\F060';
-  color: #000080;
-}
-
-.theme--light.v-btn:not(.v-btn--flat):not(.v-btn--text):not(.v-btn--outlined) {
-  background-color: transparent;
-}
-
-.base-gallery-row .base-gallery-row__dialog-image {
-  transition: all 0.3s;
-}
-
-.base-gallery-row .base-gallery-row__dialog-image:hover {
-  cursor: pointer;
-  transform: scale(1.1);
-}
-
-@media screen and (max-width: 768px) {
-  .base-miny-gallery .v-card {
-    width: 250px !important;
-  }
-}
-
-.image {
+.gallery-image {
   float: left;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   border: 1px solid #ebebeb;
   margin: 5px;
+  transition: all 0.3s;
+}
+
+.gallery-image:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 768px) {
+  .gallery-image {
+    width: 150px !important;
+  }
 }
 

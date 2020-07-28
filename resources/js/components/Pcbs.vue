@@ -66,9 +66,9 @@ export default {
 	data() {
 		return {
 				pcbsImages: [
-					{ src: '/images/pcbs/pcbs4.jpg' },
-					{ src: '/images/pcbs/pcbs2.jpg' },
-					{ src: '/images/pcbs/pcbs3.jpg' },
+				 '/images/pcbs/pcbs4.jpg',
+				 '/images/pcbs/pcbs2.jpg',
+				 '/images/pcbs/pcbs3.jpg',
 			],
 		}
 	}

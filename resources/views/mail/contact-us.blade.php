@@ -9,7 +9,7 @@
 			<h3>Phone {{ $phone }}</h3>
 			<h3>Country: {{ $country }}</h3>
 			<h3>Email: {{ $email }}</h3>
-			<h3>{{ $messages }}</h3>
+			<h3>Message: {{ $messages }}</h3>
 		</div>
 	</body>
 </html>

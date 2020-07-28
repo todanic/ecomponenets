@@ -99,7 +99,7 @@
 			</v-col>
 		</v-row>
 		<v-row>
-			<base-miny-gallery :galleryImages="wireImages"></base-miny-gallery>
+			<base-miny-gallery :className="'wire'" :galleryImages="wireImages"></base-miny-gallery>
 		</v-row>
 
 		<v-divider class="pb-10"></v-divider>
@@ -158,7 +158,7 @@
 			</v-col>
 		</v-row>
 		<v-row>
-			<base-miny-gallery :galleryImages="cableImages"></base-miny-gallery>
+			<base-miny-gallery :className="'cable'" :galleryImages="cableImages"></base-miny-gallery>
 		</v-row>
 		<v-divider class="pb-10"></v-divider>
 		
@@ -170,6 +170,9 @@
 			</v-col>
 			<v-col cols="12" class="text-left">
 				<v-row class="wholesale-subcat-info">
+						<v-col lg="8" md="8" sm="12" cols="12">
+						<v-img  class="subcat-img" max-width="600px" max-height="400px" src="/images/wires-cables/ready-made-cables/ready-made-cables.jpg" alt=""></v-img>
+					</v-col>
 					<v-col cols="12">
 						<h4 class="mb-2">
 							USB cables
@@ -209,14 +212,11 @@
 						</h4>
 					</v-col>
 				</v-row>
-				<v-row>
-					<base-miny-gallery :galleryImages="readyMadeCableImages"></base-miny-gallery>
-				</v-row>
 				<v-row class="justify-center mt-5">
 					<v-col class="text-center" lg="6" md="6" sm="8" cols="8">
 						<p>
 							We also offer wire and cable harness manufacture per your design - from smaller cable harness to bigger
-							and more comples cable systems.
+							and more complex cable systems.
 						</p>
 						<p class="wholesale-click-picture">
 							Click the <span>picture for more details</span>
@@ -230,6 +230,9 @@
 				</v-row>
 			</v-col>
 		</v-row>
+		<v-row>
+			<base-miny-gallery :className="'readyMadeCable'" :galleryImages="readyMadeCableImages"></base-miny-gallery>
+		</v-row>
 	</v-container>
 </template>
 <script>
@@ -238,18 +241,25 @@ export default {
 	data () {
 		return {
 			wireImages: [
-					{ src: '/images/wires-cables/wires/wire1.jpg' },
-					{ src: '/images/wires-cables/wires/wire2.jpg' },
-					{ src: '/images/wires-cables/wires/wire3.jpg' },
+					'/images/wires-cables/wires/wire1.jpg',
+					'/images/wires-cables/wires/wire2.jpg',
+					'/images/wires-cables/wires/wire3.jpg',
+					'/images/wires-cables/wires/wire4.jpg',
+					'/images/wires-cables/wires/wire5.jpg',
+					'/images/wires-cables/wires/wire6.jpg',
 			],
 			cableImages: [
-				{ src: '/images/wires-cables/cables/cable1.jpg' },
-				{ src: '/images/wires-cables/cables/cable2.jpg' },
-				{ src: '/images/wires-cables/cables/cable3.jpg' },
+				'/images/wires-cables/cables/cable1.jpg',
+				'/images/wires-cables/cables/cable2.jpg',
+				'/images/wires-cables/cables/cable3.jpg',
 			],
 			readyMadeCableImages: [
-				{ src: '/images/wires-cables/ready-made-cables/ready-made-cables.jpg' },
+				'/images/wires-cables/ready-made-cables/ready_made_cabels1.jpg',
+				'/images/wires-cables/ready-made-cables/ready_made_cables2.jpg',
+				'/images/wires-cables/ready-made-cables/ready_made_cables3.jpg',
+				'/images/wires-cables/ready-made-cables/ready_made_cables4.jpg',
 			],
+			className:null
 		}
 	}
 }

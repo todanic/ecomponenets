@@ -1,6 +1,6 @@
 <template>
 	<v-row class="base-gallery-row">
-		<v-col class="text-center mb-5" lg="12" md="12" sm="12" cols="12">
+		<!-- <v-col class="text-center mb-5" lg="12" md="12" sm="12" cols="12">
 			<h1><span>Gallery</span></h1>
 		</v-col>
 		<v-dialog v-model="galleryModel" content-class="base-gallery-row__dialog" max-width="900px">
@@ -21,18 +21,33 @@
 					<v-icon color="#000080">X</v-icon>
 				</v-btn>
 			</v-sheet>
-		</v-dialog>
-	</v-row>
-
+		</v-dialog> -->
+				 <div>
+    <gallery :id="className" :images="galleryImages" :index="index" @close="index = null"></gallery>
+    <div
+      class="image"
+      v-for="(image, imageIndex) in galleryImages"
+      :key="imageIndex"
+      @click="index = imageIndex"
+      :style="{ backgroundImage: 'url(' + image + ')', width: '250px', height: '200px' }"
+    ></div>
+  </div>
+	</v-row> 
 </template>
 <script>
+import VueGallery from 'vue-gallery';
 export default {
 	name: 'BaseGallery',
+			components: {
+		'gallery': VueGallery
+	},
 	data() {
 		return {
 			galleryModel: null,
 			imageSrc: null,
-			model: null
+			model: null,
+			className: null,
+			index: null
 		}
 	},
 	props: {

@@ -8,12 +8,14 @@
 				</v-col>
 				<v-col lg="4" md="4" sm="12" cols="12">
 					<p class="mb-0"><span>Phone:</span></p>
-					<p>+381 6995 4448</p>
+					<p class="mb-0">+381 63 8023260</p>
+					<p class="mb-0">+381 60 5120666</p>
+					<p class="mb-4">+381 63 1623505</p>
 					<p class="mb-0"><span>Address:</span></p>
 					<p class="mb-0">Cara Lazara 2</p>
 					<p class="mb-0">Srbobran 21480 Serbia</p>
 				</v-col>
-      	<v-col class="contact-us-container__col" lg="8" md="8" sm="12" cols="12">
+      	<v-col class="contact-us-container__col" v-if="!loading" lg="8" md="8" sm="12" cols="12">
 					<v-row>
 						<v-col lg="6" md="6" sm="12" cols="12">
 						<v-text-field outlined color="#000080" label="First name" v-model="firstName">
@@ -36,15 +38,18 @@
 						</v-text-field>
 						</v-col>
 						<v-col cols="12">
-							<v-file-input ref="file" @change="encodeImageFileAsURL" color="#000080" prepend-icon="" height="100px" accept="image/*" multiple filled outlined label="Upload image">
-							</v-file-input>
+							<!-- <v-file-input ref="file" @change="encodeImageFileAsURL" color="#000080" prepend-icon="" height="100px" accept="image/*" multiple filled outlined label="Upload image">
+							</v-file-input> -->
 						</v-col>
 						<v-col cols="12" class="text-right">
-							<v-btn color="#000080" large dark @click="contactUs()">
+							<v-btn type="submit" color="#000080" large dark @click="submit">
 								Send
 							</v-btn>
 						</v-col>
 					</v-row>
+				</v-col>
+				<v-col v-else class="text-center pb-6">
+					<cube-spin></cube-spin>
 				</v-col>
 			</v-row>
 		</v-container>
@@ -52,9 +57,13 @@
 </template>
 <script>
 import axios from 'axios'
+import CubeSpin from 'vue-loading-spinner/src/components/Circle.vue'
 
 export default  {
 	name: 'ContactUsView',
+  components: {
+		CubeSpin
+	},
 	data () {
 		return {
 			email: null,
@@ -64,21 +73,29 @@ export default  {
 			message: null,
 			userImage: null,
 			attachments: null,
-			images: null
+			images: {},
+			loading: false
 		}
 	},
 	methods: {
-		contactUs() {
-			const config = {
-				headers: { 'content-type': 'multipart/form-data' }
-			}
+		submit(e) {
+			// const config = {
+			// 	headers: { 'content-type': 'multipart/form-data' }
+			// }
+			var formData = new FormData();
+			formData.append('email', this.email);
+			formData.append('name', this.firstName);
+			formData.append('country', this.country);
+			formData.append('phone', this.phone);
+			formData.append('message', this.message);
+			formData.append('images', this.images);
 
-			let formData = new FormData();
-			formData.append('image', this.images);
+			this.loading = true;
 
-			axios.post('/email',formData, config)
+			axios.post('/email',formData)
 			.then((response)=>{
 				alert('Thank you for contacting us!')
+				this.loading = false;
 			})
 			.catch(error => alert('Error accrued!'))
 		},

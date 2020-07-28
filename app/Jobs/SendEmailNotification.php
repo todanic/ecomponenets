@@ -35,6 +35,6 @@ class SendEmailNotification implements ShouldQueue
     public function handle()
     {
         //env variable!
-		Mail::to($this->email)->send(new Email($this->name, $this->email, $this->phone, $this->country, $this->messages));
+		Mail::to('teodoraodanic96@gmail.com')->send(new Email($this->name, $this->email, $this->phone, $this->country, $this->messages));
     }
 }

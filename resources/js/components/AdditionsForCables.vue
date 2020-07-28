@@ -71,12 +71,14 @@ export default {
 	data() {
 		return {
 				accessoriesImages: [
-					{ src: '/images/cable-accessories/accessories2.jpg' },
-					{ src: '/images/cable-accessories/accessories3.jpg' },
-					{ src: '/images/cable-accessories/accessories4.jpg' },
-					{ src: '/images/cable-accessories/accessories5.jpg' },
-					{ src: '/images/cable-accessories/accessories6.jpg' },
-					{ src: '/images/cable-accessories/accessories7.jpg' },
+					'/images/cable-accessories/accessories2.jpg',
+					'/images/cable-accessories/accessories3.jpg',
+					'/images/cable-accessories/accessories4.jpg',
+					'/images/cable-accessories/accessories5.jpg',
+					'/images/cable-accessories/accessories6.jpg',
+					'/images/cable-accessories/accessories7.jpg',
+					'/images/cable-accessories/accessories8.jpg',
+					'/images/cable-accessories/accessories9.jpg',
 			],
 		}
 	}

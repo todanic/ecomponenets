@@ -1,5 +1,5 @@
 <template>
-	<div class="base-miny-gallery">
+	<!-- <div class="base-miny-gallery">
 		<v-dialog v-model="minyGalleryModel" content-class="base-miny-gallery__dialog" max-width="900px">
 			<template v-slot:activator="{ on }">
 				<v-sheet width="100%" class="base-miny-gallery__dialog-sheet">
@@ -25,17 +25,17 @@
 				</v-btn>
 			</v-sheet>
 		</v-dialog>
-	</div>
-	 <!-- <div>
-    <gallery :images="galleryImages" :index="index" @close="index = null"></gallery>
+	</div> -->
+	 <v-row class="justify-center mb-4">
+    <gallery :id="className" :images="galleryImages" :index="index" @close="index = null"></gallery>
     <div
-      class="image"
+      class="gallery-image"
       v-for="(image, imageIndex) in galleryImages"
       :key="imageIndex"
       @click="index = imageIndex"
-      :style="{ backgroundImage: 'url(' + image + ')', width: '300px', height: '200px' }"
+      :style="{ backgroundImage: 'url(' + image + ')', width: '250px', height: '200px' }"
     ></div>
-  </div> -->
+  </v-row>
 </template>
 <script>
 import VueGallery from 'vue-gallery';
@@ -53,6 +53,10 @@ export default {
 	props: {
 		galleryImages: {
 			type: Array,
+			required: false
+		},
+		className: {
+			type: String,
 			required: false
 		}
 	},

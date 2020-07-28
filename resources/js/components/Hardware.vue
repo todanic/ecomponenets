@@ -29,7 +29,7 @@
 			</v-col>
 		</v-row>
 			<v-row>
-			<base-miny-gallery :galleryImages="hardwareImages"></base-miny-gallery>
+			<base-miny-gallery :className="'hardware'" :galleryImages="hardwareImages"></base-miny-gallery>
 		</v-row>
 	</v-container>
 </template>
@@ -39,11 +39,11 @@ export default {
 	data() {
 		return {
 			hardwareImages: [
-				{ src: '/images/hardware/hardware2.jpg' },
-				{ src: '/images/hardware/hardware3.jpg' },
-				{ src: '/images/hardware/hardware4.jpg' },
-				{ src: '/images/hardware/hardware5.jpg' },
-				{ src: '/images/hardware/hardware6.jpg' },
+			 '/images/hardware/hardware2.jpg',
+			 '/images/hardware/hardware3.jpg',
+			 '/images/hardware/hardware4.jpg',
+			 '/images/hardware/hardware5.jpg',
+			 '/images/hardware/hardware6.jpg',
 		],
 		}
 	}

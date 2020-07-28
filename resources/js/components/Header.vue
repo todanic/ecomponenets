@@ -7,14 +7,14 @@
             <v-row class="align-center">
                   <v-col class="header-logo-col d-flex justify-center pa-0" lg="12" md="12" sm="12" cols="12">
                     <router-link to="/">
-                        <v-img max-width="150px" src="/images/logo-full.png" alt="logo"></v-img>
+                        <v-img max-width="150px" class="header-logo-col__img" src="/images/logo-full.png" alt="logo"></v-img>
                     </router-link>
                 </v-col>
                 <v-col :class="{'pt-6': !$vuetify.breakpoint.xs, 'text-right pt-0 pb-0': $vuetify.breakpoint.xs}" lg="12" md="12" sm="12" cols="12">
                     <div class="header-collapse-menu">
                         <span @click="toggleMenu()"></span>
                     </div>
-                    <ul class="menu pl-0 justify-center" :class="{active: isActive}">
+                    <ul class="menu pl-0 pt-4 justify-center" :class="{active: isActive}">
                         <li class="menu-block">
                             <router-link @click.native="toggleMenu()" to="/">Home</router-link>
                         </li>
