@@ -1,6 +1,5 @@
 <template>
 <v-container fluid>
-	<v-divider class="mb-10"></v-divider>
 	<v-container class="shrink-width">
 		<v-row>
 			<v-col class="text-center mb-5" lg="12" md="12" sm="12" cols="12">

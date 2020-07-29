@@ -1,6 +1,5 @@
 <template name="wires-and-harness-view">
 	<v-container fluid class="wires-and-harness-container">
-		<v-divider class="mb-10"></v-divider>
 		<v-container class="shrink-width">
 			<v-row>
 				<v-col lg="12" md="12" sm="12" cols="12" class="text-center">

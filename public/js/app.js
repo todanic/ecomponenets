@@ -2876,6 +2876,14 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {};
@@ -3271,8 +3279,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'WiresCables',
   data: function data() {
@@ -3296,7 +3302,6 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-//
 //
 //
 //
@@ -3425,7 +3430,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -3485,7 +3489,6 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-//
 //
 //
 //
@@ -3619,7 +3622,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'WholesaleView',
   data: function data() {
@@ -3646,7 +3648,6 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-//
 //
 //
 //
@@ -8504,7 +8505,18 @@ var render = function() {
               _vm._v(
                 "© " + _vm._s(new Date().getFullYear()) + " All Rights Reserved"
               )
-            ])
+            ]),
+            _vm._v(" "),
+            _c(
+              "a",
+              {
+                attrs: {
+                  target: "_blank",
+                  href: "https://www.linkedin.com/in/teodora-odanic-74205b173/"
+                }
+              },
+              [_vm._v("todanic")]
+            )
           ])
         ],
         1
@@ -9692,6 +9704,50 @@ var render = function() {
                   )
                 ],
                 1
+              ),
+              _vm._v(" "),
+              _c(
+                "v-col",
+                {
+                  staticClass: "text-center prefooter-social-links",
+                  attrs: { lg: "12", md: "12", sm: "12", cols: "12" }
+                },
+                [
+                  _c(
+                    "a",
+                    {
+                      staticClass: "mr-2",
+                      attrs: {
+                        target: "_blank",
+                        href:
+                          "https://instagram.com/ecomponentsdoo?igshid=1laai7c68an6d"
+                      }
+                    },
+                    [
+                      _c("i", {
+                        staticClass: "fa fa-instagram",
+                        attrs: { "aria-hidden": "true" }
+                      })
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "a",
+                    {
+                      attrs: {
+                        target: "_blank",
+                        href:
+                          "https://www.facebook.com/EComponents-108169840984289/?modal=admin_todo_tour"
+                      }
+                    },
+                    [
+                      _c("i", {
+                        staticClass: "fa fa-facebook-square",
+                        attrs: { large: "", "aria-hidden": "true" }
+                      })
+                    ]
+                  )
+                ]
               )
             ],
             1
@@ -10432,7 +10488,7 @@ var render = function() {
           ]),
           _vm._v(" "),
           _c("v-col", { staticClass: "text-left", attrs: { cols: "12" } }, [
-            _c("h4", { staticClass: "mb-2" }, [_vm._v("ColPower cables")]),
+            _c("h4", { staticClass: "mb-2" }, [_vm._v("Power cables")]),
             _vm._v(" "),
             _c("ul", { staticClass: "pl-0" }, [
               _c("li", [
@@ -10445,27 +10501,7 @@ var render = function() {
             _c("p", { staticClass: "mt-5" }, [
               _vm._v("*for certain conductors ")
             ])
-          ]),
-          _vm._v(" "),
-          _c(
-            "v-col",
-            { staticClass: "mb-8 mt-4 mt-0", attrs: { cols: "12" } },
-            [
-              _c("h4", [_vm._v("\n\t\t\t\tCable assemblies\n\t\t\t")]),
-              _vm._v(" "),
-              _c("p", { staticClass: "mb-2" }, [
-                _vm._v("Wide assortment of cable assemblies")
-              ]),
-              _vm._v(" "),
-              _c("p", { staticClass: "mb-2" }, [
-                _vm._v("Stay connected at any moment")
-              ]),
-              _vm._v(" "),
-              _c("p", { staticClass: "mb-2" }, [
-                _vm._v("Posibility of special order")
-              ])
-            ]
-          )
+          ])
         ],
         1
       ),
@@ -10518,6 +10554,32 @@ var render = function() {
                       })
                     ],
                     1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "v-col",
+                    {
+                      staticClass: "text-left",
+                      attrs: { lg: "4", md: "4", sm: "12", cols: "12" }
+                    },
+                    [
+                      _c("h3", [
+                        _vm._v("Cable "),
+                        _c("span", [_vm._v("assemblies")])
+                      ]),
+                      _vm._v(" "),
+                      _c("p", { staticClass: "mb-0" }, [
+                        _vm._v("Wide assortment of cable assemblies")
+                      ]),
+                      _vm._v(" "),
+                      _c("p", { staticClass: "mb-0" }, [
+                        _vm._v("Stay connected at any moment")
+                      ]),
+                      _vm._v(" "),
+                      _c("p", { staticClass: "mb-0" }, [
+                        _vm._v("Posibility of special order")
+                      ])
+                    ]
                   ),
                   _vm._v(" "),
                   _c("v-col", { attrs: { cols: "12" } }, [
@@ -10694,8 +10756,6 @@ var render = function() {
     "v-container",
     { staticClass: "about-us-view-container", attrs: { fluid: "" } },
     [
-      _c("v-divider", { staticClass: "mb-10" }),
-      _vm._v(" "),
       _c(
         "v-container",
         [
@@ -10811,8 +10871,6 @@ var render = function() {
     "v-container",
     { attrs: { fludi: "" } },
     [
-      _c("v-divider", { staticClass: "mb-10" }),
-      _vm._v(" "),
       _c(
         "v-container",
         { staticClass: "shrink-width contact-us-container" },
@@ -11064,8 +11122,6 @@ var render = function() {
     "v-container",
     { attrs: { fluid: "" } },
     [
-      _c("v-divider", { staticClass: "mb-10" }),
-      _vm._v(" "),
       _c(
         "v-container",
         { staticClass: "shrink-width" },
@@ -11160,8 +11216,6 @@ var render = function() {
     "v-container",
     { staticClass: "wholesale-view-container", attrs: { fluid: "" } },
     [
-      _c("v-divider", { staticClass: "mb-10" }),
-      _vm._v(" "),
       _c(
         "v-container",
         {
@@ -11453,8 +11507,6 @@ var render = function() {
     "v-container",
     { staticClass: "wires-and-harness-container", attrs: { fluid: "" } },
     [
-      _c("v-divider", { staticClass: "mb-10" }),
-      _vm._v(" "),
       _c(
         "v-container",
         { staticClass: "shrink-width" },

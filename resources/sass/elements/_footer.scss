@@ -1,12 +1,23 @@
 .footer-container {
-    background-color: $secondary-black;
+  background-color: $secondary-black;
 
-    .footer-block {
+	.footer-block {
 
-        p {
-            color: #5e5e5e;
-            margin-bottom: 0;
-            font-size: 1.1rem;
-        }
-    }
+		p {
+			color: #5e5e5e;
+			font-size: 1.1rem;
+			margin-bottom: 6px;
+		}
+
+		a {
+			font-size: 1.1rem;
+			color: #5e5e5e;
+			text-decoration: none;
+			transition: 0.3s ease-in-out;
+
+			&:hover {
+				color: $primary-color;
+			}
+		}
+	}
 }

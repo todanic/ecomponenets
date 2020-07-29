@@ -1,6 +1,5 @@
 <template>
 	<v-container fludi>
-		<v-divider class="mb-10"></v-divider>
 		<v-container class="shrink-width contact-us-container">
 			<v-row>
 				<v-col cols="12" class="text-center">
@@ -83,6 +82,7 @@ export default  {
 			// 	headers: { 'content-type': 'multipart/form-data' }
 			// }
 			var formData = new FormData();
+			
 			formData.append('email', this.email);
 			formData.append('name', this.firstName);
 			formData.append('country', this.country);

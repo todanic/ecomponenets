@@ -1,6 +1,5 @@
 <template name="wholesale-view">
 	<v-container fluid class="wholesale-view-container">
-		<v-divider class="mb-10"></v-divider>
 		<v-container v-show="isParent" class="shrink-width">
 			<v-row class="text-center">
 				<v-col cols="12">

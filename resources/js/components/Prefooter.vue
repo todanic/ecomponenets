@@ -25,6 +25,14 @@
 								<v-img max-width="200px" class="mt-6" src="/images/logo-name.png"></v-img>
 						</router-link>
 				</v-col>
+				<v-col class="text-center prefooter-social-links" lg="12" md="12" sm="12" cols="12">
+					<a class="mr-2" target="_blank" href="https://instagram.com/ecomponentsdoo?igshid=1laai7c68an6d">
+						<i class="fa fa-instagram" aria-hidden="true"></i>
+					</a>
+					<a target="_blank" href="https://www.facebook.com/EComponents-108169840984289/?modal=admin_todo_tour">
+						<i large class="fa fa-facebook-square" aria-hidden="true"></i>
+					</a>
+				</v-col>
 			</v-row>
 		</v-container>
 	</v-container>

@@ -2,34 +2,55 @@
     background-color: #0E0E0E;
     border-top: 1px solid #3e3e3e;
 
-    h3 {
-        color: #fff;
-        font-size: 2rem;
-        margin-bottom: 15px;
-    }
+	h3 {
+			color: #fff;
+			font-size: 2rem;
+			margin-bottom: 15px;
+	}
 
-    .prefooter-block {
-        list-style: none;
-        padding-left: 0;
+	.prefooter-block {
+		list-style: none;
+		padding-left: 0;
 
-        li:before {
-            content: '\f192';
-            font-family: "FontAwesome";
-            font-size: 8px;
-            color: $primary-color;
-            margin-right: 10px;
-            top: -1px;
-            position: relative;
-        }
+		li:before {
+				content: '\f192';
+				font-family: "FontAwesome";
+				font-size: 8px;
+				color: $primary-color;
+				margin-right: 10px;
+				top: -1px;
+				position: relative;
+		}
 
-        .prefooter-block-link {
-            color: $primary-text;
-            text-decoration: none;
-            transition: all .5s ease;
+		.prefooter-block-link {
+			color: $primary-text;
+			text-decoration: none;
+			transition: all .5s ease;
 
-            &:hover {
-                color: $primary-color;
-            }
-        }
-    }
+			&:hover {
+					color: $primary-color;
+			}
+		}
+	}
+
+	.prefooter-social-links {
+
+		i {
+			font-size: 28px;
+			filter: grayscale(1);
+			transition: all 0.3s ease-in-out;
+
+			&.fa-instagram {
+				color: #f77737;
+			}
+
+			&.fa-facebook {
+				color: #3b5998;
+			}
+
+			&:hover {
+				filter: grayscale(0);
+			}
+		}
+	}
 }

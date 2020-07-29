@@ -1,6 +1,5 @@
 <template name="about-us-view">
 	<v-container fluid class="about-us-view-container">
-			<v-divider class="mb-10"></v-divider>
 		<v-container>
 			<v-row class="justify-center">
 				<v-col cols="12" class="text-center">

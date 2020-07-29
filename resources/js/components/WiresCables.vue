@@ -140,21 +140,13 @@
 				</ul>
 			</v-col>
 			<v-col cols="12" class="text-left">
-				<h4 class="mb-2">ColPower cables</h4>
+				<h4 class="mb-2">Power cables</h4>
 				<ul class="pl-0">
 					<li>
 						All kinds of power cables for different currents
 					</li>
 				</ul>
 				<p class="mt-5">*for certain conductors </p>
-			</v-col>
-			<v-col cols="12" class="mb-8 mt-4 mt-0">
-				<h4>
-					Cable assemblies
-				</h4>
-				<p class="mb-2">Wide assortment of cable assemblies</p>
-				<p class="mb-2">Stay connected at any moment</p>
-				<p class="mb-2">Posibility of special order</p>
 			</v-col>
 		</v-row>
 		<v-row>
@@ -170,8 +162,14 @@
 			</v-col>
 			<v-col cols="12" class="text-left">
 				<v-row class="wholesale-subcat-info">
-						<v-col lg="8" md="8" sm="12" cols="12">
+					<v-col lg="8" md="8" sm="12" cols="12">
 						<v-img  class="subcat-img" max-width="600px" max-height="400px" src="/images/wires-cables/ready-made-cables/ready-made-cables.jpg" alt=""></v-img>
+					</v-col>
+					<v-col lg="4" md="4" sm="12" cols="12" class="text-left">
+						<h3>Cable <span>assemblies</span></h3>
+						<p class="mb-0">Wide assortment of cable assemblies</p>
+						<p class="mb-0">Stay connected at any moment</p>
+						<p class="mb-0">Posibility of special order</p>
 					</v-col>
 					<v-col cols="12">
 						<h4 class="mb-2">
