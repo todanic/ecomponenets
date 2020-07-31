@@ -33,8 +33,8 @@
 						</v-text-field>
 						</v-col>
 						<v-col cols="12">
-							<v-text-field height="150px" outlined color="#000080" label="Message" v-model="message">
-						</v-text-field>
+							<v-textarea height="150px" outlined color="#000080" label="Message" v-model="message">
+						</v-textarea>
 						</v-col>
 						<v-col cols="12">
 							<v-file-input ref="file" @change="encodeImageFileAsURL" color="#000080" prepend-icon="" height="100px" accept="image/*" multiple filled outlined label="Upload image">
@@ -89,15 +89,14 @@ export default  {
 			formData.append('phone', this.phone);
 			formData.append('message', this.message);
 
-			if(this.images.length > 1) {
+			if(Object.keys(this.images).length > 1) {
 				for (var i = 0; i < this.images.length; i++) {
 					formData.append(`images[${i}]`, this.images[i]);
 				} 
 			} else {
 				formData.append('images', this.images);
 			}
-		
-
+			this.images = {};
 			this.loading = true;
 
 			axios.post('/email',formData)
@@ -119,7 +118,6 @@ export default  {
 			} else {
 				this.images = e[0];
 			}
-			console.log(this.images)
 		}
 	}
 }

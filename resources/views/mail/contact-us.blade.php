@@ -14,7 +14,7 @@
 				@foreach($img as $image)
 					<img width="200px" src="<?php echo $message->embed(storage_path() . '/app/' . $image); ?>">
 				@endforeach
-			@else
+			@elseif(!empty($img))
 				<img width="200px" src="<?php echo $message->embed(storage_path() . '/app/' . $img); ?>">
 			@endif
 		</div>

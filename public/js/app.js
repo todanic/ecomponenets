@@ -3465,7 +3465,7 @@ __webpack_require__.r(__webpack_exports__);
       formData.append('phone', this.phone);
       formData.append('message', this.message);
 
-      if (this.images.length > 1) {
+      if (Object.keys(this.images).length > 1) {
         for (var i = 0; i < this.images.length; i++) {
           formData.append("images[".concat(i, "]"), this.images[i]);
         }
@@ -3473,6 +3473,7 @@ __webpack_require__.r(__webpack_exports__);
         formData.append('images', this.images);
       }
 
+      this.images = {};
       this.loading = true;
       axios__WEBPACK_IMPORTED_MODULE_0___default.a.post('/email', formData).then(function (response) {
         alert('Thank you for contacting us!');
@@ -3492,8 +3493,6 @@ __webpack_require__.r(__webpack_exports__);
       } else {
         this.images = e[0];
       }
-
-      console.log(this.images);
     }
   }
 });
@@ -11060,7 +11059,7 @@ var render = function() {
                             "v-col",
                             { attrs: { cols: "12" } },
                             [
-                              _c("v-text-field", {
+                              _c("v-textarea", {
                                 attrs: {
                                   height: "150px",
                                   outlined: "",
