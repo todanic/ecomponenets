@@ -17,14 +17,16 @@ class SendEmailNotification implements ShouldQueue
         protected $country;
         protected $phone;
         protected $messages;
+        protected $img;
 
-    public function __construct($email, $name, $phone, $country, $messages)
+    public function __construct($email, $name, $phone, $country, $messages, $img)
     {
         $this->email = $email;
         $this->name = $name;
         $this->phone = $phone;
         $this->country = $country;
         $this->messages = $messages;
+        $this->img = $img;
     }
 
     /**
@@ -35,6 +37,6 @@ class SendEmailNotification implements ShouldQueue
     public function handle()
     {
         //env variable!
-		Mail::to('teodoraodanic96@gmail.com')->send(new Email($this->name, $this->email, $this->phone, $this->country, $this->messages));
+		Mail::to('teodoraodanic96@gmail.com')->send(new Email($this->name, $this->email, $this->phone, $this->country, $this->messages, $this->img));
     }
 }

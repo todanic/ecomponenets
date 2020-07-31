@@ -7,7 +7,7 @@
 						About <span>us</span>
 					</h1>
 				</v-col>
-				<v-col cols="6">
+				<v-col lg="6" md="6" sm="12" cols="12">
 					<p>
 						Welcome to eComponents, your number one source for all things electronics. 
 						We're dedicated to giving you the very best of electronic components, with a focus on customer service, 

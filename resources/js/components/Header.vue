@@ -14,7 +14,8 @@
                     <div class="header-collapse-menu">
                         <span @click="toggleMenu()"></span>
                     </div>
-                    <ul class="menu pl-0 pt-4 justify-center" :class="{active: isActive}">
+                    <ul class="menu pl-0 pt-4 justify-center text-center" :class="{active: isActive}">
+                        <span class="menu-close" href="" @click="toggleMenu()">X</span>
                         <li class="menu-block">
                             <router-link @click.native="toggleMenu()" to="/">Home</router-link>
                         </li>
@@ -47,19 +48,19 @@
 
 <script>
     export default {
-        data: () => ({
-            items: [
-                { title: 'Click Me' },
-                { title: 'Click Me' },
-                { title: 'Click Me' },
-                { title: 'Click Me 2' },
-            ],
-						isActive: false
-        }),
-        methods: {
-					toggleMenu() {
-						this.isActive = !this.isActive;
-					}
-				}
+			data: () => ({
+				items: [
+					{ title: 'Click Me' },
+					{ title: 'Click Me' },
+					{ title: 'Click Me' },
+					{ title: 'Click Me 2' },
+				],
+				isActive: false
+			}),
+			methods: {
+				toggleMenu() {
+					this.isActive = !this.isActive;
+				},
+			}
     }
 </script>

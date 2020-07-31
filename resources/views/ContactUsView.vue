@@ -37,8 +37,8 @@
 						</v-text-field>
 						</v-col>
 						<v-col cols="12">
-							<!-- <v-file-input ref="file" @change="encodeImageFileAsURL" color="#000080" prepend-icon="" height="100px" accept="image/*" multiple filled outlined label="Upload image">
-							</v-file-input> -->
+							<v-file-input ref="file" @change="encodeImageFileAsURL" color="#000080" prepend-icon="" height="100px" accept="image/*" multiple filled outlined label="Upload image">
+							</v-file-input>
 						</v-col>
 						<v-col cols="12" class="text-right">
 							<v-btn type="submit" color="#000080" large dark @click="submit">
@@ -88,7 +88,15 @@ export default  {
 			formData.append('country', this.country);
 			formData.append('phone', this.phone);
 			formData.append('message', this.message);
-			formData.append('images', this.images);
+
+			if(this.images.length > 1) {
+				for (var i = 0; i < this.images.length; i++) {
+					formData.append(`images[${i}]`, this.images[i]);
+				} 
+			} else {
+				formData.append('images', this.images);
+			}
+		
 
 			this.loading = true;
 
@@ -99,8 +107,19 @@ export default  {
 			})
 			.catch(error => alert('Error accrued!'))
 		},
-		 encodeImageFileAsURL(e) {
-			 this.images = e[0];
+		encodeImageFileAsURL(e) {
+			
+			if(e.length > 1) {
+				var tempImages = [];
+				e.forEach(function(value, index) {
+					tempImages.push(value);
+				});
+				// this.images = Object.assign({}, tempImages);
+				this.images = tempImages;
+			} else {
+				this.images = e[0];
+			}
+			console.log(this.images)
 		}
 	}
 }

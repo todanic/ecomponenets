@@ -2552,6 +2552,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -3463,7 +3464,15 @@ __webpack_require__.r(__webpack_exports__);
       formData.append('country', this.country);
       formData.append('phone', this.phone);
       formData.append('message', this.message);
-      formData.append('images', this.images);
+
+      if (this.images.length > 1) {
+        for (var i = 0; i < this.images.length; i++) {
+          formData.append("images[".concat(i, "]"), this.images[i]);
+        }
+      } else {
+        formData.append('images', this.images);
+      }
+
       this.loading = true;
       axios__WEBPACK_IMPORTED_MODULE_0___default.a.post('/email', formData).then(function (response) {
         alert('Thank you for contacting us!');
@@ -3473,7 +3482,18 @@ __webpack_require__.r(__webpack_exports__);
       });
     },
     encodeImageFileAsURL: function encodeImageFileAsURL(e) {
-      this.images = e[0];
+      if (e.length > 1) {
+        var tempImages = [];
+        e.forEach(function (value, index) {
+          tempImages.push(value);
+        }); // this.images = Object.assign({}, tempImages);
+
+        this.images = tempImages;
+      } else {
+        this.images = e[0];
+      }
+
+      console.log(this.images);
     }
   }
 });
@@ -8724,10 +8744,24 @@ var render = function() {
                   _c(
                     "ul",
                     {
-                      staticClass: "menu pl-0 pt-4 justify-center",
+                      staticClass: "menu pl-0 pt-4 justify-center text-center",
                       class: { active: _vm.isActive }
                     },
                     [
+                      _c(
+                        "span",
+                        {
+                          staticClass: "menu-close",
+                          attrs: { href: "" },
+                          on: {
+                            click: function($event) {
+                              return _vm.toggleMenu()
+                            }
+                          }
+                        },
+                        [_vm._v("X")]
+                      ),
+                      _vm._v(" "),
                       _c(
                         "li",
                         { staticClass: "menu-block" },
@@ -10776,7 +10810,7 @@ var render = function() {
               _vm._v(" "),
               _c(
                 "v-col",
-                { attrs: { cols: "6" } },
+                { attrs: { lg: "6", md: "6", sm: "12", cols: "12" } },
                 [
                   _c("p", [
                     _vm._v(
@@ -11045,7 +11079,27 @@ var render = function() {
                             1
                           ),
                           _vm._v(" "),
-                          _c("v-col", { attrs: { cols: "12" } }),
+                          _c(
+                            "v-col",
+                            { attrs: { cols: "12" } },
+                            [
+                              _c("v-file-input", {
+                                ref: "file",
+                                attrs: {
+                                  color: "#000080",
+                                  "prepend-icon": "",
+                                  height: "100px",
+                                  accept: "image/*",
+                                  multiple: "",
+                                  filled: "",
+                                  outlined: "",
+                                  label: "Upload image"
+                                },
+                                on: { change: _vm.encodeImageFileAsURL }
+                              })
+                            ],
+                            1
+                          ),
                           _vm._v(" "),
                           _c(
                             "v-col",

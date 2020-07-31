@@ -12,13 +12,14 @@ class Mail extends Mailable
      * @return $this
      */
 
-    public function __construct($name, $email, $phone, $country, $messages)
+    public function __construct($name, $email, $phone, $country, $messages, $img)
     {
         $this->name = $name;
         $this->country = $country;
         $this->email = $email;
         $this->phone = $phone;
         $this->messages = $messages;
+        $this->img = $img;
     }
 
     public function build()
@@ -30,7 +31,8 @@ class Mail extends Mailable
                 'phone' => $this->phone,
                 'country' => $this->country,
                 'messages' => $this->messages,
-                'email' => $this->email
+                'email' => $this->email,
+                'img' => $this->img
             ]);;
 
             // var_dump($this->view());

@@ -8,26 +8,27 @@ use Illuminate\Support\Facades\Storage;
 
 class AppController extends Controller
 {
-    public function index(Request $request) {
+	public function index(Request $request) {
+	
+		if (last($request->segments()) == 'email') {
 
-        // if($request->images) {
-         
-            // var_dump($request->all());
-            // Storage::disk('uploads')->put($request->images, 'Contents');
-        //     $path = $request->file('photo')->store('cache');
-        //     $file = $request->file('photo');
-        //     $path = $file->storeAs('cache', $filename);
-            
-        //     var_dump(time().'.'.$request->image->getClientOriginalExtension());
-        // }
-    
-        // Storage::disk('cache')->put($request->attachments, 'Contents');
+			if(is_countable ($request->images)) {
+				$imgPath = [];
 
-        if (last($request->segments()) == 'email') {
-            event(new EmailEvent($request->email, $request->name, $request->phone, $request->country, $request->message));
-        } else { 
-            return view('app'); 
-        }
-    
-    }
+				foreach ($request->images as $image) {
+					$imgName = 'attachment-'.time().rand(1,10000) .'.'.$image->getClientOriginalExtension();
+					$path = $image->storeAs('uploads', $imgName);
+					array_push($imgPath, $path);
+				}
+			} else {
+				$imgPath = '';
+				$imgName = 'attachment-'.time().'.'.$request->images->getClientOriginalExtension();
+				$imgPath = $request->images->storeAs('uploads', $imgName);
+			}
+	
+			event(new EmailEvent($request->email, $request->name, $request->phone, $request->country, $request->message, $imgPath));
+		} else { 
+			return view('app'); 
+		}
+	}
 }
