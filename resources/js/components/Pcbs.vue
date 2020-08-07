@@ -38,7 +38,7 @@
 				</ul>
 			</v-col>
 			<v-col cols="12" class="text-left">
-				<h4 class="mb-2">Proudction</h4>
+				<h4 class="mb-2">Production</h4>
 				<ul>
 					<li>
 						Manual and robotized serial production 

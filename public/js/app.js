@@ -2428,6 +2428,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'Connectors',
   data: function data() {
@@ -2450,6 +2456,11 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
 //
 //
 //
@@ -3354,6 +3365,21 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'AboutUsView',
   data: function data() {
@@ -3431,6 +3457,13 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -3448,16 +3481,14 @@ __webpack_require__.r(__webpack_exports__);
       userImage: null,
       attachments: null,
       images: {},
-      loading: false
+      loading: false,
+      previewImages: []
     };
   },
   methods: {
     submit: function submit(e) {
       var _this = this;
 
-      // const config = {
-      // 	headers: { 'content-type': 'multipart/form-data' }
-      // }
       var formData = new FormData();
       formData.append('email', this.email);
       formData.append('name', this.firstName);
@@ -3465,14 +3496,11 @@ __webpack_require__.r(__webpack_exports__);
       formData.append('phone', this.phone);
       formData.append('message', this.message);
 
-      if (Object.keys(this.images).length > 1) {
-        for (var i = 0; i < this.images.length; i++) {
-          formData.append("images[".concat(i, "]"), this.images[i]);
-        }
-      } else {
-        formData.append('images', this.images);
+      for (var i = 0; i < this.images.length; i++) {
+        formData.append("images[".concat(i, "]"), this.images[i]);
       }
 
+      this.previewImages = '';
       this.images = {};
       this.loading = true;
       axios__WEBPACK_IMPORTED_MODULE_0___default.a.post('/email', formData).then(function (response) {
@@ -3483,16 +3511,19 @@ __webpack_require__.r(__webpack_exports__);
       });
     },
     encodeImageFileAsURL: function encodeImageFileAsURL(e) {
-      if (e.length > 1) {
-        var tempImages = [];
-        e.forEach(function (value, index) {
-          tempImages.push(value);
-        }); // this.images = Object.assign({}, tempImages);
-
-        this.images = tempImages;
-      } else {
-        this.images = e[0];
-      }
+      var tempImages = [];
+      var tempPreviewImages = [];
+      e.forEach(function (value, index) {
+        tempImages.push(value);
+        tempPreviewImages.push(URL.createObjectURL(value));
+      });
+      this.images = tempImages;
+      this.previewImages = tempPreviewImages;
+    },
+    removeImages: function removeImages(e) {
+      this.previewImages = '';
+      this.images = {};
+      this.$refs.fileUpload.value = null;
     }
   }
 });
@@ -7793,7 +7824,7 @@ var render = function() {
             _c("ul", { staticClass: "pl-0" }, [
               _c("li", [
                 _vm._v(
-                  "\n\t\t\t\t\t\tHeatshrinking tubes different sizes and scales, for wires and cables isolation  \n\t\t\t\t\t"
+                  "\n\t\t\t\t\t\tHeat shrinking tubes different sizes and scales, for wires and cables isolation  \n\t\t\t\t\t"
                 )
               ]),
               _vm._v(" "),
@@ -8187,7 +8218,7 @@ var render = function() {
               _vm._v(" "),
               _c("li", [
                 _vm._v(
-                  "\n\t\t\t\t\t\tOur offer includes connectors with different pitch and pin configuration, power connectors, audio and video connectors, signal connectors, data connectors and many more. \n\t\t\t\t\t"
+                  "\n\t\t\t\t\t\tOur offer includes connectors with different pitch and pin\n\t\t\t\t\t\tconfiguration, power connectors, audio and video connectors,\n\t\t\t\t\t\tsignal connectors, data connectors and many more. \n\t\t\t\t\t"
                 )
               ])
             ])
@@ -8201,7 +8232,7 @@ var render = function() {
             _c("ul", { staticClass: "pl-0" }, [
               _c("li", [
                 _vm._v(
-                  "\n\t\t\t\t\t\tWith every connector we offer it’s corresponding crimp contacts suitable for conductors of different thickness, as well as connector backshells for the connectors that use them  \n\t\t\t\t\t"
+                  "\n\t\t\t\t\t\tWith every connector we offer it’s corresponding crimp contacts\n\t\t\t\t\t\tsuitable for conductors of different thickness, as well as\n\t\t\t\t\t\tconnector back shells for the connectors that use them  \n\t\t\t\t\t"
                 )
               ])
             ])
@@ -8215,7 +8246,7 @@ var render = function() {
             _c("ul", { staticClass: "pl-0" }, [
               _c("li", [
                 _vm._v(
-                  "\n\t\t\t\t\t\teComponents also offers alternative models of connectors, manufactured by our Chinese partners if your project demands lower priced, but still very reliable components  \n\t\t\t\t\t"
+                  "\n\t\t\t\t\t\teComponents also offers alternative models of connectors,\n\t\t\t\t\t\tmanufactured by our Chinese partners if your project demands lower\n\t\t\t\t\t\tpriced, but still very reliable components  \n\t\t\t\t\t"
                 )
               ])
             ])
@@ -8624,13 +8655,13 @@ var render = function() {
             _c("ul", { staticClass: "pl-0" }, [
               _c("li", [
                 _vm._v(
-                  "\n\t\t\t\t\tPossible procurement of different parts for deviecs, like built-in monitors, touch screen monitors, LED panels, power supplies, Bluetooth modules, antennas, amplifier, and many other parts that you require. \n\t\t\t\t"
+                  "\n\t\t\t\t\tPossible procurement of different parts for devices, like built-in\n\t\t\t\t\tmonitors, touch screen monitors, LED panels, power supplies,\n\t\t\t\t\tBluetooth modules, antennas, amplifier, and many other parts that\n\t\t\t\t\tyou require. \n\t\t\t\t"
                 )
               ]),
               _vm._v(" "),
               _c("li", [
                 _vm._v(
-                  "\n\t\t\t\t\tRetail and bulk procuring from European and American distributers, as well as from our Chinese partners at good prices with short delivery time  \n\t\t\t\t"
+                  "\n\t\t\t\t\tRetail and bulk procuring from European and American distributors,\n\t\t\t\t\tas well as from our Chinese partners at good prices with short\n\t\t\t\t\tdelivery time  \n\t\t\t\t"
                 )
               ]),
               _vm._v(" "),
@@ -9319,7 +9350,7 @@ var render = function() {
             [
               _c("h3", { staticClass: "mb-5" }, [
                 _vm._v("Led "),
-                _c("span", [_vm._v("lighthing")])
+                _c("span", [_vm._v("lightning")])
               ]),
               _vm._v(" "),
               _c("p", { staticClass: "mb-0" }, [
@@ -9490,7 +9521,7 @@ var render = function() {
           ]),
           _vm._v(" "),
           _c("v-col", { staticClass: "text-left", attrs: { cols: "12" } }, [
-            _c("h4", { staticClass: "mb-2" }, [_vm._v("Proudction")]),
+            _c("h4", { staticClass: "mb-2" }, [_vm._v("Production")]),
             _vm._v(" "),
             _c("ul", [
               _c("li", [
@@ -10008,7 +10039,7 @@ var render = function() {
                   _vm._v(" "),
                   _c("p", [
                     _vm._v(
-                      "We are trusted member of domestic adn global supply chain."
+                      "We are trusted member of domestic and global supply chain."
                     )
                   ])
                 ],
@@ -10610,7 +10641,7 @@ var render = function() {
                       ]),
                       _vm._v(" "),
                       _c("p", { staticClass: "mb-0" }, [
-                        _vm._v("Posibility of special order")
+                        _vm._v("Possibility of special order")
                       ])
                     ]
                   ),
@@ -10636,7 +10667,7 @@ var render = function() {
                         ]),
                         _vm._v(" "),
                         _c("p", { staticClass: "mb-0 ml-5" }, [
-                          _vm._v("- Type A – Type B, Type B mini, Type B micr")
+                          _vm._v("- Type A – Type B, Type B mini, Type B micro")
                         ]),
                         _vm._v(" "),
                         _c("p", { staticClass: "mb-0 ml-5" }, [
@@ -10819,31 +10850,31 @@ var render = function() {
                   _vm._v(" "),
                   _c("p", [
                     _vm._v(
-                      "\n\t\t\t\t\tWhen eComponents team first started out, our passion for helping innovative people accomplish \n\t\t\t\t\tincredible things drove us to quit our day jobs, and gave us the impetus to turn hard work and inspiration into this booming endeavor.  \n\t\t\t\t"
+                      "\n\t\t\t\t\tWhen eComponents team first started out, our passion for helping\n\t\t\t\t\tinnovative people accomplish incredible things drove us to quit our\n\t\t\t\t\tday jobs, and gave us the impetus to turn hard work and inspiration\n\t\t\t\t\tinto this booming endeavor.  \n\t\t\t\t"
                     )
                   ]),
                   _vm._v(" "),
                   _c("p", [
                     _vm._v(
-                      "\n\t\t\t\t\tWe now provide our customers with electronic components – wires and cables, connectors, active and passive components of the highest quality made by world’s leading manufacturers, such as Molex, TE Connectivity, JST, MEDIKabel, HELUKABEL etc., at very competitive prices. We navigate our way through the ocean of electronic equipment, terminology, and datasheets with ease - so you don’t have to! \n\t\t\t\t"
+                      "\n\t\t\t\t\tWe now provide our customers with electronic components – wires and\n\t\t\t\t\tcables, connectors, active and passive components of the highest\n\t\t\t\t\tquality made by world’s leading manufacturers, such as Molex, TE\n\t\t\t\t\tConnectivity, JST, MEDIKabel, HELUKABEL etc., at very competitive\n\t\t\t\t\tprices. We navigate our way through the ocean of electronic\n\t\t\t\t\tequipment, terminology, and data sheets with ease - so you don’t have\n\t\t\t\t\tto! \n\t\t\t\t"
                     )
                   ]),
                   _vm._v(" "),
                   _c("p", [
                     _vm._v(
-                      "\n\t\t\t\t\tWe also excel at producing custom cable assemblies and cable harnesses for all your connecting needs. If you can imagine it, we can make it; you put all the pieces together, we’ll make them work! \n\t\t\t\t"
+                      "\n\t\t\t\t\tWe also excel at producing custom cable assemblies and cable\n\t\t\t\t\tharnesses for all your connecting needs. If you can imagine it, we\n\t\t\t\t\tcan make it; you put all the pieces together, we’ll make them work! \n\t\t\t\t"
                     )
                   ]),
                   _vm._v(" "),
                   _c("p", [
                     _vm._v(
-                      "\n\t\t\t\t\teComponents is based in Serbia, but we are able to ship anywhere in the world. We are thrilled to be a part of the ever-growing wing of the electronics industry. \n\t\t\t\t"
+                      "\n\t\t\t\t\teComponents is based in Serbia, but we are able to ship anywhere in\n\t\t\t\t\tthe world. We are thrilled to be a part of the ever-growing wing of\n\t\t\t\t\tthe electronics industry. \n\t\t\t\t"
                     )
                   ]),
                   _vm._v(" "),
                   _c("p", [
                     _vm._v(
-                      "\n\t\t\t\t\tIf you have any questions or comments, please don't hesitate to contact us. Our polite staff will gladly assist you and provide answers to your inquiries as soon as possible. We are looking forward to working with you! \n\t\t\t\t"
+                      "\n\t\t\t\t\tIf you have any questions or comments, please don't hesitate to\n\t\t\t\t\tcontact us. Our polite staff will gladly assist you and provide\n\t\t\t\t\tanswers to your inquiries as soon as possible. We are looking\n\t\t\t\t\tforward to working with you! \n\t\t\t\t"
                     )
                   ]),
                   _vm._v(" "),
@@ -11080,25 +11111,73 @@ var render = function() {
                           _vm._v(" "),
                           _c(
                             "v-col",
-                            { attrs: { cols: "12" } },
+                            { staticClass: "text-right", attrs: { cols: "4" } },
                             [
                               _c("v-file-input", {
-                                ref: "file",
+                                ref: "fileUpload",
                                 attrs: {
                                   color: "#000080",
                                   "prepend-icon": "",
-                                  height: "100px",
+                                  height: "50px",
                                   accept: "image/*",
                                   multiple: "",
-                                  filled: "",
                                   outlined: "",
-                                  label: "Upload image"
+                                  label: "Upload images"
                                 },
                                 on: { change: _vm.encodeImageFileAsURL }
                               })
                             ],
                             1
                           ),
+                          _vm._v(" "),
+                          _vm.previewImages.length > 0
+                            ? _c(
+                                "v-col",
+                                {
+                                  staticClass: "text-right",
+                                  attrs: {
+                                    lg: "12",
+                                    md: "12",
+                                    sm: "12",
+                                    cols: "12"
+                                  }
+                                },
+                                [
+                                  _c("v-divider", { staticClass: "pb-3" }),
+                                  _vm._v(" "),
+                                  _c(
+                                    "span",
+                                    {
+                                      staticClass:
+                                        "contact-us-container__remove-images",
+                                      on: {
+                                        click: function($event) {
+                                          return _vm.removeImages()
+                                        }
+                                      }
+                                    },
+                                    [_vm._v("X")]
+                                  )
+                                ],
+                                1
+                              )
+                            : _vm._e(),
+                          _vm._v(" "),
+                          _vm._l(_vm.previewImages, function(img, index) {
+                            return _c(
+                              "v-col",
+                              {
+                                key: index,
+                                attrs: { lg: "3", md: "3", sm: "2", cols: "2" }
+                              },
+                              [
+                                _c("v-img", {
+                                  attrs: { src: img, "max-width": "200px" }
+                                })
+                              ],
+                              1
+                            )
+                          }),
                           _vm._v(" "),
                           _c(
                             "v-col",
@@ -11111,6 +11190,7 @@ var render = function() {
                                 "v-btn",
                                 {
                                   attrs: {
+                                    width: "160px",
                                     type: "submit",
                                     color: "#000080",
                                     large: "",
@@ -11128,7 +11208,7 @@ var render = function() {
                             1
                           )
                         ],
-                        1
+                        2
                       )
                     ],
                     1

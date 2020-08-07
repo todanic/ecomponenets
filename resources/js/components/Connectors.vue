@@ -67,7 +67,9 @@
 							Broad selection of connectors of world’s renowned manufacturers such as Molex, TE Connectivity, JST…  
 						</li>
 						<li>
-							Our offer includes connectors with different pitch and pin configuration, power connectors, audio and video connectors, signal connectors, data connectors and many more. 
+							Our offer includes connectors with different pitch and pin
+							configuration, power connectors, audio and video connectors,
+							signal connectors, data connectors and many more. 
 						</li>
 					</ul>
 				</v-col>
@@ -75,7 +77,9 @@
 					<h4 class="mb-2">Crimp contacts and connector housings </h4>
 					<ul class="pl-0">
 						<li>
-							With every connector we offer it’s corresponding crimp contacts suitable for conductors of different thickness, as well as connector backshells for the connectors that use them  
+							With every connector we offer it’s corresponding crimp contacts
+							suitable for conductors of different thickness, as well as
+							connector back shells for the connectors that use them  
 						</li>
 					</ul>
 				</v-col>
@@ -85,7 +89,9 @@
 					</h4>
 					<ul class="pl-0">
 						<li>
-							eComponents also offers alternative models of connectors, manufactured by our Chinese partners if your project demands lower priced, but still very reliable components  
+							eComponents also offers alternative models of connectors,
+							manufactured by our Chinese partners if your project demands lower
+							priced, but still very reliable components  
 						</li>
 					</ul>
 				</v-col>

@@ -39,7 +39,7 @@
 					</h4>
 					<ul class="pl-0">
 						<li>
-							Heatshrinking tubes different sizes and scales, for wires and cables isolation  
+							Heat shrinking tubes different sizes and scales, for wires and cables isolation  
 						</li>
 						<li>
 							PVC tubes different sizes and dimensions 

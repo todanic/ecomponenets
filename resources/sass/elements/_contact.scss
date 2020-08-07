@@ -60,4 +60,13 @@
   .v-text-field__details {
     display: none;
   }
+
+  &__remove-images {
+    font-size: 14px;
+    border: 1px solid;
+    border-radius: 50%;
+    padding: 3px;
+    cursor: pointer;
+    color: $primary-color;
+  }
 }

@@ -169,7 +169,7 @@
 						<h3>Cable <span>assemblies</span></h3>
 						<p class="mb-0">Wide assortment of cable assemblies</p>
 						<p class="mb-0">Stay connected at any moment</p>
-						<p class="mb-0">Posibility of special order</p>
+						<p class="mb-0">Possibility of special order</p>
 					</v-col>
 					<v-col cols="12">
 						<h4 class="mb-2">
@@ -182,7 +182,7 @@
 							<li>
 								Combinations:
 								<p class="mb-0 ml-5">- Type A male – Type A female (extension USB type A cable with or without screws for mounting</p>
-								<p class="mb-0 ml-5">- Type A – Type B, Type B mini, Type B micr</p>
+								<p class="mb-0 ml-5">- Type A – Type B, Type B mini, Type B micro</p>
 								<p class="mb-0 ml-5">- Type A – Type</p> 
 								<p class="mb-0 ml-5">- and others... </p>
 							</li>

@@ -14,20 +14,35 @@
 						dependability and uniqueness. 
 					</p>
 					<p>
-						When eComponents team first started out, our passion for helping innovative people accomplish 
-						incredible things drove us to quit our day jobs, and gave us the impetus to turn hard work and inspiration into this booming endeavor.  
+						When eComponents team first started out, our passion for helping
+						innovative people accomplish incredible things drove us to quit our
+						day jobs, and gave us the impetus to turn hard work and inspiration
+						into this booming endeavor.  
 					</p>
 					<p>
-						We now provide our customers with electronic components – wires and cables, connectors, active and passive components of the highest quality made by world’s leading manufacturers, such as Molex, TE Connectivity, JST, MEDIKabel, HELUKABEL etc., at very competitive prices. We navigate our way through the ocean of electronic equipment, terminology, and datasheets with ease - so you don’t have to! 
+						We now provide our customers with electronic components – wires and
+						cables, connectors, active and passive components of the highest
+						quality made by world’s leading manufacturers, such as Molex, TE
+						Connectivity, JST, MEDIKabel, HELUKABEL etc., at very competitive
+						prices. We navigate our way through the ocean of electronic
+						equipment, terminology, and data sheets with ease - so you don’t have
+						to! 
 					</p>
 					<p>
-						We also excel at producing custom cable assemblies and cable harnesses for all your connecting needs. If you can imagine it, we can make it; you put all the pieces together, we’ll make them work! 
+						We also excel at producing custom cable assemblies and cable
+						harnesses for all your connecting needs. If you can imagine it, we
+						can make it; you put all the pieces together, we’ll make them work! 
 					</p>
 					<p>
-						eComponents is based in Serbia, but we are able to ship anywhere in the world. We are thrilled to be a part of the ever-growing wing of the electronics industry. 
+						eComponents is based in Serbia, but we are able to ship anywhere in
+						the world. We are thrilled to be a part of the ever-growing wing of
+						the electronics industry. 
 					</p>
 					<p>
-						If you have any questions or comments, please don't hesitate to contact us. Our polite staff will gladly assist you and provide answers to your inquiries as soon as possible. We are looking forward to working with you! 
+						If you have any questions or comments, please don't hesitate to
+						contact us. Our polite staff will gladly assist you and provide
+						answers to your inquiries as soon as possible. We are looking
+						forward to working with you! 
 					</p>
 					<p>
 						Sincerely,<br>

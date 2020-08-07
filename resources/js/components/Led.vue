@@ -8,7 +8,7 @@
 				<v-img  class="subcat-img" max-width="600px" max-height="400px" src="/images/led/led.jpg" alt=""></v-img>
 			</v-col>
 			<v-col lg="5" md="5" sm="12" cols="12" class="text-left">
-				<h3 class="mb-5">Led <span>lighthing</span></h3>
+				<h3 class="mb-5">Led <span>lightning</span></h3>
 				<p class="mb-0">Wide range of every connection type</p>
 				<p class="mb-0">Possible mounting of cables and connectors on LED strips and modules for easier connection</p>
 				<p class="mb-0">Easy mounting (3M strip)</p>

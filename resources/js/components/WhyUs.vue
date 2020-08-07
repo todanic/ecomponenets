@@ -28,7 +28,7 @@
 				<v-col lg="4" md="4" sm="6" cols="12" class="text-center why-us-container__cols">
 					<v-img class="ml-auto mr-auto" max-width="120px" src="/images/why-us/trusted.png"></v-img>
 					<h3>Trusted</h3>
-					<p>We are trusted member of domestic adn global supply chain.</p>
+					<p>We are trusted member of domestic and global supply chain.</p>
 				</v-col>
 				<v-col lg="4" md="4" sm="6" cols="12" class="text-center why-us-container__cols">
 					<v-img class="ml-auto mr-auto" max-width="75px" src="/images/why-us/quality.png"></v-img>

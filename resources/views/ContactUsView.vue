@@ -36,12 +36,19 @@
 							<v-textarea height="150px" outlined color="#000080" label="Message" v-model="message">
 						</v-textarea>
 						</v-col>
-						<v-col cols="12">
-							<v-file-input ref="file" @change="encodeImageFileAsURL" color="#000080" prepend-icon="" height="100px" accept="image/*" multiple filled outlined label="Upload image">
+						<v-col class="text-right" cols="4">
+							<v-file-input ref="fileUpload" @change="encodeImageFileAsURL" color="#000080" prepend-icon="" height="50px" accept="image/*" multiple outlined label="Upload images">
 							</v-file-input>
 						</v-col>
+						<v-col class="text-right" v-if="previewImages.length > 0" lg="12" md="12" sm="12" cols="12">
+								<v-divider class="pb-3"></v-divider>
+								<span class="contact-us-container__remove-images" @click="removeImages()">X</span>
+						</v-col>
+						<v-col lg="3" md="3" sm="2" cols="2" v-for="(img, index) in previewImages" :key="index">
+								<v-img :src="img" max-width="200px"></v-img>
+						</v-col>
 						<v-col cols="12" class="text-right">
-							<v-btn type="submit" color="#000080" large dark @click="submit">
+							<v-btn width="160px" type="submit" color="#000080" large dark @click="submit">
 								Send
 							</v-btn>
 						</v-col>
@@ -73,14 +80,12 @@ export default  {
 			userImage: null,
 			attachments: null,
 			images: {},
-			loading: false
+			loading: false,
+			previewImages: []
 		}
 	},
 	methods: {
 		submit(e) {
-			// const config = {
-			// 	headers: { 'content-type': 'multipart/form-data' }
-			// }
 			var formData = new FormData();
 			
 			formData.append('email', this.email);
@@ -88,14 +93,12 @@ export default  {
 			formData.append('country', this.country);
 			formData.append('phone', this.phone);
 			formData.append('message', this.message);
-
-			if(Object.keys(this.images).length > 1) {
-				for (var i = 0; i < this.images.length; i++) {
-					formData.append(`images[${i}]`, this.images[i]);
-				} 
-			} else {
-				formData.append('images', this.images);
+		
+			for (var i = 0; i < this.images.length; i++) {
+				formData.append(`images[${i}]`, this.images[i]);
 			}
+
+			this.previewImages = '';
 			this.images = {};
 			this.loading = true;
 
@@ -107,17 +110,21 @@ export default  {
 			.catch(error => alert('Error accrued!'))
 		},
 		encodeImageFileAsURL(e) {
-			
-			if(e.length > 1) {
-				var tempImages = [];
-				e.forEach(function(value, index) {
-					tempImages.push(value);
-				});
-				// this.images = Object.assign({}, tempImages);
-				this.images = tempImages;
-			} else {
-				this.images = e[0];
-			}
+			var tempImages = [];
+			var tempPreviewImages = [];
+
+			e.forEach(function(value, index) {
+				tempImages.push(value);
+				tempPreviewImages.push(URL.createObjectURL(value))
+			});
+
+			this.images = tempImages;
+			this.previewImages = tempPreviewImages;
+		},
+		removeImages(e) {
+			this.previewImages = '';
+			this.images = {};
+			this.$refs.fileUpload.value=null;
 		}
 	}
 }

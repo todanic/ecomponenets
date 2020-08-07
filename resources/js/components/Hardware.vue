@@ -17,10 +17,15 @@
 			<v-col cols="12" class="text-left">
 				<ul class="pl-0">
 					<li>
-						Possible procurement of different parts for deviecs, like built-in monitors, touch screen monitors, LED panels, power supplies, Bluetooth modules, antennas, amplifier, and many other parts that you require. 
+						Possible procurement of different parts for devices, like built-in
+						monitors, touch screen monitors, LED panels, power supplies,
+						Bluetooth modules, antennas, amplifier, and many other parts that
+						you require. 
 					</li>
 					<li>
-						Retail and bulk procuring from European and American distributers, as well as from our Chinese partners at good prices with short delivery time  
+						Retail and bulk procuring from European and American distributors,
+						as well as from our Chinese partners at good prices with short
+						delivery time  
 					</li>
 					<li>
 						Metal housings, plexiglass parts and other
