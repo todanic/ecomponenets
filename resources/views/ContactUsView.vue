@@ -55,7 +55,7 @@
 					</v-row>
 				</v-col>
 				<v-col v-else class="text-center pb-6">
-					<cube-spin></cube-spin>
+<!--					<cube-spin></cube-spin>-->
 				</v-col>
 			</v-row>
 		</v-container>
@@ -63,12 +63,12 @@
 </template>
 <script>
 import axios from 'axios'
-import CubeSpin from 'vue-loading-spinner/src/components/Circle.vue'
+// import CubeSpin from 'vue-loading-spinner/src/components/Circle.vue'
 
 export default  {
 	name: 'ContactUsView',
   components: {
-		CubeSpin
+		// CubeSpin
 	},
 	data () {
 		return {
@@ -102,7 +102,7 @@ export default  {
 			this.images = {};
 			this.loading = true;
 
-			axios.post('/email',formData)
+			axios.post('/api/email',formData)
 			.then((response)=>{
 				alert('Thank you for contacting us!')
 				this.loading = false;

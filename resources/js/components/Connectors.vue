@@ -207,43 +207,61 @@
 	</v-container>
 </template>
 <script>
+
+import axios from 'axios'
+
 export default {
 	name: 'Connectors',
 	data() {
 		return {
-				connectorImages: [
-					'/images/connectors/sub-connectors/connector2.jpg',
-					'/images/connectors/sub-connectors/connector3.jpg',
-					'/images/connectors/sub-connectors/connector4.jpg',
-					'/images/connectors/sub-connectors/connector5.jpg',
-					'/images/connectors/sub-connectors/connector6.jpg',
-					'/images/connectors/sub-connectors/connector7.jpg',
-					'/images/connectors/sub-connectors/connector8.jpg',
-					'/images/connectors/sub-connectors/connector9.jpg',
-					'/images/connectors/sub-connectors/connector10.jpg',
-					'/images/connectors/sub-connectors/connector11.jpg',
-					'/images/connectors/sub-connectors/connector12.jpg',
-					'/images/connectors/sub-connectors/connector13.jpg',
-					'/images/connectors/sub-connectors/connector14.jpg',
-					'/images/connectors/sub-connectors/connector15.jpg',
-			],
-				terminalImages: [
-					'/images/connectors/terminals/terminals2.jpg',
-					'/images/connectors/terminals/terminals3.jpg',
-					'/images/connectors/terminals/terminals4.jpg',
-					'/images/connectors/terminals/terminals5.jpg',
-					'/images/connectors/terminals/terminals6.jpg',
-					'/images/connectors/terminals/terminals7.jpg',
-					'/images/connectors/terminals/terminals8.jpg',
-			],
-				componentImages: [
-					'/images/connectors/components/component.jpg',
-					'/images/connectors/components/component2.jpg',
-					'/images/connectors/components/component3.jpg',
-					'/images/connectors/components/component4.jpg',
-					'/images/connectors/components/component5.jpg',
-			],
+			connectorImages: [],
+			terminalImages: [],
+			componentImages: [],
 		}
-	}
+	},
+	mounted() {
+		axios.get('/api/index', {
+			params: {
+				folder: 'connectors/sub-connectors'
+			}
+			})
+			.then((response)=>{
+				let images = response.data.images;
+
+				images.forEach(image => {
+					this.connectorImages.push('/images/connectors/sub-connectors/' + image);
+				});
+				console.log(images)
+			})
+			.catch(error => console.log(error))
+
+		axios.get('/api/index', {
+			params: {
+				folder: 'connectors/terminals'
+			}
+		})
+				.then((response)=>{
+					let images = response.data.images;
+
+					images.forEach(image => {
+						this.terminalImages.push('/images/connectors/terminals/' + image);
+					});
+				})
+				.catch(error => console.log(error))
+
+		axios.get('/api/index', {
+			params: {
+				folder: 'connectors/components'
+			}
+			})
+			.then((response)=>{
+				let images = response.data.images;
+
+				images.forEach(image => {
+					this.componentImages.push('/images/connectors/components/' + image);
+				});
+			})
+			.catch(error => console.log(error))
+	},
 }
 </script>

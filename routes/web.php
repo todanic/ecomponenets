@@ -14,16 +14,12 @@ use App\Http\Controllers\AppController;
 |
 */
 
-// Route::get('/{any}', 'AppController@index')->where('any', '.*');
+//Route::get('{any}', 'AppController@index')->where('any', '.*');
+Route::any('{all}', 'AppController@index')->where('all', '^(?!api).*$');
+//Route::post('{any}', 'AppController@index')->where('any', '.*');
 
-// Route::get('{any}/{locale}', function ($locale) {
-//     if (! in_array($locale, ['en', 'es', 'srb'])) {
-//         abort(400);
-//     }
 
-//     App::setLocale($locale);
+Route::get('/api/index', 'ImagesController@index');
+Route::post('/api/email', 'AppController@email');
 
-// //     //
-// });
-Route::get('{any}', 'AppController@index')->where('any', '.*');
-Route::post('{any}', 'AppController@index')->where('any', '.*'); 
+
