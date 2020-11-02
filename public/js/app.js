@@ -1949,6 +1949,8 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);
 //
 //
 //
@@ -2016,12 +2018,30 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'AdditionsForCables',
   data: function data() {
     return {
-      accessoriesImages: ['/images/cable-accessories/accessories2.jpg', '/images/cable-accessories/accessories3.jpg', '/images/cable-accessories/accessories4.jpg', '/images/cable-accessories/accessories5.jpg', '/images/cable-accessories/accessories6.jpg', '/images/cable-accessories/accessories7.jpg', '/images/cable-accessories/accessories8.jpg', '/images/cable-accessories/accessories9.jpg']
+      accessoriesImages: []
     };
+  },
+  mounted: function mounted() {
+    var _this = this;
+
+    axios__WEBPACK_IMPORTED_MODULE_0___default.a.get('/api/index', {
+      params: {
+        folder: 'cable-accessories'
+      }
+    }).then(function (response) {
+      var images = response.data.images;
+      console.log(images);
+      images.forEach(function (image) {
+        _this.accessoriesImages.push('/images/cable-accessories/' + image);
+      });
+    })["catch"](function (error) {
+      return console.log(error);
+    });
   }
 });
 
@@ -2458,7 +2478,6 @@ __webpack_require__.r(__webpack_exports__);
       images.forEach(function (image) {
         _this.connectorImages.push('/images/connectors/sub-connectors/' + image);
       });
-      console.log(images);
     })["catch"](function (error) {
       return console.log(error);
     });
@@ -2500,6 +2519,8 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);
 //
 //
 //
@@ -2540,12 +2561,29 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'Hardware',
   data: function data() {
     return {
-      hardwareImages: ['/images/hardware/hardware2.jpg', '/images/hardware/hardware3.jpg', '/images/hardware/hardware4.jpg', '/images/hardware/hardware5.jpg', '/images/hardware/hardware6.jpg']
+      hardwareImages: []
     };
+  },
+  mounted: function mounted() {
+    var _this = this;
+
+    axios__WEBPACK_IMPORTED_MODULE_0___default.a.get('/api/index', {
+      params: {
+        folder: 'hardware'
+      }
+    }).then(function (response) {
+      var images = response.data.images;
+      images.forEach(function (image) {
+        _this.hardwareImages.push('/images/hardware/' + image);
+      });
+    })["catch"](function (error) {
+      return console.log(error);
+    });
   }
 });
 
@@ -2757,6 +2795,8 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);
 //
 //
 //
@@ -2799,12 +2839,29 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'Led',
   data: function data() {
     return {
-      ledImages: ['/images/led/led.jpg', '/images/led/led2.jpg', '/images/led/led3.jpg']
+      ledImages: []
     };
+  },
+  mounted: function mounted() {
+    var _this = this;
+
+    axios__WEBPACK_IMPORTED_MODULE_0___default.a.get('/api/index', {
+      params: {
+        folder: 'led'
+      }
+    }).then(function (response) {
+      var images = response.data.images;
+      images.forEach(function (image) {
+        _this.ledImages.push('/images/led/' + image);
+      });
+    })["catch"](function (error) {
+      return console.log(error);
+    });
   }
 });
 
@@ -2819,6 +2876,8 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);
 //
 //
 //
@@ -2881,12 +2940,29 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'Pcbs',
   data: function data() {
     return {
-      pcbsImages: ['/images/pcbs/pcbs4.jpg', '/images/pcbs/pcbs2.jpg', '/images/pcbs/pcbs3.jpg']
+      pcbsImages: []
     };
+  },
+  mounted: function mounted() {
+    var _this = this;
+
+    axios__WEBPACK_IMPORTED_MODULE_0___default.a.get('/api/index', {
+      params: {
+        folder: 'pcbs'
+      }
+    }).then(function (response) {
+      var images = response.data.images;
+      images.forEach(function (image) {
+        _this.pcbsImages.push('/images/pcbs/' + image);
+      });
+    })["catch"](function (error) {
+      return console.log(error);
+    });
   }
 });
 
@@ -3100,6 +3176,8 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);
 //
 //
 //
@@ -3335,15 +3413,56 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'WiresCables',
   data: function data() {
     return {
-      wireImages: ['/images/wires-cables/wires/wire1.jpg', '/images/wires-cables/wires/wire2.jpg', '/images/wires-cables/wires/wire3.jpg', '/images/wires-cables/wires/wire4.jpg', '/images/wires-cables/wires/wire5.jpg', '/images/wires-cables/wires/wire6.jpg'],
-      cableImages: ['/images/wires-cables/cables/cable1.jpg', '/images/wires-cables/cables/cable2.jpg', '/images/wires-cables/cables/cable3.jpg'],
-      readyMadeCableImages: ['/images/wires-cables/ready-made-cables/ready_made_cabels1.jpg', '/images/wires-cables/ready-made-cables/ready_made_cables2.jpg', '/images/wires-cables/ready-made-cables/ready_made_cables3.jpg', '/images/wires-cables/ready-made-cables/ready_made_cables4.jpg'],
+      wireImages: [],
+      cableImages: [],
+      readyMadeCableImages: [],
       className: null
     };
+  },
+  mounted: function mounted() {
+    var _this = this;
+
+    axios__WEBPACK_IMPORTED_MODULE_0___default.a.get('/api/index', {
+      params: {
+        folder: 'wires-cables/wires'
+      }
+    }).then(function (response) {
+      var images = response.data.images;
+      images.forEach(function (image) {
+        _this.wireImages.push('/images/wires-cables/wires/' + image);
+      });
+    })["catch"](function (error) {
+      return console.log(error);
+    });
+    axios__WEBPACK_IMPORTED_MODULE_0___default.a.get('/api/index', {
+      params: {
+        folder: 'wires-cables/cables'
+      }
+    }).then(function (response) {
+      var images = response.data.images;
+      images.forEach(function (image) {
+        _this.cableImages.push('/images/wires-cables/cables/' + image);
+      });
+    })["catch"](function (error) {
+      return console.log(error);
+    });
+    axios__WEBPACK_IMPORTED_MODULE_0___default.a.get('/api/index', {
+      params: {
+        folder: 'wires-cables/ready-made-cables'
+      }
+    }).then(function (response) {
+      var images = response.data.images;
+      images.forEach(function (image) {
+        _this.readyMadeCableImages.push('/images/wires-cables/ready-made-cables/' + image);
+      });
+    })["catch"](function (error) {
+      return console.log(error);
+    });
   }
 });
 

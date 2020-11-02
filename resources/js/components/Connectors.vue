@@ -231,7 +231,6 @@ export default {
 				images.forEach(image => {
 					this.connectorImages.push('/images/connectors/sub-connectors/' + image);
 				});
-				console.log(images)
 			})
 			.catch(error => console.log(error))
 

@@ -234,31 +234,61 @@
 	</v-container>
 </template>
 <script>
+
+import axios from 'axios'
+
 export default {
 	name: 'WiresCables',
 	data () {
 		return {
-			wireImages: [
-					'/images/wires-cables/wires/wire1.jpg',
-					'/images/wires-cables/wires/wire2.jpg',
-					'/images/wires-cables/wires/wire3.jpg',
-					'/images/wires-cables/wires/wire4.jpg',
-					'/images/wires-cables/wires/wire5.jpg',
-					'/images/wires-cables/wires/wire6.jpg',
-			],
-			cableImages: [
-				'/images/wires-cables/cables/cable1.jpg',
-				'/images/wires-cables/cables/cable2.jpg',
-				'/images/wires-cables/cables/cable3.jpg',
-			],
-			readyMadeCableImages: [
-				'/images/wires-cables/ready-made-cables/ready_made_cabels1.jpg',
-				'/images/wires-cables/ready-made-cables/ready_made_cables2.jpg',
-				'/images/wires-cables/ready-made-cables/ready_made_cables3.jpg',
-				'/images/wires-cables/ready-made-cables/ready_made_cables4.jpg',
-			],
+			wireImages: [],
+			cableImages: [],
+			readyMadeCableImages: [],
 			className:null
 		}
-	}
+	},
+	mounted() {
+		axios.get('/api/index', {
+			params: {
+				folder: 'wires-cables/wires'
+			}
+		})
+				.then((response)=>{
+					let images = response.data.images;
+
+					images.forEach(image => {
+						this.wireImages.push('/images/wires-cables/wires/' + image);
+					});
+				})
+				.catch(error => console.log(error))
+
+		axios.get('/api/index', {
+			params: {
+				folder: 'wires-cables/cables'
+			}
+		})
+				.then((response)=>{
+					let images = response.data.images;
+
+					images.forEach(image => {
+						this.cableImages.push('/images/wires-cables/cables/' + image);
+					});
+				})
+				.catch(error => console.log(error))
+
+		axios.get('/api/index', {
+			params: {
+				folder: 'wires-cables/ready-made-cables'
+			}
+		})
+				.then((response)=>{
+					let images = response.data.images;
+
+					images.forEach(image => {
+						this.readyMadeCableImages.push('/images/wires-cables/ready-made-cables/' + image);
+					});
+				})
+				.catch(error => console.log(error))
+	},
 }
 </script>

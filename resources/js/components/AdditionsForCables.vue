@@ -66,21 +66,30 @@
 	</v-container>
 </template>
 <script>
+
+import axios from 'axios'
+
 export default {
 	name: 'AdditionsForCables',
 	data() {
 		return {
-				accessoriesImages: [
-					'/images/cable-accessories/accessories2.jpg',
-					'/images/cable-accessories/accessories3.jpg',
-					'/images/cable-accessories/accessories4.jpg',
-					'/images/cable-accessories/accessories5.jpg',
-					'/images/cable-accessories/accessories6.jpg',
-					'/images/cable-accessories/accessories7.jpg',
-					'/images/cable-accessories/accessories8.jpg',
-					'/images/cable-accessories/accessories9.jpg',
-			],
+				accessoriesImages: [],
 		}
+	},
+	mounted() {
+		axios.get('/api/index', {
+			params: {
+				folder: 'cable-accessories'
+			}
+		})
+				.then((response) => {
+					let images = response.data.images;
+console.log(images)
+					images.forEach(image => {
+						this.accessoriesImages.push('/images/cable-accessories/' + image);
+					});
+				})
+				.catch(error => console.log(error))
 	}
 }
 </script>

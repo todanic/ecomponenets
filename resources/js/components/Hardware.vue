@@ -39,18 +39,30 @@
 	</v-container>
 </template>
 <script>
+
+import axios from 'axios'
+
 export default {
 	name: 'Hardware',
 	data() {
 		return {
-			hardwareImages: [
-			 '/images/hardware/hardware2.jpg',
-			 '/images/hardware/hardware3.jpg',
-			 '/images/hardware/hardware4.jpg',
-			 '/images/hardware/hardware5.jpg',
-			 '/images/hardware/hardware6.jpg',
-		],
+			hardwareImages: [],
 		}
+	},
+	mounted() {
+		axios.get('/api/index', {
+			params: {
+				folder: 'hardware'
+			}
+		})
+				.then((response) => {
+					let images = response.data.images;
+
+					images.forEach(image => {
+						this.hardwareImages.push('/images/hardware/' + image);
+					});
+				})
+				.catch(error => console.log(error))
 	}
 }
 </script>

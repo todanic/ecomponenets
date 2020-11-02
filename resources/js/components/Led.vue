@@ -41,16 +41,30 @@
 	</v-container>
 </template>
 <script>
+
+import axios from 'axios'
+
 export default {
 	name: 'Led',
 	data() {
 		return {
-				ledImages: [
-					'/images/led/led.jpg',
-					'/images/led/led2.jpg',
-					'/images/led/led3.jpg',
-			],
+				ledImages: [],
 		}
+	},
+	mounted() {
+		axios.get('/api/index', {
+			params: {
+				folder: 'led'
+			}
+		})
+				.then((response) => {
+					let images = response.data.images;
+
+					images.forEach(image => {
+						this.ledImages.push('/images/led/' + image);
+					});
+				})
+				.catch(error => console.log(error))
 	}
 }
 </script>

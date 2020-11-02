@@ -14,9 +14,7 @@ use App\Http\Controllers\AppController;
 |
 */
 
-//Route::get('{any}', 'AppController@index')->where('any', '.*');
 Route::any('{all}', 'AppController@index')->where('all', '^(?!api).*$');
-//Route::post('{any}', 'AppController@index')->where('any', '.*');
 
 
 Route::get('/api/index', 'ImagesController@index');

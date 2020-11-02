@@ -61,16 +61,30 @@
 	</v-container>
 </template>
 <script>
+
+import axios from 'axios'
+
 export default {
 	name: 'Pcbs',
 	data() {
 		return {
-				pcbsImages: [
-				 '/images/pcbs/pcbs4.jpg',
-				 '/images/pcbs/pcbs2.jpg',
-				 '/images/pcbs/pcbs3.jpg',
-			],
+				pcbsImages: [],
 		}
+	},
+	mounted() {
+		axios.get('/api/index', {
+			params: {
+				folder: 'pcbs'
+			}
+		})
+				.then((response) => {
+					let images = response.data.images;
+
+					images.forEach(image => {
+						this.pcbsImages.push('/images/pcbs/' + image);
+					});
+				})
+				.catch(error => console.log(error))
 	}
 }
 </script>
