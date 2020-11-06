@@ -1,6 +1,6 @@
 <template name="additions-for-cables">
 	<v-container class="shrink-width connectors-container text-center">
-			<v-row id="pcbs">
+			<v-row id="pcbs" daTa-aos="fade-down" data-aos-delay="400" data-aos-easing="ease-in-out">
 			<v-col cols="12">
 				<h2 class="subcat-title mb-5">Cable accessories</h2>
 			</v-col>
@@ -14,7 +14,7 @@
 				<p class="mb-0">Everything you need for neat wiring and marking in one place</p>
 			</v-col>
 		</v-row>
-		<v-row class="wholesale-subcat-info">
+		<v-row class="wholesale-subcat-info" daTa-aos="fade-down" data-aos-delay="400" data-aos-easing="ease-in-out">
 				<v-col cols="12">
 					<h3 class="mt-5">
 						Cable accessories					
@@ -60,9 +60,7 @@
 					</ul>
 				</v-col>
 			</v-row>
-			<v-row>
-				<base-miny-gallery :galleryImages="accessoriesImages"></base-miny-gallery>
-			</v-row>
+			<base-miny-gallery :minyGallery="true" :className="'additionCables'" :galleryImages="accessoriesImages"></base-miny-gallery>
 	</v-container>
 </template>
 <script>

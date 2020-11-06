@@ -1,7 +1,7 @@
-<template name="splash-component">
+<template>
 	<v-container fluid class="splash-container pa-0">
-		<v-carousel dark class="carousel-block" fade cycle light height="500" hide-delimiter-background :show-arrows="false">
-		<v-carousel-item :src="image.src" class="carousel-item" v-for="(image, i) in images" :key="i">
+		<v-carousel dark class="splash-container__carousel" fade cycle light height="500" hide-delimiter-background :show-arrows="false">
+		<v-carousel-item :src="image.src" v-for="(image, i) in images" :key="i">
 		</v-carousel-item>
 	</v-carousel>
 	</v-container>

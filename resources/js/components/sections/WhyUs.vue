@@ -1,10 +1,10 @@
 <template>
 <v-container fluid class="why-us-container">
 		<v-container class="shrink-width">
-			<v-row class="justify-center">
+			<v-row class="justify-center" daTa-aos="fade-down" data-aos-delay="400" data-aos-easing="ease-in-out">
 				<h2>Why choose <span>eComponents d.o.o</span></h2>
 			</v-row>
-			<v-row>
+			<v-row daTa-aos="fade-down" data-aos-delay="400" data-aos-easing="ease-in-out">
 				<v-col lg="4" md="4" sm="6" cols="12" class="text-center why-us-container__cols">
 					<v-img class="ml-auto mr-auto" max-width="90px" src="/images/why-us/fast.png"></v-img>
 					<h3>Fast quotation</h3>

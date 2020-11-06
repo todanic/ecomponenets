@@ -5,8 +5,15 @@ html {
     scroll-behavior: smooth
 }
 
+body {
+    font-family: 'Poppins', 'sans-serif';
+}
+
+.v-application {
+    font-family: 'Poppins', 'sans-serif';
+}
+
 h1, h2, h3, h4 {
-    font-family: 'Poppins';
     color: $primary-text;
 
     span {
@@ -34,7 +41,6 @@ h4 {
 }
 
 p {
-    font-family: 'Poppins';
     font-size: 1.6rem;
     color: $secondary-text;
     letter-spacing: 1px;
@@ -46,20 +52,11 @@ p {
 }
 
 ul li {
-    font-family: 'Poppins';
     font-size: 1.6rem;
     letter-spacing: 2px;
 }
 
 a {
-    font-family: 'Poppins';
     font-size: 1.5rem;
     letter-spacing: 2px;
-}
-
-@media (min-width: 1904px){
-
-    .container.shrink-width {
-        max-width: 1185px;
-    }
 }

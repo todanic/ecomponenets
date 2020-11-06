@@ -1,13 +1,13 @@
 .splash-container {
   border-bottom: 1px solid #222121;
 
-  .carousel-block {
-      overflow: visible;
+  &__carousel {
+    overflow: visible;
 
     .v-carousel__controls {
-        bottom: -49px;
-        padding: 20px 0 29px 0;
-        background-color: $secondary-black;
+      bottom: -49px;
+      padding: 20px 0 29px 0;
+      background-color: $secondary-black;
 
       .v-btn--icon.v-size--small {
         height: 12px;
@@ -27,11 +27,14 @@
 
 @media screen and (max-width: 768px) {
 
-  .splash-container .carousel-block {
-    height: 400px !important;
+  .splash-container {
+
+    &__carousel {
+      height: 300px !important;
+    }
 
     .v-image {
-      height: 400px !important;
+      height: 300px !important;
     }
   }
 }

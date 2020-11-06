@@ -1,7 +1,7 @@
 <template>
 	<v-container fludi>
 		<v-container class="shrink-width contact-us-container">
-			<v-row>
+			<v-row daTa-aos="fade-down" data-aos-delay="400" data-aos-easing="ease-in-out">
 				<v-col cols="12" class="text-center">
 					<h1 class="mb-4">Contact <span>us</span></h1>
 				</v-col>
@@ -36,7 +36,7 @@
 							<v-textarea height="150px" outlined color="#000080" label="Message" v-model="message">
 						</v-textarea>
 						</v-col>
-						<v-col class="text-right" cols="4">
+						<v-col class="text-right" lg="4" md="4" sm="12" cols="12">
 							<v-file-input ref="fileUpload" @change="encodeImageFileAsURL" color="#000080" prepend-icon="" height="50px" accept="image/*" multiple outlined label="Upload images">
 							</v-file-input>
 						</v-col>
@@ -87,13 +87,13 @@ export default  {
 	methods: {
 		submit(e) {
 			var formData = new FormData();
-			
+
 			formData.append('email', this.email);
 			formData.append('name', this.firstName);
 			formData.append('country', this.country);
 			formData.append('phone', this.phone);
 			formData.append('message', this.message);
-		
+
 			for (var i = 0; i < this.images.length; i++) {
 				formData.append(`images[${i}]`, this.images[i]);
 			}

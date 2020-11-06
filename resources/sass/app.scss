@@ -1,36 +1,32 @@
-// $fa-font-path: "/fonts" !default;
 //color
-
 @import 'colors';
 
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Nunito');
 
-//base
+//Default
 @import 'base';
+@import 'helper.classes';
 
 //font awesome
 @import '~font-awesome/scss/font-awesome';
 
-// Bootstrap
-// @import '~bootstrap/scss/bootstrap';
-
 //Vuetify
 @import '~vuetify/dist/vuetify.min.css';
 
-//elements
-@import 'elements/header';
-@import 'elements/splash';
-@import 'elements/home-cat';
-@import 'elements/prefooter';
-@import 'elements/footer';
-@import 'elements/contact';
-@import 'elements/wholesale';
-@import 'elements/why-us';
-@import 'elements/wire-harness';
-@import 'elements/gallery';
+//components
+@import 'components/header';
+@import 'components/splash';
+@import 'components/home.cat';
+@import 'components/prefooter';
+@import 'components/footer';
+@import 'components/contact';
+@import 'components/wholesale';
+@import 'components/why.us';
+@import 'components/wire.harness';
+@import 'components/gallery';
 
-@import '~aos/dist/aos.css'
+@import '~aos/dist/aos.css';
 
 
 

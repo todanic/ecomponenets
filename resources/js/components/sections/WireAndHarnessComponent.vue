@@ -2,7 +2,7 @@
 	<v-container fluid class="wire-harness-container pa-0">
 		<v-parallax src="images/parallax.jpg">
 			<v-container class="shrink-width">
-				<v-row>
+				<v-row daTa-aos="fade-down" data-aos-delay="400" data-aos-easing="ease-in-out">
 					<v-col class="text-center" lg="12" md="12" sm="12" cols="12">
 						<h2 class="mb-4">
 							Wire and cable harnessing 

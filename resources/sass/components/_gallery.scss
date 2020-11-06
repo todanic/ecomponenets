@@ -13,6 +13,15 @@
 	}
 }
 
+.v-slide-group.v-item-group>.v-slide-group__next, .v-slide-group.v-item-group>.v-slide-group__prev {
+	transform: skewX(15deg);
+
+	i {
+		color: #000000;
+		font-size: 30px;
+	}
+}
+
 @media screen and (max-width: 768px) {
 	
 	.gallery-image {

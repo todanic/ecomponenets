@@ -1,7 +1,7 @@
 <template name="about-us-view">
 	<v-container fluid class="about-us-view-container">
 		<v-container>
-			<v-row class="justify-center">
+			<v-row class="justify-center" daTa-aos="fade-down" data-aos-delay="400" data-aos-easing="ease-in-out">
 				<v-col cols="12" class="text-center">
 					<h1 class="mb-4">
 						About <span>us</span>
