@@ -1,6 +1,6 @@
 <template name="pcbs">
   <v-container class="shrink-width connectors-container text-center">
-    <v-row id="pcbs" daTa-aos="fade-down" data-aos-delay="400" data-aos-easing="ease-in-out">
+    <v-row id="pcbs">
       <v-col cols="12">
         <h2 class="subcat-title mb-5">PCBs</h2>
       </v-col>
@@ -14,7 +14,7 @@
         <p class="mb-0">Filling of PCB with SMT components</p>
       </v-col>
     </v-row>
-    <v-row class="wholesale-subcat-info mt-6" daTa-aos="fade-down" data-aos-delay="400" data-aos-easing="ease-in-out">
+    <v-row class="wholesale-subcat-info mt-6">
       <v-col cols="12" class="text-left">
         <h4 class="mb-2">
           Assistance with design

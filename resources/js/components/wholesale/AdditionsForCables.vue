@@ -1,6 +1,6 @@
 <template name="additions-for-cables">
 	<v-container class="shrink-width connectors-container text-center">
-			<v-row id="pcbs" daTa-aos="fade-down" data-aos-delay="400" data-aos-easing="ease-in-out">
+			<v-row id="pcbs">
 			<v-col cols="12">
 				<h2 class="subcat-title mb-5">Cable accessories</h2>
 			</v-col>
@@ -14,7 +14,7 @@
 				<p class="mb-0">Everything you need for neat wiring and marking in one place</p>
 			</v-col>
 		</v-row>
-		<v-row class="wholesale-subcat-info" daTa-aos="fade-down" data-aos-delay="400" data-aos-easing="ease-in-out">
+		<v-row class="wholesale-subcat-info">
 				<v-col cols="12">
 					<h3 class="mt-5">
 						Cable accessories					
@@ -82,7 +82,7 @@ export default {
 		})
 				.then((response) => {
 					let images = response.data.images;
-console.log(images)
+
 					images.forEach(image => {
 						this.accessoriesImages.push('/images/cable-accessories/' + image);
 					});

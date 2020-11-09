@@ -1,6 +1,6 @@
 <template name="wires-cables">
   <v-container class="shrink-width wires-cables-container text-center">
-    <v-row daTa-aos="fade-down" data-aos-delay="400" data-aos-easing="ease-in-out">
+    <v-row>
       <v-col cols="12">
         <h3 class="wholesale-subcat-title mb-5">Wires and <span>cables categories</span></h3>
       </v-col>
@@ -39,7 +39,7 @@
 
     <v-divider class="pb-10"></v-divider>
 
-    <v-row id="wires" daTa-aos="fade-down" data-aos-delay="400" data-aos-easing="ease-in-out">
+    <v-row id="wires">
       <v-col cols="12">
         <h2 class="subcat-title mb-5">Wires</h2>
       </v-col>
@@ -54,7 +54,7 @@
         <p class="mb-0">Special offer - measuring cables to required length</p>
       </v-col>
     </v-row>
-    <v-row class="wholesale-subcat-info" daTa-aos="fade-down" data-aos-delay="400" data-aos-easing="ease-in-out">
+    <v-row class="wholesale-subcat-info">
       <v-col cols="12">
         <h3 class="mt-5">
           Liy

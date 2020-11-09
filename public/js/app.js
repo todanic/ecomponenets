@@ -2320,6 +2320,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -2539,7 +2540,6 @@ __webpack_require__.r(__webpack_exports__);
       }
     }).then(function (response) {
       var images = response.data.images;
-      console.log(images);
       images.forEach(function (image) {
         _this.accessoriesImages.push('/images/cable-accessories/' + image);
       });
@@ -9128,14 +9128,7 @@ var render = function() {
     [
       _c(
         "v-row",
-        {
-          attrs: {
-            id: "pcbs",
-            "daTa-aos": "fade-down",
-            "data-aos-delay": "400",
-            "data-aos-easing": "ease-in-out"
-          }
-        },
+        { attrs: { id: "pcbs" } },
         [
           _c("v-col", { attrs: { cols: "12" } }, [
             _c("h2", { staticClass: "subcat-title mb-5" }, [
@@ -9191,14 +9184,7 @@ var render = function() {
       _vm._v(" "),
       _c(
         "v-row",
-        {
-          staticClass: "wholesale-subcat-info",
-          attrs: {
-            "daTa-aos": "fade-down",
-            "data-aos-delay": "400",
-            "data-aos-easing": "ease-in-out"
-          }
-        },
+        { staticClass: "wholesale-subcat-info" },
         [
           _c("v-col", { attrs: { cols: "12" } }, [
             _c("h3", { staticClass: "mt-5" }, [
@@ -9308,13 +9294,6 @@ var render = function() {
     [
       _c(
         "v-row",
-        {
-          attrs: {
-            "daTa-aos": "fade-down",
-            "data-aos-delay": "400",
-            "data-aos-easing": "ease-in-out"
-          }
-        },
         [
           _c("v-col", { attrs: { cols: "12" } }, [
             _c("h3", { staticClass: "wholesale-subcat-title mb-5" }, [
@@ -9436,14 +9415,7 @@ var render = function() {
       _vm._v(" "),
       _c(
         "v-row",
-        {
-          attrs: {
-            id: "connectors",
-            "daTa-aos": "fade-down",
-            "data-aos-delay": "400",
-            "data-aos-easing": "ease-in-out"
-          }
-        },
+        { attrs: { id: "connectors" } },
         [
           _c("v-col", { attrs: { cols: "12" } }, [
             _c("h2", { staticClass: "subcat-title mb-5" }, [
@@ -9875,14 +9847,7 @@ var render = function() {
     [
       _c(
         "v-row",
-        {
-          attrs: {
-            id: "led",
-            "daTa-aos": "fade-down",
-            "data-aos-delay": "400",
-            "data-aos-easing": "ease-in-out"
-          }
-        },
+        { attrs: { id: "led" } },
         [
           _c("v-col", { attrs: { cols: "12" } }, [
             _c("h2", { staticClass: "subcat-title mb-5" }, [_vm._v("Hardware")])
@@ -9928,14 +9893,7 @@ var render = function() {
       _vm._v(" "),
       _c(
         "v-row",
-        {
-          staticClass: "wholesale-subcat-info mt-6",
-          attrs: {
-            "daTa-aos": "fade-down",
-            "data-aos-delay": "400",
-            "data-aos-easing": "ease-in-out"
-          }
-        },
+        { staticClass: "wholesale-subcat-info mt-6" },
         [
           _c("v-col", { staticClass: "text-left", attrs: { cols: "12" } }, [
             _c("ul", { staticClass: "pl-0" }, [
@@ -10001,14 +9959,7 @@ var render = function() {
     [
       _c(
         "v-row",
-        {
-          attrs: {
-            id: "led",
-            "daTa-aos": "fade-down",
-            "data-aos-delay": "400",
-            "data-aos-easing": "ease-in-out"
-          }
-        },
+        { attrs: { id: "led" } },
         [
           _c("v-col", { attrs: { cols: "12" } }, [
             _c("h2", { staticClass: "subcat-title mb-5" }, [
@@ -10066,14 +10017,7 @@ var render = function() {
       _vm._v(" "),
       _c(
         "v-row",
-        {
-          staticClass: "wholesale-subcat-info mt-6",
-          attrs: {
-            "daTa-aos": "fade-down",
-            "data-aos-delay": "400",
-            "data-aos-easing": "ease-in-out"
-          }
-        },
+        { staticClass: "wholesale-subcat-info mt-6" },
         [
           _c("v-col", { staticClass: "text-left", attrs: { cols: "12" } }, [
             _c("ul", { staticClass: "pl-0" }, [
@@ -10145,14 +10089,7 @@ var render = function() {
     [
       _c(
         "v-row",
-        {
-          attrs: {
-            id: "pcbs",
-            "daTa-aos": "fade-down",
-            "data-aos-delay": "400",
-            "data-aos-easing": "ease-in-out"
-          }
-        },
+        { attrs: { id: "pcbs" } },
         [
           _c("v-col", { attrs: { cols: "12" } }, [
             _c("h2", { staticClass: "subcat-title mb-5" }, [_vm._v("PCBs")])
@@ -10202,14 +10139,7 @@ var render = function() {
       _vm._v(" "),
       _c(
         "v-row",
-        {
-          staticClass: "wholesale-subcat-info mt-6",
-          attrs: {
-            "daTa-aos": "fade-down",
-            "data-aos-delay": "400",
-            "data-aos-easing": "ease-in-out"
-          }
-        },
+        { staticClass: "wholesale-subcat-info mt-6" },
         [
           _c("v-col", { staticClass: "text-left", attrs: { cols: "12" } }, [
             _c("h4", { staticClass: "mb-2" }, [
@@ -10287,13 +10217,6 @@ var render = function() {
     [
       _c(
         "v-row",
-        {
-          attrs: {
-            "daTa-aos": "fade-down",
-            "data-aos-delay": "400",
-            "data-aos-easing": "ease-in-out"
-          }
-        },
         [
           _c("v-col", { attrs: { cols: "12" } }, [
             _c("h3", { staticClass: "wholesale-subcat-title mb-5" }, [
@@ -10415,14 +10338,7 @@ var render = function() {
       _vm._v(" "),
       _c(
         "v-row",
-        {
-          attrs: {
-            id: "wires",
-            "daTa-aos": "fade-down",
-            "data-aos-delay": "400",
-            "data-aos-easing": "ease-in-out"
-          }
-        },
+        { attrs: { id: "wires" } },
         [
           _c("v-col", { attrs: { cols: "12" } }, [
             _c("h2", { staticClass: "subcat-title mb-5" }, [_vm._v("Wires")])
@@ -10474,14 +10390,7 @@ var render = function() {
       _vm._v(" "),
       _c(
         "v-row",
-        {
-          staticClass: "wholesale-subcat-info",
-          attrs: {
-            "daTa-aos": "fade-down",
-            "data-aos-delay": "400",
-            "data-aos-easing": "ease-in-out"
-          }
-        },
+        { staticClass: "wholesale-subcat-info" },
         [
           _c("v-col", { attrs: { cols: "12" } }, [
             _c("h3", { staticClass: "mt-5" }, [_vm._v("\n        Liy\n      ")])
@@ -68769,15 +68678,14 @@ var app = new vue__WEBPACK_IMPORTED_MODULE_0___default.a({
 /*!**************************************************************!*\
   !*** ./resources/js/components/sections/FooterComponent.vue ***!
   \**************************************************************/
-/*! no static exports found */
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _FooterComponent_vue_vue_type_template_id_69679e6c___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./FooterComponent.vue?vue&type=template&id=69679e6c& */ "./resources/js/components/sections/FooterComponent.vue?vue&type=template&id=69679e6c&");
 /* harmony import */ var _FooterComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./FooterComponent.vue?vue&type=script&lang=js& */ "./resources/js/components/sections/FooterComponent.vue?vue&type=script&lang=js&");
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _FooterComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _FooterComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
 
@@ -68807,7 +68715,7 @@ component.options.__file = "resources/js/components/sections/FooterComponent.vue
 /*!***************************************************************************************!*\
   !*** ./resources/js/components/sections/FooterComponent.vue?vue&type=script&lang=js& ***!
   \***************************************************************************************/
-/*! no static exports found */
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";

@@ -1,6 +1,6 @@
 <template name="hardware">
   <v-container class="shrink-width harware-container text-center">
-    <v-row id="led" daTa-aos="fade-down" data-aos-delay="400" data-aos-easing="ease-in-out">
+    <v-row id="led">
       <v-col cols="12">
         <h2 class="subcat-title mb-5">Hardware</h2>
       </v-col>
@@ -14,7 +14,7 @@
         <p class="mb-0">Power supply</p>
       </v-col>
     </v-row>
-    <v-row class="wholesale-subcat-info mt-6" daTa-aos="fade-down" data-aos-delay="400" data-aos-easing="ease-in-out">
+    <v-row class="wholesale-subcat-info mt-6">
       <v-col cols="12" class="text-left">
         <ul class="pl-0">
           <li>

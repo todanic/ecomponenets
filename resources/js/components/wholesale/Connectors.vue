@@ -1,6 +1,6 @@
 <template name="connectors">
   <v-container class="shrink-width connectors-container text-center">
-    <v-row daTa-aos="fade-down" data-aos-delay="400" data-aos-easing="ease-in-out">
+    <v-row>
       <v-col cols="12">
         <h3 class="wholesale-subcat-title mb-5">Connectors, terminals <span>and electronic components </span></h3>
       </v-col>
@@ -38,7 +38,7 @@
 
     <v-divider class="mb-10 mt-6"></v-divider>
 
-    <v-row id="connectors" daTa-aos="fade-down" data-aos-delay="400" data-aos-easing="ease-in-out">
+    <v-row id="connectors">
       <v-col cols="12">
         <h2 class="subcat-title mb-5">Connectors</h2>
       </v-col>
