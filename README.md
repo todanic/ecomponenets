@@ -1,9 +1,5 @@
-<p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
+<h1 align="center">Ecomponents d.o.o</h1>
+<p align="center">Ecomponents doo is a company based in Srbobran that produces cables, led lights, wires etc.</p>
+<p align="center"><a align="center" href="https://ecomponentsdoo.com/">ecomponentsdoo</a></p>
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
-
+<p align="center">The website was made using Laravel and Vue.js as well as a material design framework Vuetify and CSS framework Bootstrap</p>
