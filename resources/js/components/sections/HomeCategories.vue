@@ -67,7 +67,6 @@
 	</v-container>
 </template>
 <script>
-
 	export default {
 			data: () => ({
 			})
