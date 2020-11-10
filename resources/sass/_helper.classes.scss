@@ -1,6 +1,18 @@
+.text--blue {
+  .v-btn__content {
+    color: $primary-color;
+  }
+}
+
+.text--white {
+  .v-btn__content {
+    color: #fff;
+  }
+}
+
 @media (min-width: 1904px){
 
-  .container.shrink-width {
-    max-width: 1185px;
+  .shrink-width {
+    max-width: 1300px;
   }
 }

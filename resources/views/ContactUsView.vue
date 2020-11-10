@@ -48,7 +48,7 @@
 								<v-img :src="img" max-width="200px"></v-img>
 						</v-col>
 						<v-col cols="12" class="text-right">
-							<v-btn width="160px" type="submit" color="#000080" large dark @click="submit">
+							<v-btn width="160px" type="submit" color="#000080" class="btn" large dark @click="submit" rounded>
 								Send
 							</v-btn>
 						</v-col>

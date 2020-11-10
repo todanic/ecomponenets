@@ -4,7 +4,7 @@
 			<v-row class="d-flex justify-center">
 				<v-col lg="6" md="6" sm="12" cols="12">
 						<h3>Wholesale</h3>
-						<ul class="prefooter-container__block">
+						<ul class="prefooter-container__block pa-0">
 							<li><router-link class="prefooter-container__block-link" to="/wholesale/wires-cables">Wires and cables</router-link></li>
 							<li><router-link class="prefooter-container__block-link" to="/wholesale/connectors">Connectors & electronic components</router-link></li>
 							<li><router-link class="prefooter-container__block-link" to="/wholesale/pcbs">PCBs</router-link></li>
@@ -15,7 +15,7 @@
 				</v-col>
 				<v-col lg="4" md="6" sm="12" cols="12">
 					<h3>Learn more</h3>
-						<ul class="prefooter-container__block">
+						<ul class="prefooter-container__block pa-0">
 							<li><router-link class="prefooter-container__block-link" to="/contact-us">Contact us</router-link></li>
 							<li><router-link class="prefooter-container__block-link" to="/about-us">About us</router-link></li>
 							<li><router-link class="prefooter-container__block-link" to="/gallery">Gallery</router-link></li>

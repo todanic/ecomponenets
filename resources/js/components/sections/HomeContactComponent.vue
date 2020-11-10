@@ -7,7 +7,7 @@
         </v-col>
         <v-col cols="12" class="text-center">
           <router-link class="prefooter-block-link" to="/contact-us">
-            <v-btn outlined class="home-contact-btn" x-large rounded>Contact us</v-btn>
+            <v-btn outlined class="btn btn--fill btn--blue text--white" x-large rounded>Contact us</v-btn>
           </router-link>
         </v-col>
       </v-row>

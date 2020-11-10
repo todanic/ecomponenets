@@ -1,5 +1,5 @@
 <template>
-  <v-row class="justify-center mb-4">
+  <v-row class="justify-center mb-4" daTa-aos="fade-down" data-aos-delay="400" data-aos-easing="ease-in-out">
     <gallery :id="className" :images="galleryImages" :index="index" @close="index = null"></gallery>
     <v-sheet
         v-if="minyGallery"

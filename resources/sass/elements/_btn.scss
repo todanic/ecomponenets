@@ -1,0 +1,21 @@
+.btn {
+  font-size: 1.6rem;
+
+  &--blue {
+    border: 2px solid #000080;
+  }
+
+  &--fill:hover:before {
+    background-color: $primary-color;
+    opacity: 1 !important;
+  }
+
+  &.v-btn:before {
+    transition: 0.4s ease-in-out;
+  }
+
+  .v-btn__content {
+    font-size: 1.4rem;
+    text-decoration: none;
+  }
+}
