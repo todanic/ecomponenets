@@ -15,6 +15,7 @@ class ImagesController extends Controller
     public function index(Request $request) {
         $folder = 'images/' .  $request->input('folder');
 
+        //public_path must be removed for production
         $files = File::allFiles(public_path($folder));
         $images_path = [];
 
