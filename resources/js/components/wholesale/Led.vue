@@ -1,6 +1,6 @@
 <template name="led">
   <v-container class="shrink-width led-container text-center">
-    <v-row id="led">
+    <v-row>
       <v-col cols="12">
         <h2 class="subcat-title mb-5">Led program</h2>
       </v-col>
@@ -36,34 +36,33 @@
         </ul>
       </v-col>
     </v-row>
-    <base-miny-gallery :minyGallery="true" class :galleryImages="ledImages"></base-miny-gallery>
+    <base-miny-gallery :className="'led'" :minyGallery=true class :galleryImages="ledImages"></base-miny-gallery>
   </v-container>
 </template>
 <script>
 
-  import axios from 'axios'
+  import ImageService from '../../services/ImageService';
 
   export default {
     name: 'Led',
     data() {
       return {
         ledImages: [],
+        folder: 'led'
       }
     },
     mounted() {
-      axios.get('/api/index', {
-        params: {
-          folder: 'led'
-        }
-      })
-        .then((response) => {
+      ImageService.gallery(this.folder)
+        .then(response => {
           let images = response.data.images;
 
           images.forEach(image => {
-            this.ledImages.push('/images/led/' + image);
+            this.ledImages.push(image);
           });
         })
-        .catch(error => console.log(error))
+        .catch(e => {
+          console.log(e);
+        });
     }
   }
 </script>

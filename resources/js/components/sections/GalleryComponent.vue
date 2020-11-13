@@ -1,5 +1,5 @@
 <template>
-  <v-row class="justify-center mb-4" daTa-aos="fade-down" data-aos-delay="400" data-aos-easing="ease-in-out">
+  <v-row class="justify-center mb-4">
     <gallery :id="className" :images="galleryImages" :index="index" @close="index = null"></gallery>
     <v-sheet
         v-if="minyGallery"
@@ -7,7 +7,7 @@
         max-width="100%">
       <v-slide-group
           multiple
-          show-arrows="true"
+          :show-arrows="true"
           next-icon="fas fa-angle-double-right"
           prev-icon="fas fa-angle-double-left"
           style="font-family:'FontAwesome';">

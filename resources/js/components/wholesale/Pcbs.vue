@@ -60,29 +60,28 @@
 </template>
 <script>
 
-  import axios from 'axios'
+  import ImageService from '../../services/ImageService';
 
   export default {
     name: 'Pcbs',
     data() {
       return {
         pcbsImages: [],
+        folder: 'pcbs'
       }
     },
     mounted() {
-      axios.get('/api/index', {
-        params: {
-          folder: 'pcbs'
-        }
-      })
-        .then((response) => {
+      ImageService.gallery(this.folder)
+        .then(response => {
           let images = response.data.images;
 
           images.forEach(image => {
-            this.pcbsImages.push('/images/pcbs/' + image);
+            this.pcbsImages.push(image);
           });
         })
-        .catch(error => console.log(error))
+        .catch(e => {
+          console.log(e);
+        });
     }
   }
 </script>

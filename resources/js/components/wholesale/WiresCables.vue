@@ -231,12 +231,13 @@
         </v-row>
       </v-col>
     </v-row>
-    <base-miny-gallery :minyGallery="true" :className="'readyMadeCable'" :galleryImages="readyMadeCableImages"></base-miny-gallery>
+    <base-miny-gallery :minyGallery="true" :className="'readyMadeCable'"
+                       :galleryImages="readyMadeCableImages"></base-miny-gallery>
   </v-container>
 </template>
 <script>
 
-  import axios from 'axios'
+  import ImageService from '../../services/ImageService';
 
   export default {
     name: 'WiresCables',
@@ -245,51 +246,38 @@
         wireImages: [],
         cableImages: [],
         readyMadeCableImages: [],
-        className: null
+        className: null,
+        folders: [
+          {folder: 'wires-cables/wires'},
+          {folder: 'wires-cables/cables'},
+          {folder: 'wires-cables/ready-made-cables'}
+        ]
       }
     },
     mounted() {
-      axios.get('/api/index', {
-        params: {
-          folder: 'wires-cables/wires'
-        }
-      })
-        .then((response) => {
-          let images = response.data.images;
+      this.folders.forEach((value, index) => {
 
-          images.forEach(image => {
-            this.wireImages.push('/images/wires-cables/wires/' + image);
+        ImageService.gallery(value.folder, index)
+          .then(response => {
+
+            let images = response.data.images;
+
+            images.forEach(image => {
+              if (index == 0) {
+                this.wireImages.push(image);
+              } else if (index == 1) {
+                this.cableImages.push(image);
+              } else {
+                this.readyMadeCableImages.push(image);
+              }
+
+            });
+          })
+          .catch(e => {
+            console.log(e);
           });
-        })
-        .catch(error => console.log(error))
+      });
 
-      axios.get('/api/index', {
-        params: {
-          folder: 'wires-cables/cables'
-        }
-      })
-        .then((response) => {
-          let images = response.data.images;
-
-          images.forEach(image => {
-            this.cableImages.push('/images/wires-cables/cables/' + image);
-          });
-        })
-        .catch(error => console.log(error))
-
-      axios.get('/api/index', {
-        params: {
-          folder: 'wires-cables/ready-made-cables'
-        }
-      })
-        .then((response) => {
-          let images = response.data.images;
-
-          images.forEach(image => {
-            this.readyMadeCableImages.push('/images/wires-cables/ready-made-cables/' + image);
-          });
-        })
-        .catch(error => console.log(error))
     },
   }
 </script>

@@ -16,13 +16,13 @@ class ImagesController extends Controller
         $folder = 'images/' .  $request->input('folder');
 
         $files = File::allFiles(public_path($folder));
-        $images = [];
+        $images_path = [];
 
         foreach ($files as $file) {
-            $images[] = $file->getRelativePathname();
+            $images_path[] = '/' . $folder . '/' . $file->getRelativePathname();
         }
 
-        return array('images'=>$images);
+        return array('images' => $images_path);
     }
 
 }

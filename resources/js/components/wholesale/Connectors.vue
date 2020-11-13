@@ -97,7 +97,8 @@
         </ul>
       </v-col>
     </v-row>
-    <base-miny-gallery :minyGallery="true" :className="'connector'" :galleryImages="connectorImages"></base-miny-gallery>
+    <base-miny-gallery :minyGallery="true" :className="'connector'"
+                       :galleryImages="connectorImages"></base-miny-gallery>
     <v-divider class="mb-10 mt-6"></v-divider>
 
     <v-row id="terminals" daTa-aos="fade-down" data-aos-delay="400" data-aos-easing="ease-in-out">
@@ -204,12 +205,13 @@
         </ul>
       </v-col>
     </v-row>
-    <base-miny-gallery :minyGallery="true" :className="'component'" :galleryImages="componentImages"></base-miny-gallery>
+    <base-miny-gallery :minyGallery="true" :className="'component'"
+                       :galleryImages="componentImages"></base-miny-gallery>
   </v-container>
 </template>
 <script>
 
-  import axios from 'axios'
+  import ImageService from '../../services/ImageService';
 
   export default {
     name: 'Connectors',
@@ -218,50 +220,37 @@
         connectorImages: [],
         terminalImages: [],
         componentImages: [],
+        folders: [
+          {folder: 'connectors/sub-connectors'},
+          {folder: 'connectors/terminals'},
+          {folder: 'connectors/components'}
+        ]
       }
     },
     mounted() {
-      axios.get('/api/index', {
-        params: {
-          folder: 'connectors/sub-connectors'
-        }
-      })
-        .then((response) => {
-          let images = response.data.images;
+      this.folders.forEach((value, index) => {
 
-          images.forEach(image => {
-            this.connectorImages.push('/images/connectors/sub-connectors/' + image);
+        ImageService.gallery(value.folder, index)
+          .then(response => {
+
+            let images = response.data.images;
+
+            images.forEach(image => {
+              if (index == 0) {
+                this.connectorImages.push(image);
+              } else if (index == 1) {
+                this.terminalImages.push(image);
+              } else {
+                this.componentImages.push(image);
+              }
+
+            });
+          })
+          .catch(e => {
+            console.log(e);
           });
-        })
-        .catch(error => console.log(error))
+      });
 
-      axios.get('/api/index', {
-        params: {
-          folder: 'connectors/terminals'
-        }
-      })
-        .then((response) => {
-          let images = response.data.images;
-
-          images.forEach(image => {
-            this.terminalImages.push('/images/connectors/terminals/' + image);
-          });
-        })
-        .catch(error => console.log(error))
-
-      axios.get('/api/index', {
-        params: {
-          folder: 'connectors/components'
-        }
-      })
-        .then((response) => {
-          let images = response.data.images;
-
-          images.forEach(image => {
-            this.componentImages.push('/images/connectors/components/' + image);
-          });
-        })
-        .catch(error => console.log(error))
     },
   }
 </script>
