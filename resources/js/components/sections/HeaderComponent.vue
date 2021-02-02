@@ -16,6 +16,7 @@
             <span class="header-container__menu-close" @click="toggleMenu()">X</span>
             <li class="header-container__menu-block">
               <router-link @click.native="toggleMenu()" to="/">Home</router-link>
+              <p>{{ __('home.welcome') }}</p>
             </li>
             <li class="header-container__menu-block">
               <router-link @click.native="toggleMenu()" to="/wholesale">Wholesale</router-link>
@@ -48,6 +49,9 @@
       toggleMenu() {
         this.isActive = !this.isActive;
       },
+    },
+    created() {
+      console.log(this.$lang)
     }
   }
 </script>

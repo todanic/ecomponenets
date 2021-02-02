@@ -20,4 +20,9 @@ Route::any('{all}', 'AppController@index')->where('all', '^(?!api).*$');
 Route::get('/api/index', 'ImagesController@index');
 Route::post('/api/email', 'AppController@email');
 
+Route::get('/{lang}', function ($lang) {
+    App::setlocale($lang);
+    return view('home');
+});
+
 

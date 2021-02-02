@@ -10,11 +10,15 @@ import Vuetify from 'vuetify';
 import routes from './routes';
 import App from './App.vue';
 import AOS from 'aos';
+import { Lang } from 'laravel-vue-lang';
 
 var axios = require('axios');
 
-
 Vue.use(Vuetify);
+Vue.use(Lang, {
+  locale: 'sr',
+	fallback: 'en',
+});
 
 
 /**

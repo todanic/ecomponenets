@@ -27,6 +27,7 @@
         "aos": "^2.3.4",
         "fibers": "^3.1.0",
         "font-awesome": "^4.7.0",
+        "laravel-vue-lang": "^3.1.1",
         "node-sass": "^4.14.1",
         "vue-easy-slider": "^5.3.4",
         "vue-gallery": "^2.0.1",
