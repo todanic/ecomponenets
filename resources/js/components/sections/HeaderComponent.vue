@@ -26,6 +26,7 @@
             </li>
             <li class="header-container__menu-block">
               <router-link @click.native="toggleMenu()" to="/wires-and-harness">Wire and cable harnessing</router-link>
+               <p>{{ __('wires-cables.title') }}</p>
             </li>
             <li class="header-container__menu-block">
               <router-link @click.native="toggleMenu()" to="/about-us">About us</router-link>
@@ -34,6 +35,14 @@
               <router-link @click.native="toggleMenu()" to="/contact-us">Contact us</router-link>
             </li>
           </ul>
+          <v-select
+            :items="languages"
+            v-model="defaultLanguage"
+            label="Solo field"
+            dense
+            @change="changeLanguage($event)"
+            solo>
+            </v-select>
         </v-col>
       </v-row>
     </v-container>
@@ -43,15 +52,25 @@
 <script>
   export default {
     data: () => ({
-      isActive: false
+      isActive: false,
+      languages: [
+        "en",
+        "sr"
+      ],
+      defaultLanguage: null
     }),
     methods: {
       toggleMenu() {
         this.isActive = !this.isActive;
       },
+      changeLanguage(lang) {
+       this.$store.commit('changeLanguage', lang);
+       this.defaultLanguage = lang;
+       window.location.reload();
+      }
     },
-    created() {
-      console.log(this.$lang)
+    mounted() {
+      this.defaultLanguage = this.$store.state.language;
     }
   }
 </script>

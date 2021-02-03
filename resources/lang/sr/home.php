@@ -1,4 +1,4 @@
 <?php
-return [
-	'welcome' => "dobrodosli!"
-];
+	return [
+		'welcome' => "dobrodosli!"
+	];

@@ -11,15 +11,7 @@ import routes from './routes';
 import App from './App.vue';
 import AOS from 'aos';
 import { Lang } from 'laravel-vue-lang';
-
-var axios = require('axios');
-
-Vue.use(Vuetify);
-Vue.use(Lang, {
-  locale: 'sr',
-	fallback: 'en',
-});
-
+import store from './store/language.js';
 
 /**
  * The following block of code may be used to automatically register your
@@ -31,6 +23,12 @@ Vue.use(Lang, {
 
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
+
+Vue.use(Vuetify);
+Vue.use(Lang, {
+  locale: store.state.language,
+	fallback: 'en',
+});
 
 Vue.component('header-component',
   require('./components/sections/HeaderComponent.vue').default
@@ -82,5 +80,6 @@ const app = new Vue({
     }
   }),
   router: routes,
+  store: store,
   render: h => h(App)
 }).$mount("#app");
