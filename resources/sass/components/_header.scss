@@ -72,6 +72,17 @@
       }
     }
   }
+  .language-switch {
+    width: 150px;
+    background-color: white;
+
+    option[value="sr"] {
+      .language-switch__option-icon {
+        background: url('/images/srb.png');
+      }
+      
+    }
+  }
 }
 
 @media screen and (max-width: 768px) {

@@ -2126,6 +2126,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -2138,10 +2140,12 @@ __webpack_require__.r(__webpack_exports__);
     toggleMenu: function toggleMenu() {
       this.isActive = !this.isActive;
     },
-    changeLanguage: function changeLanguage(lang) {
-      this.$store.commit('changeLanguage', lang);
-      this.defaultLanguage = lang;
-      window.location.reload();
+    changeLanguage: function changeLanguage(event) {
+      var currentLanguage = this.$router.currentRoute.path.split('/')[1];
+      var newLanguagePath = this.$router.currentRoute.path.replace(currentLanguage, event.target.value);
+      this.$store.commit('changeLanguage', event.target.value);
+      this.defaultLanguage = event.target.value; //  this.$router.push({name: 'HomePage'})
+      // window.location.href = newLanguagePath;
     }
   },
   mounted: function mounted() {
@@ -2800,20 +2804,106 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: 'Connectors',
+  name: "Connectors",
   data: function data() {
     return {
       connectorImages: [],
       terminalImages: [],
       componentImages: [],
       folders: [{
-        folder: 'connectors/sub-connectors'
+        folder: "connectors/sub-connectors"
       }, {
-        folder: 'connectors/terminals'
+        folder: "connectors/terminals"
       }, {
-        folder: 'connectors/components'
+        folder: "connectors/components"
       }]
     };
   },
@@ -8729,9 +8819,7 @@ var render = function() {
                               }
                             },
                             [_vm._v("Home")]
-                          ),
-                          _vm._v(" "),
-                          _c("p", [_vm._v(_vm._s(_vm.__("home.welcome")))])
+                          )
                         ],
                         1
                       ),
@@ -8743,7 +8831,9 @@ var render = function() {
                           _c(
                             "router-link",
                             {
-                              attrs: { to: "/wholesale" },
+                              attrs: {
+                                to: "/" + _vm.defaultLanguage + "/wholesale"
+                              },
                               nativeOn: {
                                 click: function($event) {
                                   return _vm.toggleMenu()
@@ -8763,7 +8853,9 @@ var render = function() {
                           _c(
                             "router-link",
                             {
-                              attrs: { to: "/gallery" },
+                              attrs: {
+                                to: "/" + _vm.defaultLanguage + "/gallery"
+                              },
                               nativeOn: {
                                 click: function($event) {
                                   return _vm.toggleMenu()
@@ -8783,7 +8875,12 @@ var render = function() {
                           _c(
                             "router-link",
                             {
-                              attrs: { to: "/wires-and-harness" },
+                              attrs: {
+                                to:
+                                  "/" +
+                                  _vm.defaultLanguage +
+                                  "/wires-and-harness"
+                              },
                               nativeOn: {
                                 click: function($event) {
                                   return _vm.toggleMenu()
@@ -8807,7 +8904,9 @@ var render = function() {
                           _c(
                             "router-link",
                             {
-                              attrs: { to: "/about-us" },
+                              attrs: {
+                                to: "/" + _vm.defaultLanguage + "/about-us"
+                              },
                               nativeOn: {
                                 click: function($event) {
                                   return _vm.toggleMenu()
@@ -8827,7 +8926,9 @@ var render = function() {
                           _c(
                             "router-link",
                             {
-                              attrs: { to: "/contact-us" },
+                              attrs: {
+                                to: "/" + _vm.defaultLanguage + "/contact-us"
+                              },
                               nativeOn: {
                                 click: function($event) {
                                   return _vm.toggleMenu()
@@ -8842,28 +8943,67 @@ var render = function() {
                     ]
                   ),
                   _vm._v(" "),
-                  _c("v-select", {
-                    attrs: {
-                      items: _vm.languages,
-                      label: "Solo field",
-                      dense: "",
-                      solo: ""
-                    },
-                    on: {
-                      change: function($event) {
-                        return _vm.changeLanguage($event)
+                  _c(
+                    "select",
+                    {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.defaultLanguage,
+                          expression: "defaultLanguage"
+                        }
+                      ],
+                      staticClass: "language-switch",
+                      attrs: { name: "language-switch" },
+                      on: {
+                        change: [
+                          function($event) {
+                            var $$selectedVal = Array.prototype.filter
+                              .call($event.target.options, function(o) {
+                                return o.selected
+                              })
+                              .map(function(o) {
+                                var val = "_value" in o ? o._value : o.value
+                                return val
+                              })
+                            _vm.defaultLanguage = $event.target.multiple
+                              ? $$selectedVal
+                              : $$selectedVal[0]
+                          },
+                          function($event) {
+                            return _vm.changeLanguage($event)
+                          }
+                        ]
                       }
                     },
-                    model: {
-                      value: _vm.defaultLanguage,
-                      callback: function($$v) {
-                        _vm.defaultLanguage = $$v
-                      },
-                      expression: "defaultLanguage"
-                    }
-                  })
-                ],
-                1
+                    [
+                      _c("option", { attrs: { value: "sr" } }, [
+                        _c("span", {
+                          staticClass: "language-switch__option-icon"
+                        }),
+                        _vm._v(" "),
+                        _c(
+                          "span",
+                          { staticClass: "language-switch__option-text" },
+                          [_vm._v("srb")]
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("option", { attrs: { value: "en" } }, [
+                        _c("span", {
+                          staticClass: "language-switch__option-icon"
+                        }),
+                        _vm._v(" "),
+                        _c(
+                          "span",
+                          { staticClass: "language-switch__option-text" },
+                          [_vm._v("en")]
+                        )
+                      ])
+                    ]
+                  )
+                ]
               )
             ],
             1
@@ -10162,7 +10302,7 @@ var render = function() {
         [
           _c("v-col", { attrs: { cols: "12" } }, [
             _c("h3", { staticClass: "wholesale-subcat-title mb-5" }, [
-              _vm._v("Connectors, terminals "),
+              _vm._v("\n\t\t\t\tConnectors, terminals\n\t\t\t\t"),
               _c("span", [_vm._v("and electronic components ")])
             ])
           ]),
@@ -10318,7 +10458,9 @@ var render = function() {
               ]),
               _vm._v(" "),
               _c("p", { staticClass: "mb-0" }, [
-                _vm._v("Wide variety of connectors for different uses")
+                _vm._v(
+                  "\n\t\t\t\tWide variety of connectors for different uses\n\t\t\t"
+                )
               ]),
               _vm._v(" "),
               _c("p", { staticClass: "mb-0" }, [
@@ -10326,7 +10468,9 @@ var render = function() {
               ]),
               _vm._v(" "),
               _c("p", { staticClass: "mb-0" }, [
-                _vm._v("Possibility of ordering alternative connector types")
+                _vm._v(
+                  "\n\t\t\t\tPossibility of ordering alternative connector types\n\t\t\t"
+                )
               ])
             ]
           )
@@ -10347,25 +10491,25 @@ var render = function() {
         [
           _c("v-col", { attrs: { cols: "12" } }, [
             _c("h3", { staticClass: "mt-5" }, [
-              _vm._v("\n        Connectors\n      ")
+              _vm._v("\n\t\t\t\tConnectors\n\t\t\t")
             ])
           ]),
           _vm._v(" "),
           _c("v-col", { staticClass: "text-left", attrs: { cols: "12" } }, [
             _c("h4", { staticClass: "mb-2" }, [
-              _vm._v("\n        Manufacturers and configurations\n      ")
+              _vm._v("\n\t\t\t\tManufacturers and configurations\n\t\t\t")
             ]),
             _vm._v(" "),
             _c("ul", { staticClass: "pl-0" }, [
               _c("li", [
                 _vm._v(
-                  "\n          Broad selection of connectors of world’s renowned manufacturers such as Molex, TE Connectivity, JST… \n        "
+                  "\n\t\t\t\t\tBroad selection of connectors of world’s renowned manufacturers such\n\t\t\t\t\tas Molex, TE Connectivity, JST…\n\t\t\t\t"
                 )
               ]),
               _vm._v(" "),
               _c("li", [
                 _vm._v(
-                  "\n          Our offer includes connectors with different pitch and pin\n          configuration, power connectors, audio and video connectors,\n          signal connectors, data connectors and many more.\n        "
+                  "\n\t\t\t\t\tOur offer includes connectors with different pitch and pin\n\t\t\t\t\tconfiguration, power connectors, audio and video connectors, signal\n\t\t\t\t\tconnectors, data connectors and many more.\n\t\t\t\t"
                 )
               ])
             ])
@@ -10373,13 +10517,13 @@ var render = function() {
           _vm._v(" "),
           _c("v-col", { staticClass: "text-left", attrs: { cols: "12" } }, [
             _c("h4", { staticClass: "mb-2" }, [
-              _vm._v("Crimp contacts and connector housings ")
+              _vm._v("Crimp contacts and connector housings")
             ]),
             _vm._v(" "),
             _c("ul", { staticClass: "pl-0" }, [
               _c("li", [
                 _vm._v(
-                  "\n          With every connector we offer it’s corresponding crimp contacts\n          suitable for conductors of different thickness, as well as\n          connector back shells for the connectors that use them\n        "
+                  "\n\t\t\t\t\tWith every connector we offer it’s corresponding crimp contacts\n\t\t\t\t\tsuitable for conductors of different thickness, as well as connector\n\t\t\t\t\tback shells for the connectors that use them\n\t\t\t\t"
                 )
               ])
             ])
@@ -10387,13 +10531,13 @@ var render = function() {
           _vm._v(" "),
           _c("v-col", { staticClass: "text-left", attrs: { cols: "12" } }, [
             _c("h4", { staticClass: "mb-2" }, [
-              _vm._v("\n        Alternative offer\n      ")
+              _vm._v("\n\t\t\t\tAlternative offer\n\t\t\t")
             ]),
             _vm._v(" "),
             _c("ul", { staticClass: "pl-0" }, [
               _c("li", [
                 _vm._v(
-                  "\n          eComponents also offers alternative models of connectors,\n          manufactured by our Chinese partners if your project demands lower\n          priced, but still very reliable components\n        "
+                  "\n\t\t\t\t\teComponents also offers alternative models of connectors,\n\t\t\t\t\tmanufactured by our Chinese partners if your project demands lower\n\t\t\t\t\tpriced, but still very reliable components\n\t\t\t\t"
                 )
               ])
             ])
@@ -10484,36 +10628,40 @@ var render = function() {
         [
           _c("v-col", { attrs: { cols: "12" } }, [
             _c("h3", { staticClass: "mt-5" }, [
-              _vm._v("\n        Wire and cable terminals\n      ")
+              _vm._v("\n\t\t\t\tWire and cable terminals\n\t\t\t")
             ])
           ]),
           _vm._v(" "),
           _c("v-col", { staticClass: "text-left", attrs: { cols: "12" } }, [
             _c("h4", { staticClass: "mb-2" }, [
-              _vm._v("\n        Types of terminals\n      ")
+              _vm._v("\n\t\t\t\tTypes of terminals\n\t\t\t")
             ]),
             _vm._v(" "),
             _c("ul", { staticClass: "pl-0" }, [
               _c("li", [
                 _vm._v(
-                  "\n          We offer the following types of terminals:\n          "
+                  "\n\t\t\t\t\tWe offer the following types of terminals:\n\t\t\t\t\t"
                 ),
                 _c("p", { staticClass: "mb-0 ml-5" }, [
-                  _vm._v("- Fork terminals (M3, M4, M5…) ")
-                ]),
-                _vm._v(" "),
-                _c("p", { staticClass: "mb-0 ml-5" }, [
-                  _vm._v("- Ring terminals (3mm, 4mm, 5mm… diameter)")
+                  _vm._v("- Fork terminals (M3, M4, M5…)")
                 ]),
                 _vm._v(" "),
                 _c("p", { staticClass: "mb-0 ml-5" }, [
                   _vm._v(
-                    "- Quick connect terminals (2.8mm, 4.8mm, 6.3mm width) "
+                    "\n\t\t\t\t\t\t- Ring terminals (3mm, 4mm, 5mm… diameter)\n\t\t\t\t\t"
                   )
                 ]),
                 _vm._v(" "),
                 _c("p", { staticClass: "mb-0 ml-5" }, [
-                  _vm._v("- and others...Bootlace ferrules")
+                  _vm._v(
+                    "\n\t\t\t\t\t\t- Quick connect terminals (2.8mm, 4.8mm, 6.3mm width)\n\t\t\t\t\t"
+                  )
+                ]),
+                _vm._v(" "),
+                _c("p", { staticClass: "mb-0 ml-5" }, [
+                  _vm._v(
+                    "\n\t\t\t\t\t\t- and others...Bootlace ferrules\n\t\t\t\t\t"
+                  )
                 ]),
                 _vm._v(" "),
                 _c("p", { staticClass: "mb-0 ml-5" }, [_vm._v("- Splices")]),
@@ -10523,7 +10671,7 @@ var render = function() {
               _vm._v(" "),
               _c("li", [
                 _vm._v(
-                  "\n          Our offer includes connectors with different pitch and pin configuration, power connectors, audio and video\n          connectors, signal connectors, data connectors and many more.\n        "
+                  "\n\t\t\t\t\tOur offer includes connectors with different pitch and pin\n\t\t\t\t\tconfiguration, power connectors, audio and video connectors, signal\n\t\t\t\t\tconnectors, data connectors and many more.\n\t\t\t\t"
                 )
               ])
             ])
@@ -10531,13 +10679,13 @@ var render = function() {
           _vm._v(" "),
           _c("v-col", { staticClass: "text-left", attrs: { cols: "12" } }, [
             _c("h4", { staticClass: "mb-2" }, [
-              _vm._v("Crimp contacts and connector housings ")
+              _vm._v("Crimp contacts and connector housings")
             ]),
             _vm._v(" "),
             _c("ul", { staticClass: "pl-0" }, [
               _c("li", [
                 _vm._v(
-                  "\n          With every connector we offer it’s corresponding crimp contacts suitable for conductors of different\n          thickness, as well as connector backshells for the connectors that use them\n        "
+                  "\n\t\t\t\t\tWith every connector we offer it’s corresponding crimp contacts\n\t\t\t\t\tsuitable for conductors of different thickness, as well as connector\n\t\t\t\t\tbackshells for the connectors that use them\n\t\t\t\t"
                 )
               ])
             ])
@@ -10545,13 +10693,13 @@ var render = function() {
           _vm._v(" "),
           _c("v-col", { staticClass: "text-left", attrs: { cols: "12" } }, [
             _c("h4", { staticClass: "mb-2" }, [
-              _vm._v("\n        Alternative offer\n      ")
+              _vm._v("\n\t\t\t\tAlternative offer\n\t\t\t")
             ]),
             _vm._v(" "),
             _c("ul", { staticClass: "pl-0" }, [
               _c("li", [
                 _vm._v(
-                  "\n          eComponents also offers alternative models of connectors, manufactured by our Chinese partners if your\n          project demands lower priced, but still very reliable components\n        "
+                  "\n\t\t\t\t\teComponents also offers alternative models of connectors,\n\t\t\t\t\tmanufactured by our Chinese partners if your project demands lower\n\t\t\t\t\tpriced, but still very reliable components\n\t\t\t\t"
                 )
               ])
             ])
@@ -10612,16 +10760,20 @@ var render = function() {
             },
             [
               _c("h3", { staticClass: "mb-5" }, [
-                _vm._v("All electronic "),
+                _vm._v("\n\t\t\t\tAll electronic "),
                 _c("span", [_vm._v("components in one place")])
               ]),
               _vm._v(" "),
               _c("p", { staticClass: "mb-0" }, [
-                _vm._v("Great selection of active and passive components")
+                _vm._v(
+                  "\n\t\t\t\tGreat selection of active and passive components\n\t\t\t"
+                )
               ]),
               _vm._v(" "),
               _c("p", { staticClass: "mb-0" }, [
-                _vm._v("Electronic components for machines and appliances")
+                _vm._v(
+                  "\n\t\t\t\tElectronic components for machines and appliances\n\t\t\t"
+                )
               ]),
               _vm._v(" "),
               _c("p", { staticClass: "mb-0" }, [_vm._v("Help with selection")])
@@ -10644,15 +10796,15 @@ var render = function() {
         [
           _c("v-col", { staticClass: "text-left", attrs: { cols: "12" } }, [
             _c("h4", { staticClass: "mb-2" }, [
-              _vm._v("\n        Large choice\n      ")
+              _vm._v("\n\t\t\t\tLarge choice\n\t\t\t")
             ]),
             _vm._v(" "),
             _c("ul", { staticClass: "pl-0" }, [
-              _c("li", [_vm._v("\n          Large choice \n        ")]),
+              _c("li", [_vm._v("\n\t\t\t\t\tLarge choice\n\t\t\t\t")]),
               _vm._v(" "),
               _c("li", [
                 _vm._v(
-                  "\n          Relays, LED indicators, resistors, fuses, fuse holders…\n        "
+                  "\n\t\t\t\t\tRelays, LED indicators, resistors, fuses, fuse holders…\n\t\t\t\t"
                 )
               ])
             ])
@@ -10664,7 +10816,7 @@ var render = function() {
             _c("ul", { staticClass: "pl-0" }, [
               _c("li", [
                 _vm._v(
-                  "\n          We can supply you with electronic components starting from few pieces to thousands of pieces\n        "
+                  "\n\t\t\t\t\tWe can supply you with electronic components starting from few\n\t\t\t\t\tpieces to thousands of pieces\n\t\t\t\t"
                 )
               ])
             ])
@@ -71862,9 +72014,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_wholesale_Led_vue__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/wholesale/Led.vue */ "./resources/js/components/wholesale/Led.vue");
 /* harmony import */ var _components_wholesale_Pcbs_vue__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/wholesale/Pcbs.vue */ "./resources/js/components/wholesale/Pcbs.vue");
 /* harmony import */ var _components_wholesale_AdditionsForCables_vue__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/wholesale/AdditionsForCables.vue */ "./resources/js/components/wholesale/AdditionsForCables.vue");
-/* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm.js");
-/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
-/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var _store_language_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./store/language.js */ "./resources/js/store/language.js");
+/* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm.js");
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_14__);
 
 
 
@@ -71879,53 +72032,94 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-vue__WEBPACK_IMPORTED_MODULE_13___default.a.use(vue_router__WEBPACK_IMPORTED_MODULE_12__["default"]);
+
+vue__WEBPACK_IMPORTED_MODULE_14___default.a.use(vue_router__WEBPACK_IMPORTED_MODULE_13__["default"]);
+var lang = _store_language_js__WEBPACK_IMPORTED_MODULE_12__["default"].state.language;
 var routes = [{
-  path: '/',
+  path: "/",
   component: _views_HomeView_vue__WEBPACK_IMPORTED_MODULE_0__["default"],
-  name: 'Home'
+  name: "Home"
 }, {
-  path: '/wholesale',
+  path: "/en/wholesale",
   component: _views_WholesaleView_vue__WEBPACK_IMPORTED_MODULE_1__["default"],
-  name: 'Wholesale',
+  name: "Wholesale",
   children: [{
-    path: 'wires-cables',
+    path: "wires-cables",
     component: _components_wholesale_WiresCables_vue__WEBPACK_IMPORTED_MODULE_6__["default"]
   }, {
-    path: 'connectors',
+    path: "connectors",
     component: _components_wholesale_Connectors_vue__WEBPACK_IMPORTED_MODULE_7__["default"]
   }, {
-    path: 'pcbs',
+    path: "pcbs",
     component: _components_wholesale_Pcbs_vue__WEBPACK_IMPORTED_MODULE_10__["default"]
   }, {
-    path: 'led',
+    path: "led",
     component: _components_wholesale_Led_vue__WEBPACK_IMPORTED_MODULE_9__["default"]
   }, {
-    path: 'cable-accessories',
+    path: "cable-accessories",
     component: _components_wholesale_AdditionsForCables_vue__WEBPACK_IMPORTED_MODULE_11__["default"]
   }, {
-    path: 'hardware',
+    path: "hardware",
     component: _components_wholesale_Hardware_vue__WEBPACK_IMPORTED_MODULE_8__["default"]
   }]
 }, {
-  path: '/contact-us',
+  path: "/contact-us",
   component: _views_ContactUsView_vue__WEBPACK_IMPORTED_MODULE_2__["default"],
-  name: 'ContactUs'
+  name: "ContactUs"
 }, {
-  path: '/gallery',
+  path: "/gallery",
   component: _views_GalleryView_vue__WEBPACK_IMPORTED_MODULE_5__["default"],
-  name: 'GalleryView'
+  name: "GalleryView"
 }, {
-  path: '/wires-and-harness',
+  path: "/wires-and-harness",
   component: _views_WiresAndHarnessView_vue__WEBPACK_IMPORTED_MODULE_4__["default"],
-  name: 'WiresAndHarnessView'
+  name: "WiresAndHarnessView"
 }, {
-  path: '/about-us',
+  path: "/about-us",
   component: _views_AboutUsView_vue__WEBPACK_IMPORTED_MODULE_3__["default"],
-  name: 'AboutUs'
+  name: "AboutUs"
+}, {
+  path: "/sr/wholesale",
+  component: _views_WholesaleView_vue__WEBPACK_IMPORTED_MODULE_1__["default"],
+  name: "Wholesale",
+  children: [{
+    path: "wires-cables",
+    component: _components_wholesale_WiresCables_vue__WEBPACK_IMPORTED_MODULE_6__["default"]
+  }, {
+    path: "connectors",
+    component: _components_wholesale_Connectors_vue__WEBPACK_IMPORTED_MODULE_7__["default"]
+  }, {
+    path: "pcbs",
+    component: _components_wholesale_Pcbs_vue__WEBPACK_IMPORTED_MODULE_10__["default"]
+  }, {
+    path: "led",
+    component: _components_wholesale_Led_vue__WEBPACK_IMPORTED_MODULE_9__["default"]
+  }, {
+    path: "cable-accessories",
+    component: _components_wholesale_AdditionsForCables_vue__WEBPACK_IMPORTED_MODULE_11__["default"]
+  }, {
+    path: "hardware",
+    component: _components_wholesale_Hardware_vue__WEBPACK_IMPORTED_MODULE_8__["default"]
+  }]
+}, {
+  path: "/contact-us",
+  component: _views_ContactUsView_vue__WEBPACK_IMPORTED_MODULE_2__["default"],
+  name: "ContactUs"
+}, {
+  path: "/gallery",
+  component: _views_GalleryView_vue__WEBPACK_IMPORTED_MODULE_5__["default"],
+  name: "GalleryView"
+}, {
+  path: "/wires-and-harness",
+  component: _views_WiresAndHarnessView_vue__WEBPACK_IMPORTED_MODULE_4__["default"],
+  name: "WiresAndHarnessView"
+}, {
+  path: "/about-us",
+  component: _views_AboutUsView_vue__WEBPACK_IMPORTED_MODULE_3__["default"],
+  name: "AboutUs"
 }];
-var router = new vue_router__WEBPACK_IMPORTED_MODULE_12__["default"]({
-  mode: 'history',
+var router = new vue_router__WEBPACK_IMPORTED_MODULE_13__["default"]({
+  mode: "history",
   routes: routes,
   scrollBehavior: function scrollBehavior(to, from, savedPositio) {
     return {
@@ -71999,11 +72193,12 @@ __webpack_require__.r(__webpack_exports__);
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vuex__WEBPACK_IMPORTED_MODULE_1__["default"]);
 /* harmony default export */ __webpack_exports__["default"] = (new vuex__WEBPACK_IMPORTED_MODULE_1__["default"].Store({
   state: {
-    language: 'sr'
+    language: "sr"
   },
   mutations: {
     changeLanguage: function changeLanguage(state, lang) {
       state.language = lang;
+      document.documentElement.setAttribute("lang", lang);
     }
   },
   plugins: [Object(vuex_persistedstate__WEBPACK_IMPORTED_MODULE_2__["default"])()]
@@ -72523,8 +72718,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! D:\personal\ecomponenets\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! D:\personal\ecomponenets\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\XAMPP\htdocs\eomponents\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\XAMPP\htdocs\eomponents\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

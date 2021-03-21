@@ -19,5 +19,6 @@
     <div id="app"></div>
 
         <script rel="preload" src="/js/app.js"></script>
+
     </body>
 </html>

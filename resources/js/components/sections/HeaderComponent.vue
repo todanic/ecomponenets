@@ -16,33 +16,35 @@
             <span class="header-container__menu-close" @click="toggleMenu()">X</span>
             <li class="header-container__menu-block">
               <router-link @click.native="toggleMenu()" to="/">Home</router-link>
-              <p>{{ __('home.welcome') }}</p>
+              <!-- <p>{{ __('home.welcome') }}</p> -->
             </li>
             <li class="header-container__menu-block">
-              <router-link @click.native="toggleMenu()" to="/wholesale">Wholesale</router-link>
+              <router-link @click.native="toggleMenu()" :to="'/' + defaultLanguage + '/wholesale'">Wholesale</router-link>
             </li>
             <li class="header-container__menu-block">
-              <router-link @click.native="toggleMenu()" to="/gallery">Gallery</router-link>
+              <router-link @click.native="toggleMenu()"  :to="'/' + defaultLanguage + '/gallery'">Gallery</router-link>
             </li>
             <li class="header-container__menu-block">
-              <router-link @click.native="toggleMenu()" to="/wires-and-harness">Wire and cable harnessing</router-link>
+              <router-link @click.native="toggleMenu()" :to="'/' + defaultLanguage + '/wires-and-harness'">Wire and cable harnessing</router-link>
                <p>{{ __('wires-cables.title') }}</p>
             </li>
             <li class="header-container__menu-block">
-              <router-link @click.native="toggleMenu()" to="/about-us">About us</router-link>
+              <router-link @click.native="toggleMenu()" :to="'/' + defaultLanguage + '/about-us'">About us</router-link>
             </li>
             <li class="header-container__menu-block">
-              <router-link @click.native="toggleMenu()" to="/contact-us">Contact us</router-link>
+              <router-link @click.native="toggleMenu()" :to=" '/' +defaultLanguage + '/contact-us'">Contact us</router-link>
             </li>
           </ul>
-          <v-select
-            :items="languages"
-            v-model="defaultLanguage"
-            label="Solo field"
-            dense
-            @change="changeLanguage($event)"
-            solo>
-            </v-select>
+          <select name="language-switch" class="language-switch" v-model="defaultLanguage" @change="changeLanguage($event)">
+            <option value="sr">
+              <span class="language-switch__option-icon"></span>
+              <span class="language-switch__option-text">srb</span>
+            </option>
+            <option value="en">
+              <span class="language-switch__option-icon"></span>
+              <span class="language-switch__option-text">en</span>
+            </option>
+          </select>
         </v-col>
       </v-row>
     </v-container>
@@ -57,16 +59,19 @@
         "en",
         "sr"
       ],
-      defaultLanguage: null
+      defaultLanguage: null,
     }),
     methods: {
       toggleMenu() {
         this.isActive = !this.isActive;
       },
-      changeLanguage(lang) {
-       this.$store.commit('changeLanguage', lang);
-       this.defaultLanguage = lang;
-       window.location.reload();
+      changeLanguage(event) {
+				let currentLanguage = this.$router.currentRoute.path.split('/')[1];
+				let newLanguagePath = this.$router.currentRoute.path.replace(currentLanguage, event.target.value);
+      	this.$store.commit('changeLanguage', event.target.value);
+      	this.defaultLanguage = event.target.value;
+				//  this.$router.push({name: 'HomePage'})
+      	// window.location.href = newLanguagePath;
       }
     },
     mounted() {
@@ -74,3 +79,4 @@
     }
   }
 </script>
+

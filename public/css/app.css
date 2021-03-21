@@ -3207,6 +3207,15 @@ a {
   opacity: 1;
 }
 
+.header-container .language-switch {
+  width: 150px;
+  background-color: white;
+}
+
+.header-container .language-switch option[value="sr"] .language-switch__option-icon {
+  background: url("/images/srb.png");
+}
+
 @media screen and (max-width: 768px) {
   .header-container__collapse-menu {
     display: block;
