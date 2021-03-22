@@ -5,13 +5,14 @@
  */
 
 // require('./bootstrap');
-import Vue from 'vue';
-import Vuetify from 'vuetify';
-import routes from './routes';
-import App from './App.vue';
-import AOS from 'aos';
-import { Lang } from 'laravel-vue-lang';
-import store from './store/language.js';
+import Vue from "vue";
+import Vuetify from "vuetify";
+import routes from "./routes";
+import App from "./App.vue";
+import AOS from "aos";
+import { Lang } from "laravel-vue-lang";
+import store from "./store/language.js";
+import i18n from "./i18n";
 
 /**
  * The following block of code may be used to automatically register your
@@ -25,37 +26,43 @@ import store from './store/language.js';
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
 Vue.use(Vuetify);
-Vue.use(Lang, {
-  locale: store.state.language,
-	fallback: 'en',
-});
+// Vue.use(Lang, {
+//   locale: store.state.language,
+// 	fallback: 'en',
+// });
 
-Vue.component('header-component',
-  require('./components/sections/HeaderComponent.vue').default
+Vue.component(
+    "header-component",
+    require("./components/sections/HeaderComponent.vue").default
 );
-Vue.component('splash',
-  require('./components/sections/SplashComponent.vue').default
+Vue.component(
+    "splash",
+    require("./components/sections/SplashComponent.vue").default
 );
-Vue.component('why-us',
-  require('./components/sections/WhyUs.vue').default
+Vue.component("why-us", require("./components/sections/WhyUs.vue").default);
+Vue.component(
+    "wire-and-harness",
+    require("./components/sections/WireAndHarnessComponent.vue").default
 );
-Vue.component('wire-and-harness',
-  require('./components/sections/WireAndHarnessComponent.vue').default
+Vue.component(
+    "base-miny-gallery",
+    require("./components/sections/GalleryComponent.vue").default
 );
-Vue.component('base-miny-gallery',
-  require('./components/sections/GalleryComponent.vue').default
+Vue.component(
+    "home-catagories",
+    require("./components/sections/HomeCategories.vue").default
 );
-Vue.component('home-catagories',
-  require('./components/sections/HomeCategories.vue').default
+Vue.component(
+    "prefooter",
+    require("./components/sections/PrefooterComponent.vue").default
 );
-Vue.component('prefooter',
-  require('./components/sections/PrefooterComponent.vue').default
+Vue.component(
+    "footer-component",
+    require("./components/sections/FooterComponent.vue").default
 );
-Vue.component('footer-component',
-  require('./components/sections/FooterComponent.vue').default
-);
-Vue.component('home-contact-component',
-  require('./components/sections/HomeContactComponent.vue').default
+Vue.component(
+    "home-contact-component",
+    require("./components/sections/HomeContactComponent.vue").default
 );
 
 /**
@@ -65,21 +72,22 @@ Vue.component('home-contact-component',
  */
 
 const app = new Vue({
-  created() {
-    AOS.init({
-      once: true
-    });
-  },
-  vuetify: new Vuetify({
-    theme: {
-      themes: {
-        light: {
-          primary: '#fff'
+    created() {
+        AOS.init({
+            once: true
+        });
+    },
+    vuetify: new Vuetify({
+        theme: {
+            themes: {
+                light: {
+                    primary: "#fff"
+                }
+            }
         }
-      }
-    }
-  }),
-  router: routes,
-  store: store,
-  render: h => h(App)
+    }),
+    router: routes,
+    i18n,
+    store: store,
+    render: h => h(App)
 }).$mount("#app");

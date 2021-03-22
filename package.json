@@ -21,11 +21,12 @@
         "sass": "^1.20.1",
         "sass-loader": "^10.0.5",
         "vue": "^2.5.17",
+        "vue-cli-plugin-i18n": "~2.0.2",
         "vue-template-compiler": "^2.6.10"
     },
     "dependencies": {
         "aos": "^2.3.4",
-        "fibers": "^3.1.0",
+        "fibers": "^4.0.3",
         "font-awesome": "^4.7.0",
         "laravel-vue-lang": "^3.1.1",
         "node-sass": "^4.14.1",
