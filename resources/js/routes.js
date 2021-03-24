@@ -71,22 +71,22 @@ export const routes = [
                 ]
             },
             {
-                path: "/contact-us",
+                path: "contact-us",
                 component: ContactUs,
                 name: "ContactUs"
             },
             {
-                path: "/gallery",
+                path: "gallery",
                 component: Gallery,
                 name: "GalleryView"
             },
             {
-                path: "/wires-and-harness",
+                path: "wires-and-harness",
                 component: WiresAndHarnessView,
                 name: "WiresAndHarnessView"
             },
             {
-                path: "/about-us",
+                path: "about-us",
                 component: AboutUs,
                 name: "AboutUs"
             }

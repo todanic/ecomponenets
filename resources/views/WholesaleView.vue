@@ -1,4 +1,6 @@
 <template name="wholesale-view">
+<div>
+    <header-component></header-component>
 	<v-container fluid class="wholesale-view-container">
 		<v-container v-show="isParent" class="shrink-width">
 			<v-row class="text-center">
@@ -43,7 +45,7 @@
 											<h2>LEDs</h2>
 										</div>
 								</div>
-							
+
 					</router-link>
 				</v-col>
 				<v-col class="pb-11" lg="4" md="4" sm="12" cols="12">
@@ -70,6 +72,10 @@
 		</v-container>
 		<router-view ref="childRout"></router-view>
 	</v-container>
+    <home-contact-component></home-contact-component>
+    <prefooter></prefooter>
+    <footer-component></footer-component>
+</div>
 </template>
 <script>
 export default {

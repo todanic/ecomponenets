@@ -2184,27 +2184,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -2358,6 +2337,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _LocalizedLink__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../LocalizedLink */ "./resources/js/components/LocalizedLink.vue");
 //
 //
 //
@@ -2397,7 +2377,88 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
 /* harmony default export */ __webpack_exports__["default"] = ({
+  components: {
+    LocalizedLink: _LocalizedLink__WEBPACK_IMPORTED_MODULE_0__["default"]
+  },
   data: function data() {
     return {};
   }
@@ -3855,6 +3916,12 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -11114,18 +11181,9 @@ var render = function() {
                         "li",
                         { staticClass: "header-container__menu-block" },
                         [
-                          _c(
-                            "router-link",
-                            {
-                              attrs: { to: "/" },
-                              nativeOn: {
-                                click: function($event) {
-                                  return _vm.toggleMenu()
-                                }
-                              }
-                            },
-                            [_vm._v("Home")]
-                          )
+                          _c("LocalizedLink", { attrs: { to: "/home" } }, [
+                            _vm._v(_vm._s(_vm.$t("nav.home")))
+                          ])
                         ],
                         1
                       ),
@@ -11145,20 +11203,9 @@ var render = function() {
                         "li",
                         { staticClass: "header-container__menu-block" },
                         [
-                          _c(
-                            "router-link",
-                            {
-                              attrs: {
-                                to: "/" + _vm.defaultLanguage + "/gallery"
-                              },
-                              nativeOn: {
-                                click: function($event) {
-                                  return _vm.toggleMenu()
-                                }
-                              }
-                            },
-                            [_vm._v("Gallery")]
-                          )
+                          _c("LocalizedLink", { attrs: { to: "/gallery" } }, [
+                            _vm._v(_vm._s(_vm.$t("nav.gallery")))
+                          ])
                         ],
                         1
                       ),
@@ -11168,21 +11215,9 @@ var render = function() {
                         { staticClass: "header-container__menu-block" },
                         [
                           _c(
-                            "router-link",
-                            {
-                              attrs: {
-                                to:
-                                  "/" +
-                                  _vm.defaultLanguage +
-                                  "/wires-and-harness"
-                              },
-                              nativeOn: {
-                                click: function($event) {
-                                  return _vm.toggleMenu()
-                                }
-                              }
-                            },
-                            [_vm._v("Wire and cable harnessing")]
+                            "LocalizedLink",
+                            { attrs: { to: "/wires-and-harness" } },
+                            [_vm._v(_vm._s(_vm.$t("nav.wires-and-harness")))]
                           )
                         ],
                         1
@@ -11192,20 +11227,9 @@ var render = function() {
                         "li",
                         { staticClass: "header-container__menu-block" },
                         [
-                          _c(
-                            "router-link",
-                            {
-                              attrs: {
-                                to: "/" + _vm.defaultLanguage + "/about-us"
-                              },
-                              nativeOn: {
-                                click: function($event) {
-                                  return _vm.toggleMenu()
-                                }
-                              }
-                            },
-                            [_vm._v("About us")]
-                          )
+                          _c("LocalizedLink", { attrs: { to: "/about-us" } }, [
+                            _vm._v(_vm._s(_vm.$t("nav.about-us")))
+                          ])
                         ],
                         1
                       ),
@@ -11215,18 +11239,9 @@ var render = function() {
                         { staticClass: "header-container__menu-block" },
                         [
                           _c(
-                            "router-link",
-                            {
-                              attrs: {
-                                to: "/" + _vm.defaultLanguage + "/contact-us"
-                              },
-                              nativeOn: {
-                                click: function($event) {
-                                  return _vm.toggleMenu()
-                                }
-                              }
-                            },
-                            [_vm._v("Contact us")]
+                            "LocalizedLink",
+                            { attrs: { to: "/contact-us" } },
+                            [_vm._v(_vm._s(_vm.$t("nav.contact-us")))]
                           )
                         ],
                         1
@@ -11603,8 +11618,10 @@ var render = function() {
                 },
                 [
                   _c("h2", { staticClass: "mb-5" }, [
-                    _vm._v("Have "),
-                    _c("span", [_vm._v("questions?")])
+                    _vm._v(_vm._s(_vm.$t("contact-fixed.title.text")) + " "),
+                    _c("span", [
+                      _vm._v(_vm._s(_vm.$t("contact-fixed.title.span")))
+                    ])
                   ])
                 ]
               ),
@@ -11626,7 +11643,7 @@ var render = function() {
                           staticClass: "btn btn--fill btn--blue text--white",
                           attrs: { outlined: "", "x-large": "", rounded: "" }
                         },
-                        [_vm._v("Contact us")]
+                        [_vm._v(_vm._s(_vm.$t("contact-fixed.button")))]
                       )
                     ],
                     1
@@ -11682,19 +11699,25 @@ var render = function() {
                 "v-col",
                 { attrs: { lg: "6", md: "6", sm: "12", cols: "12" } },
                 [
-                  _c("h3", [_vm._v("Wholesale")]),
+                  _c("h3", [_vm._v(_vm._s(_vm.$t("prefooter.title-left")))]),
                   _vm._v(" "),
                   _c("ul", { staticClass: "prefooter-container__block pa-0" }, [
                     _c(
                       "li",
                       [
                         _c(
-                          "router-link",
+                          "LocalizedLink",
                           {
                             staticClass: "prefooter-container__block-link",
                             attrs: { to: "/wholesale/wires-cables" }
                           },
-                          [_vm._v("Wires and cables")]
+                          [
+                            _vm._v(
+                              _vm._s(
+                                _vm.$t("prefooter.links-left.wires-cables")
+                              )
+                            )
+                          ]
                         )
                       ],
                       1
@@ -11704,12 +11727,16 @@ var render = function() {
                       "li",
                       [
                         _c(
-                          "router-link",
+                          "LocalizedLink",
                           {
                             staticClass: "prefooter-container__block-link",
                             attrs: { to: "/wholesale/connectors" }
                           },
-                          [_vm._v("Connectors & electronic components")]
+                          [
+                            _vm._v(
+                              _vm._s(_vm.$t("prefooter.links-left.connectors"))
+                            )
+                          ]
                         )
                       ],
                       1
@@ -11719,12 +11746,12 @@ var render = function() {
                       "li",
                       [
                         _c(
-                          "router-link",
+                          "LocalizedLink",
                           {
                             staticClass: "prefooter-container__block-link",
                             attrs: { to: "/wholesale/pcbs" }
                           },
-                          [_vm._v("PCBs")]
+                          [_vm._v(_vm._s(_vm.$t("prefooter.links-left.pcb")))]
                         )
                       ],
                       1
@@ -11734,12 +11761,12 @@ var render = function() {
                       "li",
                       [
                         _c(
-                          "router-link",
+                          "LocalizedLink",
                           {
                             staticClass: "prefooter-container__block-link",
                             attrs: { to: "/wholesale/led" }
                           },
-                          [_vm._v("LEDs")]
+                          [_vm._v(_vm._s(_vm.$t("prefooter.links-left.led")))]
                         )
                       ],
                       1
@@ -11749,12 +11776,16 @@ var render = function() {
                       "li",
                       [
                         _c(
-                          "router-link",
+                          "LocalizedLink",
                           {
                             staticClass: "prefooter-container__block-link",
                             attrs: { to: "/wholesale/cable-accessories" }
                           },
-                          [_vm._v("Cable accessories")]
+                          [
+                            _vm._v(
+                              _vm._s(_vm.$t("prefooter.links-left.cables"))
+                            )
+                          ]
                         )
                       ],
                       1
@@ -11764,12 +11795,16 @@ var render = function() {
                       "li",
                       [
                         _c(
-                          "router-link",
+                          "LocalizedLink",
                           {
                             staticClass: "prefooter-container__block-link",
                             attrs: { to: "/wholesale/hardware" }
                           },
-                          [_vm._v("Hardware")]
+                          [
+                            _vm._v(
+                              _vm._s(_vm.$t("prefooter.links-left.harware"))
+                            )
+                          ]
                         )
                       ],
                       1
@@ -11782,19 +11817,19 @@ var render = function() {
                 "v-col",
                 { attrs: { lg: "4", md: "6", sm: "12", cols: "12" } },
                 [
-                  _c("h3", [_vm._v("Learn more")]),
+                  _c("h3", [_vm._v(_vm._s(_vm.$t("prefooter.title-right")))]),
                   _vm._v(" "),
                   _c("ul", { staticClass: "prefooter-container__block pa-0" }, [
                     _c(
                       "li",
                       [
                         _c(
-                          "router-link",
+                          "LocalizedLink",
                           {
                             staticClass: "prefooter-container__block-link",
                             attrs: { to: "/contact-us" }
                           },
-                          [_vm._v("Contact us")]
+                          [_vm._v(_vm._s(_vm.$t("contact-fixed.button")))]
                         )
                       ],
                       1
@@ -11804,12 +11839,12 @@ var render = function() {
                       "li",
                       [
                         _c(
-                          "router-link",
+                          "LocalizedLink",
                           {
                             staticClass: "prefooter-container__block-link",
                             attrs: { to: "/about-us" }
                           },
-                          [_vm._v("About us")]
+                          [_vm._v(_vm._s(_vm.$t("nav.about-us")))]
                         )
                       ],
                       1
@@ -11819,12 +11854,12 @@ var render = function() {
                       "li",
                       [
                         _c(
-                          "router-link",
+                          "LocalizedLink",
                           {
                             staticClass: "prefooter-container__block-link",
                             attrs: { to: "/gallery" }
                           },
-                          [_vm._v("Gallery")]
+                          [_vm._v(_vm._s(_vm.$t("nav.gallery")))]
                         )
                       ],
                       1
@@ -11834,12 +11869,12 @@ var render = function() {
                       "li",
                       [
                         _c(
-                          "router-link",
+                          "LocalizedLink",
                           {
                             staticClass: "prefooter-container__block-link",
                             attrs: { to: "/wires-and-harness" }
                           },
-                          [_vm._v("Wire and cable harnessing")]
+                          [_vm._v(_vm._s(_vm.$t("nav.wires-and-harness")))]
                         )
                       ],
                       1
@@ -14657,270 +14692,288 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c(
-    "v-container",
-    { staticClass: "wholesale-view-container", attrs: { fluid: "" } },
+    "div",
     [
+      _c("header-component"),
+      _vm._v(" "),
       _c(
         "v-container",
-        {
-          directives: [
-            {
-              name: "show",
-              rawName: "v-show",
-              value: _vm.isParent,
-              expression: "isParent"
-            }
-          ],
-          staticClass: "shrink-width"
-        },
+        { staticClass: "wholesale-view-container", attrs: { fluid: "" } },
         [
           _c(
-            "v-row",
-            { staticClass: "text-center" },
+            "v-container",
+            {
+              directives: [
+                {
+                  name: "show",
+                  rawName: "v-show",
+                  value: _vm.isParent,
+                  expression: "isParent"
+                }
+              ],
+              staticClass: "shrink-width"
+            },
             [
-              _c("v-col", { attrs: { cols: "12" } }, [
-                _c("h1", { staticClass: "mb-8" }, [
-                  _vm._v("Whole"),
-                  _c("span", [_vm._v("sale")])
-                ])
-              ]),
-              _vm._v(" "),
               _c(
-                "v-col",
-                {
-                  staticClass: "pb-11",
-                  attrs: { lg: "4", md: "4", sm: "12", cols: "12" }
-                },
+                "v-row",
+                { staticClass: "text-center" },
                 [
+                  _c("v-col", { attrs: { cols: "12" } }, [
+                    _c("h1", { staticClass: "mb-8" }, [
+                      _vm._v("Whole"),
+                      _c("span", [_vm._v("sale")])
+                    ])
+                  ]),
+                  _vm._v(" "),
                   _c(
-                    "router-link",
+                    "v-col",
                     {
-                      staticClass: "round-block",
-                      attrs: { to: "/wholesale/wires-cables" }
+                      staticClass: "pb-11",
+                      attrs: { lg: "4", md: "4", sm: "12", cols: "12" }
                     },
                     [
                       _c(
-                        "div",
-                        { staticClass: "round-block__img" },
+                        "router-link",
+                        {
+                          staticClass: "round-block",
+                          attrs: { to: "/wholesale/wires-cables" }
+                        },
                         [
-                          _c("v-img", {
-                            attrs: {
-                              "max-width": "280px",
-                              src: "images/wires-cables/thumbnail.jpg",
-                              alt: ""
-                            }
-                          })
-                        ],
-                        1
-                      ),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "round-block__content" }, [
-                        _c("h2", [_vm._v("Wires and cables")])
-                      ])
-                    ]
-                  )
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "v-col",
-                {
-                  staticClass: "pb-11",
-                  attrs: { lg: "4", md: "4", sm: "12", cols: "12" }
-                },
-                [
-                  _c(
-                    "router-link",
-                    {
-                      staticClass: "round-block",
-                      attrs: { to: "/wholesale/connectors" }
-                    },
-                    [
-                      _c(
-                        "div",
-                        { staticClass: "round-block__img" },
-                        [
-                          _c("v-img", {
-                            attrs: {
-                              "max-width": "280px",
-                              src: "images/connectors/thumbnail.jpg",
-                              alt: ""
-                            }
-                          })
-                        ],
-                        1
-                      ),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "round-block__content" }, [
-                        _c("h2", [_vm._v("Connectors & electronic components")])
-                      ])
-                    ]
-                  )
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "v-col",
-                {
-                  staticClass: "pb-11",
-                  attrs: { lg: "4", md: "4", sm: "12", cols: "12" }
-                },
-                [
-                  _c(
-                    "router-link",
-                    {
-                      staticClass: "round-block",
-                      attrs: { to: "/wholesale/pcbs" }
-                    },
-                    [
-                      _c(
-                        "div",
-                        { staticClass: "round-block__img" },
-                        [
-                          _c("v-img", {
-                            attrs: {
-                              "max-width": "280px",
-                              src: "/images/pcbs/pcbs.jpg",
-                              alt: ""
-                            }
-                          })
-                        ],
-                        1
-                      ),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "round-block__content" }, [
-                        _c("h2", [_vm._v("PCBs")])
-                      ])
-                    ]
-                  )
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "v-col",
-                {
-                  staticClass: "pb-11",
-                  attrs: { lg: "4", md: "4", sm: "12", cols: "12" }
-                },
-                [
-                  _c(
-                    "router-link",
-                    {
-                      staticClass: "round-block",
-                      attrs: { to: "/wholesale/led" }
-                    },
-                    [
-                      _c(
-                        "div",
-                        { staticClass: "round-block__img" },
-                        [
-                          _c("v-img", {
-                            attrs: {
-                              "max-width": "280px",
-                              height: "228px",
-                              src: "/images/led/led.jpg",
-                              alt: ""
-                            }
-                          }),
+                          _c(
+                            "div",
+                            { staticClass: "round-block__img" },
+                            [
+                              _c("v-img", {
+                                attrs: {
+                                  "max-width": "280px",
+                                  src: "images/wires-cables/thumbnail.jpg",
+                                  alt: ""
+                                }
+                              })
+                            ],
+                            1
+                          ),
                           _vm._v(" "),
                           _c("div", { staticClass: "round-block__content" }, [
-                            _c("h2", [_vm._v("LEDs")])
+                            _c("h2", [_vm._v("Wires and cables")])
                           ])
-                        ],
-                        1
+                        ]
                       )
-                    ]
-                  )
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "v-col",
-                {
-                  staticClass: "pb-11",
-                  attrs: { lg: "4", md: "4", sm: "12", cols: "12" }
-                },
-                [
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
                   _c(
-                    "router-link",
+                    "v-col",
                     {
-                      staticClass: "round-block",
-                      attrs: { to: "wholesale/cable-accessories" }
+                      staticClass: "pb-11",
+                      attrs: { lg: "4", md: "4", sm: "12", cols: "12" }
                     },
                     [
                       _c(
-                        "div",
-                        { staticClass: "round-block__img" },
+                        "router-link",
+                        {
+                          staticClass: "round-block",
+                          attrs: { to: "/wholesale/connectors" }
+                        },
                         [
-                          _c("v-img", {
-                            attrs: {
-                              "max-width": "280px",
-                              src: "images/cable-accessories/thumbnail.jpg",
-                              alt: ""
-                            }
-                          })
-                        ],
-                        1
-                      ),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "round-block__content" }, [
-                        _c("h2", [_vm._v("Cable accessories")])
-                      ])
-                    ]
-                  )
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "v-col",
-                {
-                  staticClass: "pb-11",
-                  attrs: { lg: "4", md: "4", sm: "12", cols: "12" }
-                },
-                [
+                          _c(
+                            "div",
+                            { staticClass: "round-block__img" },
+                            [
+                              _c("v-img", {
+                                attrs: {
+                                  "max-width": "280px",
+                                  src: "images/connectors/thumbnail.jpg",
+                                  alt: ""
+                                }
+                              })
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "round-block__content" }, [
+                            _c("h2", [
+                              _vm._v("Connectors & electronic components")
+                            ])
+                          ])
+                        ]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
                   _c(
-                    "router-link",
+                    "v-col",
                     {
-                      staticClass: "round-block",
-                      attrs: { to: "wholesale/hardware" }
+                      staticClass: "pb-11",
+                      attrs: { lg: "4", md: "4", sm: "12", cols: "12" }
                     },
                     [
                       _c(
-                        "div",
-                        { staticClass: "round-block__img" },
+                        "router-link",
+                        {
+                          staticClass: "round-block",
+                          attrs: { to: "/wholesale/pcbs" }
+                        },
                         [
-                          _c("v-img", {
-                            attrs: {
-                              "max-width": "280px",
-                              src: "/images/hardware/hardware.jpg",
-                              alt: ""
-                            }
-                          })
-                        ],
-                        1
-                      ),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "round-block__content" }, [
-                        _c("h2", [_vm._v("Hardware")])
-                      ])
-                    ]
+                          _c(
+                            "div",
+                            { staticClass: "round-block__img" },
+                            [
+                              _c("v-img", {
+                                attrs: {
+                                  "max-width": "280px",
+                                  src: "/images/pcbs/pcbs.jpg",
+                                  alt: ""
+                                }
+                              })
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "round-block__content" }, [
+                            _c("h2", [_vm._v("PCBs")])
+                          ])
+                        ]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "v-col",
+                    {
+                      staticClass: "pb-11",
+                      attrs: { lg: "4", md: "4", sm: "12", cols: "12" }
+                    },
+                    [
+                      _c(
+                        "router-link",
+                        {
+                          staticClass: "round-block",
+                          attrs: { to: "/wholesale/led" }
+                        },
+                        [
+                          _c(
+                            "div",
+                            { staticClass: "round-block__img" },
+                            [
+                              _c("v-img", {
+                                attrs: {
+                                  "max-width": "280px",
+                                  height: "228px",
+                                  src: "/images/led/led.jpg",
+                                  alt: ""
+                                }
+                              }),
+                              _vm._v(" "),
+                              _c(
+                                "div",
+                                { staticClass: "round-block__content" },
+                                [_c("h2", [_vm._v("LEDs")])]
+                              )
+                            ],
+                            1
+                          )
+                        ]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "v-col",
+                    {
+                      staticClass: "pb-11",
+                      attrs: { lg: "4", md: "4", sm: "12", cols: "12" }
+                    },
+                    [
+                      _c(
+                        "router-link",
+                        {
+                          staticClass: "round-block",
+                          attrs: { to: "wholesale/cable-accessories" }
+                        },
+                        [
+                          _c(
+                            "div",
+                            { staticClass: "round-block__img" },
+                            [
+                              _c("v-img", {
+                                attrs: {
+                                  "max-width": "280px",
+                                  src: "images/cable-accessories/thumbnail.jpg",
+                                  alt: ""
+                                }
+                              })
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "round-block__content" }, [
+                            _c("h2", [_vm._v("Cable accessories")])
+                          ])
+                        ]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "v-col",
+                    {
+                      staticClass: "pb-11",
+                      attrs: { lg: "4", md: "4", sm: "12", cols: "12" }
+                    },
+                    [
+                      _c(
+                        "router-link",
+                        {
+                          staticClass: "round-block",
+                          attrs: { to: "wholesale/hardware" }
+                        },
+                        [
+                          _c(
+                            "div",
+                            { staticClass: "round-block__img" },
+                            [
+                              _c("v-img", {
+                                attrs: {
+                                  "max-width": "280px",
+                                  src: "/images/hardware/hardware.jpg",
+                                  alt: ""
+                                }
+                              })
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "round-block__content" }, [
+                            _c("h2", [_vm._v("Hardware")])
+                          ])
+                        ]
+                      )
+                    ],
+                    1
                   )
                 ],
                 1
               )
             ],
             1
-          )
+          ),
+          _vm._v(" "),
+          _c("router-view", { ref: "childRout" })
         ],
         1
       ),
       _vm._v(" "),
-      _c("router-view", { ref: "childRout" })
+      _c("home-contact-component"),
+      _vm._v(" "),
+      _c("prefooter"),
+      _vm._v(" "),
+      _c("footer-component")
     ],
     1
   )
@@ -74427,10 +74480,10 @@ webpackContext.id = "./resources/js/locales sync recursive [A-Za-z0-9-_,\\s]+\\.
 /*!**************************************!*\
   !*** ./resources/js/locales/en.json ***!
   \**************************************/
-/*! exports provided: app, nav, default */
+/*! exports provided: app, nav, contact-fixed, prefooter, default */
 /***/ (function(module) {
 
-module.exports = JSON.parse("{\"app\":\"Ecomponents d.o.o\",\"nav\":{\"wholesale\":\"wholesale\"}}");
+module.exports = JSON.parse("{\"app\":\"Ecomponents d.o.o\",\"nav\":{\"wholesale\":\"wholesale\",\"home\":\"home\",\"about-us\":\"about us\",\"contact-us\":\"contact us\",\"gallery\":\"gallery\",\"wires-and-harness\":\"Wire and cable harnessing\"},\"contact-fixed\":{\"title\":{\"text\":\"Have\",\"span\":\"questions?\"},\"button\":\"Contact us\"},\"prefooter\":{\"title-left\":\"Wholesale\",\"title-right\":\"Learn more\",\"links-left\":{\"wires-cables\":\"Wires and cables\",\"connectors\":\"Connectors & electronic components\",\"pcb\":\"PCBs\",\"led\":\"LEDs\",\"cables\":\"Cable accessories\",\"harware\":\"Hardware\"}}}");
 
 /***/ }),
 
@@ -74438,10 +74491,10 @@ module.exports = JSON.parse("{\"app\":\"Ecomponents d.o.o\",\"nav\":{\"wholesale
 /*!**************************************!*\
   !*** ./resources/js/locales/sr.json ***!
   \**************************************/
-/*! exports provided: app, nav, default */
+/*! exports provided: app, nav, contact-fixed, prefooter, default */
 /***/ (function(module) {
 
-module.exports = JSON.parse("{\"app\":\"Ecomponents d.o.o\",\"nav\":{\"wholesale\":\"prodaja\"}}");
+module.exports = JSON.parse("{\"app\":\"Ecomponents d.o.o\",\"nav\":{\"wholesale\":\"prodaja\",\"home\":\"početna\",\"about-us\":\"O nama\",\"contact-us\":\"Kontakt\",\"gallery\":\"Galerija\",\"wires-and-harness\":\"Wire and cable harnessing\"},\"contact-fixed\":{\"title\":{\"text\":\"Imate\",\"span\":\"pitanje?\"},\"button\":\"Kontaktirajte nas\"},\"prefooter\":{\"title-left\":\"Prodaja\",\"title-right\":\"Pogledajte još\",\"links-left\":{\"wires-cables\":\"Žice i kablovi\",\"connectors\":\"Konektori & elektronske komponenete\",\"pcb\":\"PCBs\",\"led\":\"LEDs\",\"cables\":\"Dodaci za kablove\",\"harware\":\"Hardware\"}}}");
 
 /***/ }),
 
@@ -74528,19 +74581,19 @@ var routes = [{
       component: _components_wholesale_Hardware_vue__WEBPACK_IMPORTED_MODULE_9__["default"]
     }]
   }, {
-    path: "/contact-us",
+    path: "contact-us",
     component: _views_ContactUsView_vue__WEBPACK_IMPORTED_MODULE_2__["default"],
     name: "ContactUs"
   }, {
-    path: "/gallery",
+    path: "gallery",
     component: _views_GalleryView_vue__WEBPACK_IMPORTED_MODULE_6__["default"],
     name: "GalleryView"
   }, {
-    path: "/wires-and-harness",
+    path: "wires-and-harness",
     component: _views_WiresAndHarnessView_vue__WEBPACK_IMPORTED_MODULE_4__["default"],
     name: "WiresAndHarnessView"
   }, {
-    path: "/about-us",
+    path: "about-us",
     component: _views_AboutUsView_vue__WEBPACK_IMPORTED_MODULE_3__["default"],
     name: "AboutUs"
   }]

@@ -38,43 +38,22 @@
               >X</span
             >
             <li class="header-container__menu-block">
-              <router-link @click.native="toggleMenu()" to="/"
-                >Home</router-link
-              >
+               <LocalizedLink to="/home">{{ $t("nav.home") }}</LocalizedLink>
             </li>
             <li class="header-container__menu-block">
                 <LocalizedLink to="/wholesale">{{ $t("nav.wholesale") }}</LocalizedLink>
-              <!-- <router-link @click.native="toggleMenu()" to="/wholesale"
-                >Wholesale</router-link
-              > -->
             </li>
             <li class="header-container__menu-block">
-              <router-link
-                @click.native="toggleMenu()"
-                :to="'/' + defaultLanguage + '/gallery'"
-                >Gallery</router-link
-              >
+              <LocalizedLink to="/gallery">{{ $t("nav.gallery") }}</LocalizedLink>
             </li>
             <li class="header-container__menu-block">
-              <router-link
-                @click.native="toggleMenu()"
-                :to="'/' + defaultLanguage + '/wires-and-harness'"
-                >Wire and cable harnessing</router-link
-              >
+             <LocalizedLink to="/wires-and-harness">{{ $t("nav.wires-and-harness") }}</LocalizedLink>
             </li>
             <li class="header-container__menu-block">
-              <router-link
-                @click.native="toggleMenu()"
-                :to="'/' + defaultLanguage + '/about-us'"
-                >About us</router-link
-              >
+              <LocalizedLink to="/about-us">{{ $t("nav.about-us") }}</LocalizedLink>
             </li>
             <li class="header-container__menu-block">
-              <router-link
-                @click.native="toggleMenu()"
-                :to="'/' + defaultLanguage + '/contact-us'"
-                >Contact us</router-link
-              >
+              <LocalizedLink to="/contact-us">{{ $t("nav.contact-us") }}</LocalizedLink>
             </li>
           </ul>
           <select

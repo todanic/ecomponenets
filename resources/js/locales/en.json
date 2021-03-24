@@ -1,6 +1,30 @@
 {
     "app": "Ecomponents d.o.o",
     "nav": {
-        "wholesale": "wholesale"
+        "wholesale": "wholesale",
+        "home": "home",
+        "about-us": "about us",
+        "contact-us" : "contact us",
+        "gallery": "gallery",
+        "wires-and-harness": "Wire and cable harnessing"
+    },
+    "contact-fixed": {
+        "title": {
+            "text": "Have",
+            "span": "questions?"
+        },
+        "button": "Contact us"
+    },
+    "prefooter": {
+        "title-left": "Wholesale",
+        "title-right": "Learn more",
+        "links-left": {
+            "wires-cables": "Wires and cables",
+            "connectors": "Connectors & electronic components",
+            "pcb": "PCBs",
+            "led": "LEDs",
+            "cables": "Cable accessories",
+            "harware": "Hardware"
+        }
     }
 }

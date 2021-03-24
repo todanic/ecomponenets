@@ -1,6 +1,30 @@
 {
     "app": "Ecomponents d.o.o",
     "nav": {
-        "wholesale": "prodaja"
+        "wholesale": "prodaja",
+        "home": "početna",
+        "about-us": "O nama",
+        "contact-us" : "Kontakt",
+        "gallery": "Galerija",
+        "wires-and-harness": "Wire and cable harnessing"
+    },
+    "contact-fixed": {
+        "title": {
+            "text": "Imate",
+            "span": "pitanje?"
+        },
+        "button": "Kontaktirajte nas"
+    },
+    "prefooter": {
+        "title-left": "Prodaja",
+        "title-right": "Pogledajte još",
+        "links-left": {
+            "wires-cables": "Žice i kablovi",
+            "connectors": "Konektori & elektronske komponenete",
+            "pcb": "PCBs",
+            "led": "LEDs",
+            "cables": "Dodaci za kablove",
+            "harware": "Hardware"
+        }
     }
 }
