@@ -35,7 +35,7 @@
             parts for your product.
           </p>
           <v-img class="ml-auto mr-auto" max-width="650px" max-height="450px"
-                 src="images/wiress-and-harness/prototype.jpg"></v-img>
+                 src="/images/wiress-and-harness/prototype.jpg"></v-img>
         </v-col>
         <v-col lg="12" md="12" sm="12" cols="12" class="mt-6" daTa-aos="fade-down" data-aos-delay="400" data-aos-easing="ease-in-out">
           <p>
@@ -45,7 +45,7 @@
             as referencing it to our technicians.
           </p>
           <v-img class="ml-auto mr-auto" max-width="650px" max-height="450px"
-                 src="images/wiress-and-harness/annotation.jpg"></v-img>
+                 src="/images/wiress-and-harness/annotation.jpg"></v-img>
         </v-col>
         <v-col lg="12" md="12" sm="12" cols="12" daTa-aos="fade-down" data-aos-delay="400" data-aos-easing="ease-in-out">
           <p>
@@ -56,7 +56,7 @@
             standards and certifications.
           </p>
           <v-img class="ml-auto mr-auto mb-6 mt-6" max-width="650px" max-height="450px"
-                 src="images/wiress-and-harness/what-to-know.jpg"></v-img>
+                 src="/images/wiress-and-harness/what-to-know.jpg"></v-img>
         </v-col>
         <v-col lg="12" md="12" sm="12" cols="12" daTa-aos="fade-down" data-aos-delay="400" data-aos-easing="ease-in-out">
           <p>
@@ -65,7 +65,7 @@
             important to our customers.
           </p>
           <v-img class="ml-auto mr-auto" max-width="650px" max-height="450px"
-                 src="images/wiress-and-harness/clipboard.jpg"></v-img>
+                 src="/images/wiress-and-harness/clipboard.jpg"></v-img>
         </v-col>
         <v-col lg="12" md="12" sm="12" cols="12" class="mt-10" daTa-aos="fade-down" data-aos-delay="400" data-aos-easing="ease-in-out">
           <p>

@@ -10,7 +10,6 @@ import Vuetify from "vuetify";
 import routes from "./routes";
 import App from "./App.vue";
 import AOS from "aos";
-import { Lang } from "laravel-vue-lang";
 import store from "./store/language.js";
 import i18n from "./i18n";
 

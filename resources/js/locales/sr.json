@@ -26,5 +26,20 @@
             "cables": "Dodaci za kablove",
             "harware": "Hardware"
         }
+    },
+    "wire-harness-home": "We offer our customers and partners in different industries tailor-made solutions in the field of wire harnesses. Home appliance industry, gaming and vending machines industry and many other rely on us to bring their designs to life. Be it a single wire or a complex wire harness system – we got you covered!",
+    "about-us": {
+      "title": {
+        "text": "O",
+        "span": "nama"
+      },
+      "text1": "Dobrodošli u eComponents, vaš najbolji izvor svih stvari vezanih za elektroniku. Posvećeni smo tome da vam ponudimo najbolje od elektronskih komponenti, sa fokusom na uslugu i pomoć kupcima, pouzdane proizvode i jedinstvenost",
+      "text2": "Naša strast i želja da pomognemo inovativnim ljudima u postizanju neverovatnih stvari su nas motivisale da napustimo svoje tadašnje poslove i dale nam podsticaj da pretvorimo naporan rad i inspiraciju u ovaj brzo-rastući poduhvat.",
+      "text3": "Sada snabdevamo naše klijente sa elektronskim komponentama – žicama i kablovima, konektorima, aktivnim i pasivnim komponentama najboljeg kvaliteta vodećih svetskih proizvođača, kao što su Molex, TE Connectivity, JST, MEDIKabel, HELUKABEL itd., po veoma kompetitivnim cenama. Sa lakoćom se snalazimo u okeanu elektronike, terminologije i tehničkih crteža – pa vi ne morate!",
+      "text4": "Takođe, ističemo se i proizvodnjom kablovskih veza i sklopova po vašim instrukcijama i zahtevima. Ono što vi zamislite, mi možemo da napravimo; vi sastavite sve delove, a mi ćemo se pobrinuti da oni ožive.",
+      "text5": "eComponents se nalazi u Srbiji, ali možemo da vršimo isporuke svuda u svetu. Uzbuđeni smo što smo deo rastuće grane elektronske industrije.",
+      "text6": "Ako imate neka pitanja ili komentare, molimo vas ne oklevajte da nas kontaktirate. Naše ljubazno osoblje će vam rado izaći u susret i u najkraćem roku odgovoriti na vaše upite. Radujemo se saradnji sa vama!",
+      "sincerely": "S poštovanjem",
+      "stamp": "eComponents tim"
     }
 }

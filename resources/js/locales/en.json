@@ -2,10 +2,10 @@
     "app": "Ecomponents d.o.o",
     "nav": {
         "wholesale": "wholesale",
-        "home": "home",
-        "about-us": "about us",
-        "contact-us" : "contact us",
-        "gallery": "gallery",
+        "home": "Home",
+        "about-us": "About us",
+        "contact-us" : "Contact us",
+        "gallery": "Gallery",
         "wires-and-harness": "Wire and cable harnessing"
     },
     "contact-fixed": {
@@ -26,5 +26,21 @@
             "cables": "Cable accessories",
             "harware": "Hardware"
         }
+    },
+    "wire-harness-home": "We offer our customers and partners in different industries tailor-made solutions in the field of wire harnesses. Home appliance industry, gaming and vending machines industry and many other rely on us to bring their designs to life. Be it a single wire or a complex wire harness system – we got you covered!",
+    "about-us": {
+      "title": {
+        "text": "About",
+        "span": "us"
+      },
+      "text1": "Welcome to eComponents, your number one source for all things electronics. We're dedicated to giving you the very best of electronic components, with a focus on customer service,dependability and uniqueness.",
+      "text2": "When eComponents team first started out, our passion for helping innovative people accomplish incredible things drove us to quit our day jobs, and gave us the impetus to turn hard work and inspiration into this booming endeavor.",
+      "text3": "We now provide our customers with electronic components – wires and cables, connectors, active and passive components of the highest quality made by world’s leading manufacturers, such as Molex, TE Connectivity, JST, MEDIKabel, HELUKABEL etc., at very competitive prices. We navigate our way through the ocean of electronic equipment, terminology, and data sheets with ease - so you don’t have to!",
+      "text4": "We also excel at producing custom cable assemblies and cable harnesses for all your connecting needs. If you can imagine it, we can make it; you put all the pieces together, we’ll make them work!",
+      "text5": "eComponents is based in Serbia, but we are able to ship anywhere in the world. We are thrilled to be a part of the ever-growing wing of the electronics industry.",
+      "text6": "If you have any questions or comments, please don't hesitate to contact us. Our polite staff will gladly assist you and provide answers to your inquiries as soon as possible. We are looking forward to working with you!",
+      "sincerely": "Sincerely",
+      "stamp": "eComponents team",
+      "make-it-work": "make it work"
     }
 }

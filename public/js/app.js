@@ -1926,6 +1926,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "app",
   data: function data() {
@@ -2184,6 +2188,16 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -2204,7 +2218,7 @@ __webpack_require__.r(__webpack_exports__);
     changeLanguage: function changeLanguage(e) {
       var locale = e.target.value;
       this.$i18n.locale = locale;
-      this.$store.commit('changeLanguage', locale);
+      this.$store.commit("changeLanguage", locale);
       this.$router.push("/".concat(locale));
     }
   }
@@ -2221,6 +2235,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _LocalizedLink__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../LocalizedLink */ "./resources/js/components/LocalizedLink.vue");
 //
 //
 //
@@ -2289,7 +2304,66 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
 /* harmony default export */ __webpack_exports__["default"] = ({
+  components: {
+    LocalizedLink: _LocalizedLink__WEBPACK_IMPORTED_MODULE_0__["default"]
+  },
   data: function data() {
     return {};
   }
@@ -2613,8 +2687,39 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: 'WireAndHarnessComponent'
+  name: "WireAndHarnessComponent"
 });
 
 /***/ }),
@@ -3655,28 +3760,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: 'AboutUsView',
+  name: "AboutUsView",
   data: function data() {
     return {};
   }
@@ -3848,15 +3933,18 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: 'GalleryView',
+  name: "GalleryView",
   data: function data() {
     return {
-      imageDir: '/images/gallery/',
+      imageDir: "/images/gallery/",
       images: {},
       galleryImages: [],
-      folder: 'gallery',
+      folder: "gallery",
       className: null
     };
   },
@@ -3894,10 +3982,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "HomeView",
   data: function data() {
@@ -3916,6 +4000,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _js_components_LocalizedLink__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../js/components/LocalizedLink */ "./resources/js/components/LocalizedLink.vue");
 //
 //
 //
@@ -3995,18 +4080,65 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: 'WholesaleView',
+  components: {
+    LocalizedLink: _js_components_LocalizedLink__WEBPACK_IMPORTED_MODULE_0__["default"]
+  },
+  name: "WholesaleView",
   data: function data() {
     return {
       isParent: true
     };
   },
   updated: function updated() {
-    this.isParent = typeof this.$refs.childRout === 'undefined';
+    this.isParent = typeof this.$refs.childRout === "undefined";
   },
   mounted: function mounted() {
-    this.isParent = typeof this.$refs.childRout === 'undefined';
+    this.isParent = typeof this.$refs.childRout === "undefined";
   }
 });
 
@@ -6571,794 +6703,6 @@ module.exports = function escape(url) {
 
 /***/ }),
 
-/***/ "./node_modules/lang.js/src/lang.js":
-/*!******************************************!*\
-  !*** ./node_modules/lang.js/src/lang.js ***!
-  \******************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
- *  Lang.js for Laravel localization in JavaScript.
- *
- *  @version 1.1.12
- *  @license MIT https://github.com/rmariuzzo/Lang.js/blob/master/LICENSE
- *  @site    https://github.com/rmariuzzo/Lang.js
- *  @author  Rubens Mariuzzo <rubens@mariuzzo.com>
- */
-
-(function(root, factory) {
-    'use strict';
-
-    if (true) {
-        // AMD support.
-        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
-				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
-				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
-				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
-    } else {}
-
-}(this, function() {
-    'use strict';
-
-    function inferLocale() {
-        if (typeof document !== 'undefined' && document.documentElement) {
-            return document.documentElement.lang;
-        }
-    };
-
-    function convertNumber(str) {
-        if (str === '-Inf') {
-            return -Infinity;
-        } else if (str === '+Inf' || str === 'Inf' || str === '*') {
-            return Infinity;
-        }
-        return parseInt(str, 10);
-    }
-
-    // Derived from: https://github.com/symfony/translation/blob/460390765eb7bb9338a4a323b8a4e815a47541ba/Interval.php
-    var intervalRegexp = /^({\s*(\-?\d+(\.\d+)?[\s*,\s*\-?\d+(\.\d+)?]*)\s*})|([\[\]])\s*(-Inf|\*|\-?\d+(\.\d+)?)\s*,\s*(\+?Inf|\*|\-?\d+(\.\d+)?)\s*([\[\]])$/;
-    var anyIntervalRegexp = /({\s*(\-?\d+(\.\d+)?[\s*,\s*\-?\d+(\.\d+)?]*)\s*})|([\[\]])\s*(-Inf|\*|\-?\d+(\.\d+)?)\s*,\s*(\+?Inf|\*|\-?\d+(\.\d+)?)\s*([\[\]])/;
-
-    // Default options //
-
-    var defaults = {
-        locale: 'en'/** The default locale if not set. */
-    };
-
-    // Constructor //
-
-    var Lang = function(options) {
-        options = options || {};
-        this.locale = options.locale || inferLocale() || defaults.locale;
-        this.fallback = options.fallback;
-        this.messages = options.messages;
-    };
-
-    // Methods //
-
-    /**
-     * Set messages source.
-     *
-     * @param messages {object} The messages source.
-     *
-     * @return void
-     */
-    Lang.prototype.setMessages = function(messages) {
-        this.messages = messages;
-    };
-
-    /**
-     * Get the current locale.
-     *
-     * @return {string} The current locale.
-     */
-    Lang.prototype.getLocale = function() {
-        return this.locale || this.fallback;
-    };
-
-    /**
-     * Set the current locale.
-     *
-     * @param locale {string} The locale to set.
-     *
-     * @return void
-     */
-    Lang.prototype.setLocale = function(locale) {
-        this.locale = locale;
-    };
-
-    /**
-     * Get the fallback locale being used.
-     *
-     * @return void
-     */
-    Lang.prototype.getFallback = function() {
-        return this.fallback;
-    };
-
-    /**
-     * Set the fallback locale being used.
-     *
-     * @param fallback {string} The fallback locale.
-     *
-     * @return void
-     */
-    Lang.prototype.setFallback = function(fallback) {
-        this.fallback = fallback;
-    };
-
-    /**
-     * This method act as an alias to get() method.
-     *
-     * @param key {string} The key of the message.
-     * @param locale {string} The locale of the message
-     *
-     * @return {boolean} true if the given key is defined on the messages source, otherwise false.
-     */
-    Lang.prototype.has = function(key, locale) {
-        if (typeof key !== 'string' || !this.messages) {
-            return false;
-        }
-
-        return this._getMessage(key, locale) !== null;
-    };
-
-    /**
-     * Get a translation message.
-     *
-     * @param key {string} The key of the message.
-     * @param replacements {object} The replacements to be done in the message.
-     * @param locale {string} The locale to use, if not passed use the default locale.
-     *
-     * @return {string} The translation message, if not found the given key.
-     */
-    Lang.prototype.get = function(key, replacements, locale) {
-        if (!this.has(key, locale)) {
-            return key;
-        }
-
-        var message = this._getMessage(key, locale);
-        if (message === null) {
-            return key;
-        }
-
-        if (replacements) {
-            message = this._applyReplacements(message, replacements);
-        }
-
-        return message;
-    };
-
-    /**
-     * This method act as an alias to get() method.
-     *
-     * @param key {string} The key of the message.
-     * @param replacements {object} The replacements to be done in the message.
-     *
-     * @return {string} The translation message, if not found the given key.
-     */
-    Lang.prototype.trans = function(key, replacements) {
-        return this.get(key, replacements);
-    };
-
-    /**
-     * Gets the plural or singular form of the message specified based on an integer value.
-     *
-     * @param key {string} The key of the message.
-     * @param count {number} The number of elements.
-     * @param replacements {object} The replacements to be done in the message.
-     * @param locale {string} The locale to use, if not passed use the default locale.
-     *
-     * @return {string} The translation message according to an integer value.
-     */
-    Lang.prototype.choice = function(key, number, replacements, locale) {
-        // Set default values for parameters replace and locale
-        replacements = typeof replacements !== 'undefined'
-            ? replacements
-            : {};
-
-        // The count must be replaced if found in the message
-        replacements.count = number;
-
-        // Message to get the plural or singular
-        var message = this.get(key, replacements, locale);
-
-        // Check if message is not null or undefined
-        if (message === null || message === undefined) {
-            return message;
-        }
-
-        // Separate the plural from the singular, if any
-        var messageParts = message.split('|');
-
-        // Get the explicit rules, If any
-        var explicitRules = [];
-
-        for (var i = 0; i < messageParts.length; i++) {
-            messageParts[i] = messageParts[i].trim();
-
-            if (anyIntervalRegexp.test(messageParts[i])) {
-                var messageSpaceSplit = messageParts[i].split(/\s/);
-                explicitRules.push(messageSpaceSplit.shift());
-                messageParts[i] = messageSpaceSplit.join(' ');
-            }
-        }
-
-        // Check if there's only one message
-        if (messageParts.length === 1) {
-            // Nothing to do here
-            return message;
-        }
-
-        // Check the explicit rules
-        for (var j = 0; j < explicitRules.length; j++) {
-            if (this._testInterval(number, explicitRules[j])) {
-                return messageParts[j];
-            }
-        }
-
-        locale = locale || this._getLocale(key);
-        var pluralForm = this._getPluralForm(number, locale);
-
-        return messageParts[pluralForm];
-    };
-
-    /**
-     * This method act as an alias to choice() method.
-     *
-     * @param key {string} The key of the message.
-     * @param count {number} The number of elements.
-     * @param replacements {object} The replacements to be done in the message.
-     *
-     * @return {string} The translation message according to an integer value.
-     */
-    Lang.prototype.transChoice = function(key, count, replacements) {
-        return this.choice(key, count, replacements);
-    };
-
-    /**
-     * Parse a message key into components.
-     *
-     * @param key {string} The message key to parse.
-     * @param key {string} The message locale to parse
-     * @return {object} A key object with source and entries properties.
-     */
-    Lang.prototype._parseKey = function(key, locale) {
-        if (typeof key !== 'string' || typeof locale !== 'string') {
-            return null;
-        }
-
-        var segments = key.split('.');
-        var source = segments[0].replace(/\//g, '.');
-
-        return {
-            source: locale + '.' + source,
-            sourceFallback: this.getFallback() + '.' + source,
-            entries: segments.slice(1)
-        };
-    };
-
-    /**
-     * Returns a translation message. Use `Lang.get()` method instead, this methods assumes the key exists.
-     *
-     * @param key {string} The key of the message.
-     * @param locale {string} The locale of the message
-     *
-     * @return {string} The translation message for the given key.
-     */
-    Lang.prototype._getMessage = function(key, locale) {
-        locale = locale || this.getLocale();
-        
-        key = this._parseKey(key, locale);
-
-        // Ensure message source exists.
-        if (this.messages[key.source] === undefined && this.messages[key.sourceFallback] === undefined) {
-            return null;
-        }
-
-        // Get message from default locale.
-        var message = this.messages[key.source];
-        var entries = key.entries.slice();
-        var subKey = entries.join('.');
-        message = message !== undefined ? this._getValueInKey(message, subKey) : undefined;
-
-
-        // Get message from fallback locale.
-        if (typeof message !== 'string' && this.messages[key.sourceFallback]) {
-            message = this.messages[key.sourceFallback];
-            entries = key.entries.slice();
-            subKey = '';
-            while (entries.length && message !== undefined) {
-                var subKey = !subKey ? entries.shift() : subKey.concat('.', entries.shift());
-                if (message[subKey]) {
-                    message = message[subKey]
-                    subKey = '';
-                }
-            }
-        }
-
-        if (typeof message !== 'string') {
-            return null;
-        }
-
-        return message;
-    };
-
-    Lang.prototype._getValueInKey = function(obj, str) {
-        // If the full key exists just return the value
-        if (typeof obj[str] === 'string') {
-            return obj[str]
-        }
-
-        str = str.replace(/\[(\w+)\]/g, '.$1'); // convert indexes to properties
-        str = str.replace(/^\./, '');           // strip a leading dot
-
-        var parts = str.split('.');
-
-        for (var i = 0, n = parts.length; i < n; ++i) {
-            var currentKey = parts.slice(0, i + 1).join('.');
-            var restOfTheKey = parts.slice(i + 1, parts.length).join('.')
-            
-            if (obj[currentKey]) {
-                return this._getValueInKey(obj[currentKey], restOfTheKey)
-            }
-        }
-
-        return obj;
-    };
-
-    /**
-     * Return the locale to be used between default and fallback.
-     * @param {String} key
-     * @return {String}
-     */
-    Lang.prototype._getLocale = function(key) {
-        key = this._parseKey(key, this.locale)
-        if (this.messages[key.source]) {
-            return this.locale;
-        }
-        if (this.messages[key.sourceFallback]) {
-            return this.fallback;
-        }
-        return null;
-    };
-
-    /**
-     * Find a message in a translation tree using both dotted keys and regular ones
-     *
-     * @param pathSegments {array} An array of path segments such as ['family', 'father']
-     * @param tree {object} The translation tree
-     */
-    Lang.prototype._findMessageInTree = function(pathSegments, tree) {
-        while (pathSegments.length && tree !== undefined) {
-            var dottedKey = pathSegments.join('.');
-            if (tree[dottedKey]) {
-                tree = tree[dottedKey];
-                break;
-            }
-
-            tree = tree[pathSegments.shift()]
-        }
-
-        return tree;
-    };
-
-    /**
-     * Sort replacement keys by length in descending order.
-     *
-     * @param a {string} Replacement key
-     * @param b {string} Sibling replacement key
-     * @return {number}
-     * @private
-     */
-    Lang.prototype._sortReplacementKeys = function(a, b) {
-        return b.length - a.length;
-    };
-
-    /**
-     * Apply replacements to a string message containing placeholders.
-     *
-     * @param message {string} The text message.
-     * @param replacements {object} The replacements to be done in the message.
-     *
-     * @return {string} The string message with replacements applied.
-     */
-    Lang.prototype._applyReplacements = function(message, replacements) {
-        var keys = Object.keys(replacements).sort(this._sortReplacementKeys);
-
-        keys.forEach(function(replace) {
-            message = message.replace(new RegExp(':' + replace, 'gi'), function (match) {
-                var value = replacements[replace];
-
-                // Capitalize all characters.
-                var allCaps = match === match.toUpperCase();
-                if (allCaps) {
-                    return value.toUpperCase();
-                }
-
-                // Capitalize first letter.
-                var firstCap = match === match.replace(/\w/i, function(letter) {
-                    return letter.toUpperCase();
-                });
-                if (firstCap) {
-                    return value.charAt(0).toUpperCase() + value.slice(1);
-                }
-
-                return value;
-            })
-        });
-        return message;
-    };
-
-    /**
-     * Checks if the given `count` is within the interval defined by the {string} `interval`
-     *
-     * @param  count     {int}    The amount of items.
-     * @param  interval  {string} The interval to be compared with the count.
-     * @return {boolean}          Returns true if count is within interval; false otherwise.
-     */
-    Lang.prototype._testInterval = function(count, interval) {
-        /**
-         * From the Symfony\Component\Translation\Interval Docs
-         *
-         * Tests if a given number belongs to a given math interval.
-         *
-         * An interval can represent a finite set of numbers:
-         *
-         *  {1,2,3,4}
-         *
-         * An interval can represent numbers between two numbers:
-         *
-         *  [1, +Inf]
-         *  ]-1,2[
-         *
-         * The left delimiter can be [ (inclusive) or ] (exclusive).
-         * The right delimiter can be [ (exclusive) or ] (inclusive).
-         * Beside numbers, you can use -Inf and +Inf for the infinite.
-         */
-
-        if (typeof interval !== 'string') {
-            throw 'Invalid interval: should be a string.';
-        }
-
-        interval = interval.trim();
-
-        var matches = interval.match(intervalRegexp);
-        if (!matches) {
-            throw 'Invalid interval: ' + interval;
-        }
-
-        if (matches[2]) {
-            var items = matches[2].split(',');
-            for (var i = 0; i < items.length; i++) {
-                if (parseInt(items[i], 10) === count) {
-                    return true;
-                }
-            }
-        } else {
-            // Remove falsy values.
-            matches = matches.filter(function(match) {
-                return !!match;
-            });
-
-            var leftDelimiter = matches[1];
-            var leftNumber = convertNumber(matches[2]);
-            if (leftNumber === Infinity) {
-                leftNumber = -Infinity;
-            }
-            var rightNumber = convertNumber(matches[3]);
-            var rightDelimiter = matches[4];
-
-            return (leftDelimiter === '[' ? count >= leftNumber : count > leftNumber)
-                && (rightDelimiter === ']' ? count <= rightNumber : count < rightNumber);
-        }
-
-        return false;
-    };
-
-    /**
-     * Returns the plural position to use for the given locale and number.
-     *
-     * The plural rules are derived from code of the Zend Framework (2010-09-25),
-     * which is subject to the new BSD license (http://framework.zend.com/license/new-bsd).
-     * Copyright (c) 2005-2010 Zend Technologies USA Inc. (http://www.zend.com)
-     *
-     * @param {Number} count
-     * @param {String} locale
-     * @return {Number}
-     */
-    Lang.prototype._getPluralForm = function(count, locale) {
-        switch (locale) {
-            case 'az':
-            case 'bo':
-            case 'dz':
-            case 'id':
-            case 'ja':
-            case 'jv':
-            case 'ka':
-            case 'km':
-            case 'kn':
-            case 'ko':
-            case 'ms':
-            case 'th':
-            case 'tr':
-            case 'vi':
-            case 'zh':
-                return 0;
-
-            case 'af':
-            case 'bn':
-            case 'bg':
-            case 'ca':
-            case 'da':
-            case 'de':
-            case 'el':
-            case 'en':
-            case 'eo':
-            case 'es':
-            case 'et':
-            case 'eu':
-            case 'fa':
-            case 'fi':
-            case 'fo':
-            case 'fur':
-            case 'fy':
-            case 'gl':
-            case 'gu':
-            case 'ha':
-            case 'he':
-            case 'hu':
-            case 'is':
-            case 'it':
-            case 'ku':
-            case 'lb':
-            case 'ml':
-            case 'mn':
-            case 'mr':
-            case 'nah':
-            case 'nb':
-            case 'ne':
-            case 'nl':
-            case 'nn':
-            case 'no':
-            case 'om':
-            case 'or':
-            case 'pa':
-            case 'pap':
-            case 'ps':
-            case 'pt':
-            case 'so':
-            case 'sq':
-            case 'sv':
-            case 'sw':
-            case 'ta':
-            case 'te':
-            case 'tk':
-            case 'ur':
-            case 'zu':
-                return (count == 1)
-                    ? 0
-                    : 1;
-
-            case 'am':
-            case 'bh':
-            case 'fil':
-            case 'fr':
-            case 'gun':
-            case 'hi':
-            case 'hy':
-            case 'ln':
-            case 'mg':
-            case 'nso':
-            case 'xbr':
-            case 'ti':
-            case 'wa':
-                return ((count === 0) || (count === 1))
-                    ? 0
-                    : 1;
-
-            case 'be':
-            case 'bs':
-            case 'hr':
-            case 'ru':
-            case 'sr':
-            case 'uk':
-                return ((count % 10 == 1) && (count % 100 != 11))
-                    ? 0
-                    : (((count % 10 >= 2) && (count % 10 <= 4) && ((count % 100 < 10) || (count % 100 >= 20)))
-                        ? 1
-                        : 2);
-
-            case 'cs':
-            case 'sk':
-                return (count == 1)
-                    ? 0
-                    : (((count >= 2) && (count <= 4))
-                        ? 1
-                        : 2);
-
-            case 'ga':
-                return (count == 1)
-                    ? 0
-                    : ((count == 2)
-                        ? 1
-                        : 2);
-
-            case 'lt':
-                return ((count % 10 == 1) && (count % 100 != 11))
-                    ? 0
-                    : (((count % 10 >= 2) && ((count % 100 < 10) || (count % 100 >= 20)))
-                        ? 1
-                        : 2);
-
-            case 'sl':
-                return (count % 100 == 1)
-                    ? 0
-                    : ((count % 100 == 2)
-                        ? 1
-                        : (((count % 100 == 3) || (count % 100 == 4))
-                            ? 2
-                            : 3));
-
-            case 'mk':
-                return (count % 10 == 1)
-                    ? 0
-                    : 1;
-
-            case 'mt':
-                return (count == 1)
-                    ? 0
-                    : (((count === 0) || ((count % 100 > 1) && (count % 100 < 11)))
-                        ? 1
-                        : (((count % 100 > 10) && (count % 100 < 20))
-                            ? 2
-                            : 3));
-
-            case 'lv':
-                return (count === 0)
-                    ? 0
-                    : (((count % 10 == 1) && (count % 100 != 11))
-                        ? 1
-                        : 2);
-
-            case 'pl':
-                return (count == 1)
-                    ? 0
-                    : (((count % 10 >= 2) && (count % 10 <= 4) && ((count % 100 < 12) || (count % 100 > 14)))
-                        ? 1
-                        : 2);
-
-            case 'cy':
-                return (count == 1)
-                    ? 0
-                    : ((count == 2)
-                        ? 1
-                        : (((count == 8) || (count == 11))
-                            ? 2
-                            : 3));
-
-            case 'ro':
-                return (count == 1)
-                    ? 0
-                    : (((count === 0) || ((count % 100 > 0) && (count % 100 < 20)))
-                        ? 1
-                        : 2);
-
-            case 'ar':
-                return (count === 0)
-                    ? 0
-                    : ((count == 1)
-                        ? 1
-                        : ((count == 2)
-                            ? 2
-                            : (((count % 100 >= 3) && (count % 100 <= 10))
-                                ? 3
-                                : (((count % 100 >= 11) && (count % 100 <= 99))
-                                    ? 4
-                                    : 5))));
-
-            default:
-                return 0;
-        }
-    };
-
-    return Lang;
-
-}));
-
-
-/***/ }),
-
-/***/ "./node_modules/laravel-vue-lang/dist/index.js":
-/*!*****************************************************!*\
-  !*** ./node_modules/laravel-vue-lang/dist/index.js ***!
-  \*****************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.Lang = exports.default = void 0;
-const lang_js_1 = __importDefault(__webpack_require__(/*! lang.js */ "./node_modules/lang.js/src/lang.js"));
-/*
-|--------------------------------------------------------------------------
-| Helpers
-|--------------------------------------------------------------------------
-*/
-/**
- * Determines if the given locale and domain combination is ignored.
- */
-function shouldIgnore(ignore, locale, domain) {
-    for (let [ignoreLocale, ignoreDomains] of Object.entries(ignore)) {
-        if (locale === ignoreLocale && ignoreDomains.includes(domain)) {
-            return true;
-        }
-    }
-    return false;
-}
-/**
- * Imports translations from the configured alias.
- */
-function importTranslations({ ignore, globalTranslationsKey }) {
-    const catalogue = {};
-    const files = __webpack_require__("./resources/lang sync recursive \\.(php|json)$");
-    files.keys().forEach((file) => {
-        var _a, _b;
-        // Find localization files at the root directory
-        const [isGlobal, rootLocale] = (_a = /\.\/([A-Za-z0-9-_]+).(?:php|json)/.exec(file)) !== null && _a !== void 0 ? _a : [];
-        if (isGlobal) {
-            catalogue[`${rootLocale}.${globalTranslationsKey}`] = files(file);
-            return;
-        }
-        // Find localization files in a /lang/ directory
-        const [isScoped, locale, domain] = (_b = /\.\/([A-Za-z0-9-_]+)\/([A-Za-z0-9-_]+).(?:php|json)/.exec(file)) !== null && _b !== void 0 ? _b : [];
-        if (!ignore || !shouldIgnore(ignore, locale, domain)) {
-            catalogue[`${locale}.${domain}`] = files(file);
-        }
-    });
-    return catalogue;
-}
-/**
- * Adds localization to Vue.
- */
-const Lang = {
-    install: (Vue, options = {}) => {
-        var _a;
-        // Defines default options
-        options = Object.assign({ globalTranslationsKey: '__global__' }, options);
-        // Creates the Lang.js object
-        const i18n = new lang_js_1.default(Object.assign({ fallback: document.documentElement.lang || navigator.language, messages: (_a = options === null || options === void 0 ? void 0 : options.messages) !== null && _a !== void 0 ? _a : importTranslations(options) }, options));
-        // Defines a global translation function
-        const __ = (key, ...args) => {
-            // Non-global translations
-            if (key.match(/^[\w-]+(?:\.[\w-]+)+$/)) {
-                return i18n.get(key, ...args);
-            }
-            // Global translations
-            const result = i18n.get(`${options.globalTranslationsKey}.${key}`, ...args);
-            return result.startsWith(options.globalTranslationsKey)
-                ? result.substr(options.globalTranslationsKey.length + 1)
-                : result;
-        };
-        Vue.mixin({
-            methods: {
-                $lang: () => i18n,
-                __,
-            },
-        });
-    },
-};
-exports.default = Lang;
-exports.Lang = Lang;
-
-
-/***/ }),
-
 /***/ "./node_modules/process/browser.js":
 /*!*****************************************!*\
   !*** ./node_modules/process/browser.js ***!
@@ -8665,7 +8009,7 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /*!
- * vue-i18n v8.24.1 
+ * vue-i18n v8.24.2 
  * (c) 2021 kazuya kawaguchi
  * Released under the MIT License.
  */
@@ -8970,6 +8314,16 @@ var mixin = {
           options.i18n.silentFallbackWarn = rootI18n.silentFallbackWarn;
           options.i18n.pluralizationRules = rootI18n.pluralizationRules;
           options.i18n.preserveDirectiveContent = rootI18n.preserveDirectiveContent;
+          this.$root.$once('hook:beforeDestroy', function () {
+            options.i18n.root = null;
+            options.i18n.formatter = null;
+            options.i18n.fallbackLocale = null;
+            options.i18n.formatFallbackMessages = null;
+            options.i18n.silentTranslationWarn = null;
+            options.i18n.silentFallbackWarn = null;
+            options.i18n.pluralizationRules = null;
+            options.i18n.preserveDirectiveContent = null;
+          });
         }
 
         // init locale messages via custom blocks
@@ -10863,7 +10217,7 @@ Object.defineProperty(VueI18n, 'availabilities', {
 });
 
 VueI18n.install = install;
-VueI18n.version = '8.24.1';
+VueI18n.version = '8.24.2';
 
 /* harmony default export */ __webpack_exports__["default"] = (VueI18n);
 
@@ -10885,7 +10239,51 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("v-app", [_c("v-content", [_c("router-view")], 1)], 1)
+  return _c(
+    "v-app",
+    [
+      _c(
+        "v-content",
+        [
+          _c("header-component"),
+          _vm._v(" "),
+          _c("router-view"),
+          _vm._v(" "),
+          _c("home-contact-component"),
+          _vm._v(" "),
+          _c("prefooter"),
+          _vm._v(" "),
+          _c("footer-component")
+        ],
+        1
+      )
+    ],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Root.vue?vue&type=template&id=0f977d00&":
+/*!********************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Root.vue?vue&type=template&id=0f977d00& ***!
+  \********************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("router-view")
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -11104,6 +10502,32 @@ var render = function() {
         { staticClass: "pa-0 shrink-width" },
         [
           _c(
+            "select",
+            {
+              staticClass: "language-selector",
+              domProps: { value: _vm.$i18n.locale },
+              on: {
+                change: function($event) {
+                  $event.preventDefault()
+                  return _vm.changeLanguage($event)
+                }
+              }
+            },
+            _vm._l(_vm.locales, function(locale) {
+              return _c(
+                "option",
+                { key: locale.code, domProps: { value: locale.code } },
+                [
+                  _vm._v(
+                    "\n        \n        " + _vm._s(locale.name) + "\n      "
+                  )
+                ]
+              )
+            }),
+            0
+          ),
+          _vm._v(" "),
+          _c(
             "v-row",
             { staticClass: "align-center" },
             [
@@ -11181,7 +10605,7 @@ var render = function() {
                         "li",
                         { staticClass: "header-container__menu-block" },
                         [
-                          _c("LocalizedLink", { attrs: { to: "/home" } }, [
+                          _c("LocalizedLink", { attrs: { to: "/" } }, [
                             _vm._v(_vm._s(_vm.$t("nav.home")))
                           ])
                         ],
@@ -11247,35 +10671,6 @@ var render = function() {
                         1
                       )
                     ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "select",
-                    {
-                      staticClass: "language-change",
-                      staticStyle: { "background-color": "white" },
-                      domProps: { value: _vm.$i18n.locale },
-                      on: {
-                        change: function($event) {
-                          $event.preventDefault()
-                          return _vm.changeLanguage($event)
-                        }
-                      }
-                    },
-                    _vm._l(_vm.locales, function(locale) {
-                      return _c(
-                        "option",
-                        { key: locale.code, domProps: { value: locale.code } },
-                        [
-                          _vm._v(
-                            "\n            " +
-                              _vm._s(locale.name) +
-                              "\n          "
-                          )
-                        ]
-                      )
-                    }),
-                    0
                   )
                 ]
               )
@@ -11338,9 +10733,9 @@ var render = function() {
                 },
                 [
                   _c(
-                    "router-link",
+                    "LocalizedLink",
                     {
-                      staticClass: "round-block",
+                      staticClass: "prefooter-container__block-link",
                       attrs: { to: "/wholesale/wires-cables" }
                     },
                     [
@@ -11361,7 +10756,11 @@ var render = function() {
                       ),
                       _vm._v(" "),
                       _c("div", { staticClass: "round-block__content" }, [
-                        _c("h2", [_vm._v("Wires and cables")])
+                        _c("h2", [
+                          _vm._v(
+                            _vm._s(_vm.$t("prefooter.links-left.wires-cables"))
+                          )
+                        ])
                       ])
                     ]
                   )
@@ -11377,9 +10776,9 @@ var render = function() {
                 },
                 [
                   _c(
-                    "router-link",
+                    "LocalizedLink",
                     {
-                      staticClass: "round-block",
+                      staticClass: "prefooter-container__block-link",
                       attrs: { to: "/wholesale/connectors" }
                     },
                     [
@@ -11400,10 +10799,19 @@ var render = function() {
                       ),
                       _vm._v(" "),
                       _c("div", { staticClass: "round-block__content" }, [
-                        _c("h2", [_vm._v("Connectors & electronic components")])
+                        _c("h2", [
+                          _vm._v(
+                            _vm._s(_vm.$t("prefooter.links-left.connectors"))
+                          )
+                        ])
                       ])
                     ]
-                  )
+                  ),
+                  _vm._v(" "),
+                  _c("router-link", {
+                    staticClass: "round-block",
+                    attrs: { to: "/wholesale/connectors" }
+                  })
                 ],
                 1
               ),
@@ -11416,9 +10824,9 @@ var render = function() {
                 },
                 [
                   _c(
-                    "router-link",
+                    "LocalizedLink",
                     {
-                      staticClass: "round-block",
+                      staticClass: "prefooter-container__block-link",
                       attrs: { to: "/wholesale/pcbs" }
                     },
                     [
@@ -11455,9 +10863,9 @@ var render = function() {
                 },
                 [
                   _c(
-                    "router-link",
+                    "LocalizedLink",
                     {
-                      staticClass: "round-block",
+                      staticClass: "prefooter-container__block-link",
                       attrs: { to: "/wholesale/led" }
                     },
                     [
@@ -11478,7 +10886,9 @@ var render = function() {
                       ),
                       _vm._v(" "),
                       _c("div", { staticClass: "round-block__content" }, [
-                        _c("h2", [_vm._v("LEDs")])
+                        _c("h2", [
+                          _vm._v(_vm._s(_vm.$t("prefooter.links-left.led")))
+                        ])
                       ])
                     ]
                   )
@@ -11494,10 +10904,10 @@ var render = function() {
                 },
                 [
                   _c(
-                    "router-link",
+                    "LocalizedLink",
                     {
-                      staticClass: "round-block",
-                      attrs: { to: "wholesale/cable-accessories" }
+                      staticClass: "prefooter-container__block-link",
+                      attrs: { to: "/wholesale/cable-accessories" }
                     },
                     [
                       _c(
@@ -11517,7 +10927,9 @@ var render = function() {
                       ),
                       _vm._v(" "),
                       _c("div", { staticClass: "round-block__content" }, [
-                        _c("h2", [_vm._v("Cable accessories")])
+                        _c("h2", [
+                          _vm._v(_vm._s(_vm.$t("prefooter.links-left.cables")))
+                        ])
                       ])
                     ]
                   )
@@ -11533,10 +10945,10 @@ var render = function() {
                 },
                 [
                   _c(
-                    "router-link",
+                    "LocalizedLink",
                     {
-                      staticClass: "round-block",
-                      attrs: { to: "wholesale/hardware" }
+                      staticClass: "prefooter-container__block-link",
+                      attrs: { to: "/wholesale/hardware" }
                     },
                     [
                       _c(
@@ -11556,7 +10968,9 @@ var render = function() {
                       ),
                       _vm._v(" "),
                       _c("div", { staticClass: "round-block__content" }, [
-                        _c("h2", [_vm._v("Hardware")])
+                        _c("h2", [
+                          _vm._v(_vm._s(_vm.$t("prefooter.links-left.harware")))
+                        ])
                       ])
                     ]
                   )
@@ -12320,7 +11734,9 @@ var render = function() {
                     [
                       _c("h2", { staticClass: "mb-4" }, [
                         _vm._v(
-                          "\n            Wire and cable harnessing\n          "
+                          "\n            " +
+                            _vm._s(_vm.$t("nav.wires-and-harness")) +
+                            "\n          "
                         )
                       ])
                     ]
@@ -12342,7 +11758,7 @@ var render = function() {
                     [
                       _c("p", [
                         _vm._v(
-                          "\n            We offer our customers and partners in different industries\n            tailor-made solutions in the field of wire harnesses. Home appliance\n            industry, gaming and vending machines industry and many other rely\n            on us to bring their designs to life. Be it a single wire or a\n            complex wire harness system – we got you covered!\n          "
+                          "\n            We offer our customers and partners in different industries\n            tailor-made solutions in the field of wire harnesses. Home\n            appliance industry, gaming and vending machines industry and many\n            other rely on us to bring their designs to life. Be it a single\n            wire or a complex wire harness system – we got you covered!\n          "
                         )
                       ])
                     ]
@@ -14171,50 +13587,40 @@ var render = function() {
         { staticClass: "shrink-width" },
         [
           _c("h1", { staticClass: "mb-4 text-center" }, [
-            _vm._v("\n      About "),
-            _c("span", [_vm._v("us")])
-          ]),
-          _vm._v(" "),
-          _c("p", [
             _vm._v(
-              "\n      Welcome to eComponents, your number one source for all things electronics.\n      We're dedicated to giving you the very best of electronic components, with a focus on customer service,\n      dependability and uniqueness.\n    "
-            )
+              "\n      " + _vm._s(_vm.$t("about-us.title.text")) + "\n      "
+            ),
+            _c("span", [_vm._v(_vm._s(_vm.$t("about-us.title.span")) + " ")])
           ]),
           _vm._v(" "),
           _c("p", [
-            _vm._v(
-              "\n      When eComponents team first started out, our passion for helping\n      innovative people accomplish incredible things drove us to quit our\n      day jobs, and gave us the impetus to turn hard work and inspiration\n      into this booming endeavor.\n    "
-            )
+            _vm._v("\n      " + _vm._s(_vm.$t("about-us.text1")) + "\n    ")
           ]),
           _vm._v(" "),
           _c("p", [
-            _vm._v(
-              "\n      We now provide our customers with electronic components – wires and\n      cables, connectors, active and passive components of the highest\n      quality made by world’s leading manufacturers, such as Molex, TE\n      Connectivity, JST, MEDIKabel, HELUKABEL etc., at very competitive\n      prices. We navigate our way through the ocean of electronic\n      equipment, terminology, and data sheets with ease - so you don’t have\n      to!\n    "
-            )
+            _vm._v("\n      " + _vm._s(_vm.$t("about-us.text2")) + "\n    ")
           ]),
           _vm._v(" "),
           _c("p", [
-            _vm._v(
-              "\n      We also excel at producing custom cable assemblies and cable\n      harnesses for all your connecting needs. If you can imagine it, we\n      can make it; you put all the pieces together, we’ll make them work!\n    "
-            )
+            _vm._v("\n      " + _vm._s(_vm.$t("about-us.text3")) + "\n    ")
           ]),
           _vm._v(" "),
           _c("p", [
-            _vm._v(
-              "\n      eComponents is based in Serbia, but we are able to ship anywhere in\n      the world. We are thrilled to be a part of the ever-growing wing of\n      the electronics industry.\n    "
-            )
+            _vm._v("\n      " + _vm._s(_vm.$t("about-us.text4")) + "\n    ")
           ]),
           _vm._v(" "),
           _c("p", [
-            _vm._v(
-              "\n      If you have any questions or comments, please don't hesitate to\n      contact us. Our polite staff will gladly assist you and provide\n      answers to your inquiries as soon as possible. We are looking\n      forward to working with you!\n    "
-            )
+            _vm._v("\n      " + _vm._s(_vm.$t("about-us.text5")) + "\n    ")
           ]),
           _vm._v(" "),
           _c("p", [
-            _vm._v("\n      Sincerely,"),
+            _vm._v("\n      " + _vm._s(_vm.$t("about-us.text6")) + "\n    ")
+          ]),
+          _vm._v(" "),
+          _c("p", [
+            _vm._v("\n      " + _vm._s(_vm.$t("about-us.sincerely")) + ","),
             _c("br"),
-            _vm._v("\n      eComponents team\n    ")
+            _vm._v("\n      " + _vm._s(_vm.$t("about-us.stamp")) + "\n    ")
           ]),
           _vm._v(" "),
           _c("v-img", {
@@ -14228,7 +13634,9 @@ var render = function() {
             }
           }),
           _vm._v(" "),
-          _c("p", [_vm._v("\n      - make it work -\n    ")])
+          _c("p", [
+            _vm._v("- " + _vm._s(_vm.$t("about-us.make-it-work")) + " -")
+          ])
         ],
         1
       )
@@ -14601,7 +14009,11 @@ var render = function() {
                   staticClass: "text-center mb-5",
                   attrs: { lg: "12", md: "12", sm: "12", cols: "12" }
                 },
-                [_c("h1", [_c("span", [_vm._v("Gallery")])])]
+                [
+                  _c("h1", [
+                    _c("span", [_vm._v(_vm._s(_vm.$t("nav.gallery")))])
+                  ])
+                ]
               ),
               _vm._v(" "),
               _c("base-miny-gallery", {
@@ -14650,21 +14062,13 @@ var render = function() {
   return _c(
     "div",
     [
-      _c("header-component"),
-      _vm._v(" "),
       _c("splash"),
       _vm._v(" "),
       _c("home-catagories"),
       _vm._v(" "),
       _c("wire-and-harness"),
       _vm._v(" "),
-      _c("why-us"),
-      _vm._v(" "),
-      _c("home-contact-component"),
-      _vm._v(" "),
-      _c("prefooter"),
-      _vm._v(" "),
-      _c("footer-component")
+      _c("why-us")
     ],
     1
   )
@@ -14692,288 +14096,294 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c(
-    "div",
+    "v-container",
+    { staticClass: "wholesale-view-container", attrs: { fluid: "" } },
     [
-      _c("header-component"),
-      _vm._v(" "),
       _c(
         "v-container",
-        { staticClass: "wholesale-view-container", attrs: { fluid: "" } },
+        {
+          directives: [
+            {
+              name: "show",
+              rawName: "v-show",
+              value: _vm.isParent,
+              expression: "isParent"
+            }
+          ],
+          staticClass: "shrink-width"
+        },
         [
           _c(
-            "v-container",
-            {
-              directives: [
-                {
-                  name: "show",
-                  rawName: "v-show",
-                  value: _vm.isParent,
-                  expression: "isParent"
-                }
-              ],
-              staticClass: "shrink-width"
-            },
+            "v-row",
+            { staticClass: "text-center" },
             [
+              _c("v-col", { attrs: { cols: "12" } }, [
+                _c("h1", { staticClass: "mb-8" }, [
+                  _vm._v("Whole"),
+                  _c("span", [_vm._v("sale")])
+                ])
+              ]),
+              _vm._v(" "),
               _c(
-                "v-row",
-                { staticClass: "text-center" },
+                "v-col",
+                {
+                  staticClass: "pb-11",
+                  attrs: { lg: "4", md: "4", sm: "6", cols: "12" }
+                },
                 [
-                  _c("v-col", { attrs: { cols: "12" } }, [
-                    _c("h1", { staticClass: "mb-8" }, [
-                      _vm._v("Whole"),
-                      _c("span", [_vm._v("sale")])
-                    ])
-                  ]),
-                  _vm._v(" "),
                   _c(
-                    "v-col",
+                    "LocalizedLink",
                     {
-                      staticClass: "pb-11",
-                      attrs: { lg: "4", md: "4", sm: "12", cols: "12" }
+                      staticClass: "prefooter-container__block-link",
+                      attrs: { to: "/wholesale/wires-cables" }
                     },
                     [
                       _c(
-                        "router-link",
-                        {
-                          staticClass: "round-block",
-                          attrs: { to: "/wholesale/wires-cables" }
-                        },
+                        "div",
+                        { staticClass: "round-block__img" },
                         [
-                          _c(
-                            "div",
-                            { staticClass: "round-block__img" },
-                            [
-                              _c("v-img", {
-                                attrs: {
-                                  "max-width": "280px",
-                                  src: "images/wires-cables/thumbnail.jpg",
-                                  alt: ""
-                                }
-                              })
-                            ],
-                            1
-                          ),
-                          _vm._v(" "),
-                          _c("div", { staticClass: "round-block__content" }, [
-                            _c("h2", [_vm._v("Wires and cables")])
-                          ])
-                        ]
-                      )
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "v-col",
-                    {
-                      staticClass: "pb-11",
-                      attrs: { lg: "4", md: "4", sm: "12", cols: "12" }
-                    },
-                    [
-                      _c(
-                        "router-link",
-                        {
-                          staticClass: "round-block",
-                          attrs: { to: "/wholesale/connectors" }
-                        },
-                        [
-                          _c(
-                            "div",
-                            { staticClass: "round-block__img" },
-                            [
-                              _c("v-img", {
-                                attrs: {
-                                  "max-width": "280px",
-                                  src: "images/connectors/thumbnail.jpg",
-                                  alt: ""
-                                }
-                              })
-                            ],
-                            1
-                          ),
-                          _vm._v(" "),
-                          _c("div", { staticClass: "round-block__content" }, [
-                            _c("h2", [
-                              _vm._v("Connectors & electronic components")
-                            ])
-                          ])
-                        ]
-                      )
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "v-col",
-                    {
-                      staticClass: "pb-11",
-                      attrs: { lg: "4", md: "4", sm: "12", cols: "12" }
-                    },
-                    [
-                      _c(
-                        "router-link",
-                        {
-                          staticClass: "round-block",
-                          attrs: { to: "/wholesale/pcbs" }
-                        },
-                        [
-                          _c(
-                            "div",
-                            { staticClass: "round-block__img" },
-                            [
-                              _c("v-img", {
-                                attrs: {
-                                  "max-width": "280px",
-                                  src: "/images/pcbs/pcbs.jpg",
-                                  alt: ""
-                                }
-                              })
-                            ],
-                            1
-                          ),
-                          _vm._v(" "),
-                          _c("div", { staticClass: "round-block__content" }, [
-                            _c("h2", [_vm._v("PCBs")])
-                          ])
-                        ]
-                      )
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "v-col",
-                    {
-                      staticClass: "pb-11",
-                      attrs: { lg: "4", md: "4", sm: "12", cols: "12" }
-                    },
-                    [
-                      _c(
-                        "router-link",
-                        {
-                          staticClass: "round-block",
-                          attrs: { to: "/wholesale/led" }
-                        },
-                        [
-                          _c(
-                            "div",
-                            { staticClass: "round-block__img" },
-                            [
-                              _c("v-img", {
-                                attrs: {
-                                  "max-width": "280px",
-                                  height: "228px",
-                                  src: "/images/led/led.jpg",
-                                  alt: ""
-                                }
-                              }),
-                              _vm._v(" "),
-                              _c(
-                                "div",
-                                { staticClass: "round-block__content" },
-                                [_c("h2", [_vm._v("LEDs")])]
-                              )
-                            ],
-                            1
+                          _c("v-img", {
+                            attrs: {
+                              "max-width": "240px",
+                              height: "180px",
+                              src: "/images/wires-cables/thumbnail.jpg",
+                              alt: ""
+                            }
+                          })
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "round-block__content" }, [
+                        _c("h2", [
+                          _vm._v(
+                            _vm._s(_vm.$t("prefooter.links-left.wires-cables"))
                           )
-                        ]
-                      )
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
+                        ])
+                      ])
+                    ]
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "v-col",
+                {
+                  staticClass: "pb-11",
+                  attrs: { lg: "4", md: "4", sm: "6", cols: "12" }
+                },
+                [
                   _c(
-                    "v-col",
+                    "LocalizedLink",
                     {
-                      staticClass: "pb-11",
-                      attrs: { lg: "4", md: "4", sm: "12", cols: "12" }
+                      staticClass: "prefooter-container__block-link",
+                      attrs: { to: "/wholesale/connectors" }
                     },
                     [
                       _c(
-                        "router-link",
-                        {
-                          staticClass: "round-block",
-                          attrs: { to: "wholesale/cable-accessories" }
-                        },
+                        "div",
+                        { staticClass: "round-block__img" },
                         [
-                          _c(
-                            "div",
-                            { staticClass: "round-block__img" },
-                            [
-                              _c("v-img", {
-                                attrs: {
-                                  "max-width": "280px",
-                                  src: "images/cable-accessories/thumbnail.jpg",
-                                  alt: ""
-                                }
-                              })
-                            ],
-                            1
-                          ),
-                          _vm._v(" "),
-                          _c("div", { staticClass: "round-block__content" }, [
-                            _c("h2", [_vm._v("Cable accessories")])
-                          ])
-                        ]
-                      )
-                    ],
-                    1
+                          _c("v-img", {
+                            attrs: {
+                              "max-width": "240px",
+                              height: "180px",
+                              src: "/images/connectors/thumbnail.jpg",
+                              alt: ""
+                            }
+                          })
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "round-block__content" }, [
+                        _c("h2", [
+                          _vm._v(
+                            _vm._s(_vm.$t("prefooter.links-left.connectors"))
+                          )
+                        ])
+                      ])
+                    ]
                   ),
                   _vm._v(" "),
+                  _c("router-link", {
+                    staticClass: "round-block",
+                    attrs: { to: "/wholesale/connectors" }
+                  })
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "v-col",
+                {
+                  staticClass: "pb-11",
+                  attrs: { lg: "4", md: "4", sm: "6", cols: "12" }
+                },
+                [
                   _c(
-                    "v-col",
+                    "LocalizedLink",
                     {
-                      staticClass: "pb-11",
-                      attrs: { lg: "4", md: "4", sm: "12", cols: "12" }
+                      staticClass: "prefooter-container__block-link",
+                      attrs: { to: "/wholesale/pcbs" }
                     },
                     [
                       _c(
-                        "router-link",
-                        {
-                          staticClass: "round-block",
-                          attrs: { to: "wholesale/hardware" }
-                        },
+                        "div",
+                        { staticClass: "round-block__img" },
                         [
-                          _c(
-                            "div",
-                            { staticClass: "round-block__img" },
-                            [
-                              _c("v-img", {
-                                attrs: {
-                                  "max-width": "280px",
-                                  src: "/images/hardware/hardware.jpg",
-                                  alt: ""
-                                }
-                              })
-                            ],
-                            1
-                          ),
-                          _vm._v(" "),
-                          _c("div", { staticClass: "round-block__content" }, [
-                            _c("h2", [_vm._v("Hardware")])
-                          ])
-                        ]
-                      )
-                    ],
-                    1
+                          _c("v-img", {
+                            attrs: {
+                              "max-width": "240px",
+                              height: "180px",
+                              src: "/images/pcbs/pcbs.jpg",
+                              alt: ""
+                            }
+                          })
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "round-block__content" }, [
+                        _c("h2", [_vm._v("PCBs")])
+                      ])
+                    ]
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "v-col",
+                {
+                  staticClass: "pb-11",
+                  attrs: { lg: "4", md: "4", sm: "6", cols: "12" }
+                },
+                [
+                  _c(
+                    "LocalizedLink",
+                    {
+                      staticClass: "prefooter-container__block-link",
+                      attrs: { to: "/wholesale/led" }
+                    },
+                    [
+                      _c(
+                        "div",
+                        { staticClass: "round-block__img" },
+                        [
+                          _c("v-img", {
+                            attrs: {
+                              "max-width": "240px",
+                              height: "180px",
+                              src: "/images/led/led.jpg",
+                              alt: ""
+                            }
+                          })
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "round-block__content" }, [
+                        _c("h2", [
+                          _vm._v(_vm._s(_vm.$t("prefooter.links-left.led")))
+                        ])
+                      ])
+                    ]
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "v-col",
+                {
+                  staticClass: "pb-11",
+                  attrs: { lg: "4", md: "4", sm: "6", cols: "12" }
+                },
+                [
+                  _c(
+                    "LocalizedLink",
+                    {
+                      staticClass: "prefooter-container__block-link",
+                      attrs: { to: "/wholesale/cable-accessories" }
+                    },
+                    [
+                      _c(
+                        "div",
+                        { staticClass: "round-block__img" },
+                        [
+                          _c("v-img", {
+                            attrs: {
+                              "max-width": "240px",
+                              height: "180px",
+                              src: "/images/cable-accessories/thumbnail.jpg",
+                              alt: ""
+                            }
+                          })
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "round-block__content" }, [
+                        _c("h2", [
+                          _vm._v(_vm._s(_vm.$t("prefooter.links-left.cables")))
+                        ])
+                      ])
+                    ]
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "v-col",
+                {
+                  staticClass: "pb-11",
+                  attrs: { lg: "4", md: "4", sm: "6", cols: "12" }
+                },
+                [
+                  _c(
+                    "LocalizedLink",
+                    {
+                      staticClass: "prefooter-container__block-link",
+                      attrs: { to: "/wholesale/hardware" }
+                    },
+                    [
+                      _c(
+                        "div",
+                        { staticClass: "round-block__img" },
+                        [
+                          _c("v-img", {
+                            attrs: {
+                              "max-width": "240px",
+                              height: "180px",
+                              src: "/images/hardware/hardware.jpg",
+                              alt: ""
+                            }
+                          })
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "round-block__content" }, [
+                        _c("h2", [
+                          _vm._v(_vm._s(_vm.$t("prefooter.links-left.harware")))
+                        ])
+                      ])
+                    ]
                   )
                 ],
                 1
               )
             ],
             1
-          ),
-          _vm._v(" "),
-          _c("router-view", { ref: "childRout" })
+          )
         ],
         1
       ),
       _vm._v(" "),
-      _c("home-contact-component"),
-      _vm._v(" "),
-      _c("prefooter"),
-      _vm._v(" "),
-      _c("footer-component")
+      _c("router-view", { ref: "childRout" })
     ],
     1
   )
@@ -15097,7 +14507,7 @@ var render = function() {
                     attrs: {
                       "max-width": "650px",
                       "max-height": "450px",
-                      src: "images/wiress-and-harness/prototype.jpg"
+                      src: "/images/wiress-and-harness/prototype.jpg"
                     }
                   })
                 ],
@@ -15131,7 +14541,7 @@ var render = function() {
                     attrs: {
                       "max-width": "650px",
                       "max-height": "450px",
-                      src: "images/wiress-and-harness/annotation.jpg"
+                      src: "/images/wiress-and-harness/annotation.jpg"
                     }
                   })
                 ],
@@ -15164,7 +14574,7 @@ var render = function() {
                     attrs: {
                       "max-width": "650px",
                       "max-height": "450px",
-                      src: "images/wiress-and-harness/what-to-know.jpg"
+                      src: "/images/wiress-and-harness/what-to-know.jpg"
                     }
                   })
                 ],
@@ -15197,7 +14607,7 @@ var render = function() {
                     attrs: {
                       "max-width": "650px",
                       "max-height": "450px",
-                      src: "images/wiress-and-harness/clipboard.jpg"
+                      src: "/images/wiress-and-harness/clipboard.jpg"
                     }
                   })
                 ],
@@ -73190,6 +72600,59 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/Root.vue":
+/*!*******************************!*\
+  !*** ./resources/js/Root.vue ***!
+  \*******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Root_vue_vue_type_template_id_0f977d00___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Root.vue?vue&type=template&id=0f977d00& */ "./resources/js/Root.vue?vue&type=template&id=0f977d00&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+var script = {}
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__["default"])(
+  script,
+  _Root_vue_vue_type_template_id_0f977d00___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Root_vue_vue_type_template_id_0f977d00___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/Root.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/Root.vue?vue&type=template&id=0f977d00&":
+/*!**************************************************************!*\
+  !*** ./resources/js/Root.vue?vue&type=template&id=0f977d00& ***!
+  \**************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Root_vue_vue_type_template_id_0f977d00___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../node_modules/vue-loader/lib??vue-loader-options!./Root.vue?vue&type=template&id=0f977d00& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Root.vue?vue&type=template&id=0f977d00&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Root_vue_vue_type_template_id_0f977d00___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Root_vue_vue_type_template_id_0f977d00___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
 /***/ "./resources/js/app.js":
 /*!*****************************!*\
   !*** ./resources/js/app.js ***!
@@ -73207,17 +72670,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _App_vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./App.vue */ "./resources/js/App.vue");
 /* harmony import */ var aos__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! aos */ "./node_modules/aos/dist/aos.js");
 /* harmony import */ var aos__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(aos__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var laravel_vue_lang__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! laravel-vue-lang */ "./node_modules/laravel-vue-lang/dist/index.js");
-/* harmony import */ var laravel_vue_lang__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(laravel_vue_lang__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _store_language_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./store/language.js */ "./resources/js/store/language.js");
-/* harmony import */ var _i18n__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./i18n */ "./resources/js/i18n.js");
+/* harmony import */ var _store_language_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./store/language.js */ "./resources/js/store/language.js");
+/* harmony import */ var _i18n__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./i18n */ "./resources/js/i18n.js");
 /**
  * First we will load all of this project's JavaScript dependencies which
  * includes Vue and other libraries. It is a great starting point when
  * building robust, powerful web applications using Vue and Laravel.
  */
 // require('./bootstrap');
-
 
 
 
@@ -73271,8 +72731,8 @@ var app = new vue__WEBPACK_IMPORTED_MODULE_0___default.a({
     }
   }),
   router: _routes__WEBPACK_IMPORTED_MODULE_2__["default"],
-  i18n: _i18n__WEBPACK_IMPORTED_MODULE_7__["default"],
-  store: _store_language_js__WEBPACK_IMPORTED_MODULE_6__["default"],
+  i18n: _i18n__WEBPACK_IMPORTED_MODULE_6__["default"],
+  store: _store_language_js__WEBPACK_IMPORTED_MODULE_5__["default"],
   render: function render(h) {
     return h(_App_vue__WEBPACK_IMPORTED_MODULE_3__["default"]);
   }
@@ -74480,10 +73940,10 @@ webpackContext.id = "./resources/js/locales sync recursive [A-Za-z0-9-_,\\s]+\\.
 /*!**************************************!*\
   !*** ./resources/js/locales/en.json ***!
   \**************************************/
-/*! exports provided: app, nav, contact-fixed, prefooter, default */
+/*! exports provided: app, nav, contact-fixed, prefooter, wire-harness-home, about-us, default */
 /***/ (function(module) {
 
-module.exports = JSON.parse("{\"app\":\"Ecomponents d.o.o\",\"nav\":{\"wholesale\":\"wholesale\",\"home\":\"home\",\"about-us\":\"about us\",\"contact-us\":\"contact us\",\"gallery\":\"gallery\",\"wires-and-harness\":\"Wire and cable harnessing\"},\"contact-fixed\":{\"title\":{\"text\":\"Have\",\"span\":\"questions?\"},\"button\":\"Contact us\"},\"prefooter\":{\"title-left\":\"Wholesale\",\"title-right\":\"Learn more\",\"links-left\":{\"wires-cables\":\"Wires and cables\",\"connectors\":\"Connectors & electronic components\",\"pcb\":\"PCBs\",\"led\":\"LEDs\",\"cables\":\"Cable accessories\",\"harware\":\"Hardware\"}}}");
+module.exports = JSON.parse("{\"app\":\"Ecomponents d.o.o\",\"nav\":{\"wholesale\":\"wholesale\",\"home\":\"Home\",\"about-us\":\"About us\",\"contact-us\":\"Contact us\",\"gallery\":\"Gallery\",\"wires-and-harness\":\"Wire and cable harnessing\"},\"contact-fixed\":{\"title\":{\"text\":\"Have\",\"span\":\"questions?\"},\"button\":\"Contact us\"},\"prefooter\":{\"title-left\":\"Wholesale\",\"title-right\":\"Learn more\",\"links-left\":{\"wires-cables\":\"Wires and cables\",\"connectors\":\"Connectors & electronic components\",\"pcb\":\"PCBs\",\"led\":\"LEDs\",\"cables\":\"Cable accessories\",\"harware\":\"Hardware\"}},\"wire-harness-home\":\"We offer our customers and partners in different industries tailor-made solutions in the field of wire harnesses. Home appliance industry, gaming and vending machines industry and many other rely on us to bring their designs to life. Be it a single wire or a complex wire harness system – we got you covered!\",\"about-us\":{\"title\":{\"text\":\"About\",\"span\":\"us\"},\"text1\":\"Welcome to eComponents, your number one source for all things electronics. We're dedicated to giving you the very best of electronic components, with a focus on customer service,dependability and uniqueness.\",\"text2\":\"When eComponents team first started out, our passion for helping innovative people accomplish incredible things drove us to quit our day jobs, and gave us the impetus to turn hard work and inspiration into this booming endeavor.\",\"text3\":\"We now provide our customers with electronic components – wires and cables, connectors, active and passive components of the highest quality made by world’s leading manufacturers, such as Molex, TE Connectivity, JST, MEDIKabel, HELUKABEL etc., at very competitive prices. We navigate our way through the ocean of electronic equipment, terminology, and data sheets with ease - so you don’t have to!\",\"text4\":\"We also excel at producing custom cable assemblies and cable harnesses for all your connecting needs. If you can imagine it, we can make it; you put all the pieces together, we’ll make them work!\",\"text5\":\"eComponents is based in Serbia, but we are able to ship anywhere in the world. We are thrilled to be a part of the ever-growing wing of the electronics industry.\",\"text6\":\"If you have any questions or comments, please don't hesitate to contact us. Our polite staff will gladly assist you and provide answers to your inquiries as soon as possible. We are looking forward to working with you!\",\"sincerely\":\"Sincerely\",\"stamp\":\"eComponents team\",\"make-it-work\":\"make it work\"}}");
 
 /***/ }),
 
@@ -74491,10 +73951,10 @@ module.exports = JSON.parse("{\"app\":\"Ecomponents d.o.o\",\"nav\":{\"wholesale
 /*!**************************************!*\
   !*** ./resources/js/locales/sr.json ***!
   \**************************************/
-/*! exports provided: app, nav, contact-fixed, prefooter, default */
+/*! exports provided: app, nav, contact-fixed, prefooter, wire-harness-home, about-us, default */
 /***/ (function(module) {
 
-module.exports = JSON.parse("{\"app\":\"Ecomponents d.o.o\",\"nav\":{\"wholesale\":\"prodaja\",\"home\":\"početna\",\"about-us\":\"O nama\",\"contact-us\":\"Kontakt\",\"gallery\":\"Galerija\",\"wires-and-harness\":\"Wire and cable harnessing\"},\"contact-fixed\":{\"title\":{\"text\":\"Imate\",\"span\":\"pitanje?\"},\"button\":\"Kontaktirajte nas\"},\"prefooter\":{\"title-left\":\"Prodaja\",\"title-right\":\"Pogledajte još\",\"links-left\":{\"wires-cables\":\"Žice i kablovi\",\"connectors\":\"Konektori & elektronske komponenete\",\"pcb\":\"PCBs\",\"led\":\"LEDs\",\"cables\":\"Dodaci za kablove\",\"harware\":\"Hardware\"}}}");
+module.exports = JSON.parse("{\"app\":\"Ecomponents d.o.o\",\"nav\":{\"wholesale\":\"prodaja\",\"home\":\"početna\",\"about-us\":\"O nama\",\"contact-us\":\"Kontakt\",\"gallery\":\"Galerija\",\"wires-and-harness\":\"Wire and cable harnessing\"},\"contact-fixed\":{\"title\":{\"text\":\"Imate\",\"span\":\"pitanje?\"},\"button\":\"Kontaktirajte nas\"},\"prefooter\":{\"title-left\":\"Prodaja\",\"title-right\":\"Pogledajte još\",\"links-left\":{\"wires-cables\":\"Žice i kablovi\",\"connectors\":\"Konektori & elektronske komponenete\",\"pcb\":\"PCBs\",\"led\":\"LEDs\",\"cables\":\"Dodaci za kablove\",\"harware\":\"Hardware\"}},\"wire-harness-home\":\"We offer our customers and partners in different industries tailor-made solutions in the field of wire harnesses. Home appliance industry, gaming and vending machines industry and many other rely on us to bring their designs to life. Be it a single wire or a complex wire harness system – we got you covered!\",\"about-us\":{\"title\":{\"text\":\"O\",\"span\":\"nama\"},\"text1\":\"Dobrodošli u eComponents, vaš najbolji izvor svih stvari vezanih za elektroniku. Posvećeni smo tome da vam ponudimo najbolje od elektronskih komponenti, sa fokusom na uslugu i pomoć kupcima, pouzdane proizvode i jedinstvenost\",\"text2\":\"Naša strast i želja da pomognemo inovativnim ljudima u postizanju neverovatnih stvari su nas motivisale da napustimo svoje tadašnje poslove i dale nam podsticaj da pretvorimo naporan rad i inspiraciju u ovaj brzo-rastući poduhvat.\",\"text3\":\"Sada snabdevamo naše klijente sa elektronskim komponentama – žicama i kablovima, konektorima, aktivnim i pasivnim komponentama najboljeg kvaliteta vodećih svetskih proizvođača, kao što su Molex, TE Connectivity, JST, MEDIKabel, HELUKABEL itd., po veoma kompetitivnim cenama. Sa lakoćom se snalazimo u okeanu elektronike, terminologije i tehničkih crteža – pa vi ne morate!\",\"text4\":\"Takođe, ističemo se i proizvodnjom kablovskih veza i sklopova po vašim instrukcijama i zahtevima. Ono što vi zamislite, mi možemo da napravimo; vi sastavite sve delove, a mi ćemo se pobrinuti da oni ožive.\",\"text5\":\"eComponents se nalazi u Srbiji, ali možemo da vršimo isporuke svuda u svetu. Uzbuđeni smo što smo deo rastuće grane elektronske industrije.\",\"text6\":\"Ako imate neka pitanja ili komentare, molimo vas ne oklevajte da nas kontaktirate. Naše ljubazno osoblje će vam rado izaći u susret i u najkraćem roku odgovoriti na vaše upite. Radujemo se saradnji sa vama!\",\"sincerely\":\"S poštovanjem\",\"stamp\":\"eComponents tim\"}}");
 
 /***/ }),
 
@@ -74526,7 +73986,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_14__);
 /* harmony import */ var _i18n__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./i18n */ "./resources/js/i18n.js");
 /* harmony import */ var _store_language_js__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./store/language.js */ "./resources/js/store/language.js");
-/* harmony import */ var _util_i18n_document__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./util/i18n/document */ "./resources/js/util/i18n/document.js");
+/* harmony import */ var _Root_vue__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./Root.vue */ "./resources/js/Root.vue");
+/* harmony import */ var _util_i18n_document__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./util/i18n/document */ "./resources/js/util/i18n/document.js");
+
 
 
 
@@ -74552,7 +74014,7 @@ var routes = [{
   redirect: locale
 }, {
   path: "/:locale",
-  component: _App_vue__WEBPACK_IMPORTED_MODULE_5__["default"],
+  component: _Root_vue__WEBPACK_IMPORTED_MODULE_17__["default"],
   children: [{
     path: "/",
     component: _views_HomeView_vue__WEBPACK_IMPORTED_MODULE_0__["default"],
@@ -74619,8 +74081,8 @@ router.beforeEach(function (to, from, next) {
 
   var locale = to.params.locale;
   _store_language_js__WEBPACK_IMPORTED_MODULE_16__["default"].commit("changeLanguage", to.params.locale);
-  Object(_util_i18n_document__WEBPACK_IMPORTED_MODULE_17__["setDocumentLang"])(locale);
-  Object(_util_i18n_document__WEBPACK_IMPORTED_MODULE_17__["setDocumentDirectionPerLocale"])(locale);
+  Object(_util_i18n_document__WEBPACK_IMPORTED_MODULE_18__["setDocumentLang"])(locale);
+  Object(_util_i18n_document__WEBPACK_IMPORTED_MODULE_18__["setDocumentDirectionPerLocale"])(locale);
   next();
 });
 /* harmony default export */ __webpack_exports__["default"] = (router);
@@ -74755,25 +74217,6 @@ function getSupportedLocales() {
 function supportedLocalesInclude(locale) {
   return Object.keys(_config_supported_locales__WEBPACK_IMPORTED_MODULE_0__["default"]).includes(locale);
 }
-
-/***/ }),
-
-/***/ "./resources/lang sync recursive \\.(php|json)$":
-/*!*******************************************!*\
-  !*** ./resources/lang sync \.(php|json)$ ***!
-  \*******************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-function webpackEmptyContext(req) {
-	var e = new Error("Cannot find module '" + req + "'");
-	e.code = 'MODULE_NOT_FOUND';
-	throw e;
-}
-webpackEmptyContext.keys = function() { return []; };
-webpackEmptyContext.resolve = webpackEmptyContext;
-module.exports = webpackEmptyContext;
-webpackEmptyContext.id = "./resources/lang sync recursive \\.(php|json)$";
 
 /***/ }),
 
@@ -75209,8 +74652,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\personal work\ecomponenets\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\personal work\ecomponenets\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\XAMPP\htdocs\eomponents\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\XAMPP\htdocs\eomponents\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

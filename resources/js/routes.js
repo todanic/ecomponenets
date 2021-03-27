@@ -15,10 +15,10 @@ import VueRouter from "vue-router";
 import Vue from "vue";
 import i18n, { loadLocaleMessagesAsync } from "./i18n";
 import store from "./store/language.js";
+import Root from "./Root.vue";
 import {
     setDocumentDirectionPerLocale,
-    setDocumentLang,
-    setDocumentTitle
+    setDocumentLang
 } from "./util/i18n/document";
 
 Vue.use(VueRouter);
@@ -32,7 +32,7 @@ export const routes = [
     },
     {
         path: "/:locale",
-        component: App,
+        component: Root,
         children: [
             {
                 path: "/",
