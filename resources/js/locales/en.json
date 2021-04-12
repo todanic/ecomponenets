@@ -27,7 +27,6 @@
             "harware": "Hardware"
         }
     },
-    "wire-harness-home": "We offer our customers and partners in different industries tailor-made solutions in the field of wire harnesses. Home appliance industry, gaming and vending machines industry and many other rely on us to bring their designs to life. Be it a single wire or a complex wire harness system – we got you covered!",
     "about-us": {
       "title": {
         "text": "About",
@@ -42,5 +41,190 @@
       "sincerely": "Sincerely",
       "stamp": "eComponents team",
       "make-it-work": "make it work"
+    },
+    "why-choose-us-home": {
+      "main-title": {
+        "text": "Why choose",
+        "span": "eComponents d.o.o"
+      },
+      "title": "Fast quotation",
+      "description": "We dedicate our time to ensure that all enquiries are quoted in a timely manner.",
+      "title2": "Save money",
+      "description2": "With our competitive pricing and multi-skilled workers, customers are able to reduce operating costs and save money when outsourcing production to eComponents.",
+      "title3": "Experience",
+      "description3": "For years now, our main goal has been to provide the best quality service for our customers.",
+      "title4": "On-time delivery",
+      "description4": "With our quick delivery system, we ensure fast shipment all over the world.",
+      "title5": "Trusted",
+      "description5": "We are trusted member of domestic and global supply chain.",
+      "title6": "Quality",
+      "description6": "We offer top quality services, products and raw materials, all certified."
+    },
+    "wire-and-cable-harness": {
+      "button": "Read more",
+      "title": {
+        "text": "wire and",
+        "span": "cable harness"
+      },
+      "description": "We offer our customers and partners in different industries tailor-made solutions in the field of wire harnesses. Home appliance industry, gaming and vending machines industry and many other rely on us to bring their designs to life. Be it a single wire or a complex wire harness system – we got you covered!",
+      "description2": "We offer services that cover everything from prototyping to series manufacture. Being also the supplier of electronic components eComponents offers a wide variety of cable harness solutions with different combinations of connectors, conductors, cable accessories etc. All of our cable assemblies are customized, incorporating custom lengths, colors and special pin-outs in our designs – per customer request.",
+      "description3": "eComponents offers development and manufacture of wire harnesses, including:",
+      "description4": {
+        "title":"Prototyping",
+        "text": "we can make fully functional prototypes based off of your design - be it a description or a photo (if possible); or a technical drawing or reverse-engineering a sample. We also offer help with choosing the right connectors, conductors and other parts for your product."
+      },
+      "description5": {
+        "title":"Documenting ",
+        "text": "we can make detailed documentation including drawings, BOMs and other information about the product you need. Once we define your wire harness and assign it an article number you can easily order it anytime or make changes to it as easy as referencing it to our technicians."
+      },
+      "description6": {
+        "title":"Manufacture",
+        "text": "we can produce wire harnesses in greater quantities with no loss in quality and with great attention to detail. This applies to the simplest of cables as well as the more complex cable systems. We offer classic plug-in contacts with (or without) housings on conductors of many different cross-sectional areas, colors, qualities, standards and certifications."
+      },
+      "description7": {
+        "title":"Quality control",
+        "text": "we send you the cable harnesses only after they have been thoroughly tested by our quality control. This is very important to us, and we know it is very important to our customers."
+      },
+      "description8": "With experience and the “know-how” in combination with professional equipment and devotion to helping our customers do incredible things, we are able to create custom and innovative products that can fulfil all your needs.",
+      "description9":"Please use the contact form bellow to contact us today and… MAKE IT WORK!"
+    },
+    "wholesale": {
+      "text": "whole",
+      "span": "sale",
+      "pages": {
+        "wires": {
+          "title": {
+            "text": "Wires and",
+            "span": "cables categories"
+          },
+          "sub-section": {
+            "wires": {
+              "title": "Wires",
+              "sub-title": {
+                "text": "LIY wires",
+                "span": "for electronics"
+              },
+              "paragraph": "Vast range",
+              "description": "Help with making the right choice",
+              "description2": "Special offer - measuring cables to required length",
+              "liy": "liy",
+              "list": {
+                "title": "Conductors with various cross-sections",
+                "list-item": "Conductors with different cross-sectional areas for different uses",
+                "list-item2": "0,14mm2; 0,25mm2; 0,34mm2........ 1mm2; 1,5mm2; 2,5mm2;..........10mm2 or 28AWG, 24AWG, 22AWG…….18AWG, 16AWG, 14AWG..."
+              },
+              "list2": {
+                "title": "Colored wires",
+                "list-item": "A wide specter of colors and shades",
+                "list-item2": "Two-colored wires with vertical stripe or ring stripe"
+              },
+              "list3": {
+                "title": "Standard",
+                "list-item": "Conductors manufactured by standards for European and American markets (VDE, UL, cUL...)",
+                "list-item2": "Conductors of many different structures and materials, tested for functioning in out-of-ordinary circumstances (high temperature, moisture, indoor/outdoor use...)"
+              },
+              "note": "for certain conductors"
+            },
+            "cables": {
+              "title": "Cables",
+              "sub-title": {
+                "text": "Multi-core cables to",
+                "span": "fit all your needs"
+              },
+              "paragraph": "Large choice",
+              "description": "Help with choosing the right cable",
+              "multi-core": "MULTI-CORE LIYY, LIY-CY, SIGNAL, CONTROL AND POWER CABLES",
+              "list": {
+                "title": "Multi-core cables",
+                "list-item": "Cables with two or more cores with different cross-sections and colors",
+                "list-item2": "We offer multi-core cables with all configurations - 2x0,25mm2 ; 2x0,34mm2… 5x0,25mm2, 5x0,34mm2….. the same goes for UL certified cables in which case the configurations are marked in the following way - 2x24AWG; 2x22AWG….. 5x24AWG; 5x22AWG etc."
+              },
+              "list2": {
+                "title": "Power cables",
+                "list-item": "All kinds of power cables for different currents"
+              },
+              "note": "for certain conductors"
+            },
+            "ready-made": {
+              "title": "READY-MADE CABLE ASSEMBLIES THAT YOU NEED ALL THE TIME",
+              "sub-title": {
+                "text": "Cable",
+                "span": "assemblies"
+              },
+              "description": "Wide assortment of cable assemblies",
+              "description2": "Stay connected at any moment",
+              "description3": "Possibility of special order",
+              "list": {
+                "title": "USB cables",
+                "list-item": "We offer USB cables of different colors and lengths, with the connectors combinations that work for you.",
+                "list-item2": {
+                  "title": "Combinations",
+                  "paragraph": "Type A male – Type A female (extension USB type A cable with or without screws for mounting",
+                  "paragraph2": "Type A – Type B, Type B mini, Type B micro",
+                  "paragraph3": "Type A – Type",
+                  "paragraph4": "and others..."
+                },
+                "list-item3": "Angled connectors (90 degrees, left angle, right angle, etc…)"
+              },
+              "list2": {
+                "title": "Audio and video cables",
+                "list-item": "Monitor cables for all of your screen types (HDMI, DVI, DP, VGA…)",
+                "list-item2": "Audio cables (with speaker jacks and other connectors)"
+              },
+              "list3": {
+                "title": "And others per your request...",
+                "list-item": "We also offer wire and cable harness manufacture per your design - from smaller cable harness to bigger and more complex cable systems.",
+                "click-here": {
+                  "text": "Click the",
+                  "span": "picture for more details"
+                }
+              }
+            }
+          }
+        },
+        "connectors": {
+          "title": {
+            "text": "Cable",
+            "span": "assemblies"
+          },
+          "description": "Wide assortment of cable assemblies Stay connected at any moment Possibility of special order"
+        },
+        "pcb": {
+          "title": {
+            "span": "pcbs"
+          }
+        },
+        "led": {
+          "title": {
+            "span": "leds"
+          }
+        },
+        "accessories": {
+          "title": {
+            "span": "cable accessories"
+          }
+        },
+        "hardware": {
+          "title": {
+            "span": "hardware"
+          }
+        }
+      }
+    },
+    "contact-us": {
+      "title": {
+        "span": "us",
+        "text": "contact"
+      },
+      "phone": "Phone",
+      "address": "Address",
+      "button": "send",
+      "name": "First name",
+      "email": "Email",
+      "country": "Country",
+      "phone-placeholder": "Phone number",
+      "message": "Message",
+      "upload": "Upload images"
     }
+
 }

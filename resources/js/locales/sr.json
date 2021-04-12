@@ -6,7 +6,7 @@
         "about-us": "O nama",
         "contact-us" : "Kontakt",
         "gallery": "Galerija",
-        "wires-and-harness": "Wire and cable harnessing"
+        "wires-and-harness": "Ugradnja žice i kablova"
     },
     "contact-fixed": {
         "title": {
@@ -27,7 +27,6 @@
             "harware": "Hardware"
         }
     },
-    "wire-harness-home": "We offer our customers and partners in different industries tailor-made solutions in the field of wire harnesses. Home appliance industry, gaming and vending machines industry and many other rely on us to bring their designs to life. Be it a single wire or a complex wire harness system – we got you covered!",
     "about-us": {
       "title": {
         "text": "O",
@@ -41,5 +40,189 @@
       "text6": "Ako imate neka pitanja ili komentare, molimo vas ne oklevajte da nas kontaktirate. Naše ljubazno osoblje će vam rado izaći u susret i u najkraćem roku odgovoriti na vaše upite. Radujemo se saradnji sa vama!",
       "sincerely": "S poštovanjem",
       "stamp": "eComponents tim"
+    },
+    "why-choose-us-home": {
+      "main-title": {
+        "text": "Zašto da izaberete",
+        "span": "eComponents d.o.o"
+      },
+      "title": "Brza ponuda",
+      "description": "Posvećeni smo tome da odgovorimo na sve upite u najkraćem vremenskom roku.",
+      "title2": "Ušteda novca",
+      "description2": "Uz naše kompetitivne cene i vešte radnike, klijenti mogu značajno uštedeti 'outsourcing-om' proizvodnje kablovskih veza eComponents-u.",
+      "title3": "Iskustvo",
+      "description3": "Već godinama, naš glavni cilj je da ponudimo uslugu najboljeg kvaliteta svojim mušterijama.",
+      "title4": "Isporuka na vreme",
+      "description4": "Sa našim sistemom isporuke, osiguravamo brzu isporuku širom sveta.",
+      "title5": "Poverenje",
+      "description5": "Mi smo pouzdan član domaćeg i globalnog lanca distribucije elektronskih komponenti.",
+      "title6": "Kvalitet",
+      "description6": "Nudimo usluge i proizvode vrhunskog kvaliteta sa sertifikatima."
+    },
+    "wire-and-cable-harness": {
+      "button": "Detaljnije",
+      "title": {
+        "text": "ugradnja žice",
+        "span": "i kablova"
+      },
+      "description": "Svojim klijentima i poslovnim partnerima u različitim industrijama nudimo rešenja ‘’po meri’’ u oblasti kablovskih veza i sklopova. Industrija kućnih aparata, gejming i vending aparata i mnoge druge industrije se oslanjaju na nas da udahnemo život u njihove dizajne. Bilo da je u pitanju jedna žica ili komplikovan kablovski sistem – možete računati na nas!",
+      "description2": "Nudimo usluge koje pokrivaju sve od izrade prototipa do serijske proizvodnje. Obzirom na to da jetakođe dobavljač elektronskih komponenti, eComponents takođe nudi širok izbor kablovskih rešenja sarazličitom kombinacijom konektora, provodnika, dodataka za kablove itd. Svi naši kablovski sklopovi suprilagođeni želji kupca po boji, dužini i posebnim pinovanjem.",
+      "description3": "eComponents nudi razvoj i proizvodnju kablovskih sklopova, kao što su:",
+      "description4": {
+        "title":"Izrada prototipa",
+        "text": "možemo da napravimo funkcionalne prototipe bazirane na vašem dizajnu – biloda je to opis ili fotografija; ili tehnički crtež, obrnuti inženjering (reverse-engineering), uzorak kabela.Takođe, nudimo pomoć prilikom odabira konektora, provodnika i drugih delova vašeg proizvoda."
+      },
+      "description5": {
+        "title":"Dokumentovanje",
+        "text": "možemo da napravimo detaljnu dokumentaciju, koja uključuje crteže, listematerijala i druge informacije potrebne za proizvod. Kada definišemo kablovski sklop i dodelimo mu brojartikla, nakon toga možete sa lakoćom poručiti željeni artikal ili napraviti promene, odnosno revizije nakabelu u bilo kom trenutku, uz pomoć naših tehničara."
+      },
+      "description6": {
+        "title":"Proizvodnja",
+        "text": "nudimo vam proizvodnju kablovskih sklopova u velikim količinama bez gubitka ukvalitetu sa izuzetnom pažnjom na detalje. Ovo se odnosi na jednostavne kablove kao i nakomplikovanije kablovske sisteme. Nudimo klasične plug-in kontakte sa (ili bez) kućišta na provodnicimarazličitih preseka, boja, kvaliteta, standarda i sertifikata."
+      },
+      "description7": {
+        "title":"Kontrola kvaliteta",
+        "text": "svaki kablovski sklop, pre samog slanja, prolazi kroz seriju detaljnih testiranjaod strane naše kontrole kvaliteta. Ovo je za nas veoma važno, i znamo da je to jednako važno za našeklijente."
+      },
+      "description8": "Sa iskustvom i veštinama u kombinaciji sa profesionalnom opremom i posvećenosti u pomaganju našimklijentima da ostvare svoje ciljeve, u mogućnosti smo da stvorimo prilagođene i inovativne proizvodekako bismo ispunili sve potrebe naših klijenata.",
+      "description9":"Kontaktirajte nas putem naše kontakt forme već danas i … MAKE IT WORK!"
+    },
+    "wholesale": {
+      "text": "pro",
+      "span": "daja",
+      "pages": {
+        "wires": {
+          "title": {
+            "text": "Žice i",
+            "span": "kablovi"
+          },
+          "sub-section": {
+            "wires": {
+              "title": "Žice",
+              "sub-title": {
+                "text": "Licnasti provodnici",
+                "span": "za elektorniku"
+              },
+              "paragraph": "Veliki izbor",
+              "description": "Pomoć pri odabiru. Mogućnost merenja provodnika na željenu dužinu",
+              "liy": "liy",
+              "list": {
+                "title": "Provodnici svih preseka",
+                "list-item": "Provodnici različitih poprečnih preseka za različitu upotrebu",
+                "list-item2": "0,14mm2; 0,25mm2; 0,34mm2........ 1mm2; 1,5mm2; 2,5mm2;..........10mm2.........."
+              },
+              "list2": {
+                "title": "Provodnici različitih boja ",
+                "list-item": "Širok spektar boja i nijansi",
+                "list-item2": "Dvobojne žice sa poprečnom i uzdužnom šarom"
+              },
+              "list3": {
+                "title": "Standard",
+                "list-item": "Provodnici po standardima za evropsko i američko tržište (VDE, UL, cUL...)",
+                "list-item2": "Provodnici različite strukture i materijala po propisanim standardima i testiranim za rad u izuzetnim okolnostima (visoka temperatura, vlaga, unutrašnja/spoljašnja upotreba...)"
+              },
+              "note": "za određene provodnike"
+            },
+            "cables": {
+              "title": "Kablovi",
+              "sub-title": {
+                "text": "PVC kablovi za",
+                "span": "sve vaše potrebe"
+              },
+              "paragraph": "Veliki izbor",
+              "description": "Pomoć pri odabiru. Mogućnost merenja provodnika na željenu dužinu",
+              "multi-core": "Višežilni, širmovani, signalni kablovi",
+              "list": {
+                "title": "Kablovi sa više jezgara",
+                "list-item": "Kablovi sa dva ili više jezgra sa različitim presecima jezgara i određenim bojama",
+                "list-item2": "U ponudi imamo kablove 2x0,25mm2 ; 2x0,34mm2… 5x0,25mm2, 5x0,34mm2….."
+              },
+              "list2": {
+                "title": "Naponski kablovi",
+                "list-item": "Sve vrste naponskih kablova za nizak, srednji ili visok napon"
+              },
+              "note": "za određene provodnike"
+            },
+            "ready-made": {
+              "title": "Gotovi kablovi koji su vam uvek potrebni",
+              "sub-title": {
+                "text": "Gotovi",
+                "span": "kablovi"
+              },
+              "description": "Širok asortiman gotovih kablova",
+              "description2": "Budite povezani u svakom trenutku",
+              "description3": "Mogućnost specijalne porudžbine",
+              "list": {
+                "title": "USB kablovi",
+                "list-item": "U ponudi imamo USB kablove različitih boja i dužina, sa kombinacijom konektora koji vam odgovaraju.",
+                "list-item2": {
+                  "title": "Kombinacije",
+                  "paragraph": "Type A male – Type A female (produžni USB type A kabl sa ili bez šrafova za montažu)",
+                  "paragraph2": "Type A – Type B, Type B mini, Type B micro",
+                  "paragraph3": "Type A – Type",
+                  "paragraph4": "i drugi..."
+                },
+                "list-item3": "Konektori pod uglom"
+              },
+              "list2": {
+                "title": "Audio i video kablovi",
+                "list-item": "Monitor kablovi za sve tipove vaših ekrana (HDMI, DVI, DP, VGA…)",
+                "list-item2": "Audio kablovi (bananice)"
+              },
+              "list3": {
+                "title": "I drugi po vašem zahtevu...",
+                "list-item": "Nudimo i proizvodnju kablovskih sklopova po vašem zahtevu – od manjih kablova do velikih sklopova",
+                "click-here": {
+                  "text": "Za više informacija",
+                  "span": "kliknite na sliku"
+                }
+              }
+            }
+          }
+        },
+        "connectors": {
+          "title": {
+            "text": "Cable",
+            "span": "assemblies"
+          },
+          "description": "Wide assortment of cable assemblies Stay connected at any moment Possibility of special order"
+        },
+        "pcb": {
+          "title": {
+            "span": "pcbs"
+          }
+        },
+        "led": {
+          "title": {
+            "span": "leds"
+          }
+        },
+        "accessories": {
+          "title": {
+            "span": "cable accessories"
+          }
+        },
+        "hardware": {
+          "title": {
+            "span": "hardware"
+          }
+        }
+      }
+    },
+    "contact-us": {
+      "title": {
+        "span": "nas",
+        "text": "kontaktirajte"
+      },
+      "phone": "Telefon",
+      "address": "Adresa",
+      "button": "pošalju",
+      "name": "Ime",
+      "email": "Email",
+      "country": "Zemlja",
+      "phone-placeholder": "Telefon",
+      "message": "Poruka",
+      "upload": "Dodajte sliku"
     }
+
 }

@@ -27,11 +27,7 @@
             data-aos-easing="ease-in-out"
           >
             <p>
-              We offer our customers and partners in different industries
-              tailor-made solutions in the field of wire harnesses. Home
-              appliance industry, gaming and vending machines industry and many
-              other rely on us to bring their designs to life. Be it a single
-              wire or a complex wire harness system – we got you covered!
+              {{ $t("wire-and-cable-harness.description") }}
             </p>
           </v-col>
           <v-col
@@ -44,16 +40,19 @@
             data-aos-delay="400"
             data-aos-easing="ease-in-out"
           >
-            <router-link to="/wires-and-harness">
+            <LocalizedLink
+              class="prefooter-container__block-link"
+              to="/wires-and-harness"
+            >
               <v-btn
                 outlined
                 class="btn btn--blue btn--fill text--white"
                 x-large
                 rounded
               >
-                Read more
+                {{ $t("wire-and-cable-harness.button") }}
               </v-btn>
-            </router-link>
+            </LocalizedLink>
           </v-col>
         </v-row>
       </v-container>
@@ -61,7 +60,9 @@
   </v-container>
 </template>
 <script>
+import LocalizedLink from "../LocalizedLink";
 export default {
+  components: { LocalizedLink },
   name: "WireAndHarnessComponent",
 };
 </script>

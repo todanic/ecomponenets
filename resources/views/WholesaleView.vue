@@ -3,7 +3,9 @@
     <v-container v-show="isParent" class="shrink-width">
       <v-row class="text-center">
         <v-col cols="12">
-          <h1 class="mb-8">Whole<span>sale</span></h1>
+          <h1 class="mb-8">
+            {{ $t("wholesale.text") }}<span>{{ $t("wholesale.span") }}</span>
+          </h1>
         </v-col>
         <v-col class="pb-11" lg="4" md="4" sm="6" cols="12">
           <LocalizedLink
