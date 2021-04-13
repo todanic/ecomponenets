@@ -182,29 +182,164 @@
         },
         "connectors": {
           "title": {
-            "text": "Cable",
-            "span": "assemblies"
+            "text": "Konektori, terminali",
+            "span": "i elektronske komponente"
           },
-          "description": "Wide assortment of cable assemblies Stay connected at any moment Possibility of special order"
+          "sub-section": {
+            "connectors": {
+              "title": "Konektori",
+              "sub-title": {
+                "text": "Konektori za ",
+                "span": "svaku konekciju"
+              },
+              "paragraph": "Široka lepeza konektora za različitu upotrebu",
+              "description": "Pomoć pri pretrazi konektora",
+              "description2": "Mogućnost ponude alternativnih modela",
+              "list": {
+                "title": "Proizvođači i konfiguracije",
+                "list-item": "Veliki izbor konektora različitih svetskih proizvođača kao što su Molex, TE Connectivity, JST… ",
+                "list-item2": "U ponudi imamo konektore različitih rastera (razmaka između pinova) i konfiguracija pinova, napojne konektore, audio i video konektore, signalne konektore, data konektore"
+              },
+              "list2": {
+                "title": "Krimp kontakti i kućišta za konektore",
+                "list-item": "Uz svaki konektor nudimo i odgovarajuće pinove, tj. krimp kontakte za odgovarajuće preseke žica kao i plastična kućišta za pojedine konektore koji ih imaju"
+              },
+              "list3": {
+                "title": "Alternative",
+                "list-item": "Takođe, nudimo alternativne modele naših kineskih partnera ukoliko vam za vaš projekat odgovaraju povoljnije cene"
+              }
+            },
+            "terminals": {
+              "title": "Terminali",
+              "sub-title": {
+                "text": "Da kraj vaših žica",
+                "span": "nikad ne bude sam"
+              },
+              "paragraph": "Lako montiranje",
+              "description": "Veliki izbor terminala sa različitim karatkeristikama",
+              "description2": "Jednostavna aplikacija",
+              "wire-cable": "Terminali",
+              "list": {
+                "title": "Vrste terminala",
+                "list-item": "Vrste terminala koje nudimo:",
+                "list-item2": "Viljuškice (M3, M4, M5…)",
+                "list-item3": "Ring terminali (prečnika 3mm, 4mm, 5mm...)",
+                "list-item4": "Faston2.8mm, 4.8mm, 6.3mm",
+                "list-item5": "and others...Bootlace ferrules",
+                "list-item6": "Hilzne",
+                "list-item7": "Čaure",
+                "list-item8": "i još svašta!"
+              },
+              "list2": {
+                "title": "Karakteristike",
+                "list-item": "Svi terminali koje imamo u ponudi mogu biti sa PVC izolacijom i bez nje. Ponuđeni terminali su u skladu sa presekom žica koje želite da ukrimpate"
+              },
+              "list3": {
+                "title": "Alternativa",
+                "list-item": "Takođe, nudimo alternativne modele naših kineskih partnera ukoliko vam za vaš projekat odgovaraju povoljnije cene"
+              }
+            },
+            "components": {
+              "title": "Elektronske komponente",
+              "sub-title": {
+                "text": "Sve od elektronskih komponenata ",
+                "span": "na jednom mestu"
+              },
+              "paragraph": "Odabir različitih aktivnih i pasivnih komponenti",
+              "description": "Elektronske komponente za aparate i uređaje",
+              "description2": "Pomoć pri izboru",
+              "list": {
+                "title": "Veliki izbor",
+                "list-item": "Širok dijapazon aktivnih i pasivnih komponenti",
+                "list-item2":"Releji, LED indikatori, otpornici, osigurači…"
+              },
+              "list2": {
+                "title": "Količine",
+                "list-item": "Nabavka od nekoliko komada do nekoliko hiljada komada"
+              }
+            }
+          }
         },
         "pcb": {
-          "title": {
-            "span": "pcbs"
+          "title": "pcbs",
+          "sub-title": {
+            "text": "PCB",
+            "span": "dizajn"
+          },
+
+          "paragraph": "Projektovanje štampanih ploča",
+          "paragraph2": "Brza izrada prototipa",
+          "description": "Serijska proizvodnja",
+          "list": {
+            "title": "Pomoć pri dizajnu",
+            "list-item": "Dizajn prema zahtevu korisnika",
+            "list-item2": "Izrada dokumentacije",
+            "list-item3": "Projektovanje elektronike",
+            "list-item4": "Projektovanje štampanih ploča",
+            "list-item5": "Brza izrada prototipa"
+          },
+          "list2": {
+            "title": "Proizvodnja",
+            "list-item": "Ručna i robotizovana serijska proizvodnja",
+            "list-item2": "Kontrola i testiranje",
+            "list-item3": "Garantovan kvalitet",
+            "list-item4": "Pristupačne cene"
           }
         },
         "led": {
-          "title": {
-            "span": "leds"
+          "title": "led program",
+          "sub-title": {
+            "text": "Led",
+            "span": "rasveta"
+          },
+          "paragraph": "Širok asortiman LED traka i modula",
+          "paragraph2": "Mogućnost montiranja kablova i konektora na LED trake i module radi lakše konekcije",
+          "paragraph3":"Jednostavno montiranje (3M traka)",
+          "list": {
+            "list-item": "Raznovstan asortiman LED traka i modula",
+            "list-item2": "Trake sa različitim brojem LED-ova po metru (30LED/m, 60LED/m…)",
+            "list-item3": "Jednobojne i RGB trake",
+            "list-item4": "LED-ovi različitih dimenzija (3030, 3528, 5050 i mnogi drugi)",
+            "list-item5": "Trake sa različitim sertifikatima IP zaštite (bez zaštite, otporne na udar, prašinu, vodu (silikonske) i mnoge druge)"
           }
         },
         "accessories": {
-          "title": {
-            "span": "cable accessories"
+          "title": "Dodaci za kablove",
+          "sub-title": {
+            "text": "Sve što vam treba za",
+            "span": "besprekornu asemblažu i izolaciju kablova"
+          },
+          "paragraph": "Širok izbor kablovskih vezica i držača",
+          "paragraph2": "Ponuda izolacionih creva",
+          "paragraph3":"Sve što je potrebno za uredno ožičavanje i obeležavanje na jednom mestu",
+          "list": {
+            "title": "Vezice i držači",
+            "list-item": "Plastične vezice različitih dimenzija i boja za učvršćivanje kablovskih sklopova",
+            "list-item2": "Držači i nosači kablova sa montirajućim patentom radi lakšeg manipulisanja kablovima"
+          },
+          "list2": {
+            "title": "Izolacioni program",
+            "list-item": "Termoskupljajući bužiri različitih preseka i razmera, za izolaciju provodnika i kablova",
+            "list-item2": "PVC creva razčilitih preseka i dimenzija",
+            "list-item3": "Rebrasta PVC creva, PVC lanci i drugo"
+          },
+          "list3": {
+            "title": "Alternativne ponude",
+            "list-item": "Takođe, nudimo alternativne modele naših kineskih partnera ukoliko vam za vaš projekat odgovaraju povoljnije cene"
           }
         },
         "hardware": {
-          "title": {
-            "span": "hardware"
+          "title": "hardware",
+          "sub-title": {
+            "text": "Hardverske komponente",
+            "span": "za vaše aparate i uređaje"
+          },
+          "paragraph": "Metalna kućišta",
+          "paragraph2": "Napajanja",
+          "list": {
+            "list-item": "Mogućnost nabavke različitih delova za aparate kao što su ugradni ekrani, touch screen ekrani, LED paneli, napajanja, Bluetooth moduli, antene, pojačala, i sve drugo po vašem zahtevu.",
+            "list-item2": "Nabavka na malo i veliko od evropskih i američkih distributera, kao i od kineskih partnera po dobrim cenama i sa kratkim rokovima isporuke",
+            "list-item3": "Metalna kućišta, delovi od pleksiglasa i dr."
           }
         }
       }

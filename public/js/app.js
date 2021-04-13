@@ -1963,7 +1963,8 @@ __webpack_require__.r(__webpack_exports__);
         return this.to;
       }
 
-      var locale = this.$route.params.locale; // we strip leading and trailing slashes and prefix
+      var locale = this.$route.params.locale;
+      if (this.to === "/") return "/"; // we strip leading and trailing slashes and prefix
       // the current locale
 
       return "/".concat(locale, "/").concat(this.to.replace(/^\/|\/$/g, ""));
@@ -2122,9 +2123,6 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _util_i18n_supported_locales__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../util/i18n/supported-locales */ "./resources/js/util/i18n/supported-locales.js");
 /* harmony import */ var _LocalizedLink__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../LocalizedLink */ "./resources/js/components/LocalizedLink.vue");
-//
-//
-//
 //
 //
 //
@@ -2392,6 +2390,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _LocalizedLink__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../LocalizedLink */ "./resources/js/components/LocalizedLink.vue");
 //
 //
 //
@@ -2408,8 +2407,27 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: 'HomeContactComponent'
+  components: {
+    LocalizedLink: _LocalizedLink__WEBPACK_IMPORTED_MODULE_0__["default"]
+  },
+  name: "HomeContactComponent"
 });
 
 /***/ }),
@@ -2424,8 +2442,6 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _LocalizedLink__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../LocalizedLink */ "./resources/js/components/LocalizedLink.vue");
-//
-//
 //
 //
 //
@@ -2904,15 +2920,13 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: 'AdditionsForCables',
+  name: "AdditionsForCables",
   data: function data() {
     return {
       accessoriesImages: [],
-      folder: 'cable-accessories'
+      folder: "cable-accessories"
     };
   },
   mounted: function mounted() {
@@ -2941,6 +2955,171 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _services_ImageService__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../services/ImageService */ "./resources/js/services/ImageService.js");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -3328,13 +3507,20 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: 'Hardware',
+  name: "Hardware",
   data: function data() {
     return {
       hardwareImages: [],
-      folder: 'hardware'
+      folder: "hardware"
     };
   },
   mounted: function mounted() {
@@ -3404,13 +3590,18 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: 'Led',
+  name: "Led",
   data: function data() {
     return {
       ledImages: [],
-      folder: 'led'
+      folder: "led"
     };
   },
   mounted: function mounted() {
@@ -3491,21 +3682,13 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: 'Pcbs',
+  name: "Pcbs",
   data: function data() {
     return {
       pcbsImages: [],
-      folder: 'pcbs'
+      folder: "pcbs"
     };
   },
   mounted: function mounted() {
@@ -10954,11 +11137,7 @@ var render = function() {
               return _c(
                 "option",
                 { key: locale.code, domProps: { value: locale.code } },
-                [
-                  _vm._v(
-                    "\n        \n        " + _vm._s(locale.name) + "\n      "
-                  )
-                ]
+                [_vm._v("\n        " + _vm._s(locale.name) + "\n      ")]
               )
             }),
             0
@@ -10975,20 +11154,13 @@ var render = function() {
                   attrs: { lg: "12", md: "12", sm: "12", cols: "12" }
                 },
                 [
-                  _c(
-                    "router-link",
-                    { attrs: { to: "/" } },
-                    [
-                      _c("v-img", {
-                        attrs: {
-                          "max-width": "150px",
-                          src: "/images/logo-full.png",
-                          alt: "logo"
-                        }
-                      })
-                    ],
-                    1
-                  )
+                  _c("v-img", {
+                    attrs: {
+                      "max-width": "150px",
+                      src: "/images/logo-full.png",
+                      alt: "logo"
+                    }
+                  })
                 ],
                 1
               ),
@@ -11469,7 +11641,11 @@ var render = function() {
                 },
                 [
                   _c("h2", { staticClass: "mb-5" }, [
-                    _vm._v(_vm._s(_vm.$t("contact-fixed.title.text")) + " "),
+                    _vm._v(
+                      "\n          " +
+                        _vm._s(_vm.$t("contact-fixed.title.text")) +
+                        "\n          "
+                    ),
                     _c("span", [
                       _vm._v(_vm._s(_vm.$t("contact-fixed.title.span")))
                     ])
@@ -11482,11 +11658,8 @@ var render = function() {
                 { staticClass: "text-center", attrs: { cols: "12" } },
                 [
                   _c(
-                    "router-link",
-                    {
-                      staticClass: "prefooter-block-link",
-                      attrs: { to: "/contact-us" }
-                    },
+                    "LocalizedLink",
+                    { attrs: { to: "/contact-us" } },
                     [
                       _c(
                         "v-btn",
@@ -11732,20 +11905,13 @@ var render = function() {
                     )
                   ]),
                   _vm._v(" "),
-                  _c(
-                    "router-link",
-                    { attrs: { to: "/" } },
-                    [
-                      _c("v-img", {
-                        staticClass: "mt-6",
-                        attrs: {
-                          "max-width": "200px",
-                          src: "/images/logo-name.png"
-                        }
-                      })
-                    ],
-                    1
-                  )
+                  _c("v-img", {
+                    staticClass: "mt-6",
+                    attrs: {
+                      "max-width": "200px",
+                      src: "/images/logo-name.png"
+                    }
+                  })
                 ],
                 1
               ),
@@ -12309,7 +12475,11 @@ var render = function() {
         [
           _c("v-col", { attrs: { cols: "12" } }, [
             _c("h2", { staticClass: "subcat-title mb-5" }, [
-              _vm._v("Cable accessories")
+              _vm._v(
+                "\n        " +
+                  _vm._s(_vm.$t("wholesale.pages.accessories.title")) +
+                  "\n      "
+              )
             ])
           ]),
           _vm._v(" "),
@@ -12338,19 +12508,33 @@ var render = function() {
             },
             [
               _c("h3", { staticClass: "mb-5" }, [
-                _vm._v("Everything you need for "),
-                _c("span", [_vm._v("flawless cable assembly and isolation")])
+                _vm._v(
+                  "\n        " +
+                    _vm._s(
+                      _vm.$t("wholesale.pages.accessories.sub-title.text")
+                    ) +
+                    "\n        "
+                ),
+                _c("span", [
+                  _vm._v(
+                    _vm._s(_vm.$t("wholesale.pages.accessories.sub-title.span"))
+                  )
+                ])
               ]),
               _vm._v(" "),
               _c("p", { staticClass: "mb-0" }, [
-                _vm._v("PVC cable ties and holders")
+                _vm._v(_vm._s(_vm.$t("wholesale.pages.accessories.paragraph")))
               ]),
               _vm._v(" "),
-              _c("p", { staticClass: "mb-0" }, [_vm._v("PVC tubes")]),
+              _c("p", { staticClass: "mb-0" }, [
+                _vm._v(_vm._s(_vm.$t("wholesale.pages.accessories.paragraph2")))
+              ]),
               _vm._v(" "),
               _c("p", { staticClass: "mb-0" }, [
                 _vm._v(
-                  "Everything you need for neat wiring and marking in one place"
+                  "\n        " +
+                    _vm._s(_vm.$t("wholesale.pages.accessories.paragraph3")) +
+                    "\n      "
                 )
               ])
             ]
@@ -12365,25 +12549,25 @@ var render = function() {
         [
           _c("v-col", { attrs: { cols: "12" } }, [
             _c("h3", { staticClass: "mt-5" }, [
-              _vm._v("\n        Cable accessories\n      ")
+              _vm._v(_vm._s(_vm.$t("wholesale.pages.accessories.title")))
             ])
           ]),
           _vm._v(" "),
           _c("v-col", { staticClass: "text-left", attrs: { cols: "12" } }, [
             _c("h4", { staticClass: "mb-2" }, [
-              _vm._v("\n        Cable ties and cable holders\n      ")
+              _vm._v(_vm._s(_vm.$t("wholesale.pages.accessories.list.title")))
             ]),
             _vm._v(" "),
             _c("ul", { staticClass: "pl-0" }, [
               _c("li", [
                 _vm._v(
-                  "\n          Cable ties different dimension and colors for fixing cables\n        "
+                  _vm._s(_vm.$t("wholesale.pages.accessories.list.list-item"))
                 )
               ]),
               _vm._v(" "),
               _c("li", [
                 _vm._v(
-                  "\n          Holders and cable mounts for easier cable handling\n        "
+                  _vm._s(_vm.$t("wholesale.pages.accessories.list.list-item2"))
                 )
               ])
             ])
@@ -12391,25 +12575,29 @@ var render = function() {
           _vm._v(" "),
           _c("v-col", { staticClass: "text-left", attrs: { cols: "12" } }, [
             _c("h4", { staticClass: "mb-2" }, [
-              _vm._v("\n        Isolation program\n      ")
+              _vm._v(
+                "\n        " +
+                  _vm._s(_vm.$t("wholesale.pages.accessories.list2.title")) +
+                  "\n      "
+              )
             ]),
             _vm._v(" "),
             _c("ul", { staticClass: "pl-0" }, [
               _c("li", [
                 _vm._v(
-                  "\n          Heat shrinking tubes different sizes and scales, for wires and cables isolation\n        "
+                  _vm._s(_vm.$t("wholesale.pages.accessories.list2.list-item"))
                 )
               ]),
               _vm._v(" "),
               _c("li", [
                 _vm._v(
-                  "\n          PVC tubes different sizes and dimensions\n        "
+                  _vm._s(_vm.$t("wholesale.pages.accessories.list2.list-item2"))
                 )
               ]),
               _vm._v(" "),
               _c("li", [
                 _vm._v(
-                  "\n          Ribbed PVC tubes, PVC chains and others\n        "
+                  _vm._s(_vm.$t("wholesale.pages.accessories.list2.list-item3"))
                 )
               ])
             ])
@@ -12417,13 +12605,17 @@ var render = function() {
           _vm._v(" "),
           _c("v-col", { staticClass: "text-left", attrs: { cols: "12" } }, [
             _c("h4", { staticClass: "mb-2" }, [
-              _vm._v("\n        Alternative offer\n      ")
+              _vm._v(
+                "\n        " +
+                  _vm._s(_vm.$t("wholesale.pages.accessories.list3.title")) +
+                  "\n      "
+              )
             ]),
             _vm._v(" "),
             _c("ul", { staticClass: "pl-0" }, [
               _c("li", [
                 _vm._v(
-                  "\n          eComponents also offers alternative models of connectors, manufactured by our Chinese partners if your\n          project demands lower priced, but still very reliable components\n        "
+                  _vm._s(_vm.$t("wholesale.pages.accessories.list3.list-item"))
                 )
               ])
             ])
@@ -12474,8 +12666,16 @@ var render = function() {
         [
           _c("v-col", { attrs: { cols: "12" } }, [
             _c("h3", { staticClass: "wholesale-subcat-title mb-5" }, [
-              _vm._v("\n\t\t\t\tConnectors, terminals\n\t\t\t\t"),
-              _c("span", [_vm._v("and electronic components ")])
+              _vm._v(
+                "\n        " +
+                  _vm._s(_vm.$t("wholesale.pages.connectors.title.text")) +
+                  "\n        "
+              ),
+              _c("span", [
+                _vm._v(
+                  _vm._s(_vm.$t("wholesale.pages.connectors.title.span")) + " "
+                )
+              ])
             ])
           ]),
           _vm._v(" "),
@@ -12507,7 +12707,17 @@ var render = function() {
                   ),
                   _vm._v(" "),
                   _c("div", { staticClass: "round-block__content" }, [
-                    _c("h2", [_vm._v("Connectors")])
+                    _c("h2", [
+                      _vm._v(
+                        "\n            " +
+                          _vm._s(
+                            _vm.$t(
+                              "wholesale.pages.connectors.sub-section.connectors.title"
+                            )
+                          ) +
+                          "\n          "
+                      )
+                    ])
                   ])
                 ]
               )
@@ -12541,7 +12751,17 @@ var render = function() {
                   ),
                   _vm._v(" "),
                   _c("div", { staticClass: "round-block__content" }, [
-                    _c("h2", [_vm._v("Terminals")])
+                    _c("h2", [
+                      _vm._v(
+                        "\n            " +
+                          _vm._s(
+                            _vm.$t(
+                              "wholesale.pages.connectors.sub-section.terminals.title"
+                            )
+                          ) +
+                          "\n          "
+                      )
+                    ])
                   ])
                 ]
               )
@@ -12578,7 +12798,17 @@ var render = function() {
                   ),
                   _vm._v(" "),
                   _c("div", { staticClass: "round-block__content" }, [
-                    _c("h2", [_vm._v("Electronic components")])
+                    _c("h2", [
+                      _vm._v(
+                        "\n            " +
+                          _vm._s(
+                            _vm.$t(
+                              "wholesale.pages.connectors.sub-section.components.title"
+                            )
+                          ) +
+                          "\n          "
+                      )
+                    ])
                   ])
                 ]
               )
@@ -12596,7 +12826,15 @@ var render = function() {
         [
           _c("v-col", { attrs: { cols: "12" } }, [
             _c("h2", { staticClass: "subcat-title mb-5" }, [
-              _vm._v("Connectors")
+              _vm._v(
+                "\n        " +
+                  _vm._s(
+                    _vm.$t(
+                      "wholesale.pages.connectors.sub-section.connectors.title"
+                    )
+                  ) +
+                  "\n      "
+              )
             ])
           ]),
           _vm._v(" "),
@@ -12625,23 +12863,59 @@ var render = function() {
             },
             [
               _c("h3", { staticClass: "mb-5" }, [
-                _vm._v("Connectors for "),
-                _c("span", [_vm._v("every connection type")])
+                _vm._v(
+                  "\n        " +
+                    _vm._s(
+                      _vm.$t(
+                        "wholesale.pages.connectors.sub-section.connectors.sub-title.text"
+                      )
+                    ) +
+                    "\n        "
+                ),
+                _c("span", [
+                  _vm._v(
+                    _vm._s(
+                      _vm.$t(
+                        "wholesale.pages.connectors.sub-section.connectors.sub-title.span"
+                      )
+                    )
+                  )
+                ])
               ]),
               _vm._v(" "),
               _c("p", { staticClass: "mb-0" }, [
                 _vm._v(
-                  "\n\t\t\t\tWide variety of connectors for different uses\n\t\t\t"
+                  "\n        " +
+                    _vm._s(
+                      _vm.$t(
+                        "wholesale.pages.connectors.sub-section.connectors.paragraph"
+                      )
+                    ) +
+                    "\n      "
                 )
               ]),
               _vm._v(" "),
               _c("p", { staticClass: "mb-0" }, [
-                _vm._v("Help with finding the right connector type")
+                _vm._v(
+                  "\n        " +
+                    _vm._s(
+                      _vm.$t(
+                        "wholesale.pages.connectors.sub-section.connectors.description"
+                      )
+                    ) +
+                    "\n      "
+                )
               ]),
               _vm._v(" "),
               _c("p", { staticClass: "mb-0" }, [
                 _vm._v(
-                  "\n\t\t\t\tPossibility of ordering alternative connector types\n\t\t\t"
+                  "\n        " +
+                    _vm._s(
+                      _vm.$t(
+                        "wholesale.pages.connectors.sub-section.connectors.description2"
+                      )
+                    ) +
+                    "\n      "
                 )
               ])
             ]
@@ -12663,25 +12937,53 @@ var render = function() {
         [
           _c("v-col", { attrs: { cols: "12" } }, [
             _c("h3", { staticClass: "mt-5" }, [
-              _vm._v("\n\t\t\t\tConnectors\n\t\t\t")
+              _vm._v(
+                "\n        " +
+                  _vm._s(
+                    _vm.$t(
+                      "wholesale.pages.connectors.sub-section.connectors.title"
+                    )
+                  ) +
+                  "\n      "
+              )
             ])
           ]),
           _vm._v(" "),
           _c("v-col", { staticClass: "text-left", attrs: { cols: "12" } }, [
             _c("h4", { staticClass: "mb-2" }, [
-              _vm._v("\n\t\t\t\tManufacturers and configurations\n\t\t\t")
+              _vm._v(
+                "\n        " +
+                  _vm._s(
+                    _vm.$t(
+                      "wholesale.pages.connectors.sub-section.connectors.list.title"
+                    )
+                  ) +
+                  "\n      "
+              )
             ]),
             _vm._v(" "),
             _c("ul", { staticClass: "pl-0" }, [
               _c("li", [
                 _vm._v(
-                  "\n\t\t\t\t\tBroad selection of connectors of world’s renowned manufacturers such\n\t\t\t\t\tas Molex, TE Connectivity, JST…\n\t\t\t\t"
+                  "\n          " +
+                    _vm._s(
+                      _vm.$t(
+                        "wholesale.pages.connectors.sub-section.connectors.list.list-item"
+                      )
+                    ) +
+                    "\n        "
                 )
               ]),
               _vm._v(" "),
               _c("li", [
                 _vm._v(
-                  "\n\t\t\t\t\tOur offer includes connectors with different pitch and pin\n\t\t\t\t\tconfiguration, power connectors, audio and video connectors, signal\n\t\t\t\t\tconnectors, data connectors and many more.\n\t\t\t\t"
+                  "\n          " +
+                    _vm._s(
+                      _vm.$t(
+                        "wholesale.pages.connectors.sub-section.connectors.list.list-item2"
+                      )
+                    ) +
+                    "\n        "
                 )
               ])
             ])
@@ -12689,13 +12991,27 @@ var render = function() {
           _vm._v(" "),
           _c("v-col", { staticClass: "text-left", attrs: { cols: "12" } }, [
             _c("h4", { staticClass: "mb-2" }, [
-              _vm._v("Crimp contacts and connector housings")
+              _vm._v(
+                "\n        " +
+                  _vm._s(
+                    _vm.$t(
+                      "wholesale.pages.connectors.sub-section.connectors.list2.title"
+                    )
+                  ) +
+                  "\n      "
+              )
             ]),
             _vm._v(" "),
             _c("ul", { staticClass: "pl-0" }, [
               _c("li", [
                 _vm._v(
-                  "\n\t\t\t\t\tWith every connector we offer it’s corresponding crimp contacts\n\t\t\t\t\tsuitable for conductors of different thickness, as well as connector\n\t\t\t\t\tback shells for the connectors that use them\n\t\t\t\t"
+                  "\n          " +
+                    _vm._s(
+                      _vm.$t(
+                        "wholesale.pages.connectors.sub-section.connectors.list2.list-item"
+                      )
+                    ) +
+                    "\n        "
                 )
               ])
             ])
@@ -12703,13 +13019,27 @@ var render = function() {
           _vm._v(" "),
           _c("v-col", { staticClass: "text-left", attrs: { cols: "12" } }, [
             _c("h4", { staticClass: "mb-2" }, [
-              _vm._v("\n\t\t\t\tAlternative offer\n\t\t\t")
+              _vm._v(
+                "\n        " +
+                  _vm._s(
+                    _vm.$t(
+                      "wholesale.pages.connectors.sub-section.connectors.list3.title"
+                    )
+                  ) +
+                  "r\n      "
+              )
             ]),
             _vm._v(" "),
             _c("ul", { staticClass: "pl-0" }, [
               _c("li", [
                 _vm._v(
-                  "\n\t\t\t\t\teComponents also offers alternative models of connectors,\n\t\t\t\t\tmanufactured by our Chinese partners if your project demands lower\n\t\t\t\t\tpriced, but still very reliable components\n\t\t\t\t"
+                  "\n          " +
+                    _vm._s(
+                      _vm.$t(
+                        "wholesale.pages.connectors.sub-section.connectors.list3.list-item"
+                      )
+                    ) +
+                    "\n        "
                 )
               ])
             ])
@@ -12741,7 +13071,15 @@ var render = function() {
         [
           _c("v-col", { attrs: { cols: "12" } }, [
             _c("h2", { staticClass: "subcat-title mb-5" }, [
-              _vm._v("Terminals")
+              _vm._v(
+                "\n        " +
+                  _vm._s(
+                    _vm.$t(
+                      "wholesale.pages.connectors.sub-section.terminals.title"
+                    )
+                  ) +
+                  "\n      "
+              )
             ])
           ]),
           _vm._v(" "),
@@ -12770,17 +13108,62 @@ var render = function() {
             },
             [
               _c("h3", { staticClass: "mb-5" }, [
-                _vm._v("Terminal for "),
-                _c("span", [_vm._v("every wire end")])
+                _vm._v(
+                  "\n        " +
+                    _vm._s(
+                      _vm.$t(
+                        "wholesale.pages.connectors.sub-section.terminals.sub-title.text"
+                      )
+                    ) +
+                    "\n        "
+                ),
+                _c("span", [
+                  _vm._v(
+                    "\n          " +
+                      _vm._s(
+                        _vm.$t(
+                          "wholesale.pages.connectors.sub-section.terminals.sub-title.span"
+                        )
+                      )
+                  )
+                ])
               ]),
               _vm._v(" "),
               _c("p", { staticClass: "mb-0" }, [
-                _vm._v("Different characteristics terminals")
+                _vm._v(
+                  "\n        " +
+                    _vm._s(
+                      _vm.$t(
+                        "wholesale.pages.connectors.sub-section.terminals.paragraph"
+                      )
+                    ) +
+                    "\n      "
+                )
               ]),
               _vm._v(" "),
-              _c("p", { staticClass: "mb-0" }, [_vm._v("Simple application")]),
+              _c("p", { staticClass: "mb-0" }, [
+                _vm._v(
+                  "\n        " +
+                    _vm._s(
+                      _vm.$t(
+                        "wholesale.pages.connectors.sub-section.terminals.description"
+                      )
+                    ) +
+                    "\n      "
+                )
+              ]),
               _vm._v(" "),
-              _c("p", { staticClass: "mb-0" }, [_vm._v("Easy mounting")])
+              _c("p", { staticClass: "mb-0" }, [
+                _vm._v(
+                  "\n        " +
+                    _vm._s(
+                      _vm.$t(
+                        "wholesale.pages.connectors.sub-section.terminals.description2"
+                      )
+                    ) +
+                    "\n      "
+                )
+              ])
             ]
           )
         ],
@@ -12800,50 +13183,124 @@ var render = function() {
         [
           _c("v-col", { attrs: { cols: "12" } }, [
             _c("h3", { staticClass: "mt-5" }, [
-              _vm._v("\n\t\t\t\tWire and cable terminals\n\t\t\t")
+              _vm._v(
+                "\n        " +
+                  _vm._s(
+                    _vm.$t(
+                      "wholesale.pages.connectors.sub-section.terminals.wire-cable"
+                    )
+                  ) +
+                  "\n      "
+              )
             ])
           ]),
           _vm._v(" "),
           _c("v-col", { staticClass: "text-left", attrs: { cols: "12" } }, [
             _c("h4", { staticClass: "mb-2" }, [
-              _vm._v("\n\t\t\t\tTypes of terminals\n\t\t\t")
+              _vm._v(
+                "\n        " +
+                  _vm._s(
+                    _vm.$t(
+                      "wholesale.pages.connectors.sub-section.terminals.list.title"
+                    )
+                  ) +
+                  "\n      "
+              )
             ]),
             _vm._v(" "),
             _c("ul", { staticClass: "pl-0" }, [
               _c("li", [
                 _vm._v(
-                  "\n\t\t\t\t\tWe offer the following types of terminals:\n\t\t\t\t\t"
+                  "\n          " +
+                    _vm._s(
+                      _vm.$t(
+                        "wholesale.pages.connectors.sub-section.terminals.list.list-item"
+                      )
+                    ) +
+                    "\n          "
                 ),
                 _c("p", { staticClass: "mb-0 ml-5" }, [
-                  _vm._v("- Fork terminals (M3, M4, M5…)")
-                ]),
-                _vm._v(" "),
-                _c("p", { staticClass: "mb-0 ml-5" }, [
                   _vm._v(
-                    "\n\t\t\t\t\t\t- Ring terminals (3mm, 4mm, 5mm… diameter)\n\t\t\t\t\t"
+                    "\n            -\n            " +
+                      _vm._s(
+                        _vm.$t(
+                          "wholesale.pages.connectors.sub-section.terminals.list.list-item2"
+                        )
+                      ) +
+                      "\n          "
                   )
                 ]),
                 _vm._v(" "),
                 _c("p", { staticClass: "mb-0 ml-5" }, [
                   _vm._v(
-                    "\n\t\t\t\t\t\t- Quick connect terminals (2.8mm, 4.8mm, 6.3mm width)\n\t\t\t\t\t"
+                    "\n            -\n            " +
+                      _vm._s(
+                        _vm.$t(
+                          "wholesale.pages.connectors.sub-section.terminals.list.list-item3"
+                        )
+                      ) +
+                      "\n          "
                   )
                 ]),
                 _vm._v(" "),
                 _c("p", { staticClass: "mb-0 ml-5" }, [
                   _vm._v(
-                    "\n\t\t\t\t\t\t- and others...Bootlace ferrules\n\t\t\t\t\t"
+                    "\n            -\n            " +
+                      _vm._s(
+                        _vm.$t(
+                          "wholesale.pages.connectors.sub-section.terminals.list.list-item4"
+                        )
+                      ) +
+                      "\n          "
                   )
                 ]),
                 _vm._v(" "),
-                _c("p", { staticClass: "mb-0 ml-5" }, [_vm._v("- Splices")]),
+                _c("p", { staticClass: "mb-0 ml-5" }, [
+                  _vm._v(
+                    "\n            -\n            " +
+                      _vm._s(
+                        _vm.$t(
+                          "wholesale.pages.connectors.sub-section.terminals.list.list-item5"
+                        )
+                      ) +
+                      "\n          "
+                  )
+                ]),
                 _vm._v(" "),
-                _c("p", { staticClass: "mb-0 ml-5" }, [_vm._v("- And more!")])
+                _c("p", { staticClass: "mb-0 ml-5" }, [
+                  _vm._v(
+                    "\n            -\n            " +
+                      _vm._s(
+                        _vm.$t(
+                          "wholesale.pages.connectors.sub-section.terminals.list.list-item6"
+                        )
+                      ) +
+                      "\n          "
+                  )
+                ]),
+                _vm._v(" "),
+                _c("p", { staticClass: "mb-0 ml-5" }, [
+                  _vm._v(
+                    "\n            -\n            " +
+                      _vm._s(
+                        _vm.$t(
+                          "wholesale.pages.connectors.sub-section.terminals.list.list-item7"
+                        )
+                      ) +
+                      "\n          "
+                  )
+                ])
               ]),
               _vm._v(" "),
               _c("li", [
                 _vm._v(
-                  "\n\t\t\t\t\tOur offer includes connectors with different pitch and pin\n\t\t\t\t\tconfiguration, power connectors, audio and video connectors, signal\n\t\t\t\t\tconnectors, data connectors and many more.\n\t\t\t\t"
+                  "\n          " +
+                    _vm._s(
+                      _vm.$t(
+                        "wholesale.pages.connectors.sub-section.terminals.list.list-item8"
+                      )
+                    ) +
+                    "\n        "
                 )
               ])
             ])
@@ -12851,13 +13308,27 @@ var render = function() {
           _vm._v(" "),
           _c("v-col", { staticClass: "text-left", attrs: { cols: "12" } }, [
             _c("h4", { staticClass: "mb-2" }, [
-              _vm._v("Crimp contacts and connector housings")
+              _vm._v(
+                "\n        " +
+                  _vm._s(
+                    _vm.$t(
+                      "wholesale.pages.connectors.sub-section.terminals.list2.title"
+                    )
+                  ) +
+                  "\n      "
+              )
             ]),
             _vm._v(" "),
             _c("ul", { staticClass: "pl-0" }, [
               _c("li", [
                 _vm._v(
-                  "\n\t\t\t\t\tWith every connector we offer it’s corresponding crimp contacts\n\t\t\t\t\tsuitable for conductors of different thickness, as well as connector\n\t\t\t\t\tbackshells for the connectors that use them\n\t\t\t\t"
+                  "\n          " +
+                    _vm._s(
+                      _vm.$t(
+                        "wholesale.pages.connectors.sub-section.terminals.list2.list-item"
+                      )
+                    ) +
+                    "\n        "
                 )
               ])
             ])
@@ -12865,13 +13336,27 @@ var render = function() {
           _vm._v(" "),
           _c("v-col", { staticClass: "text-left", attrs: { cols: "12" } }, [
             _c("h4", { staticClass: "mb-2" }, [
-              _vm._v("\n\t\t\t\tAlternative offer\n\t\t\t")
+              _vm._v(
+                "\n        " +
+                  _vm._s(
+                    _vm.$t(
+                      "wholesale.pages.connectors.sub-section.terminals.list3.title"
+                    )
+                  ) +
+                  "\n      "
+              )
             ]),
             _vm._v(" "),
             _c("ul", { staticClass: "pl-0" }, [
               _c("li", [
                 _vm._v(
-                  "\n\t\t\t\t\teComponents also offers alternative models of connectors,\n\t\t\t\t\tmanufactured by our Chinese partners if your project demands lower\n\t\t\t\t\tpriced, but still very reliable components\n\t\t\t\t"
+                  "\n          " +
+                    _vm._s(
+                      _vm.$t(
+                        "wholesale.pages.connectors.sub-section.terminals.list3.list-item"
+                      )
+                    ) +
+                    "\n        "
                 )
               ])
             ])
@@ -12903,7 +13388,15 @@ var render = function() {
         [
           _c("v-col", { attrs: { cols: "12" } }, [
             _c("h2", { staticClass: "subcat-title mb-5" }, [
-              _vm._v("Electronic components")
+              _vm._v(
+                "\n        " +
+                  _vm._s(
+                    _vm.$t(
+                      "wholesale.pages.connectors.sub-section.components.title"
+                    )
+                  ) +
+                  "\n      "
+              )
             ])
           ]),
           _vm._v(" "),
@@ -12932,23 +13425,61 @@ var render = function() {
             },
             [
               _c("h3", { staticClass: "mb-5" }, [
-                _vm._v("\n\t\t\t\tAll electronic "),
-                _c("span", [_vm._v("components in one place")])
+                _vm._v(
+                  "\n        " +
+                    _vm._s(
+                      _vm.$t(
+                        "wholesale.pages.connectors.sub-section.components.sub-title.text"
+                      )
+                    ) +
+                    "\n        "
+                ),
+                _c("span", [
+                  _vm._v(
+                    _vm._s(
+                      _vm.$t(
+                        "wholesale.pages.connectors.sub-section.components.sub-title.span"
+                      )
+                    )
+                  )
+                ])
               ]),
               _vm._v(" "),
               _c("p", { staticClass: "mb-0" }, [
                 _vm._v(
-                  "\n\t\t\t\tGreat selection of active and passive components\n\t\t\t"
+                  "\n        " +
+                    _vm._s(
+                      _vm.$t(
+                        "wholesale.pages.connectors.sub-section.components.paragraph"
+                      )
+                    ) +
+                    "\n      "
                 )
               ]),
               _vm._v(" "),
               _c("p", { staticClass: "mb-0" }, [
                 _vm._v(
-                  "\n\t\t\t\tElectronic components for machines and appliances\n\t\t\t"
+                  "\n        " +
+                    _vm._s(
+                      _vm.$t(
+                        "wholesale.pages.connectors.sub-section.components.description"
+                      )
+                    ) +
+                    "\n      "
                 )
               ]),
               _vm._v(" "),
-              _c("p", { staticClass: "mb-0" }, [_vm._v("Help with selection")])
+              _c("p", { staticClass: "mb-0" }, [
+                _vm._v(
+                  "\n        " +
+                    _vm._s(
+                      _vm.$t(
+                        "wholesale.pages.connectors.sub-section.components.description2"
+                      )
+                    ) +
+                    "\n      "
+                )
+              ])
             ]
           )
         ],
@@ -12968,27 +13499,67 @@ var render = function() {
         [
           _c("v-col", { staticClass: "text-left", attrs: { cols: "12" } }, [
             _c("h4", { staticClass: "mb-2" }, [
-              _vm._v("\n\t\t\t\tLarge choice\n\t\t\t")
+              _vm._v(
+                "\n        " +
+                  _vm._s(
+                    _vm.$t(
+                      "wholesale.pages.connectors.sub-section.components.list.title"
+                    )
+                  ) +
+                  "\n      "
+              )
             ]),
             _vm._v(" "),
             _c("ul", { staticClass: "pl-0" }, [
-              _c("li", [_vm._v("\n\t\t\t\t\tLarge choice\n\t\t\t\t")]),
+              _c("li", [
+                _vm._v(
+                  "\n          " +
+                    _vm._s(
+                      _vm.$t(
+                        "wholesale.pages.connectors.sub-section.components.list.list-item"
+                      )
+                    ) +
+                    "\n        "
+                )
+              ]),
               _vm._v(" "),
               _c("li", [
                 _vm._v(
-                  "\n\t\t\t\t\tRelays, LED indicators, resistors, fuses, fuse holders…\n\t\t\t\t"
+                  "\n          " +
+                    _vm._s(
+                      _vm.$t(
+                        "wholesale.pages.connectors.sub-section.components.list.list-item2"
+                      )
+                    ) +
+                    "\n        "
                 )
               ])
             ])
           ]),
           _vm._v(" "),
           _c("v-col", { staticClass: "text-left", attrs: { cols: "12" } }, [
-            _c("h4", { staticClass: "mb-2" }, [_vm._v("Quantities")]),
+            _c("h4", { staticClass: "mb-2" }, [
+              _vm._v(
+                "\n        " +
+                  _vm._s(
+                    _vm.$t(
+                      "wholesale.pages.connectors.sub-section.components.list2.title"
+                    )
+                  ) +
+                  "\n      "
+              )
+            ]),
             _vm._v(" "),
             _c("ul", { staticClass: "pl-0" }, [
               _c("li", [
                 _vm._v(
-                  "\n\t\t\t\t\tWe can supply you with electronic components starting from few\n\t\t\t\t\tpieces to thousands of pieces\n\t\t\t\t"
+                  "\n          " +
+                    _vm._s(
+                      _vm.$t(
+                        "wholesale.pages.connectors.sub-section.components.list2.list-item"
+                      )
+                    ) +
+                    "\n        "
                 )
               ])
             ])
@@ -13039,7 +13610,13 @@ var render = function() {
         { attrs: { id: "led" } },
         [
           _c("v-col", { attrs: { cols: "12" } }, [
-            _c("h2", { staticClass: "subcat-title mb-5" }, [_vm._v("Hardware")])
+            _c("h2", { staticClass: "subcat-title mb-5" }, [
+              _vm._v(
+                "\n        " +
+                  _vm._s(_vm.$t("wholesale.pages.hardware.title")) +
+                  "\n      "
+              )
+            ])
           ]),
           _vm._v(" "),
           _c(
@@ -13067,13 +13644,25 @@ var render = function() {
             },
             [
               _c("h3", { staticClass: "mb-5" }, [
-                _vm._v("Hardware components "),
-                _c("span", [_vm._v("for many devices")])
+                _vm._v(
+                  "\n        " +
+                    _vm._s(_vm.$t("wholesale.pages.hardware.sub-title.text")) +
+                    "\n        "
+                ),
+                _c("span", [
+                  _vm._v(
+                    _vm._s(_vm.$t("wholesale.pages.hardware.sub-title.span"))
+                  )
+                ])
               ]),
               _vm._v(" "),
-              _c("p", { staticClass: "mb-0" }, [_vm._v("Metal housings")]),
+              _c("p", { staticClass: "mb-0" }, [
+                _vm._v(_vm._s(_vm.$t("wholesale.pages.hardware.paragraph")))
+              ]),
               _vm._v(" "),
-              _c("p", { staticClass: "mb-0" }, [_vm._v("Power supply")])
+              _c("p", { staticClass: "mb-0" }, [
+                _vm._v(_vm._s(_vm.$t("wholesale.pages.hardware.paragraph2")))
+              ])
             ]
           )
         ],
@@ -13088,19 +13677,23 @@ var render = function() {
             _c("ul", { staticClass: "pl-0" }, [
               _c("li", [
                 _vm._v(
-                  "\n          Possible procurement of different parts for devices, like built-in\n          monitors, touch screen monitors, LED panels, power supplies,\n          Bluetooth modules, antennas, amplifier, and many other parts that\n          you require.\n        "
+                  "\n          " +
+                    _vm._s(_vm.$t("wholesale.pages.hardware.list.list-item")) +
+                    "\n        "
                 )
               ]),
               _vm._v(" "),
               _c("li", [
                 _vm._v(
-                  "\n          Retail and bulk procuring from European and American distributors,\n          as well as from our Chinese partners at good prices with short\n          delivery time\n        "
+                  "\n          " +
+                    _vm._s(_vm.$t("wholesale.pages.hardware.list.list-item2")) +
+                    "\n        "
                 )
               ]),
               _vm._v(" "),
               _c("li", [
                 _vm._v(
-                  "\n          Metal housings, plexiglass parts and other\n        "
+                  _vm._s(_vm.$t("wholesale.pages.hardware.list.list-item3"))
                 )
               ])
             ])
@@ -13151,7 +13744,7 @@ var render = function() {
         [
           _c("v-col", { attrs: { cols: "12" } }, [
             _c("h2", { staticClass: "subcat-title mb-5" }, [
-              _vm._v("Led program")
+              _vm._v(_vm._s(_vm.$t("wholesale.pages.led.title")))
             ])
           ]),
           _vm._v(" "),
@@ -13180,22 +13773,30 @@ var render = function() {
             },
             [
               _c("h3", { staticClass: "mb-5" }, [
-                _vm._v("Led "),
-                _c("span", [_vm._v("lightning")])
+                _vm._v(
+                  "\n        " +
+                    _vm._s(_vm.$t("wholesale.pages.led.sub-title.text")) +
+                    "\n        "
+                ),
+                _c("span", [
+                  _vm._v(_vm._s(_vm.$t("wholesale.pages.led.sub-title.span")))
+                ])
               ]),
               _vm._v(" "),
               _c("p", { staticClass: "mb-0" }, [
-                _vm._v("Wide range of every connection type")
+                _vm._v(_vm._s(_vm.$t("wholesale.pages.led.paragraph")))
               ]),
               _vm._v(" "),
               _c("p", { staticClass: "mb-0" }, [
                 _vm._v(
-                  "Possible mounting of cables and connectors on LED strips and modules for easier connection"
+                  "\n        " +
+                    _vm._s(_vm.$t("wholesale.pages.led.paragraph2")) +
+                    "\n      "
                 )
               ]),
               _vm._v(" "),
               _c("p", { staticClass: "mb-0" }, [
-                _vm._v("Easy mounting (3M strip)")
+                _vm._v(_vm._s(_vm.$t("wholesale.pages.led.paragraph3")))
               ])
             ]
           )
@@ -13210,31 +13811,23 @@ var render = function() {
           _c("v-col", { staticClass: "text-left", attrs: { cols: "12" } }, [
             _c("ul", { staticClass: "pl-0" }, [
               _c("li", [
-                _vm._v(
-                  "\n          Diverse assortment of LED strips and modules\n        "
-                )
+                _vm._v(_vm._s(_vm.$t("wholesale.pages.led.list.list-item")))
               ]),
               _vm._v(" "),
               _c("li", [
-                _vm._v(
-                  "\n          Strips with different number of LEDs per meter (30LED/m, 60LED/m…)\n        "
-                )
+                _vm._v(_vm._s(_vm.$t("wholesale.pages.led.list.list-item2")))
               ]),
               _vm._v(" "),
               _c("li", [
-                _vm._v("\n          One-coloured and RGB strips\n        ")
+                _vm._v(_vm._s(_vm.$t("wholesale.pages.led.list.list-item3")))
               ]),
               _vm._v(" "),
               _c("li", [
-                _vm._v(
-                  "\n          Different LEDs dimension (3030, 3528, 5050 and other)\n        "
-                )
+                _vm._v(_vm._s(_vm.$t("wholesale.pages.led.list.list-item4")))
               ]),
               _vm._v(" "),
               _c("li", [
-                _vm._v(
-                  "\n          Strips with different certificates IP protection (Without protection, impact resistant, dust, water (glued)\n          and other)\n        "
-                )
+                _vm._v(_vm._s(_vm.$t("wholesale.pages.led.list.list-item5")))
               ])
             ])
           ])
@@ -13284,7 +13877,9 @@ var render = function() {
         { attrs: { id: "pcbs" } },
         [
           _c("v-col", { attrs: { cols: "12" } }, [
-            _c("h2", { staticClass: "subcat-title mb-5" }, [_vm._v("PCBs")])
+            _c("h2", { staticClass: "subcat-title mb-5" }, [
+              _vm._v(_vm._s(_vm.$t("wholesale.pages.pcb.title")))
+            ])
           ]),
           _vm._v(" "),
           _c(
@@ -13312,16 +13907,26 @@ var render = function() {
             },
             [
               _c("h3", { staticClass: "mb-5" }, [
-                _vm._v("PCB "),
-                _c("span", [_vm._v("design")])
+                _vm._v(
+                  "\n        " +
+                    _vm._s(_vm.$t("wholesale.pages.pcb.sub-title.text")) +
+                    "\n        "
+                ),
+                _c("span", [
+                  _vm._v(_vm._s(_vm.$t("wholesale.pages.pcb.sub-title.span")))
+                ])
               ]),
               _vm._v(" "),
-              _c("p", { staticClass: "mb-0" }, [_vm._v("Rapid prototyping")]),
-              _vm._v(" "),
-              _c("p", { staticClass: "mb-0" }, [_vm._v("Serial production")]),
+              _c("p", { staticClass: "mb-0" }, [
+                _vm._v(_vm._s(_vm.$t("wholesale.pages.pcb.paragraph")))
+              ]),
               _vm._v(" "),
               _c("p", { staticClass: "mb-0" }, [
-                _vm._v("Filling of PCB with SMT components")
+                _vm._v(_vm._s(_vm.$t("wholesale.pages.pcb.paragraph2")))
+              ]),
+              _vm._v(" "),
+              _c("p", { staticClass: "mb-0" }, [
+                _vm._v(_vm._s(_vm.$t("wholesale.pages.pcb.description")))
               ])
             ]
           )
@@ -13335,39 +13940,53 @@ var render = function() {
         [
           _c("v-col", { staticClass: "text-left", attrs: { cols: "12" } }, [
             _c("h4", { staticClass: "mb-2" }, [
-              _vm._v("\n        Assistance with design\n      ")
+              _vm._v(_vm._s(_vm.$t("wholesale.pages.pcb.list.title")))
             ]),
             _vm._v(" "),
             _c("ul", [
               _c("li", [
-                _vm._v("\n          Design per customer request\n        ")
+                _vm._v(_vm._s(_vm.$t("wholesale.pages.pcb.list.list-item")))
               ]),
               _vm._v(" "),
-              _c("li", [_vm._v("\n          Making documentation\n        ")]),
+              _c("li", [
+                _vm._v(_vm._s(_vm.$t("wholesale.pages.pcb.list.list-item2")))
+              ]),
               _vm._v(" "),
-              _c("li", [_vm._v("\n          Electronic design\n        ")]),
+              _c("li", [
+                _vm._v(_vm._s(_vm.$t("wholesale.pages.pcb.list.list-item3")))
+              ]),
               _vm._v(" "),
-              _c("li", [_vm._v("\n          PCB design\n        ")]),
+              _c("li", [
+                _vm._v(_vm._s(_vm.$t("wholesale.pages.pcb.list.list-item4")))
+              ]),
               _vm._v(" "),
-              _c("li", [_vm._v("\n          Quick prototyping\n        ")])
+              _c("li", [
+                _vm._v(_vm._s(_vm.$t("wholesale.pages.pcb.list.list-item5")))
+              ])
             ])
           ]),
           _vm._v(" "),
           _c("v-col", { staticClass: "text-left", attrs: { cols: "12" } }, [
-            _c("h4", { staticClass: "mb-2" }, [_vm._v("Production")]),
+            _c("h4", { staticClass: "mb-2" }, [
+              _vm._v(_vm._s(_vm.$t("wholesale.pages.pcb.list2.title")))
+            ]),
             _vm._v(" "),
             _c("ul", [
               _c("li", [
-                _vm._v(
-                  "\n          Manual and robotized serial production\n        "
-                )
+                _vm._v(_vm._s(_vm.$t("wholesale.pages.pcb.list2.list-item")))
               ]),
               _vm._v(" "),
-              _c("li", [_vm._v("\n          Control and testing\n        ")]),
+              _c("li", [
+                _vm._v(_vm._s(_vm.$t("wholesale.pages.pcb.list2.list-item2")))
+              ]),
               _vm._v(" "),
-              _c("li", [_vm._v("\n          Quality guaranteed\n        ")]),
+              _c("li", [
+                _vm._v(_vm._s(_vm.$t("wholesale.pages.pcb.list2.list-item3")))
+              ]),
               _vm._v(" "),
-              _c("li", [_vm._v("\n          Affordable prices\n        ")])
+              _c("li", [
+                _vm._v(_vm._s(_vm.$t("wholesale.pages.pcb.list2.list-item4")))
+              ])
             ])
           ])
         ],
@@ -74880,7 +75499,7 @@ webpackContext.id = "./resources/js/locales sync recursive [A-Za-z0-9-_,\\s]+\\.
 /*! exports provided: app, nav, contact-fixed, prefooter, about-us, why-choose-us-home, wire-and-cable-harness, wholesale, contact-us, default */
 /***/ (function(module) {
 
-module.exports = JSON.parse("{\"app\":\"Ecomponents d.o.o\",\"nav\":{\"wholesale\":\"wholesale\",\"home\":\"Home\",\"about-us\":\"About us\",\"contact-us\":\"Contact us\",\"gallery\":\"Gallery\",\"wires-and-harness\":\"Wire and cable harnessing\"},\"contact-fixed\":{\"title\":{\"text\":\"Have\",\"span\":\"questions?\"},\"button\":\"Contact us\"},\"prefooter\":{\"title-left\":\"Wholesale\",\"title-right\":\"Learn more\",\"links-left\":{\"wires-cables\":\"Wires and cables\",\"connectors\":\"Connectors & electronic components\",\"pcb\":\"PCBs\",\"led\":\"LEDs\",\"cables\":\"Cable accessories\",\"harware\":\"Hardware\"}},\"about-us\":{\"title\":{\"text\":\"About\",\"span\":\"us\"},\"text1\":\"Welcome to eComponents, your number one source for all things electronics. We're dedicated to giving you the very best of electronic components, with a focus on customer service,dependability and uniqueness.\",\"text2\":\"When eComponents team first started out, our passion for helping innovative people accomplish incredible things drove us to quit our day jobs, and gave us the impetus to turn hard work and inspiration into this booming endeavor.\",\"text3\":\"We now provide our customers with electronic components – wires and cables, connectors, active and passive components of the highest quality made by world’s leading manufacturers, such as Molex, TE Connectivity, JST, MEDIKabel, HELUKABEL etc., at very competitive prices. We navigate our way through the ocean of electronic equipment, terminology, and data sheets with ease - so you don’t have to!\",\"text4\":\"We also excel at producing custom cable assemblies and cable harnesses for all your connecting needs. If you can imagine it, we can make it; you put all the pieces together, we’ll make them work!\",\"text5\":\"eComponents is based in Serbia, but we are able to ship anywhere in the world. We are thrilled to be a part of the ever-growing wing of the electronics industry.\",\"text6\":\"If you have any questions or comments, please don't hesitate to contact us. Our polite staff will gladly assist you and provide answers to your inquiries as soon as possible. We are looking forward to working with you!\",\"sincerely\":\"Sincerely\",\"stamp\":\"eComponents team\",\"make-it-work\":\"make it work\"},\"why-choose-us-home\":{\"main-title\":{\"text\":\"Why choose\",\"span\":\"eComponents d.o.o\"},\"title\":\"Fast quotation\",\"description\":\"We dedicate our time to ensure that all enquiries are quoted in a timely manner.\",\"title2\":\"Save money\",\"description2\":\"With our competitive pricing and multi-skilled workers, customers are able to reduce operating costs and save money when outsourcing production to eComponents.\",\"title3\":\"Experience\",\"description3\":\"For years now, our main goal has been to provide the best quality service for our customers.\",\"title4\":\"On-time delivery\",\"description4\":\"With our quick delivery system, we ensure fast shipment all over the world.\",\"title5\":\"Trusted\",\"description5\":\"We are trusted member of domestic and global supply chain.\",\"title6\":\"Quality\",\"description6\":\"We offer top quality services, products and raw materials, all certified.\"},\"wire-and-cable-harness\":{\"button\":\"Read more\",\"title\":{\"text\":\"wire and\",\"span\":\"cable harness\"},\"description\":\"We offer our customers and partners in different industries tailor-made solutions in the field of wire harnesses. Home appliance industry, gaming and vending machines industry and many other rely on us to bring their designs to life. Be it a single wire or a complex wire harness system – we got you covered!\",\"description2\":\"We offer services that cover everything from prototyping to series manufacture. Being also the supplier of electronic components eComponents offers a wide variety of cable harness solutions with different combinations of connectors, conductors, cable accessories etc. All of our cable assemblies are customized, incorporating custom lengths, colors and special pin-outs in our designs – per customer request.\",\"description3\":\"eComponents offers development and manufacture of wire harnesses, including:\",\"description4\":{\"title\":\"Prototyping\",\"text\":\"we can make fully functional prototypes based off of your design - be it a description or a photo (if possible); or a technical drawing or reverse-engineering a sample. We also offer help with choosing the right connectors, conductors and other parts for your product.\"},\"description5\":{\"title\":\"Documenting \",\"text\":\"we can make detailed documentation including drawings, BOMs and other information about the product you need. Once we define your wire harness and assign it an article number you can easily order it anytime or make changes to it as easy as referencing it to our technicians.\"},\"description6\":{\"title\":\"Manufacture\",\"text\":\"we can produce wire harnesses in greater quantities with no loss in quality and with great attention to detail. This applies to the simplest of cables as well as the more complex cable systems. We offer classic plug-in contacts with (or without) housings on conductors of many different cross-sectional areas, colors, qualities, standards and certifications.\"},\"description7\":{\"title\":\"Quality control\",\"text\":\"we send you the cable harnesses only after they have been thoroughly tested by our quality control. This is very important to us, and we know it is very important to our customers.\"},\"description8\":\"With experience and the “know-how” in combination with professional equipment and devotion to helping our customers do incredible things, we are able to create custom and innovative products that can fulfil all your needs.\",\"description9\":\"Please use the contact form bellow to contact us today and… MAKE IT WORK!\"},\"wholesale\":{\"text\":\"whole\",\"span\":\"sale\",\"pages\":{\"wires\":{\"title\":{\"text\":\"Wires and\",\"span\":\"cables categories\"},\"sub-section\":{\"wires\":{\"title\":\"Wires\",\"sub-title\":{\"text\":\"LIY wires\",\"span\":\"for electronics\"},\"paragraph\":\"Vast range\",\"description\":\"Help with making the right choice\",\"description2\":\"Special offer - measuring cables to required length\",\"liy\":\"liy\",\"list\":{\"title\":\"Conductors with various cross-sections\",\"list-item\":\"Conductors with different cross-sectional areas for different uses\",\"list-item2\":\"0,14mm2; 0,25mm2; 0,34mm2........ 1mm2; 1,5mm2; 2,5mm2;..........10mm2 or 28AWG, 24AWG, 22AWG…….18AWG, 16AWG, 14AWG...\"},\"list2\":{\"title\":\"Colored wires\",\"list-item\":\"A wide specter of colors and shades\",\"list-item2\":\"Two-colored wires with vertical stripe or ring stripe\"},\"list3\":{\"title\":\"Standard\",\"list-item\":\"Conductors manufactured by standards for European and American markets (VDE, UL, cUL...)\",\"list-item2\":\"Conductors of many different structures and materials, tested for functioning in out-of-ordinary circumstances (high temperature, moisture, indoor/outdoor use...)\"},\"note\":\"for certain conductors\"},\"cables\":{\"title\":\"Cables\",\"sub-title\":{\"text\":\"Multi-core cables to\",\"span\":\"fit all your needs\"},\"paragraph\":\"Large choice\",\"description\":\"Help with choosing the right cable\",\"multi-core\":\"MULTI-CORE LIYY, LIY-CY, SIGNAL, CONTROL AND POWER CABLES\",\"list\":{\"title\":\"Multi-core cables\",\"list-item\":\"Cables with two or more cores with different cross-sections and colors\",\"list-item2\":\"We offer multi-core cables with all configurations - 2x0,25mm2 ; 2x0,34mm2… 5x0,25mm2, 5x0,34mm2….. the same goes for UL certified cables in which case the configurations are marked in the following way - 2x24AWG; 2x22AWG….. 5x24AWG; 5x22AWG etc.\"},\"list2\":{\"title\":\"Power cables\",\"list-item\":\"All kinds of power cables for different currents\"},\"note\":\"for certain conductors\"},\"ready-made\":{\"title\":\"READY-MADE CABLE ASSEMBLIES THAT YOU NEED ALL THE TIME\",\"sub-title\":{\"text\":\"Cable\",\"span\":\"assemblies\"},\"description\":\"Wide assortment of cable assemblies\",\"description2\":\"Stay connected at any moment\",\"description3\":\"Possibility of special order\",\"list\":{\"title\":\"USB cables\",\"list-item\":\"We offer USB cables of different colors and lengths, with the connectors combinations that work for you.\",\"list-item2\":{\"title\":\"Combinations\",\"paragraph\":\"Type A male – Type A female (extension USB type A cable with or without screws for mounting\",\"paragraph2\":\"Type A – Type B, Type B mini, Type B micro\",\"paragraph3\":\"Type A – Type\",\"paragraph4\":\"and others...\"},\"list-item3\":\"Angled connectors (90 degrees, left angle, right angle, etc…)\"},\"list2\":{\"title\":\"Audio and video cables\",\"list-item\":\"Monitor cables for all of your screen types (HDMI, DVI, DP, VGA…)\",\"list-item2\":\"Audio cables (with speaker jacks and other connectors)\"},\"list3\":{\"title\":\"And others per your request...\",\"list-item\":\"We also offer wire and cable harness manufacture per your design - from smaller cable harness to bigger and more complex cable systems.\",\"click-here\":{\"text\":\"Click the\",\"span\":\"picture for more details\"}}}}},\"connectors\":{\"title\":{\"text\":\"Cable\",\"span\":\"assemblies\"},\"description\":\"Wide assortment of cable assemblies Stay connected at any moment Possibility of special order\"},\"pcb\":{\"title\":{\"span\":\"pcbs\"}},\"led\":{\"title\":{\"span\":\"leds\"}},\"accessories\":{\"title\":{\"span\":\"cable accessories\"}},\"hardware\":{\"title\":{\"span\":\"hardware\"}}}},\"contact-us\":{\"title\":{\"span\":\"us\",\"text\":\"contact\"},\"phone\":\"Phone\",\"address\":\"Address\",\"button\":\"send\",\"name\":\"First name\",\"email\":\"Email\",\"country\":\"Country\",\"phone-placeholder\":\"Phone number\",\"message\":\"Message\",\"upload\":\"Upload images\"}}");
+module.exports = JSON.parse("{\"app\":\"Ecomponents d.o.o\",\"nav\":{\"wholesale\":\"wholesale\",\"home\":\"Home\",\"about-us\":\"About us\",\"contact-us\":\"Contact us\",\"gallery\":\"Gallery\",\"wires-and-harness\":\"Wire and cable harnessing\"},\"contact-fixed\":{\"title\":{\"text\":\"Have\",\"span\":\"questions?\"},\"button\":\"Contact us\"},\"prefooter\":{\"title-left\":\"Wholesale\",\"title-right\":\"Learn more\",\"links-left\":{\"wires-cables\":\"Wires and cables\",\"connectors\":\"Connectors & electronic components\",\"pcb\":\"PCBs\",\"led\":\"LEDs\",\"cables\":\"Cable accessories\",\"harware\":\"Hardware\"}},\"about-us\":{\"title\":{\"text\":\"About\",\"span\":\"us\"},\"text1\":\"Welcome to eComponents, your number one source for all things electronics. We're dedicated to giving you the very best of electronic components, with a focus on customer service,dependability and uniqueness.\",\"text2\":\"When eComponents team first started out, our passion for helping innovative people accomplish incredible things drove us to quit our day jobs, and gave us the impetus to turn hard work and inspiration into this booming endeavor.\",\"text3\":\"We now provide our customers with electronic components – wires and cables, connectors, active and passive components of the highest quality made by world’s leading manufacturers, such as Molex, TE Connectivity, JST, MEDIKabel, HELUKABEL etc., at very competitive prices. We navigate our way through the ocean of electronic equipment, terminology, and data sheets with ease - so you don’t have to!\",\"text4\":\"We also excel at producing custom cable assemblies and cable harnesses for all your connecting needs. If you can imagine it, we can make it; you put all the pieces together, we’ll make them work!\",\"text5\":\"eComponents is based in Serbia, but we are able to ship anywhere in the world. We are thrilled to be a part of the ever-growing wing of the electronics industry.\",\"text6\":\"If you have any questions or comments, please don't hesitate to contact us. Our polite staff will gladly assist you and provide answers to your inquiries as soon as possible. We are looking forward to working with you!\",\"sincerely\":\"Sincerely\",\"stamp\":\"eComponents team\",\"make-it-work\":\"make it work\"},\"why-choose-us-home\":{\"main-title\":{\"text\":\"Why choose\",\"span\":\"eComponents d.o.o\"},\"title\":\"Fast quotation\",\"description\":\"We dedicate our time to ensure that all enquiries are quoted in a timely manner.\",\"title2\":\"Save money\",\"description2\":\"With our competitive pricing and multi-skilled workers, customers are able to reduce operating costs and save money when outsourcing production to eComponents.\",\"title3\":\"Experience\",\"description3\":\"For years now, our main goal has been to provide the best quality service for our customers.\",\"title4\":\"On-time delivery\",\"description4\":\"With our quick delivery system, we ensure fast shipment all over the world.\",\"title5\":\"Trusted\",\"description5\":\"We are trusted member of domestic and global supply chain.\",\"title6\":\"Quality\",\"description6\":\"We offer top quality services, products and raw materials, all certified.\"},\"wire-and-cable-harness\":{\"button\":\"Read more\",\"title\":{\"text\":\"wire and\",\"span\":\"cable harness\"},\"description\":\"We offer our customers and partners in different industries tailor-made solutions in the field of wire harnesses. Home appliance industry, gaming and vending machines industry and many other rely on us to bring their designs to life. Be it a single wire or a complex wire harness system – we got you covered!\",\"description2\":\"We offer services that cover everything from prototyping to series manufacture. Being also the supplier of electronic components eComponents offers a wide variety of cable harness solutions with different combinations of connectors, conductors, cable accessories etc. All of our cable assemblies are customized, incorporating custom lengths, colors and special pin-outs in our designs – per customer request.\",\"description3\":\"eComponents offers development and manufacture of wire harnesses, including:\",\"description4\":{\"title\":\"Prototyping\",\"text\":\"we can make fully functional prototypes based off of your design - be it a description or a photo (if possible); or a technical drawing or reverse-engineering a sample. We also offer help with choosing the right connectors, conductors and other parts for your product.\"},\"description5\":{\"title\":\"Documenting \",\"text\":\"we can make detailed documentation including drawings, BOMs and other information about the product you need. Once we define your wire harness and assign it an article number you can easily order it anytime or make changes to it as easy as referencing it to our technicians.\"},\"description6\":{\"title\":\"Manufacture\",\"text\":\"we can produce wire harnesses in greater quantities with no loss in quality and with great attention to detail. This applies to the simplest of cables as well as the more complex cable systems. We offer classic plug-in contacts with (or without) housings on conductors of many different cross-sectional areas, colors, qualities, standards and certifications.\"},\"description7\":{\"title\":\"Quality control\",\"text\":\"we send you the cable harnesses only after they have been thoroughly tested by our quality control. This is very important to us, and we know it is very important to our customers.\"},\"description8\":\"With experience and the “know-how” in combination with professional equipment and devotion to helping our customers do incredible things, we are able to create custom and innovative products that can fulfil all your needs.\",\"description9\":\"Please use the contact form bellow to contact us today and… MAKE IT WORK!\"},\"wholesale\":{\"text\":\"whole\",\"span\":\"sale\",\"pages\":{\"wires\":{\"title\":{\"text\":\"Wires and\",\"span\":\"cables categories\"},\"sub-section\":{\"wires\":{\"title\":\"Wires\",\"sub-title\":{\"text\":\"LIY wires\",\"span\":\"for electronics\"},\"paragraph\":\"Vast range\",\"description\":\"Help with making the right choice\",\"description2\":\"Special offer - measuring cables to required length\",\"liy\":\"liy\",\"list\":{\"title\":\"Conductors with various cross-sections\",\"list-item\":\"Conductors with different cross-sectional areas for different uses\",\"list-item2\":\"0,14mm2; 0,25mm2; 0,34mm2........ 1mm2; 1,5mm2; 2,5mm2;..........10mm2 or 28AWG, 24AWG, 22AWG…….18AWG, 16AWG, 14AWG...\"},\"list2\":{\"title\":\"Colored wires\",\"list-item\":\"A wide specter of colors and shades\",\"list-item2\":\"Two-colored wires with vertical stripe or ring stripe\"},\"list3\":{\"title\":\"Standard\",\"list-item\":\"Conductors manufactured by standards for European and American markets (VDE, UL, cUL...)\",\"list-item2\":\"Conductors of many different structures and materials, tested for functioning in out-of-ordinary circumstances (high temperature, moisture, indoor/outdoor use...)\"},\"note\":\"for certain conductors\"},\"cables\":{\"title\":\"Cables\",\"sub-title\":{\"text\":\"Multi-core cables to\",\"span\":\"fit all your needs\"},\"paragraph\":\"Large choice\",\"description\":\"Help with choosing the right cable\",\"multi-core\":\"MULTI-CORE LIYY, LIY-CY, SIGNAL, CONTROL AND POWER CABLES\",\"list\":{\"title\":\"Multi-core cables\",\"list-item\":\"Cables with two or more cores with different cross-sections and colors\",\"list-item2\":\"We offer multi-core cables with all configurations - 2x0,25mm2 ; 2x0,34mm2… 5x0,25mm2, 5x0,34mm2….. the same goes for UL certified cables in which case the configurations are marked in the following way - 2x24AWG; 2x22AWG….. 5x24AWG; 5x22AWG etc.\"},\"list2\":{\"title\":\"Power cables\",\"list-item\":\"All kinds of power cables for different currents\"},\"note\":\"for certain conductors\"},\"ready-made\":{\"title\":\"READY-MADE CABLE ASSEMBLIES THAT YOU NEED ALL THE TIME\",\"sub-title\":{\"text\":\"Cable\",\"span\":\"assemblies\"},\"description\":\"Wide assortment of cable assemblies\",\"description2\":\"Stay connected at any moment\",\"description3\":\"Possibility of special order\",\"list\":{\"title\":\"USB cables\",\"list-item\":\"We offer USB cables of different colors and lengths, with the connectors combinations that work for you.\",\"list-item2\":{\"title\":\"Combinations\",\"paragraph\":\"Type A male – Type A female (extension USB type A cable with or without screws for mounting\",\"paragraph2\":\"Type A – Type B, Type B mini, Type B micro\",\"paragraph3\":\"Type A – Type\",\"paragraph4\":\"and others...\"},\"list-item3\":\"Angled connectors (90 degrees, left angle, right angle, etc…)\"},\"list2\":{\"title\":\"Audio and video cables\",\"list-item\":\"Monitor cables for all of your screen types (HDMI, DVI, DP, VGA…)\",\"list-item2\":\"Audio cables (with speaker jacks and other connectors)\"},\"list3\":{\"title\":\"And others per your request...\",\"list-item\":\"We also offer wire and cable harness manufacture per your design - from smaller cable harness to bigger and more complex cable systems.\",\"click-here\":{\"text\":\"Click the\",\"span\":\"picture for more details\"}}}}},\"connectors\":{\"title\":{\"text\":\"Connectors, terminals\",\"span\":\"and electronic components\"},\"sub-section\":{\"connectors\":{\"title\":\"Connectors\",\"sub-title\":{\"text\":\"Connectors for\",\"span\":\"every connection type\"},\"paragraph\":\"Wide variety of connectors for different uses\",\"description\":\"Help with finding the right connector type\",\"description2\":\"Possibility of ordering alternative connector types\",\"list\":{\"title\":\"Manufacturers and configurations\",\"list-item\":\"Broad selection of connectors of world’s renowned manufacturers such as Molex, TE Connectivity, JST…\",\"list-item2\":\"Our offer includes connectors with different pitch and pin configuration, power connectors, audio and video connectors, signal connectors, data connectors and many more.\"},\"list2\":{\"title\":\"Crimp contacts and connector housings\",\"list-item\":\"With every connector we offer it’s corresponding crimp contacts suitable for conductors of different thickness, as well as connector back shells for the connectors that use them\"},\"list3\":{\"title\":\"Alternative offer\",\"list-item\":\" eComponents also offers alternative models of connectors, manufactured by our Chinese partners if your project demands lower priced, but still very reliable components\"}},\"terminals\":{\"title\":\"Terminals\",\"sub-title\":{\"text\":\"Terminal for\",\"span\":\"every wire end\"},\"paragraph\":\"Different characteristics terminals\",\"description\":\"Simple application\",\"description2\":\"Easy mounting\",\"wire-cable\":\"Wire and cable terminals\",\"list\":{\"title\":\"Types of terminals\",\"list-item\":\"We offer the following types of terminals:\",\"list-item2\":\"Fork terminals (M3, M4, M5…)\",\"list-item3\":\"Ring terminals (3mm, 4mm, 5mm… diameter)\",\"list-item4\":\"Quick connect terminals (2.8mm, 4.8mm, 6.3mm width)\",\"list-item5\":\"and others...Bootlace ferrules\",\"list-item6\":\"Splices\",\"list-item7\":\"And more!\",\"list-item8\":\"Our offer includes connectors with different pitch and pin configuration, power connectors, audio and video connectors, signal connectors, data connectors and many more.\"},\"list2\":{\"title\":\"Crimp contacts and connector housings\",\"list-item\":\"With every connector we offer it’s corresponding crimp contacts suitable for conductors of different thickness, as well as connector backshells for the connectors that use them\"},\"list3\":{\"title\":\"Alternative offer\",\"list-item\":\"eComponents also offers alternative models of connectors, manufactured by our Chinese partners if your project demands lower priced, but still very reliable components\"}},\"components\":{\"title\":\"Electronic components\",\"sub-title\":{\"text\":\"All electronic\",\"span\":\"components in one place\"},\"paragraph\":\"Great selection of active and passive components\",\"description\":\"Electronic components for machines and appliances\",\"description2\":\"Help with selection\",\"list\":{\"title\":\"Large choice\",\"list-item\":\"Large choice\",\"list-item2\":\"Relays, LED indicators, resistors, fuses, fuse holders…\"},\"list2\":{\"title\":\"Quantities\",\"list-item\":\"We can supply you with electronic components starting from few pieces to thousands of pieces\"}}}},\"pcb\":{\"title\":\"pcbs\",\"sub-title\":{\"text\":\"PCB\",\"span\":\"design\"},\"paragraph\":\"Rapid prototyping\",\"paragraph2\":\"Serial production\",\"description\":\"Filling of PCB with SMT components\",\"list\":{\"title\":\"Assistance with design\",\"list-item\":\"Design per customer request\",\"list-item2\":\"Making documentation\",\"list-item3\":\"Electronic design\",\"list-item4\":\"PCB design\",\"list-item5\":\"Quick prototyping\"},\"list2\":{\"title\":\"Production\",\"list-item\":\"Manual and robotized serial production\",\"list-item2\":\"Control and testing\",\"list-item3\":\"Quality guaranteed\",\"list-item4\":\"Affordable prices\"}},\"led\":{\"title\":\"led program\",\"sub-title\":{\"text\":\"Led\",\"span\":\"lightning\"},\"paragraph\":\"Wide range of every connection type\",\"paragraph2\":\"Possible mounting of cables and connectors on LED strips and modules for easier connection\",\"paragraph3\":\"Easy mounting (3M strip)\",\"list\":{\"list-item\":\"Diverse assortment of LED strips and modules\",\"list-item2\":\"Strips with different number of LEDs per meter (30LED/m, 60LED/m…)\",\"list-item3\":\"One-coloured and RGB strips\",\"list-item4\":\"Different LEDs dimension (3030, 3528, 5050 and other)\",\"list-item5\":\"Strips with different certificates IP protection (Without protection, impact resistant, dust, water (glued) and other)\"}},\"accessories\":{\"title\":\"Cable accessories\",\"sub-title\":{\"text\":\"Everything you need for\",\"span\":\"flawless cable assembly and isolation\"},\"paragraph\":\"PVC cable ties and holders\",\"paragraph2\":\"PVC tubes\",\"paragraph3\":\"Everything you need for neat wiring and marking in one place\",\"list\":{\"title\":\"Cable ties and cable holders\",\"list-item\":\"Cable ties different dimension and colors for fixing cables\",\"list-item2\":\"Holders and cable mounts for easier cable handling\"},\"list2\":{\"title\":\"Isolation program\",\"list-item\":\"Heat shrinking tubes different sizes and scales, for wires and cables isolation\",\"list-item2\":\"PVC tubes different sizes and dimensions\",\"list-item3\":\"Ribbed PVC tubes, PVC chains and others\"},\"list3\":{\"title\":\"Alternative offer\",\"list-item\":\"eComponents also offers alternative models of connectors, manufactured by our Chinese partners if your project demands lower priced, but still very reliable components\"}},\"hardware\":{\"title\":\"hardware\",\"sub-title\":{\"text\":\"Hardware components\",\"span\":\"for many devices\"},\"paragraph\":\"Metal housings\",\"paragraph2\":\"Power supply\",\"list\":{\"list-item\":\"Possible procurement of different parts for devices, like built-in monitors, touch screen monitors, LED panels, power supplies, Bluetooth modules, antennas, amplifier, and many other parts that you require.\",\"list-item2\":\"Retail and bulk procuring from European and American distributors, as well as from our Chinese partners at good prices with short delivery time\",\"list-item3\":\"Metal housings, plexiglass parts and other\"}}}},\"contact-us\":{\"title\":{\"span\":\"us\",\"text\":\"contact\"},\"phone\":\"Phone\",\"address\":\"Address\",\"button\":\"send\",\"name\":\"First name\",\"email\":\"Email\",\"country\":\"Country\",\"phone-placeholder\":\"Phone number\",\"message\":\"Message\",\"upload\":\"Upload images\"}}");
 
 /***/ }),
 
@@ -74891,7 +75510,7 @@ module.exports = JSON.parse("{\"app\":\"Ecomponents d.o.o\",\"nav\":{\"wholesale
 /*! exports provided: app, nav, contact-fixed, prefooter, about-us, why-choose-us-home, wire-and-cable-harness, wholesale, contact-us, default */
 /***/ (function(module) {
 
-module.exports = JSON.parse("{\"app\":\"Ecomponents d.o.o\",\"nav\":{\"wholesale\":\"prodaja\",\"home\":\"početna\",\"about-us\":\"O nama\",\"contact-us\":\"Kontakt\",\"gallery\":\"Galerija\",\"wires-and-harness\":\"Ugradnja žice i kablova\"},\"contact-fixed\":{\"title\":{\"text\":\"Imate\",\"span\":\"pitanje?\"},\"button\":\"Kontaktirajte nas\"},\"prefooter\":{\"title-left\":\"Prodaja\",\"title-right\":\"Pogledajte još\",\"links-left\":{\"wires-cables\":\"Žice i kablovi\",\"connectors\":\"Konektori & elektronske komponenete\",\"pcb\":\"PCBs\",\"led\":\"LEDs\",\"cables\":\"Dodaci za kablove\",\"harware\":\"Hardware\"}},\"about-us\":{\"title\":{\"text\":\"O\",\"span\":\"nama\"},\"text1\":\"Dobrodošli u eComponents, vaš najbolji izvor svih stvari vezanih za elektroniku. Posvećeni smo tome da vam ponudimo najbolje od elektronskih komponenti, sa fokusom na uslugu i pomoć kupcima, pouzdane proizvode i jedinstvenost\",\"text2\":\"Naša strast i želja da pomognemo inovativnim ljudima u postizanju neverovatnih stvari su nas motivisale da napustimo svoje tadašnje poslove i dale nam podsticaj da pretvorimo naporan rad i inspiraciju u ovaj brzo-rastući poduhvat.\",\"text3\":\"Sada snabdevamo naše klijente sa elektronskim komponentama – žicama i kablovima, konektorima, aktivnim i pasivnim komponentama najboljeg kvaliteta vodećih svetskih proizvođača, kao što su Molex, TE Connectivity, JST, MEDIKabel, HELUKABEL itd., po veoma kompetitivnim cenama. Sa lakoćom se snalazimo u okeanu elektronike, terminologije i tehničkih crteža – pa vi ne morate!\",\"text4\":\"Takođe, ističemo se i proizvodnjom kablovskih veza i sklopova po vašim instrukcijama i zahtevima. Ono što vi zamislite, mi možemo da napravimo; vi sastavite sve delove, a mi ćemo se pobrinuti da oni ožive.\",\"text5\":\"eComponents se nalazi u Srbiji, ali možemo da vršimo isporuke svuda u svetu. Uzbuđeni smo što smo deo rastuće grane elektronske industrije.\",\"text6\":\"Ako imate neka pitanja ili komentare, molimo vas ne oklevajte da nas kontaktirate. Naše ljubazno osoblje će vam rado izaći u susret i u najkraćem roku odgovoriti na vaše upite. Radujemo se saradnji sa vama!\",\"sincerely\":\"S poštovanjem\",\"stamp\":\"eComponents tim\"},\"why-choose-us-home\":{\"main-title\":{\"text\":\"Zašto da izaberete\",\"span\":\"eComponents d.o.o\"},\"title\":\"Brza ponuda\",\"description\":\"Posvećeni smo tome da odgovorimo na sve upite u najkraćem vremenskom roku.\",\"title2\":\"Ušteda novca\",\"description2\":\"Uz naše kompetitivne cene i vešte radnike, klijenti mogu značajno uštedeti 'outsourcing-om' proizvodnje kablovskih veza eComponents-u.\",\"title3\":\"Iskustvo\",\"description3\":\"Već godinama, naš glavni cilj je da ponudimo uslugu najboljeg kvaliteta svojim mušterijama.\",\"title4\":\"Isporuka na vreme\",\"description4\":\"Sa našim sistemom isporuke, osiguravamo brzu isporuku širom sveta.\",\"title5\":\"Poverenje\",\"description5\":\"Mi smo pouzdan član domaćeg i globalnog lanca distribucije elektronskih komponenti.\",\"title6\":\"Kvalitet\",\"description6\":\"Nudimo usluge i proizvode vrhunskog kvaliteta sa sertifikatima.\"},\"wire-and-cable-harness\":{\"button\":\"Detaljnije\",\"title\":{\"text\":\"ugradnja žice\",\"span\":\"i kablova\"},\"description\":\"Svojim klijentima i poslovnim partnerima u različitim industrijama nudimo rešenja ‘’po meri’’ u oblasti kablovskih veza i sklopova. Industrija kućnih aparata, gejming i vending aparata i mnoge druge industrije se oslanjaju na nas da udahnemo život u njihove dizajne. Bilo da je u pitanju jedna žica ili komplikovan kablovski sistem – možete računati na nas!\",\"description2\":\"Nudimo usluge koje pokrivaju sve od izrade prototipa do serijske proizvodnje. Obzirom na to da jetakođe dobavljač elektronskih komponenti, eComponents takođe nudi širok izbor kablovskih rešenja sarazličitom kombinacijom konektora, provodnika, dodataka za kablove itd. Svi naši kablovski sklopovi suprilagođeni želji kupca po boji, dužini i posebnim pinovanjem.\",\"description3\":\"eComponents nudi razvoj i proizvodnju kablovskih sklopova, kao što su:\",\"description4\":{\"title\":\"Izrada prototipa\",\"text\":\"možemo da napravimo funkcionalne prototipe bazirane na vašem dizajnu – biloda je to opis ili fotografija; ili tehnički crtež, obrnuti inženjering (reverse-engineering), uzorak kabela.Takođe, nudimo pomoć prilikom odabira konektora, provodnika i drugih delova vašeg proizvoda.\"},\"description5\":{\"title\":\"Dokumentovanje\",\"text\":\"možemo da napravimo detaljnu dokumentaciju, koja uključuje crteže, listematerijala i druge informacije potrebne za proizvod. Kada definišemo kablovski sklop i dodelimo mu brojartikla, nakon toga možete sa lakoćom poručiti željeni artikal ili napraviti promene, odnosno revizije nakabelu u bilo kom trenutku, uz pomoć naših tehničara.\"},\"description6\":{\"title\":\"Proizvodnja\",\"text\":\"nudimo vam proizvodnju kablovskih sklopova u velikim količinama bez gubitka ukvalitetu sa izuzetnom pažnjom na detalje. Ovo se odnosi na jednostavne kablove kao i nakomplikovanije kablovske sisteme. Nudimo klasične plug-in kontakte sa (ili bez) kućišta na provodnicimarazličitih preseka, boja, kvaliteta, standarda i sertifikata.\"},\"description7\":{\"title\":\"Kontrola kvaliteta\",\"text\":\"svaki kablovski sklop, pre samog slanja, prolazi kroz seriju detaljnih testiranjaod strane naše kontrole kvaliteta. Ovo je za nas veoma važno, i znamo da je to jednako važno za našeklijente.\"},\"description8\":\"Sa iskustvom i veštinama u kombinaciji sa profesionalnom opremom i posvećenosti u pomaganju našimklijentima da ostvare svoje ciljeve, u mogućnosti smo da stvorimo prilagođene i inovativne proizvodekako bismo ispunili sve potrebe naših klijenata.\",\"description9\":\"Kontaktirajte nas putem naše kontakt forme već danas i … MAKE IT WORK!\"},\"wholesale\":{\"text\":\"pro\",\"span\":\"daja\",\"pages\":{\"wires\":{\"title\":{\"text\":\"Žice i\",\"span\":\"kablovi\"},\"sub-section\":{\"wires\":{\"title\":\"Žice\",\"sub-title\":{\"text\":\"Licnasti provodnici\",\"span\":\"za elektorniku\"},\"paragraph\":\"Veliki izbor\",\"description\":\"Pomoć pri odabiru. Mogućnost merenja provodnika na željenu dužinu\",\"liy\":\"liy\",\"list\":{\"title\":\"Provodnici svih preseka\",\"list-item\":\"Provodnici različitih poprečnih preseka za različitu upotrebu\",\"list-item2\":\"0,14mm2; 0,25mm2; 0,34mm2........ 1mm2; 1,5mm2; 2,5mm2;..........10mm2..........\"},\"list2\":{\"title\":\"Provodnici različitih boja \",\"list-item\":\"Širok spektar boja i nijansi\",\"list-item2\":\"Dvobojne žice sa poprečnom i uzdužnom šarom\"},\"list3\":{\"title\":\"Standard\",\"list-item\":\"Provodnici po standardima za evropsko i američko tržište (VDE, UL, cUL...)\",\"list-item2\":\"Provodnici različite strukture i materijala po propisanim standardima i testiranim za rad u izuzetnim okolnostima (visoka temperatura, vlaga, unutrašnja/spoljašnja upotreba...)\"},\"note\":\"za određene provodnike\"},\"cables\":{\"title\":\"Kablovi\",\"sub-title\":{\"text\":\"PVC kablovi za\",\"span\":\"sve vaše potrebe\"},\"paragraph\":\"Veliki izbor\",\"description\":\"Pomoć pri odabiru. Mogućnost merenja provodnika na željenu dužinu\",\"multi-core\":\"Višežilni, širmovani, signalni kablovi\",\"list\":{\"title\":\"Kablovi sa više jezgara\",\"list-item\":\"Kablovi sa dva ili više jezgra sa različitim presecima jezgara i određenim bojama\",\"list-item2\":\"U ponudi imamo kablove 2x0,25mm2 ; 2x0,34mm2… 5x0,25mm2, 5x0,34mm2…..\"},\"list2\":{\"title\":\"Naponski kablovi\",\"list-item\":\"Sve vrste naponskih kablova za nizak, srednji ili visok napon\"},\"note\":\"za određene provodnike\"},\"ready-made\":{\"title\":\"Gotovi kablovi koji su vam uvek potrebni\",\"sub-title\":{\"text\":\"Gotovi\",\"span\":\"kablovi\"},\"description\":\"Širok asortiman gotovih kablova\",\"description2\":\"Budite povezani u svakom trenutku\",\"description3\":\"Mogućnost specijalne porudžbine\",\"list\":{\"title\":\"USB kablovi\",\"list-item\":\"U ponudi imamo USB kablove različitih boja i dužina, sa kombinacijom konektora koji vam odgovaraju.\",\"list-item2\":{\"title\":\"Kombinacije\",\"paragraph\":\"Type A male – Type A female (produžni USB type A kabl sa ili bez šrafova za montažu)\",\"paragraph2\":\"Type A – Type B, Type B mini, Type B micro\",\"paragraph3\":\"Type A – Type\",\"paragraph4\":\"i drugi...\"},\"list-item3\":\"Konektori pod uglom\"},\"list2\":{\"title\":\"Audio i video kablovi\",\"list-item\":\"Monitor kablovi za sve tipove vaših ekrana (HDMI, DVI, DP, VGA…)\",\"list-item2\":\"Audio kablovi (bananice)\"},\"list3\":{\"title\":\"I drugi po vašem zahtevu...\",\"list-item\":\"Nudimo i proizvodnju kablovskih sklopova po vašem zahtevu – od manjih kablova do velikih sklopova\",\"click-here\":{\"text\":\"Za više informacija\",\"span\":\"kliknite na sliku\"}}}}},\"connectors\":{\"title\":{\"text\":\"Cable\",\"span\":\"assemblies\"},\"description\":\"Wide assortment of cable assemblies Stay connected at any moment Possibility of special order\"},\"pcb\":{\"title\":{\"span\":\"pcbs\"}},\"led\":{\"title\":{\"span\":\"leds\"}},\"accessories\":{\"title\":{\"span\":\"cable accessories\"}},\"hardware\":{\"title\":{\"span\":\"hardware\"}}}},\"contact-us\":{\"title\":{\"span\":\"nas\",\"text\":\"kontaktirajte\"},\"phone\":\"Telefon\",\"address\":\"Adresa\",\"button\":\"pošalju\",\"name\":\"Ime\",\"email\":\"Email\",\"country\":\"Zemlja\",\"phone-placeholder\":\"Telefon\",\"message\":\"Poruka\",\"upload\":\"Dodajte sliku\"}}");
+module.exports = JSON.parse("{\"app\":\"Ecomponents d.o.o\",\"nav\":{\"wholesale\":\"prodaja\",\"home\":\"početna\",\"about-us\":\"O nama\",\"contact-us\":\"Kontakt\",\"gallery\":\"Galerija\",\"wires-and-harness\":\"Ugradnja žice i kablova\"},\"contact-fixed\":{\"title\":{\"text\":\"Imate\",\"span\":\"pitanje?\"},\"button\":\"Kontaktirajte nas\"},\"prefooter\":{\"title-left\":\"Prodaja\",\"title-right\":\"Pogledajte još\",\"links-left\":{\"wires-cables\":\"Žice i kablovi\",\"connectors\":\"Konektori & elektronske komponenete\",\"pcb\":\"PCBs\",\"led\":\"LEDs\",\"cables\":\"Dodaci za kablove\",\"harware\":\"Hardware\"}},\"about-us\":{\"title\":{\"text\":\"O\",\"span\":\"nama\"},\"text1\":\"Dobrodošli u eComponents, vaš najbolji izvor svih stvari vezanih za elektroniku. Posvećeni smo tome da vam ponudimo najbolje od elektronskih komponenti, sa fokusom na uslugu i pomoć kupcima, pouzdane proizvode i jedinstvenost\",\"text2\":\"Naša strast i želja da pomognemo inovativnim ljudima u postizanju neverovatnih stvari su nas motivisale da napustimo svoje tadašnje poslove i dale nam podsticaj da pretvorimo naporan rad i inspiraciju u ovaj brzo-rastući poduhvat.\",\"text3\":\"Sada snabdevamo naše klijente sa elektronskim komponentama – žicama i kablovima, konektorima, aktivnim i pasivnim komponentama najboljeg kvaliteta vodećih svetskih proizvođača, kao što su Molex, TE Connectivity, JST, MEDIKabel, HELUKABEL itd., po veoma kompetitivnim cenama. Sa lakoćom se snalazimo u okeanu elektronike, terminologije i tehničkih crteža – pa vi ne morate!\",\"text4\":\"Takođe, ističemo se i proizvodnjom kablovskih veza i sklopova po vašim instrukcijama i zahtevima. Ono što vi zamislite, mi možemo da napravimo; vi sastavite sve delove, a mi ćemo se pobrinuti da oni ožive.\",\"text5\":\"eComponents se nalazi u Srbiji, ali možemo da vršimo isporuke svuda u svetu. Uzbuđeni smo što smo deo rastuće grane elektronske industrije.\",\"text6\":\"Ako imate neka pitanja ili komentare, molimo vas ne oklevajte da nas kontaktirate. Naše ljubazno osoblje će vam rado izaći u susret i u najkraćem roku odgovoriti na vaše upite. Radujemo se saradnji sa vama!\",\"sincerely\":\"S poštovanjem\",\"stamp\":\"eComponents tim\"},\"why-choose-us-home\":{\"main-title\":{\"text\":\"Zašto da izaberete\",\"span\":\"eComponents d.o.o\"},\"title\":\"Brza ponuda\",\"description\":\"Posvećeni smo tome da odgovorimo na sve upite u najkraćem vremenskom roku.\",\"title2\":\"Ušteda novca\",\"description2\":\"Uz naše kompetitivne cene i vešte radnike, klijenti mogu značajno uštedeti 'outsourcing-om' proizvodnje kablovskih veza eComponents-u.\",\"title3\":\"Iskustvo\",\"description3\":\"Već godinama, naš glavni cilj je da ponudimo uslugu najboljeg kvaliteta svojim mušterijama.\",\"title4\":\"Isporuka na vreme\",\"description4\":\"Sa našim sistemom isporuke, osiguravamo brzu isporuku širom sveta.\",\"title5\":\"Poverenje\",\"description5\":\"Mi smo pouzdan član domaćeg i globalnog lanca distribucije elektronskih komponenti.\",\"title6\":\"Kvalitet\",\"description6\":\"Nudimo usluge i proizvode vrhunskog kvaliteta sa sertifikatima.\"},\"wire-and-cable-harness\":{\"button\":\"Detaljnije\",\"title\":{\"text\":\"ugradnja žice\",\"span\":\"i kablova\"},\"description\":\"Svojim klijentima i poslovnim partnerima u različitim industrijama nudimo rešenja ‘’po meri’’ u oblasti kablovskih veza i sklopova. Industrija kućnih aparata, gejming i vending aparata i mnoge druge industrije se oslanjaju na nas da udahnemo život u njihove dizajne. Bilo da je u pitanju jedna žica ili komplikovan kablovski sistem – možete računati na nas!\",\"description2\":\"Nudimo usluge koje pokrivaju sve od izrade prototipa do serijske proizvodnje. Obzirom na to da jetakođe dobavljač elektronskih komponenti, eComponents takođe nudi širok izbor kablovskih rešenja sarazličitom kombinacijom konektora, provodnika, dodataka za kablove itd. Svi naši kablovski sklopovi suprilagođeni želji kupca po boji, dužini i posebnim pinovanjem.\",\"description3\":\"eComponents nudi razvoj i proizvodnju kablovskih sklopova, kao što su:\",\"description4\":{\"title\":\"Izrada prototipa\",\"text\":\"možemo da napravimo funkcionalne prototipe bazirane na vašem dizajnu – biloda je to opis ili fotografija; ili tehnički crtež, obrnuti inženjering (reverse-engineering), uzorak kabela.Takođe, nudimo pomoć prilikom odabira konektora, provodnika i drugih delova vašeg proizvoda.\"},\"description5\":{\"title\":\"Dokumentovanje\",\"text\":\"možemo da napravimo detaljnu dokumentaciju, koja uključuje crteže, listematerijala i druge informacije potrebne za proizvod. Kada definišemo kablovski sklop i dodelimo mu brojartikla, nakon toga možete sa lakoćom poručiti željeni artikal ili napraviti promene, odnosno revizije nakabelu u bilo kom trenutku, uz pomoć naših tehničara.\"},\"description6\":{\"title\":\"Proizvodnja\",\"text\":\"nudimo vam proizvodnju kablovskih sklopova u velikim količinama bez gubitka ukvalitetu sa izuzetnom pažnjom na detalje. Ovo se odnosi na jednostavne kablove kao i nakomplikovanije kablovske sisteme. Nudimo klasične plug-in kontakte sa (ili bez) kućišta na provodnicimarazličitih preseka, boja, kvaliteta, standarda i sertifikata.\"},\"description7\":{\"title\":\"Kontrola kvaliteta\",\"text\":\"svaki kablovski sklop, pre samog slanja, prolazi kroz seriju detaljnih testiranjaod strane naše kontrole kvaliteta. Ovo je za nas veoma važno, i znamo da je to jednako važno za našeklijente.\"},\"description8\":\"Sa iskustvom i veštinama u kombinaciji sa profesionalnom opremom i posvećenosti u pomaganju našimklijentima da ostvare svoje ciljeve, u mogućnosti smo da stvorimo prilagođene i inovativne proizvodekako bismo ispunili sve potrebe naših klijenata.\",\"description9\":\"Kontaktirajte nas putem naše kontakt forme već danas i … MAKE IT WORK!\"},\"wholesale\":{\"text\":\"pro\",\"span\":\"daja\",\"pages\":{\"wires\":{\"title\":{\"text\":\"Žice i\",\"span\":\"kablovi\"},\"sub-section\":{\"wires\":{\"title\":\"Žice\",\"sub-title\":{\"text\":\"Licnasti provodnici\",\"span\":\"za elektorniku\"},\"paragraph\":\"Veliki izbor\",\"description\":\"Pomoć pri odabiru. Mogućnost merenja provodnika na željenu dužinu\",\"liy\":\"liy\",\"list\":{\"title\":\"Provodnici svih preseka\",\"list-item\":\"Provodnici različitih poprečnih preseka za različitu upotrebu\",\"list-item2\":\"0,14mm2; 0,25mm2; 0,34mm2........ 1mm2; 1,5mm2; 2,5mm2;..........10mm2..........\"},\"list2\":{\"title\":\"Provodnici različitih boja \",\"list-item\":\"Širok spektar boja i nijansi\",\"list-item2\":\"Dvobojne žice sa poprečnom i uzdužnom šarom\"},\"list3\":{\"title\":\"Standard\",\"list-item\":\"Provodnici po standardima za evropsko i američko tržište (VDE, UL, cUL...)\",\"list-item2\":\"Provodnici različite strukture i materijala po propisanim standardima i testiranim za rad u izuzetnim okolnostima (visoka temperatura, vlaga, unutrašnja/spoljašnja upotreba...)\"},\"note\":\"za određene provodnike\"},\"cables\":{\"title\":\"Kablovi\",\"sub-title\":{\"text\":\"PVC kablovi za\",\"span\":\"sve vaše potrebe\"},\"paragraph\":\"Veliki izbor\",\"description\":\"Pomoć pri odabiru. Mogućnost merenja provodnika na željenu dužinu\",\"multi-core\":\"Višežilni, širmovani, signalni kablovi\",\"list\":{\"title\":\"Kablovi sa više jezgara\",\"list-item\":\"Kablovi sa dva ili više jezgra sa različitim presecima jezgara i određenim bojama\",\"list-item2\":\"U ponudi imamo kablove 2x0,25mm2 ; 2x0,34mm2… 5x0,25mm2, 5x0,34mm2…..\"},\"list2\":{\"title\":\"Naponski kablovi\",\"list-item\":\"Sve vrste naponskih kablova za nizak, srednji ili visok napon\"},\"note\":\"za određene provodnike\"},\"ready-made\":{\"title\":\"Gotovi kablovi koji su vam uvek potrebni\",\"sub-title\":{\"text\":\"Gotovi\",\"span\":\"kablovi\"},\"description\":\"Širok asortiman gotovih kablova\",\"description2\":\"Budite povezani u svakom trenutku\",\"description3\":\"Mogućnost specijalne porudžbine\",\"list\":{\"title\":\"USB kablovi\",\"list-item\":\"U ponudi imamo USB kablove različitih boja i dužina, sa kombinacijom konektora koji vam odgovaraju.\",\"list-item2\":{\"title\":\"Kombinacije\",\"paragraph\":\"Type A male – Type A female (produžni USB type A kabl sa ili bez šrafova za montažu)\",\"paragraph2\":\"Type A – Type B, Type B mini, Type B micro\",\"paragraph3\":\"Type A – Type\",\"paragraph4\":\"i drugi...\"},\"list-item3\":\"Konektori pod uglom\"},\"list2\":{\"title\":\"Audio i video kablovi\",\"list-item\":\"Monitor kablovi za sve tipove vaših ekrana (HDMI, DVI, DP, VGA…)\",\"list-item2\":\"Audio kablovi (bananice)\"},\"list3\":{\"title\":\"I drugi po vašem zahtevu...\",\"list-item\":\"Nudimo i proizvodnju kablovskih sklopova po vašem zahtevu – od manjih kablova do velikih sklopova\",\"click-here\":{\"text\":\"Za više informacija\",\"span\":\"kliknite na sliku\"}}}}},\"connectors\":{\"title\":{\"text\":\"Konektori, terminali\",\"span\":\"i elektronske komponente\"},\"sub-section\":{\"connectors\":{\"title\":\"Konektori\",\"sub-title\":{\"text\":\"Konektori za \",\"span\":\"svaku konekciju\"},\"paragraph\":\"Široka lepeza konektora za različitu upotrebu\",\"description\":\"Pomoć pri pretrazi konektora\",\"description2\":\"Mogućnost ponude alternativnih modela\",\"list\":{\"title\":\"Proizvođači i konfiguracije\",\"list-item\":\"Veliki izbor konektora različitih svetskih proizvođača kao što su Molex, TE Connectivity, JST… \",\"list-item2\":\"U ponudi imamo konektore različitih rastera (razmaka između pinova) i konfiguracija pinova, napojne konektore, audio i video konektore, signalne konektore, data konektore\"},\"list2\":{\"title\":\"Krimp kontakti i kućišta za konektore\",\"list-item\":\"Uz svaki konektor nudimo i odgovarajuće pinove, tj. krimp kontakte za odgovarajuće preseke žica kao i plastična kućišta za pojedine konektore koji ih imaju\"},\"list3\":{\"title\":\"Alternative\",\"list-item\":\"Takođe, nudimo alternativne modele naših kineskih partnera ukoliko vam za vaš projekat odgovaraju povoljnije cene\"}},\"terminals\":{\"title\":\"Terminali\",\"sub-title\":{\"text\":\"Da kraj vaših žica\",\"span\":\"nikad ne bude sam\"},\"paragraph\":\"Lako montiranje\",\"description\":\"Veliki izbor terminala sa različitim karatkeristikama\",\"description2\":\"Jednostavna aplikacija\",\"wire-cable\":\"Terminali\",\"list\":{\"title\":\"Vrste terminala\",\"list-item\":\"Vrste terminala koje nudimo:\",\"list-item2\":\"Viljuškice (M3, M4, M5…)\",\"list-item3\":\"Ring terminali (prečnika 3mm, 4mm, 5mm...)\",\"list-item4\":\"Faston2.8mm, 4.8mm, 6.3mm\",\"list-item5\":\"and others...Bootlace ferrules\",\"list-item6\":\"Hilzne\",\"list-item7\":\"Čaure\",\"list-item8\":\"i još svašta!\"},\"list2\":{\"title\":\"Karakteristike\",\"list-item\":\"Svi terminali koje imamo u ponudi mogu biti sa PVC izolacijom i bez nje. Ponuđeni terminali su u skladu sa presekom žica koje želite da ukrimpate\"},\"list3\":{\"title\":\"Alternativa\",\"list-item\":\"Takođe, nudimo alternativne modele naših kineskih partnera ukoliko vam za vaš projekat odgovaraju povoljnije cene\"}},\"components\":{\"title\":\"Elektronske komponente\",\"sub-title\":{\"text\":\"Sve od elektronskih komponenata \",\"span\":\"na jednom mestu\"},\"paragraph\":\"Odabir različitih aktivnih i pasivnih komponenti\",\"description\":\"Elektronske komponente za aparate i uređaje\",\"description2\":\"Pomoć pri izboru\",\"list\":{\"title\":\"Veliki izbor\",\"list-item\":\"Širok dijapazon aktivnih i pasivnih komponenti\",\"list-item2\":\"Releji, LED indikatori, otpornici, osigurači…\"},\"list2\":{\"title\":\"Količine\",\"list-item\":\"Nabavka od nekoliko komada do nekoliko hiljada komada\"}}}},\"pcb\":{\"title\":\"pcbs\",\"sub-title\":{\"text\":\"PCB\",\"span\":\"dizajn\"},\"paragraph\":\"Projektovanje štampanih ploča\",\"paragraph2\":\"Brza izrada prototipa\",\"description\":\"Serijska proizvodnja\",\"list\":{\"title\":\"Pomoć pri dizajnu\",\"list-item\":\"Dizajn prema zahtevu korisnika\",\"list-item2\":\"Izrada dokumentacije\",\"list-item3\":\"Projektovanje elektronike\",\"list-item4\":\"Projektovanje štampanih ploča\",\"list-item5\":\"Brza izrada prototipa\"},\"list2\":{\"title\":\"Proizvodnja\",\"list-item\":\"Ručna i robotizovana serijska proizvodnja\",\"list-item2\":\"Kontrola i testiranje\",\"list-item3\":\"Garantovan kvalitet\",\"list-item4\":\"Pristupačne cene\"}},\"led\":{\"title\":\"led program\",\"sub-title\":{\"text\":\"Led\",\"span\":\"rasveta\"},\"paragraph\":\"Širok asortiman LED traka i modula\",\"paragraph2\":\"Mogućnost montiranja kablova i konektora na LED trake i module radi lakše konekcije\",\"paragraph3\":\"Jednostavno montiranje (3M traka)\",\"list\":{\"list-item\":\"Raznovstan asortiman LED traka i modula\",\"list-item2\":\"Trake sa različitim brojem LED-ova po metru (30LED/m, 60LED/m…)\",\"list-item3\":\"Jednobojne i RGB trake\",\"list-item4\":\"LED-ovi različitih dimenzija (3030, 3528, 5050 i mnogi drugi)\",\"list-item5\":\"Trake sa različitim sertifikatima IP zaštite (bez zaštite, otporne na udar, prašinu, vodu (silikonske) i mnoge druge)\"}},\"accessories\":{\"title\":\"Dodaci za kablove\",\"sub-title\":{\"text\":\"Sve što vam treba za\",\"span\":\"besprekornu asemblažu i izolaciju kablova\"},\"paragraph\":\"Širok izbor kablovskih vezica i držača\",\"paragraph2\":\"Ponuda izolacionih creva\",\"paragraph3\":\"Sve što je potrebno za uredno ožičavanje i obeležavanje na jednom mestu\",\"list\":{\"title\":\"Vezice i držači\",\"list-item\":\"Plastične vezice različitih dimenzija i boja za učvršćivanje kablovskih sklopova\",\"list-item2\":\"Držači i nosači kablova sa montirajućim patentom radi lakšeg manipulisanja kablovima\"},\"list2\":{\"title\":\"Izolacioni program\",\"list-item\":\"Termoskupljajući bužiri različitih preseka i razmera, za izolaciju provodnika i kablova\",\"list-item2\":\"PVC creva razčilitih preseka i dimenzija\",\"list-item3\":\"Rebrasta PVC creva, PVC lanci i drugo\"},\"list3\":{\"title\":\"Alternativne ponude\",\"list-item\":\"Takođe, nudimo alternativne modele naših kineskih partnera ukoliko vam za vaš projekat odgovaraju povoljnije cene\"}},\"hardware\":{\"title\":\"hardware\",\"sub-title\":{\"text\":\"Hardverske komponente\",\"span\":\"za vaše aparate i uređaje\"},\"paragraph\":\"Metalna kućišta\",\"paragraph2\":\"Napajanja\",\"list\":{\"list-item\":\"Mogućnost nabavke različitih delova za aparate kao što su ugradni ekrani, touch screen ekrani, LED paneli, napajanja, Bluetooth moduli, antene, pojačala, i sve drugo po vašem zahtevu.\",\"list-item2\":\"Nabavka na malo i veliko od evropskih i američkih distributera, kao i od kineskih partnera po dobrim cenama i sa kratkim rokovima isporuke\",\"list-item3\":\"Metalna kućišta, delovi od pleksiglasa i dr.\"}}}},\"contact-us\":{\"title\":{\"span\":\"nas\",\"text\":\"kontaktirajte\"},\"phone\":\"Telefon\",\"address\":\"Adresa\",\"button\":\"pošalju\",\"name\":\"Ime\",\"email\":\"Email\",\"country\":\"Zemlja\",\"phone-placeholder\":\"Telefon\",\"message\":\"Poruka\",\"upload\":\"Dodajte sliku\"}}");
 
 /***/ }),
 

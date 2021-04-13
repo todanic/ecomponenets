@@ -184,29 +184,163 @@
         },
         "connectors": {
           "title": {
-            "text": "Cable",
-            "span": "assemblies"
+            "text": "Connectors, terminals",
+            "span": "and electronic components"
           },
-          "description": "Wide assortment of cable assemblies Stay connected at any moment Possibility of special order"
+          "sub-section": {
+            "connectors": {
+              "title": "Connectors",
+              "sub-title": {
+                "text": "Connectors for",
+                "span": "every connection type"
+              },
+              "paragraph": "Wide variety of connectors for different uses",
+              "description": "Help with finding the right connector type",
+              "description2": "Possibility of ordering alternative connector types",
+              "list": {
+                "title": "Manufacturers and configurations",
+                "list-item": "Broad selection of connectors of world’s renowned manufacturers such as Molex, TE Connectivity, JST…",
+                "list-item2": "Our offer includes connectors with different pitch and pin configuration, power connectors, audio and video connectors, signal connectors, data connectors and many more."
+              },
+              "list2": {
+                "title": "Crimp contacts and connector housings",
+                "list-item": "With every connector we offer it’s corresponding crimp contacts suitable for conductors of different thickness, as well as connector back shells for the connectors that use them"
+              },
+              "list3": {
+                "title": "Alternative offer",
+                "list-item": " eComponents also offers alternative models of connectors, manufactured by our Chinese partners if your project demands lower priced, but still very reliable components"
+              }
+            },
+            "terminals": {
+              "title": "Terminals",
+              "sub-title": {
+                "text": "Terminal for",
+                "span": "every wire end"
+              },
+              "paragraph": "Different characteristics terminals",
+              "description": "Simple application",
+              "description2": "Easy mounting",
+              "wire-cable": "Wire and cable terminals",
+              "list": {
+                "title": "Types of terminals",
+                "list-item": "We offer the following types of terminals:",
+                "list-item2": "Fork terminals (M3, M4, M5…)",
+                "list-item3": "Ring terminals (3mm, 4mm, 5mm… diameter)",
+                "list-item4": "Quick connect terminals (2.8mm, 4.8mm, 6.3mm width)",
+                "list-item5": "and others...Bootlace ferrules",
+                "list-item6": "Splices",
+                "list-item7": "And more!",
+                "list-item8": "Our offer includes connectors with different pitch and pin configuration, power connectors, audio and video connectors, signal connectors, data connectors and many more."
+              },
+              "list2": {
+                "title": "Crimp contacts and connector housings",
+                "list-item": "With every connector we offer it’s corresponding crimp contacts suitable for conductors of different thickness, as well as connector backshells for the connectors that use them"
+              },
+              "list3": {
+                "title": "Alternative offer",
+                "list-item": "eComponents also offers alternative models of connectors, manufactured by our Chinese partners if your project demands lower priced, but still very reliable components"
+              }
+            },
+            "components": {
+              "title": "Electronic components",
+              "sub-title": {
+                "text": "All electronic",
+                "span": "components in one place"
+              },
+              "paragraph": "Great selection of active and passive components",
+              "description": "Electronic components for machines and appliances",
+              "description2": "Help with selection",
+              "list": {
+                "title": "Large choice",
+                "list-item": "Large choice",
+                "list-item2":"Relays, LED indicators, resistors, fuses, fuse holders…"
+              },
+              "list2": {
+                "title": "Quantities",
+                "list-item": "We can supply you with electronic components starting from few pieces to thousands of pieces"
+              }
+            }
+          }
         },
         "pcb": {
-          "title": {
-            "span": "pcbs"
+          "title": "pcbs",
+          "sub-title": {
+            "text": "PCB",
+            "span": "design"
+          },
+          "paragraph": "Rapid prototyping",
+          "paragraph2": "Serial production",
+          "description": "Filling of PCB with SMT components",
+          "list": {
+            "title": "Assistance with design",
+            "list-item": "Design per customer request",
+            "list-item2": "Making documentation",
+            "list-item3": "Electronic design",
+            "list-item4": "PCB design",
+            "list-item5": "Quick prototyping"
+          },
+          "list2": {
+            "title": "Production",
+            "list-item": "Manual and robotized serial production",
+            "list-item2": "Control and testing",
+            "list-item3": "Quality guaranteed",
+            "list-item4": "Affordable prices"
           }
         },
         "led": {
-          "title": {
-            "span": "leds"
+          "title": "led program",
+          "sub-title": {
+            "text": "Led",
+            "span": "lightning"
+          },
+          "paragraph": "Wide range of every connection type",
+          "paragraph2": "Possible mounting of cables and connectors on LED strips and modules for easier connection",
+          "paragraph3":"Easy mounting (3M strip)",
+          "list": {
+            "list-item": "Diverse assortment of LED strips and modules",
+            "list-item2": "Strips with different number of LEDs per meter (30LED/m, 60LED/m…)",
+            "list-item3": "One-coloured and RGB strips",
+            "list-item4": "Different LEDs dimension (3030, 3528, 5050 and other)",
+            "list-item5": "Strips with different certificates IP protection (Without protection, impact resistant, dust, water (glued) and other)"
           }
         },
         "accessories": {
-          "title": {
-            "span": "cable accessories"
+          "title": "Cable accessories",
+          "sub-title": {
+            "text": "Everything you need for",
+            "span": "flawless cable assembly and isolation"
+          },
+          "paragraph": "PVC cable ties and holders",
+          "paragraph2": "PVC tubes",
+          "paragraph3":"Everything you need for neat wiring and marking in one place",
+          "list": {
+            "title": "Cable ties and cable holders",
+            "list-item": "Cable ties different dimension and colors for fixing cables",
+            "list-item2": "Holders and cable mounts for easier cable handling"
+          },
+          "list2": {
+            "title": "Isolation program",
+            "list-item": "Heat shrinking tubes different sizes and scales, for wires and cables isolation",
+            "list-item2": "PVC tubes different sizes and dimensions",
+            "list-item3": "Ribbed PVC tubes, PVC chains and others"
+          },
+          "list3": {
+            "title": "Alternative offer",
+            "list-item": "eComponents also offers alternative models of connectors, manufactured by our Chinese partners if your project demands lower priced, but still very reliable components"
           }
         },
         "hardware": {
-          "title": {
-            "span": "hardware"
+          "title": "hardware",
+          "sub-title": {
+            "text": "Hardware components",
+            "span": "for many devices"
+          },
+          "paragraph": "Metal housings",
+          "paragraph2": "Power supply",
+          "list": {
+            "list-item": "Possible procurement of different parts for devices, like built-in monitors, touch screen monitors, LED panels, power supplies, Bluetooth modules, antennas, amplifier, and many other parts that you require.",
+            "list-item2": "Retail and bulk procuring from European and American distributors, as well as from our Chinese partners at good prices with short delivery time",
+            "list-item3": "Metal housings, plexiglass parts and other"
           }
         }
       }

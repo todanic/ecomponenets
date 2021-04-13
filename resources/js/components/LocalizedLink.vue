@@ -10,15 +10,15 @@ export default {
   methods: {
     getTo() {
       if (typeof this.to !== "string") {
-        return this.to
+        return this.to;
       }
 
-      const locale = this.$route.params.locale
-
+      const locale = this.$route.params.locale;
+      if (this.to === "/") return "/";
       // we strip leading and trailing slashes and prefix
       // the current locale
-      return `/${locale}/${this.to.replace(/^\/|\/$/g, "")}`
-    }
-  }
-}
+      return `/${locale}/${this.to.replace(/^\/|\/$/g, "")}`;
+    },
+  },
+};
 </script>

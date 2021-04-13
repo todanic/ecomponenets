@@ -81,13 +81,11 @@
               >
             </li>
           </ul>
-          <router-link to="/">
-            <v-img
-              max-width="200px"
-              class="mt-6"
-              src="/images/logo-name.png"
-            ></v-img>
-          </router-link>
+          <v-img
+            max-width="200px"
+            class="mt-6"
+            src="/images/logo-name.png"
+          ></v-img>
         </v-col>
         <v-col
           class="text-center prefooter-container__social-links"

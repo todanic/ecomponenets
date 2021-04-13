@@ -3214,20 +3214,13 @@ a {
 .language-selector {
   position: absolute;
   right: 0;
-  width: 70px;
+  width: 80px;
   font-size: 14px;
   background: #0e0e0e;
   color: #fff;
   border: 1px solid #fff;
-  padding: 3px 7px;
+  padding: 5px 13px;
   border-radius: 5px;
-  font-family: "FontAwesome";
-}
-
-.language-selector:before {
-  content: "\F063";
-  color: #fff;
-  font-size: 8px;
 }
 
 @media screen and (max-width: 768px) {

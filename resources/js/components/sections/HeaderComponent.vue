@@ -11,7 +11,6 @@
           v-for="locale in locales"
           :key="locale.code"
         >
-          &#xf063;
           {{ locale.name }}
         </option>
       </select>
@@ -23,13 +22,11 @@
           sm="12"
           cols="12"
         >
-          <router-link to="/">
-            <v-img
-              max-width="150px"
-              src="/images/logo-full.png"
-              alt="logo"
-            ></v-img>
-          </router-link>
+          <v-img
+            max-width="150px"
+            src="/images/logo-full.png"
+            alt="logo"
+          ></v-img>
         </v-col>
         <v-col
           :class="{
