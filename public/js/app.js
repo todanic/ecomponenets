@@ -1963,8 +1963,7 @@ __webpack_require__.r(__webpack_exports__);
         return this.to;
       }
 
-      var locale = this.$route.params.locale;
-      console.log(this.to); // we strip leading and trailing slashes and prefix
+      var locale = this.$route.params.locale; // we strip leading and trailing slashes and prefix
       // the current locale
 
       return "/".concat(locale, "/").concat(this.to.replace(/^\/|\/$/g, ""));
@@ -2123,8 +2122,6 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _util_i18n_supported_locales__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../util/i18n/supported-locales */ "./resources/js/util/i18n/supported-locales.js");
 /* harmony import */ var _LocalizedLink__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../LocalizedLink */ "./resources/js/components/LocalizedLink.vue");
-//
-//
 //
 //
 //
@@ -11124,27 +11121,28 @@ var render = function() {
         "v-container",
         { staticClass: "pa-0 shrink-width" },
         [
-          _c(
-            "select",
-            {
-              staticClass: "language-selector",
-              domProps: { value: _vm.$i18n.locale },
-              on: {
-                change: function($event) {
-                  $event.preventDefault()
-                  return _vm.changeLanguage($event)
+          _c("div", { staticClass: "language-selector" }, [
+            _c(
+              "select",
+              {
+                domProps: { value: _vm.$i18n.locale },
+                on: {
+                  change: function($event) {
+                    $event.preventDefault()
+                    return _vm.changeLanguage($event)
+                  }
                 }
-              }
-            },
-            _vm._l(_vm.locales, function(locale) {
-              return _c(
-                "option",
-                { key: locale.code, domProps: { value: locale.code } },
-                [_vm._v("\n        " + _vm._s(locale.name) + "\n      ")]
-              )
-            }),
-            0
-          ),
+              },
+              _vm._l(_vm.locales, function(locale) {
+                return _c(
+                  "option",
+                  { key: locale.code, domProps: { value: locale.code } },
+                  [_vm._v("\n          " + _vm._s(locale.name) + "\n        ")]
+                )
+              }),
+              0
+            )
+          ]),
           _vm._v(" "),
           _c(
             "v-row",
@@ -11215,7 +11213,14 @@ var render = function() {
                       _vm._v(" "),
                       _c(
                         "li",
-                        { staticClass: "header-container__menu-block" },
+                        {
+                          staticClass: "header-container__menu-block",
+                          on: {
+                            click: function($event) {
+                              return _vm.toggleMenu()
+                            }
+                          }
+                        },
                         [
                           _c("LocalizedLink", { attrs: { to: "/" } }, [
                             _vm._v(_vm._s(_vm.$t("nav.home")))
@@ -11226,7 +11231,14 @@ var render = function() {
                       _vm._v(" "),
                       _c(
                         "li",
-                        { staticClass: "header-container__menu-block" },
+                        {
+                          staticClass: "header-container__menu-block",
+                          on: {
+                            click: function($event) {
+                              return _vm.toggleMenu()
+                            }
+                          }
+                        },
                         [
                           _c("LocalizedLink", { attrs: { to: "/wholesale" } }, [
                             _vm._v(_vm._s(_vm.$t("nav.wholesale")))
@@ -11237,7 +11249,14 @@ var render = function() {
                       _vm._v(" "),
                       _c(
                         "li",
-                        { staticClass: "header-container__menu-block" },
+                        {
+                          staticClass: "header-container__menu-block",
+                          on: {
+                            click: function($event) {
+                              return _vm.toggleMenu()
+                            }
+                          }
+                        },
                         [
                           _c("LocalizedLink", { attrs: { to: "/gallery" } }, [
                             _vm._v(_vm._s(_vm.$t("nav.gallery")))
@@ -11248,7 +11267,14 @@ var render = function() {
                       _vm._v(" "),
                       _c(
                         "li",
-                        { staticClass: "header-container__menu-block" },
+                        {
+                          staticClass: "header-container__menu-block",
+                          on: {
+                            click: function($event) {
+                              return _vm.toggleMenu()
+                            }
+                          }
+                        },
                         [
                           _c(
                             "LocalizedLink",
@@ -11261,7 +11287,14 @@ var render = function() {
                       _vm._v(" "),
                       _c(
                         "li",
-                        { staticClass: "header-container__menu-block" },
+                        {
+                          staticClass: "header-container__menu-block",
+                          on: {
+                            click: function($event) {
+                              return _vm.toggleMenu()
+                            }
+                          }
+                        },
                         [
                           _c("LocalizedLink", { attrs: { to: "/about-us" } }, [
                             _vm._v(_vm._s(_vm.$t("nav.about-us")))
@@ -11272,7 +11305,14 @@ var render = function() {
                       _vm._v(" "),
                       _c(
                         "li",
-                        { staticClass: "header-container__menu-block" },
+                        {
+                          staticClass: "header-container__menu-block",
+                          on: {
+                            click: function($event) {
+                              return _vm.toggleMenu()
+                            }
+                          }
+                        },
                         [
                           _c(
                             "LocalizedLink",

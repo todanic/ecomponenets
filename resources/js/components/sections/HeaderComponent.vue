@@ -1,19 +1,18 @@
 <template>
   <v-container fluid class="header-container">
     <v-container class="pa-0 shrink-width">
-      <select
-        class="language-selector"
-        :value="$i18n.locale"
-        @change.prevent="changeLanguage"
-      >
-        <option
-          :value="locale.code"
-          v-for="locale in locales"
-          :key="locale.code"
-        >
-          {{ locale.name }}
-        </option>
-      </select>
+      <div class="language-selector">
+        <select :value="$i18n.locale" @change.prevent="changeLanguage">
+          <option
+            :value="locale.code"
+            v-for="locale in locales"
+            :key="locale.code"
+          >
+            {{ locale.name }}
+          </option>
+        </select>
+      </div>
+
       <v-row class="align-center">
         <v-col
           class="d-flex justify-center pa-0"
@@ -48,30 +47,30 @@
             <span class="header-container__menu-close" @click="toggleMenu()"
               >X</span
             >
-            <li class="header-container__menu-block">
+            <li class="header-container__menu-block" @click="toggleMenu()">
               <LocalizedLink to="/">{{ $t("nav.home") }}</LocalizedLink>
             </li>
-            <li class="header-container__menu-block">
+            <li class="header-container__menu-block" @click="toggleMenu()">
               <LocalizedLink to="/wholesale">{{
                 $t("nav.wholesale")
               }}</LocalizedLink>
             </li>
-            <li class="header-container__menu-block">
+            <li class="header-container__menu-block" @click="toggleMenu()">
               <LocalizedLink to="/gallery">{{
                 $t("nav.gallery")
               }}</LocalizedLink>
             </li>
-            <li class="header-container__menu-block">
+            <li class="header-container__menu-block" @click="toggleMenu()">
               <LocalizedLink to="/wires-and-harness">{{
                 $t("nav.wires-and-harness")
               }}</LocalizedLink>
             </li>
-            <li class="header-container__menu-block">
+            <li class="header-container__menu-block" @click="toggleMenu()">
               <LocalizedLink to="/about-us">{{
                 $t("nav.about-us")
               }}</LocalizedLink>
             </li>
-            <li class="header-container__menu-block">
+            <li class="header-container__menu-block" @click="toggleMenu()">
               <LocalizedLink to="/contact-us">{{
                 $t("nav.contact-us")
               }}</LocalizedLink>
