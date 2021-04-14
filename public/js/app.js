@@ -1964,7 +1964,7 @@ __webpack_require__.r(__webpack_exports__);
       }
 
       var locale = this.$route.params.locale;
-      if (this.to === "/") return "/"; // we strip leading and trailing slashes and prefix
+      console.log(this.to); // we strip leading and trailing slashes and prefix
       // the current locale
 
       return "/".concat(locale, "/").concat(this.to.replace(/^\/|\/$/g, ""));
@@ -2208,6 +2208,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -2218,7 +2219,8 @@ __webpack_require__.r(__webpack_exports__);
     return {
       isActive: false,
       defaultLanguage: null,
-      locales: Object(_util_i18n_supported_locales__WEBPACK_IMPORTED_MODULE_0__["getSupportedLocales"])()
+      locales: Object(_util_i18n_supported_locales__WEBPACK_IMPORTED_MODULE_0__["getSupportedLocales"])(),
+      lang: "sr"
     };
   },
   methods: {
@@ -2229,6 +2231,7 @@ __webpack_require__.r(__webpack_exports__);
       var locale = e.target.value;
       this.$i18n.locale = locale;
       this.$store.commit("changeLanguage", locale);
+      this.lang = locale;
       this.$router.push("/".concat(locale));
     }
   }
@@ -11356,7 +11359,7 @@ var render = function() {
                             attrs: {
                               "max-width": "240px",
                               height: "180px",
-                              src: "images/wires-cables/thumbnail.jpg",
+                              src: "/images/wires-cables/thumbnail.jpg",
                               alt: ""
                             }
                           })
@@ -11399,7 +11402,7 @@ var render = function() {
                             attrs: {
                               "max-width": "240px",
                               height: "180px",
-                              src: "images/connectors/thumbnail.jpg",
+                              src: "/images/connectors/thumbnail.jpg",
                               alt: ""
                             }
                           })
@@ -11486,7 +11489,7 @@ var render = function() {
                             attrs: {
                               "max-width": "240px",
                               height: "180px",
-                              src: "images/led/led.jpg",
+                              src: "/images/led/led.jpg",
                               alt: ""
                             }
                           })
@@ -11527,7 +11530,7 @@ var render = function() {
                             attrs: {
                               "max-width": "240px",
                               height: "180px",
-                              src: "images/cable-accessories/thumbnail.jpg",
+                              src: "/images/cable-accessories/thumbnail.jpg",
                               alt: ""
                             }
                           })
@@ -11568,7 +11571,7 @@ var render = function() {
                             attrs: {
                               "max-width": "240px",
                               height: "180px",
-                              src: "images/hardware/hardware.jpg",
+                              src: "/images/hardware/hardware.jpg",
                               alt: ""
                             }
                           })
@@ -12321,7 +12324,7 @@ var render = function() {
     [
       _c(
         "v-parallax",
-        { attrs: { src: "images/parallax.jpg" } },
+        { attrs: { src: "/images/parallax.jpg" } },
         [
           _c(
             "v-container",

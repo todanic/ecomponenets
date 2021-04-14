@@ -93,6 +93,7 @@ export default {
     isActive: false,
     defaultLanguage: null,
     locales: getSupportedLocales(),
+    lang: "sr",
   }),
   methods: {
     toggleMenu() {
@@ -102,7 +103,7 @@ export default {
       const locale = e.target.value;
       this.$i18n.locale = locale;
       this.$store.commit("changeLanguage", locale);
-
+      this.lang = locale;
       this.$router.push(`/${locale}`);
     },
   },

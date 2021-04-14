@@ -16,7 +16,7 @@
               <v-img
                 max-width="240px"
                 height="180px"
-                src="images/wires-cables/thumbnail.jpg"
+                src="/images/wires-cables/thumbnail.jpg"
                 alt=""
               ></v-img>
             </div>
@@ -34,7 +34,7 @@
               <v-img
                 max-width="240px"
                 height="180px"
-                src="images/connectors/thumbnail.jpg"
+                src="/images/connectors/thumbnail.jpg"
                 alt=""
               ></v-img>
             </div>
@@ -72,7 +72,7 @@
               <v-img
                 max-width="240px"
                 height="180px"
-                src="images/led/led.jpg"
+                src="/images/led/led.jpg"
                 alt=""
               ></v-img>
             </div>
@@ -90,7 +90,7 @@
               <v-img
                 max-width="240px"
                 height="180px"
-                src="images/cable-accessories/thumbnail.jpg"
+                src="/images/cable-accessories/thumbnail.jpg"
                 alt=""
               ></v-img>
             </div>
@@ -108,7 +108,7 @@
               <v-img
                 max-width="240px"
                 height="180px"
-                src="images/hardware/hardware.jpg"
+                src="/images/hardware/hardware.jpg"
                 alt=""
               ></v-img>
             </div>
