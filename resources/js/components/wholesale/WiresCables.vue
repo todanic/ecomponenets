@@ -152,9 +152,9 @@
       data-aos-easing="ease-in-out"
     >
       <v-col cols="12">
-        <h2 class="subcat-title mb-5">
+        <h1 class="subcat-title mb-5">
           {{ $t("wholesale.pages.wires.sub-section.cables.title") }}
-        </h2>
+        </h1>
       </v-col>
       <v-col lg="8" md="8" sm="12" cols="12">
         <v-img

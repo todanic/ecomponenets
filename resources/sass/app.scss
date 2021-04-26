@@ -1,38 +1,34 @@
 //color
-@import 'colors';
+@import "colors";
 
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url("https://fonts.googleapis.com/css?family=Nunito");
 
 //Default
-@import 'base';
-@import 'helper.classes';
+@import "base";
+@import "helper.classes";
 
 //font awesome
-@import '~font-awesome/scss/font-awesome';
+@import "~font-awesome/scss/font-awesome";
 
 //Vuetify
-@import '~vuetify/dist/vuetify.min.css';
+@import "~vuetify/dist/vuetify.min.css";
 
 //components
-@import 'components/header';
-@import 'components/splash';
-@import 'components/home.cat';
-@import 'components/prefooter';
-@import 'components/footer';
-@import 'components/contact';
-@import 'components/wholesale';
-@import 'components/why.us';
-@import 'components/wire.harness';
-@import 'components/gallery';
+@import "components/header";
+@import "components/splash";
+@import "components/home.cat";
+@import "components/prefooter";
+@import "components/footer";
+@import "components/contact";
+@import "components/wholesale";
+@import "components/why.us";
+@import "components/wire.harness";
+@import "components/gallery";
+@import "components/menu";
 
 //elements
-@import 'elements/btn';
+@import "elements/btn";
 
 //libraries
-@import '~aos/dist/aos.css';
-
-
-
-
-
+@import "~aos/dist/aos.css";

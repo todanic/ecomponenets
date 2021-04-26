@@ -31,37 +31,37 @@ Vue.use(Vuetify);
 // });
 
 Vue.component(
-    "header-component",
-    require("./components/sections/HeaderComponent.vue").default
+  "header-component",
+  require("./components/sections/HeaderComponent.vue").default
 );
 Vue.component(
-    "splash",
-    require("./components/sections/SplashComponent.vue").default
+  "splash",
+  require("./components/sections/SplashComponent.vue").default
 );
 Vue.component("why-us", require("./components/sections/WhyUs.vue").default);
 Vue.component(
-    "wire-and-harness",
-    require("./components/sections/WireAndHarnessComponent.vue").default
+  "wire-and-harness",
+  require("./components/sections/WireAndHarnessComponent.vue").default
 );
 Vue.component(
-    "base-miny-gallery",
-    require("./components/sections/GalleryComponent.vue").default
+  "base-miny-gallery",
+  require("./components/sections/GalleryComponent.vue").default
 );
 Vue.component(
-    "home-catagories",
-    require("./components/sections/HomeCategories.vue").default
+  "home-catagories",
+  require("./components/sections/HomeCategories.vue").default
 );
 Vue.component(
-    "prefooter",
-    require("./components/sections/PrefooterComponent.vue").default
+  "prefooter",
+  require("./components/sections/PrefooterComponent.vue").default
 );
 Vue.component(
-    "footer-component",
-    require("./components/sections/FooterComponent.vue").default
+  "footer-component",
+  require("./components/sections/FooterComponent.vue").default
 );
 Vue.component(
-    "home-contact-component",
-    require("./components/sections/HomeContactComponent.vue").default
+  "home-contact-component",
+  require("./components/sections/HomeContactComponent.vue").default
 );
 
 /**
@@ -71,22 +71,22 @@ Vue.component(
  */
 
 const app = new Vue({
-    created() {
-        AOS.init({
-            once: true
-        });
-    },
-    vuetify: new Vuetify({
-        theme: {
-            themes: {
-                light: {
-                    primary: "#fff"
-                }
-            }
+  created() {
+    AOS.init({
+      once: true
+    });
+  },
+  vuetify: new Vuetify({
+    theme: {
+      themes: {
+        light: {
+          primary: "#fff"
         }
-    }),
-    router: routes,
-    i18n,
-    store: store,
-    render: h => h(App)
+      }
+    }
+  }),
+  router: routes,
+  i18n,
+  store: store,
+  render: h => h(App)
 }).$mount("#app");

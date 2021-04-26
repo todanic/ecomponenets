@@ -1973,6 +1973,72 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/MenuComponent.vue?vue&type=script&lang=js&":
+/*!************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/MenuComponent.vue?vue&type=script&lang=js& ***!
+  \************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _LocalizedLink__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./LocalizedLink */ "./resources/js/components/LocalizedLink.vue");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  components: {
+    LocalizedLink: _LocalizedLink__WEBPACK_IMPORTED_MODULE_0__["default"]
+  },
+  data: function data() {
+    return {
+      isActive: false
+    };
+  },
+  methods: {
+    toggleMenu: function toggleMenu() {
+      this.isActive = !this.isActive;
+    }
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/sections/FooterComponent.vue?vue&type=script&lang=js&":
 /*!***********************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/sections/FooterComponent.vue?vue&type=script&lang=js& ***!
@@ -2121,45 +2187,7 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _util_i18n_supported_locales__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../util/i18n/supported-locales */ "./resources/js/util/i18n/supported-locales.js");
-/* harmony import */ var _LocalizedLink__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../LocalizedLink */ "./resources/js/components/LocalizedLink.vue");
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+/* harmony import */ var _MenuComponent__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../MenuComponent */ "./resources/js/components/MenuComponent.vue");
 //
 //
 //
@@ -2210,20 +2238,16 @@ __webpack_require__.r(__webpack_exports__);
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
-    LocalizedLink: _LocalizedLink__WEBPACK_IMPORTED_MODULE_1__["default"]
+    MenuComponent: _MenuComponent__WEBPACK_IMPORTED_MODULE_1__["default"]
   },
   data: function data() {
     return {
-      isActive: false,
       defaultLanguage: null,
       locales: Object(_util_i18n_supported_locales__WEBPACK_IMPORTED_MODULE_0__["getSupportedLocales"])(),
       lang: "sr"
     };
   },
   methods: {
-    toggleMenu: function toggleMenu() {
-      this.isActive = !this.isActive;
-    },
     changeLanguage: function changeLanguage(e) {
       var locale = e.target.value;
       this.$i18n.locale = locale;
@@ -2246,24 +2270,6 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _LocalizedLink__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../LocalizedLink */ "./resources/js/components/LocalizedLink.vue");
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -4560,24 +4566,6 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _js_components_LocalizedLink__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../js/components/LocalizedLink */ "./resources/js/components/LocalizedLink.vue");
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -10941,6 +10929,177 @@ render._withStripped = true
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/MenuComponent.vue?vue&type=template&id=98f701fa&":
+/*!****************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/MenuComponent.vue?vue&type=template&id=98f701fa& ***!
+  \****************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", [
+    _c(
+      "ul",
+      {
+        staticClass:
+          "menu-container__menu pl-0 pt-4 justify-center text-center",
+        class: { active: _vm.isActive }
+      },
+      [
+        _c(
+          "li",
+          {
+            staticClass: "menu-container__menu-block",
+            on: {
+              click: function($event) {
+                return _vm.toggleMenu()
+              }
+            }
+          },
+          [
+            _c("LocalizedLink", { attrs: { to: "/" } }, [
+              _vm._v(_vm._s(_vm.$t("nav.home")))
+            ])
+          ],
+          1
+        ),
+        _vm._v(" "),
+        _c(
+          "li",
+          {
+            staticClass: "menu-container__menu-block",
+            on: {
+              click: function($event) {
+                return _vm.toggleMenu()
+              }
+            }
+          },
+          [
+            _c("LocalizedLink", { attrs: { to: "/wholesale" } }, [
+              _vm._v(_vm._s(_vm.$t("nav.wholesale")))
+            ])
+          ],
+          1
+        ),
+        _vm._v(" "),
+        _c(
+          "li",
+          {
+            staticClass: "menu-container__menu-block",
+            on: {
+              click: function($event) {
+                return _vm.toggleMenu()
+              }
+            }
+          },
+          [
+            _c("LocalizedLink", { attrs: { to: "/gallery" } }, [
+              _vm._v(_vm._s(_vm.$t("nav.gallery")))
+            ])
+          ],
+          1
+        ),
+        _vm._v(" "),
+        _c(
+          "li",
+          {
+            staticClass: "menu-container__menu-block",
+            on: {
+              click: function($event) {
+                return _vm.toggleMenu()
+              }
+            }
+          },
+          [
+            _c("LocalizedLink", { attrs: { to: "/wires-and-harness" } }, [
+              _vm._v(_vm._s(_vm.$t("nav.wires-and-harness")))
+            ])
+          ],
+          1
+        ),
+        _vm._v(" "),
+        _c(
+          "li",
+          {
+            staticClass: "menu-container__menu-block",
+            on: {
+              click: function($event) {
+                return _vm.toggleMenu()
+              }
+            }
+          },
+          [
+            _c("LocalizedLink", { attrs: { to: "/about-us" } }, [
+              _vm._v(_vm._s(_vm.$t("nav.about-us")))
+            ])
+          ],
+          1
+        ),
+        _vm._v(" "),
+        _c(
+          "li",
+          {
+            staticClass: "menu-container__menu-block",
+            on: {
+              click: function($event) {
+                return _vm.toggleMenu()
+              }
+            }
+          },
+          [
+            _c("LocalizedLink", { attrs: { to: "/contact-us" } }, [
+              _vm._v(_vm._s(_vm.$t("nav.contact-us")))
+            ])
+          ],
+          1
+        )
+      ]
+    ),
+    _vm._v(" "),
+    _c(
+      "div",
+      {
+        staticClass: "hamburger",
+        class: { active: _vm.isActive },
+        on: {
+          click: function($event) {
+            return _vm.toggleMenu()
+          }
+        }
+      },
+      [
+        _c("span", {
+          staticClass: "hamburger__patty",
+          class: { active: _vm.isActive }
+        }),
+        _vm._v(" "),
+        _c("span", {
+          staticClass: "hamburger__patty",
+          class: { active: _vm.isActive }
+        }),
+        _vm._v(" "),
+        _c("span", {
+          staticClass: "hamburger__patty",
+          class: { active: _vm.isActive }
+        })
+      ]
+    )
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/sections/FooterComponent.vue?vue&type=template&id=69679e6c&":
 /*!***************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/sections/FooterComponent.vue?vue&type=template&id=69679e6c& ***!
@@ -11119,7 +11278,7 @@ var render = function() {
     [
       _c(
         "v-container",
-        { staticClass: "pa-0 shrink-width" },
+        { staticClass: "shrink-width" },
         [
           _c("div", { staticClass: "language-selector" }, [
             _c(
@@ -11175,156 +11334,8 @@ var render = function() {
                   },
                   attrs: { lg: "12", md: "12", sm: "12", cols: "12" }
                 },
-                [
-                  _c(
-                    "div",
-                    { staticClass: "header-container__collapse-menu" },
-                    [
-                      _c("span", {
-                        on: {
-                          click: function($event) {
-                            return _vm.toggleMenu()
-                          }
-                        }
-                      })
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "ul",
-                    {
-                      staticClass:
-                        "header-container__menu pl-0 pt-4 justify-center text-center",
-                      class: { "header-container__menu--active": _vm.isActive }
-                    },
-                    [
-                      _c(
-                        "span",
-                        {
-                          staticClass: "header-container__menu-close",
-                          on: {
-                            click: function($event) {
-                              return _vm.toggleMenu()
-                            }
-                          }
-                        },
-                        [_vm._v("X")]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "li",
-                        {
-                          staticClass: "header-container__menu-block",
-                          on: {
-                            click: function($event) {
-                              return _vm.toggleMenu()
-                            }
-                          }
-                        },
-                        [
-                          _c("LocalizedLink", { attrs: { to: "/" } }, [
-                            _vm._v(_vm._s(_vm.$t("nav.home")))
-                          ])
-                        ],
-                        1
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "li",
-                        {
-                          staticClass: "header-container__menu-block",
-                          on: {
-                            click: function($event) {
-                              return _vm.toggleMenu()
-                            }
-                          }
-                        },
-                        [
-                          _c("LocalizedLink", { attrs: { to: "/wholesale" } }, [
-                            _vm._v(_vm._s(_vm.$t("nav.wholesale")))
-                          ])
-                        ],
-                        1
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "li",
-                        {
-                          staticClass: "header-container__menu-block",
-                          on: {
-                            click: function($event) {
-                              return _vm.toggleMenu()
-                            }
-                          }
-                        },
-                        [
-                          _c("LocalizedLink", { attrs: { to: "/gallery" } }, [
-                            _vm._v(_vm._s(_vm.$t("nav.gallery")))
-                          ])
-                        ],
-                        1
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "li",
-                        {
-                          staticClass: "header-container__menu-block",
-                          on: {
-                            click: function($event) {
-                              return _vm.toggleMenu()
-                            }
-                          }
-                        },
-                        [
-                          _c(
-                            "LocalizedLink",
-                            { attrs: { to: "/wires-and-harness" } },
-                            [_vm._v(_vm._s(_vm.$t("nav.wires-and-harness")))]
-                          )
-                        ],
-                        1
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "li",
-                        {
-                          staticClass: "header-container__menu-block",
-                          on: {
-                            click: function($event) {
-                              return _vm.toggleMenu()
-                            }
-                          }
-                        },
-                        [
-                          _c("LocalizedLink", { attrs: { to: "/about-us" } }, [
-                            _vm._v(_vm._s(_vm.$t("nav.about-us")))
-                          ])
-                        ],
-                        1
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "li",
-                        {
-                          staticClass: "header-container__menu-block",
-                          on: {
-                            click: function($event) {
-                              return _vm.toggleMenu()
-                            }
-                          }
-                        },
-                        [
-                          _c(
-                            "LocalizedLink",
-                            { attrs: { to: "/contact-us" } },
-                            [_vm._v(_vm._s(_vm.$t("nav.contact-us")))]
-                          )
-                        ],
-                        1
-                      )
-                    ]
-                  )
-                ]
+                [_c("MenuComponent")],
+                1
               )
             ],
             1
@@ -11387,7 +11398,7 @@ var render = function() {
                   _c(
                     "LocalizedLink",
                     {
-                      staticClass: "prefooter-container__block-link",
+                      staticClass: "round-block",
                       attrs: { to: "/wholesale/wires-cables" }
                     },
                     [
@@ -11430,7 +11441,7 @@ var render = function() {
                   _c(
                     "LocalizedLink",
                     {
-                      staticClass: "prefooter-container__block-link",
+                      staticClass: "round-block",
                       attrs: { to: "/wholesale/connectors" }
                     },
                     [
@@ -11478,7 +11489,7 @@ var render = function() {
                   _c(
                     "LocalizedLink",
                     {
-                      staticClass: "prefooter-container__block-link",
+                      staticClass: "round-block",
                       attrs: { to: "/wholesale/pcbs" }
                     },
                     [
@@ -11517,7 +11528,7 @@ var render = function() {
                   _c(
                     "LocalizedLink",
                     {
-                      staticClass: "prefooter-container__block-link",
+                      staticClass: "round-block",
                       attrs: { to: "/wholesale/led" }
                     },
                     [
@@ -11558,7 +11569,7 @@ var render = function() {
                   _c(
                     "LocalizedLink",
                     {
-                      staticClass: "prefooter-container__block-link",
+                      staticClass: "round-block",
                       attrs: { to: "/wholesale/cable-accessories" }
                     },
                     [
@@ -11599,7 +11610,7 @@ var render = function() {
                   _c(
                     "LocalizedLink",
                     {
-                      staticClass: "prefooter-container__block-link",
+                      staticClass: "round-block",
                       attrs: { to: "/wholesale/hardware" }
                     },
                     [
@@ -14493,7 +14504,7 @@ var render = function() {
         },
         [
           _c("v-col", { attrs: { cols: "12" } }, [
-            _c("h2", { staticClass: "subcat-title mb-5" }, [
+            _c("h1", { staticClass: "subcat-title mb-5" }, [
               _vm._v(
                 "\n        " +
                   _vm._s(
@@ -15675,7 +15686,7 @@ var render = function() {
                   _c(
                     "LocalizedLink",
                     {
-                      staticClass: "prefooter-container__block-link",
+                      staticClass: "round-block",
                       attrs: { to: "/wholesale/wires-cables" }
                     },
                     [
@@ -15718,7 +15729,7 @@ var render = function() {
                   _c(
                     "LocalizedLink",
                     {
-                      staticClass: "prefooter-container__block-link",
+                      staticClass: "round-block",
                       attrs: { to: "/wholesale/connectors" }
                     },
                     [
@@ -15766,7 +15777,7 @@ var render = function() {
                   _c(
                     "LocalizedLink",
                     {
-                      staticClass: "prefooter-container__block-link",
+                      staticClass: "round-block",
                       attrs: { to: "/wholesale/pcbs" }
                     },
                     [
@@ -15805,7 +15816,7 @@ var render = function() {
                   _c(
                     "LocalizedLink",
                     {
-                      staticClass: "prefooter-container__block-link",
+                      staticClass: "round-block",
                       attrs: { to: "/wholesale/led" }
                     },
                     [
@@ -15846,7 +15857,7 @@ var render = function() {
                   _c(
                     "LocalizedLink",
                     {
-                      staticClass: "prefooter-container__block-link",
+                      staticClass: "round-block",
                       attrs: { to: "/wholesale/cable-accessories" }
                     },
                     [
@@ -15887,7 +15898,7 @@ var render = function() {
                   _c(
                     "LocalizedLink",
                     {
-                      staticClass: "prefooter-container__block-link",
+                      staticClass: "round-block",
                       attrs: { to: "/wholesale/hardware" }
                     },
                     [
@@ -74408,6 +74419,75 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/components/MenuComponent.vue":
+/*!***************************************************!*\
+  !*** ./resources/js/components/MenuComponent.vue ***!
+  \***************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _MenuComponent_vue_vue_type_template_id_98f701fa___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./MenuComponent.vue?vue&type=template&id=98f701fa& */ "./resources/js/components/MenuComponent.vue?vue&type=template&id=98f701fa&");
+/* harmony import */ var _MenuComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./MenuComponent.vue?vue&type=script&lang=js& */ "./resources/js/components/MenuComponent.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _MenuComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _MenuComponent_vue_vue_type_template_id_98f701fa___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _MenuComponent_vue_vue_type_template_id_98f701fa___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/MenuComponent.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/MenuComponent.vue?vue&type=script&lang=js&":
+/*!****************************************************************************!*\
+  !*** ./resources/js/components/MenuComponent.vue?vue&type=script&lang=js& ***!
+  \****************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_MenuComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./MenuComponent.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/MenuComponent.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_MenuComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/MenuComponent.vue?vue&type=template&id=98f701fa&":
+/*!**********************************************************************************!*\
+  !*** ./resources/js/components/MenuComponent.vue?vue&type=template&id=98f701fa& ***!
+  \**********************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_MenuComponent_vue_vue_type_template_id_98f701fa___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./MenuComponent.vue?vue&type=template&id=98f701fa& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/MenuComponent.vue?vue&type=template&id=98f701fa&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_MenuComponent_vue_vue_type_template_id_98f701fa___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_MenuComponent_vue_vue_type_template_id_98f701fa___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
 /***/ "./resources/js/components/sections/FooterComponent.vue":
 /*!**************************************************************!*\
   !*** ./resources/js/components/sections/FooterComponent.vue ***!
@@ -75553,7 +75633,7 @@ module.exports = JSON.parse("{\"app\":\"Ecomponents d.o.o\",\"nav\":{\"wholesale
 /*! exports provided: app, nav, contact-fixed, prefooter, about-us, why-choose-us-home, wire-and-cable-harness, wholesale, contact-us, default */
 /***/ (function(module) {
 
-module.exports = JSON.parse("{\"app\":\"Ecomponents d.o.o\",\"nav\":{\"wholesale\":\"prodaja\",\"home\":\"početna\",\"about-us\":\"O nama\",\"contact-us\":\"Kontakt\",\"gallery\":\"Galerija\",\"wires-and-harness\":\"Ugradnja žice i kablova\"},\"contact-fixed\":{\"title\":{\"text\":\"Imate\",\"span\":\"pitanje?\"},\"button\":\"Kontaktirajte nas\"},\"prefooter\":{\"title-left\":\"Prodaja\",\"title-right\":\"Pogledajte još\",\"links-left\":{\"wires-cables\":\"Žice i kablovi\",\"connectors\":\"Konektori & elektronske komponenete\",\"pcb\":\"PCBs\",\"led\":\"LEDs\",\"cables\":\"Dodaci za kablove\",\"harware\":\"Hardware\"}},\"about-us\":{\"title\":{\"text\":\"O\",\"span\":\"nama\"},\"text1\":\"Dobrodošli u eComponents, vaš najbolji izvor svih stvari vezanih za elektroniku. Posvećeni smo tome da vam ponudimo najbolje od elektronskih komponenti, sa fokusom na uslugu i pomoć kupcima, pouzdane proizvode i jedinstvenost\",\"text2\":\"Naša strast i želja da pomognemo inovativnim ljudima u postizanju neverovatnih stvari su nas motivisale da napustimo svoje tadašnje poslove i dale nam podsticaj da pretvorimo naporan rad i inspiraciju u ovaj brzo-rastući poduhvat.\",\"text3\":\"Sada snabdevamo naše klijente sa elektronskim komponentama – žicama i kablovima, konektorima, aktivnim i pasivnim komponentama najboljeg kvaliteta vodećih svetskih proizvođača, kao što su Molex, TE Connectivity, JST, MEDIKabel, HELUKABEL itd., po veoma kompetitivnim cenama. Sa lakoćom se snalazimo u okeanu elektronike, terminologije i tehničkih crteža – pa vi ne morate!\",\"text4\":\"Takođe, ističemo se i proizvodnjom kablovskih veza i sklopova po vašim instrukcijama i zahtevima. Ono što vi zamislite, mi možemo da napravimo; vi sastavite sve delove, a mi ćemo se pobrinuti da oni ožive.\",\"text5\":\"eComponents se nalazi u Srbiji, ali možemo da vršimo isporuke svuda u svetu. Uzbuđeni smo što smo deo rastuće grane elektronske industrije.\",\"text6\":\"Ako imate neka pitanja ili komentare, molimo vas ne oklevajte da nas kontaktirate. Naše ljubazno osoblje će vam rado izaći u susret i u najkraćem roku odgovoriti na vaše upite. Radujemo se saradnji sa vama!\",\"sincerely\":\"S poštovanjem\",\"stamp\":\"eComponents tim\"},\"why-choose-us-home\":{\"main-title\":{\"text\":\"Zašto da izaberete\",\"span\":\"eComponents d.o.o\"},\"title\":\"Brza ponuda\",\"description\":\"Posvećeni smo tome da odgovorimo na sve upite u najkraćem vremenskom roku.\",\"title2\":\"Ušteda novca\",\"description2\":\"Uz naše kompetitivne cene i vešte radnike, klijenti mogu značajno uštedeti 'outsourcing-om' proizvodnje kablovskih veza eComponents-u.\",\"title3\":\"Iskustvo\",\"description3\":\"Već godinama, naš glavni cilj je da ponudimo uslugu najboljeg kvaliteta svojim mušterijama.\",\"title4\":\"Isporuka na vreme\",\"description4\":\"Sa našim sistemom isporuke, osiguravamo brzu isporuku širom sveta.\",\"title5\":\"Poverenje\",\"description5\":\"Mi smo pouzdan član domaćeg i globalnog lanca distribucije elektronskih komponenti.\",\"title6\":\"Kvalitet\",\"description6\":\"Nudimo usluge i proizvode vrhunskog kvaliteta sa sertifikatima.\"},\"wire-and-cable-harness\":{\"button\":\"Detaljnije\",\"title\":{\"text\":\"ugradnja žice\",\"span\":\"i kablova\"},\"description\":\"Svojim klijentima i poslovnim partnerima u različitim industrijama nudimo rešenja ‘’po meri’’ u oblasti kablovskih veza i sklopova. Industrija kućnih aparata, gejming i vending aparata i mnoge druge industrije se oslanjaju na nas da udahnemo život u njihove dizajne. Bilo da je u pitanju jedna žica ili komplikovan kablovski sistem – možete računati na nas!\",\"description2\":\"Nudimo usluge koje pokrivaju sve od izrade prototipa do serijske proizvodnje. Obzirom na to da jetakođe dobavljač elektronskih komponenti, eComponents takođe nudi širok izbor kablovskih rešenja sarazličitom kombinacijom konektora, provodnika, dodataka za kablove itd. Svi naši kablovski sklopovi suprilagođeni želji kupca po boji, dužini i posebnim pinovanjem.\",\"description3\":\"eComponents nudi razvoj i proizvodnju kablovskih sklopova, kao što su:\",\"description4\":{\"title\":\"Izrada prototipa\",\"text\":\"možemo da napravimo funkcionalne prototipe bazirane na vašem dizajnu – biloda je to opis ili fotografija; ili tehnički crtež, obrnuti inženjering (reverse-engineering), uzorak kabela.Takođe, nudimo pomoć prilikom odabira konektora, provodnika i drugih delova vašeg proizvoda.\"},\"description5\":{\"title\":\"Dokumentovanje\",\"text\":\"možemo da napravimo detaljnu dokumentaciju, koja uključuje crteže, listematerijala i druge informacije potrebne za proizvod. Kada definišemo kablovski sklop i dodelimo mu brojartikla, nakon toga možete sa lakoćom poručiti željeni artikal ili napraviti promene, odnosno revizije nakabelu u bilo kom trenutku, uz pomoć naših tehničara.\"},\"description6\":{\"title\":\"Proizvodnja\",\"text\":\"nudimo vam proizvodnju kablovskih sklopova u velikim količinama bez gubitka ukvalitetu sa izuzetnom pažnjom na detalje. Ovo se odnosi na jednostavne kablove kao i nakomplikovanije kablovske sisteme. Nudimo klasične plug-in kontakte sa (ili bez) kućišta na provodnicimarazličitih preseka, boja, kvaliteta, standarda i sertifikata.\"},\"description7\":{\"title\":\"Kontrola kvaliteta\",\"text\":\"svaki kablovski sklop, pre samog slanja, prolazi kroz seriju detaljnih testiranjaod strane naše kontrole kvaliteta. Ovo je za nas veoma važno, i znamo da je to jednako važno za našeklijente.\"},\"description8\":\"Sa iskustvom i veštinama u kombinaciji sa profesionalnom opremom i posvećenosti u pomaganju našimklijentima da ostvare svoje ciljeve, u mogućnosti smo da stvorimo prilagođene i inovativne proizvodekako bismo ispunili sve potrebe naših klijenata.\",\"description9\":\"Kontaktirajte nas putem naše kontakt forme već danas i … MAKE IT WORK!\"},\"wholesale\":{\"text\":\"pro\",\"span\":\"daja\",\"pages\":{\"wires\":{\"title\":{\"text\":\"Žice i\",\"span\":\"kablovi\"},\"sub-section\":{\"wires\":{\"title\":\"Žice\",\"sub-title\":{\"text\":\"Licnasti provodnici\",\"span\":\"za elektorniku\"},\"paragraph\":\"Veliki izbor\",\"description\":\"Pomoć pri odabiru. Mogućnost merenja provodnika na željenu dužinu\",\"liy\":\"liy\",\"list\":{\"title\":\"Provodnici svih preseka\",\"list-item\":\"Provodnici različitih poprečnih preseka za različitu upotrebu\",\"list-item2\":\"0,14mm2; 0,25mm2; 0,34mm2........ 1mm2; 1,5mm2; 2,5mm2;..........10mm2..........\"},\"list2\":{\"title\":\"Provodnici različitih boja \",\"list-item\":\"Širok spektar boja i nijansi\",\"list-item2\":\"Dvobojne žice sa poprečnom i uzdužnom šarom\"},\"list3\":{\"title\":\"Standard\",\"list-item\":\"Provodnici po standardima za evropsko i američko tržište (VDE, UL, cUL...)\",\"list-item2\":\"Provodnici različite strukture i materijala po propisanim standardima i testiranim za rad u izuzetnim okolnostima (visoka temperatura, vlaga, unutrašnja/spoljašnja upotreba...)\"},\"note\":\"za određene provodnike\"},\"cables\":{\"title\":\"Kablovi\",\"sub-title\":{\"text\":\"PVC kablovi za\",\"span\":\"sve vaše potrebe\"},\"paragraph\":\"Veliki izbor\",\"description\":\"Pomoć pri odabiru. Mogućnost merenja provodnika na željenu dužinu\",\"multi-core\":\"Višežilni, širmovani, signalni kablovi\",\"list\":{\"title\":\"Kablovi sa više jezgara\",\"list-item\":\"Kablovi sa dva ili više jezgra sa različitim presecima jezgara i određenim bojama\",\"list-item2\":\"U ponudi imamo kablove 2x0,25mm2 ; 2x0,34mm2… 5x0,25mm2, 5x0,34mm2…..\"},\"list2\":{\"title\":\"Naponski kablovi\",\"list-item\":\"Sve vrste naponskih kablova za nizak, srednji ili visok napon\"},\"note\":\"za određene provodnike\"},\"ready-made\":{\"title\":\"Gotovi kablovi koji su vam uvek potrebni\",\"sub-title\":{\"text\":\"Gotovi\",\"span\":\"kablovi\"},\"description\":\"Širok asortiman gotovih kablova\",\"description2\":\"Budite povezani u svakom trenutku\",\"description3\":\"Mogućnost specijalne porudžbine\",\"list\":{\"title\":\"USB kablovi\",\"list-item\":\"U ponudi imamo USB kablove različitih boja i dužina, sa kombinacijom konektora koji vam odgovaraju.\",\"list-item2\":{\"title\":\"Kombinacije\",\"paragraph\":\"Type A male – Type A female (produžni USB type A kabl sa ili bez šrafova za montažu)\",\"paragraph2\":\"Type A – Type B, Type B mini, Type B micro\",\"paragraph3\":\"Type A – Type\",\"paragraph4\":\"i drugi...\"},\"list-item3\":\"Konektori pod uglom\"},\"list2\":{\"title\":\"Audio i video kablovi\",\"list-item\":\"Monitor kablovi za sve tipove vaših ekrana (HDMI, DVI, DP, VGA…)\",\"list-item2\":\"Audio kablovi (bananice)\"},\"list3\":{\"title\":\"I drugi po vašem zahtevu...\",\"list-item\":\"Nudimo i proizvodnju kablovskih sklopova po vašem zahtevu – od manjih kablova do velikih sklopova\",\"click-here\":{\"text\":\"Za više informacija\",\"span\":\"kliknite na sliku\"}}}}},\"connectors\":{\"title\":{\"text\":\"Konektori, terminali\",\"span\":\"i elektronske komponente\"},\"sub-section\":{\"connectors\":{\"title\":\"Konektori\",\"sub-title\":{\"text\":\"Konektori za \",\"span\":\"svaku konekciju\"},\"paragraph\":\"Široka lepeza konektora za različitu upotrebu\",\"description\":\"Pomoć pri pretrazi konektora\",\"description2\":\"Mogućnost ponude alternativnih modela\",\"list\":{\"title\":\"Proizvođači i konfiguracije\",\"list-item\":\"Veliki izbor konektora različitih svetskih proizvođača kao što su Molex, TE Connectivity, JST… \",\"list-item2\":\"U ponudi imamo konektore različitih rastera (razmaka između pinova) i konfiguracija pinova, napojne konektore, audio i video konektore, signalne konektore, data konektore\"},\"list2\":{\"title\":\"Krimp kontakti i kućišta za konektore\",\"list-item\":\"Uz svaki konektor nudimo i odgovarajuće pinove, tj. krimp kontakte za odgovarajuće preseke žica kao i plastična kućišta za pojedine konektore koji ih imaju\"},\"list3\":{\"title\":\"Alternative\",\"list-item\":\"Takođe, nudimo alternativne modele naših kineskih partnera ukoliko vam za vaš projekat odgovaraju povoljnije cene\"}},\"terminals\":{\"title\":\"Terminali\",\"sub-title\":{\"text\":\"Da kraj vaših žica\",\"span\":\"nikad ne bude sam\"},\"paragraph\":\"Lako montiranje\",\"description\":\"Veliki izbor terminala sa različitim karatkeristikama\",\"description2\":\"Jednostavna aplikacija\",\"wire-cable\":\"Terminali\",\"list\":{\"title\":\"Vrste terminala\",\"list-item\":\"Vrste terminala koje nudimo:\",\"list-item2\":\"Viljuškice (M3, M4, M5…)\",\"list-item3\":\"Ring terminali (prečnika 3mm, 4mm, 5mm...)\",\"list-item4\":\"Faston2.8mm, 4.8mm, 6.3mm\",\"list-item5\":\"and others...Bootlace ferrules\",\"list-item6\":\"Hilzne\",\"list-item7\":\"Čaure\",\"list-item8\":\"i još svašta!\"},\"list2\":{\"title\":\"Karakteristike\",\"list-item\":\"Svi terminali koje imamo u ponudi mogu biti sa PVC izolacijom i bez nje. Ponuđeni terminali su u skladu sa presekom žica koje želite da ukrimpate\"},\"list3\":{\"title\":\"Alternativa\",\"list-item\":\"Takođe, nudimo alternativne modele naših kineskih partnera ukoliko vam za vaš projekat odgovaraju povoljnije cene\"}},\"components\":{\"title\":\"Elektronske komponente\",\"sub-title\":{\"text\":\"Sve od elektronskih komponenata \",\"span\":\"na jednom mestu\"},\"paragraph\":\"Odabir različitih aktivnih i pasivnih komponenti\",\"description\":\"Elektronske komponente za aparate i uređaje\",\"description2\":\"Pomoć pri izboru\",\"list\":{\"title\":\"Veliki izbor\",\"list-item\":\"Širok dijapazon aktivnih i pasivnih komponenti\",\"list-item2\":\"Releji, LED indikatori, otpornici, osigurači…\"},\"list2\":{\"title\":\"Količine\",\"list-item\":\"Nabavka od nekoliko komada do nekoliko hiljada komada\"}}}},\"pcb\":{\"title\":\"pcbs\",\"sub-title\":{\"text\":\"PCB\",\"span\":\"dizajn\"},\"paragraph\":\"Projektovanje štampanih ploča\",\"paragraph2\":\"Brza izrada prototipa\",\"description\":\"Serijska proizvodnja\",\"list\":{\"title\":\"Pomoć pri dizajnu\",\"list-item\":\"Dizajn prema zahtevu korisnika\",\"list-item2\":\"Izrada dokumentacije\",\"list-item3\":\"Projektovanje elektronike\",\"list-item4\":\"Projektovanje štampanih ploča\",\"list-item5\":\"Brza izrada prototipa\"},\"list2\":{\"title\":\"Proizvodnja\",\"list-item\":\"Ručna i robotizovana serijska proizvodnja\",\"list-item2\":\"Kontrola i testiranje\",\"list-item3\":\"Garantovan kvalitet\",\"list-item4\":\"Pristupačne cene\"}},\"led\":{\"title\":\"led program\",\"sub-title\":{\"text\":\"Led\",\"span\":\"rasveta\"},\"paragraph\":\"Širok asortiman LED traka i modula\",\"paragraph2\":\"Mogućnost montiranja kablova i konektora na LED trake i module radi lakše konekcije\",\"paragraph3\":\"Jednostavno montiranje (3M traka)\",\"list\":{\"list-item\":\"Raznovstan asortiman LED traka i modula\",\"list-item2\":\"Trake sa različitim brojem LED-ova po metru (30LED/m, 60LED/m…)\",\"list-item3\":\"Jednobojne i RGB trake\",\"list-item4\":\"LED-ovi različitih dimenzija (3030, 3528, 5050 i mnogi drugi)\",\"list-item5\":\"Trake sa različitim sertifikatima IP zaštite (bez zaštite, otporne na udar, prašinu, vodu (silikonske) i mnoge druge)\"}},\"accessories\":{\"title\":\"Dodaci za kablove\",\"sub-title\":{\"text\":\"Sve što vam treba za\",\"span\":\"besprekornu asemblažu i izolaciju kablova\"},\"paragraph\":\"Širok izbor kablovskih vezica i držača\",\"paragraph2\":\"Ponuda izolacionih creva\",\"paragraph3\":\"Sve što je potrebno za uredno ožičavanje i obeležavanje na jednom mestu\",\"list\":{\"title\":\"Vezice i držači\",\"list-item\":\"Plastične vezice različitih dimenzija i boja za učvršćivanje kablovskih sklopova\",\"list-item2\":\"Držači i nosači kablova sa montirajućim patentom radi lakšeg manipulisanja kablovima\"},\"list2\":{\"title\":\"Izolacioni program\",\"list-item\":\"Termoskupljajući bužiri različitih preseka i razmera, za izolaciju provodnika i kablova\",\"list-item2\":\"PVC creva razčilitih preseka i dimenzija\",\"list-item3\":\"Rebrasta PVC creva, PVC lanci i drugo\"},\"list3\":{\"title\":\"Alternativne ponude\",\"list-item\":\"Takođe, nudimo alternativne modele naših kineskih partnera ukoliko vam za vaš projekat odgovaraju povoljnije cene\"}},\"hardware\":{\"title\":\"hardware\",\"sub-title\":{\"text\":\"Hardverske komponente\",\"span\":\"za vaše aparate i uređaje\"},\"paragraph\":\"Metalna kućišta\",\"paragraph2\":\"Napajanja\",\"list\":{\"list-item\":\"Mogućnost nabavke različitih delova za aparate kao što su ugradni ekrani, touch screen ekrani, LED paneli, napajanja, Bluetooth moduli, antene, pojačala, i sve drugo po vašem zahtevu.\",\"list-item2\":\"Nabavka na malo i veliko od evropskih i američkih distributera, kao i od kineskih partnera po dobrim cenama i sa kratkim rokovima isporuke\",\"list-item3\":\"Metalna kućišta, delovi od pleksiglasa i dr.\"}}}},\"contact-us\":{\"title\":{\"span\":\"nas\",\"text\":\"kontaktirajte\"},\"phone\":\"Telefon\",\"address\":\"Adresa\",\"button\":\"pošalju\",\"name\":\"Ime\",\"email\":\"Email\",\"country\":\"Zemlja\",\"phone-placeholder\":\"Telefon\",\"message\":\"Poruka\",\"upload\":\"Dodajte sliku\"}}");
+module.exports = JSON.parse("{\"app\":\"Ecomponents d.o.o\",\"nav\":{\"wholesale\":\"prodaja\",\"home\":\"početna\",\"about-us\":\"O nama\",\"contact-us\":\"Kontakt\",\"gallery\":\"Galerija\",\"wires-and-harness\":\"Ugradnja žice i kablova\"},\"contact-fixed\":{\"title\":{\"text\":\"Imate\",\"span\":\"pitanje?\"},\"button\":\"Kontaktirajte nas\"},\"prefooter\":{\"title-left\":\"Prodaja\",\"title-right\":\"Pogledajte još\",\"links-left\":{\"wires-cables\":\"Žice i kablovi\",\"connectors\":\"Konektori & elektronske komponenete\",\"pcb\":\"PCBs\",\"led\":\"LEDs\",\"cables\":\"Dodaci za kablove\",\"harware\":\"Hardware\"}},\"about-us\":{\"title\":{\"text\":\"O\",\"span\":\"nama\"},\"text1\":\"Dobrodošli u eComponents, vaš najbolji izvor svih stvari vezanih za elektroniku. Posvećeni smo tome da vam ponudimo najbolje od elektronskih komponenti, sa fokusom na uslugu i pomoć kupcima, pouzdane proizvode i jedinstvenost.\",\"text2\":\"Naša strast i želja da pomognemo inovativnim ljudima u postizanju neverovatnih stvari su nas motivisale da napustimo svoje tadašnje poslove i dale nam podsticaj da pretvorimo naporan rad i inspiraciju u ovaj brzo-rastući poduhvat.\",\"text3\":\"Sada snabdevamo naše klijente sa elektronskim komponentama – žicama i kablovima, konektorima, aktivnim i pasivnim komponentama najboljeg kvaliteta vodećih svetskih proizvođača, kao što su Molex, TE Connectivity, JST, MEDIKabel, HELUKABEL itd., po veoma kompetitivnim cenama. Sa lakoćom se snalazimo u okeanu elektronike, terminologije i tehničkih crteža – pa vi ne morate!\",\"text4\":\"Takođe, ističemo se i proizvodnjom kablovskih veza i sklopova po vašim instrukcijama i zahtevima. Ono što vi zamislite, mi možemo da napravimo; vi sastavite sve delove, a mi ćemo se pobrinuti da oni ožive.\",\"text5\":\"eComponents se nalazi u Srbiji, ali možemo da vršimo isporuke svuda u svetu. Uzbuđeni smo što smo deo rastuće grane elektronske industrije.\",\"text6\":\"Ako imate neka pitanja ili komentare, molimo vas ne oklevajte da nas kontaktirate. Naše ljubazno osoblje će vam rado izaći u susret i u najkraćem roku odgovoriti na vaše upite. Radujemo se saradnji sa vama!\",\"sincerely\":\"S poštovanjem\",\"stamp\":\"eComponents tim\"},\"why-choose-us-home\":{\"main-title\":{\"text\":\"Zašto da izaberete\",\"span\":\"eComponents d.o.o\"},\"title\":\"Brza ponuda\",\"description\":\"Posvećeni smo tome da odgovorimo na sve upite u najkraćem vremenskom roku.\",\"title2\":\"Ušteda novca\",\"description2\":\"Uz naše kompetitivne cene i vešte radnike, klijenti mogu značajno uštedeti 'outsourcing-om' proizvodnje kablovskih veza eComponents-u.\",\"title3\":\"Iskustvo\",\"description3\":\"Već godinama, naš glavni cilj je da ponudimo uslugu najboljeg kvaliteta svojim mušterijama.\",\"title4\":\"Isporuka na vreme\",\"description4\":\"Sa našim sistemom isporuke, osiguravamo brzu isporuku širom sveta.\",\"title5\":\"Poverenje\",\"description5\":\"Mi smo pouzdan član domaćeg i globalnog lanca distribucije elektronskih komponenti.\",\"title6\":\"Kvalitet\",\"description6\":\"Nudimo usluge i proizvode vrhunskog kvaliteta sa sertifikatima.\"},\"wire-and-cable-harness\":{\"button\":\"Detaljnije\",\"title\":{\"text\":\"ugradnja žice\",\"span\":\"i kablova\"},\"description\":\"Svojim klijentima i poslovnim partnerima u različitim industrijama nudimo rešenja ‘’po meri’’ u oblasti kablovskih veza i sklopova. Industrija kućnih aparata, gejming i vending aparata i mnoge druge industrije se oslanjaju na nas da udahnemo život u njihove dizajne. Bilo da je u pitanju jedna žica ili komplikovan kablovski sistem – možete računati na nas!\",\"description2\":\"Nudimo usluge koje pokrivaju sve od izrade prototipa do serijske proizvodnje. Obzirom na to da je takođe dobavljač elektronskih komponenti, eComponents takođe nudi širok izbor kablovskih rešenja sa različitom kombinacijom konektora, provodnika, dodataka za kablove itd. Svi naši kablovski sklopovi suprilagođeni želji kupca po boji, dužini i posebnim pinovanjem.\",\"description3\":\"eComponents nudi razvoj i proizvodnju kablovskih sklopova, kao što su:\",\"description4\":{\"title\":\"Izrada prototipa\",\"text\":\"možemo da napravimo funkcionalne prototipe bazirane na vašem dizajnu – bilo da je to opis ili fotografija; ili tehnički crtež, obrnuti inženjering (reverse-engineering), uzorak kabela.Takođe, nudimo pomoć prilikom odabira konektora, provodnika i drugih delova vašeg proizvoda.\"},\"description5\":{\"title\":\"Dokumentovanje\",\"text\":\"možemo da napravimo detaljnu dokumentaciju, koja uključuje crteže, liste materijala i druge informacije potrebne za proizvod. Kada definišemo kablovski sklop i dodelimo mu broj artikla, nakon toga možete sa lakoćom poručiti željeni artikal ili napraviti promene, odnosno revizije na kabelu u bilo kom trenutku, uz pomoć naših tehničara.\"},\"description6\":{\"title\":\"Proizvodnja\",\"text\":\"nudimo vam proizvodnju kablovskih sklopova u velikim količinama bez gubitka u kvalitetu sa izuzetnom pažnjom na detalje. Ovo se odnosi na jednostavne kablove kao i na komplikovanije kablovske sisteme. Nudimo klasične plug-in kontakte sa (ili bez) kućišta na provodnicima različitih preseka, boja, kvaliteta, standarda i sertifikata.\"},\"description7\":{\"title\":\"Kontrola kvaliteta\",\"text\":\"svaki kablovski sklop, pre samog slanja, prolazi kroz seriju detaljnih testiranja od strane naše kontrole kvaliteta. Ovo je za nas veoma važno, i znamo da je to jednako važno za našeklijente.\"},\"description8\":\"Sa iskustvom i veštinama u kombinaciji sa profesionalnom opremom i posvećenosti u pomaganju našim klijentima da ostvare svoje ciljeve, u mogućnosti smo da stvorimo prilagođene i inovativne proizvodekako bismo ispunili sve potrebe naših klijenata.\",\"description9\":\"Kontaktirajte nas putem naše kontakt forme već danas i … MAKE IT WORK!\"},\"wholesale\":{\"text\":\"pro\",\"span\":\"daja\",\"pages\":{\"wires\":{\"title\":{\"text\":\"Žice i\",\"span\":\"kablovi\"},\"sub-section\":{\"wires\":{\"title\":\"Žice\",\"sub-title\":{\"text\":\"Licnasti provodnici\",\"span\":\"za elektorniku\"},\"paragraph\":\"Veliki izbor\",\"description\":\"Pomoć pri odabiru. Mogućnost merenja provodnika na željenu dužinu\",\"description2\":\"Mogućnost merenja provodnika na željenu dužinu\",\"liy\":\"liy\",\"list\":{\"title\":\"Provodnici svih preseka\",\"list-item\":\"Provodnici različitih poprečnih preseka za različitu upotrebu\",\"list-item2\":\"0,14mm2; 0,25mm2; 0,34mm2........ 1mm2; 1,5mm2; 2,5mm2;..........10mm2..........\"},\"list2\":{\"title\":\"Provodnici različitih boja \",\"list-item\":\"Širok spektar boja i nijansi\",\"list-item2\":\"Dvobojne žice sa poprečnom i uzdužnom šarom\"},\"list3\":{\"title\":\"Standard\",\"list-item\":\"Provodnici po standardima za evropsko i američko tržište (VDE, UL, cUL...)\",\"list-item2\":\"Provodnici različite strukture i materijala po propisanim standardima i testiranim za rad u izuzetnim okolnostima (visoka temperatura, vlaga, unutrašnja/spoljašnja upotreba...)\"},\"note\":\"za određene provodnike\"},\"cables\":{\"title\":\"Kablovi\",\"sub-title\":{\"text\":\"PVC kablovi za\",\"span\":\"sve vaše potrebe\"},\"paragraph\":\"Veliki izbor\",\"description\":\"Pomoć pri odabiru. Mogućnost merenja provodnika na željenu dužinu\",\"multi-core\":\"Višežilni, širmovani, signalni kablovi\",\"list\":{\"title\":\"Kablovi sa više jezgara\",\"list-item\":\"Kablovi sa dva ili više jezgra sa različitim presecima jezgara i određenim bojama\",\"list-item2\":\"U ponudi imamo kablove 2x0,25mm2 ; 2x0,34mm2… 5x0,25mm2, 5x0,34mm2…..\"},\"list2\":{\"title\":\"Naponski kablovi\",\"list-item\":\"Sve vrste naponskih kablova za nizak, srednji ili visok napon\"},\"note\":\"za određene provodnike\"},\"ready-made\":{\"title\":\"Gotovi kablovi koji su vam uvek potrebni\",\"sub-title\":{\"text\":\"Gotovi\",\"span\":\"kablovi\"},\"description\":\"Širok asortiman gotovih kablova\",\"description2\":\"Budite povezani u svakom trenutku\",\"description3\":\"Mogućnost specijalne porudžbine\",\"list\":{\"title\":\"USB kablovi\",\"list-item\":\"U ponudi imamo USB kablove različitih boja i dužina, sa kombinacijom konektora koji vam odgovaraju.\",\"list-item2\":{\"title\":\"Kombinacije\",\"paragraph\":\"Type A male – Type A female (produžni USB type A kabl sa ili bez šrafova za montažu)\",\"paragraph2\":\"Type A – Type B, Type B mini, Type B micro\",\"paragraph3\":\"Type A – Type\",\"paragraph4\":\"i drugi...\"},\"list-item3\":\"Konektori pod uglom\"},\"list2\":{\"title\":\"Audio i video kablovi\",\"list-item\":\"Monitor kablovi za sve tipove vaših ekrana (HDMI, DVI, DP, VGA…)\",\"list-item2\":\"Audio kablovi (bananice)\"},\"list3\":{\"title\":\"I drugi po vašem zahtevu...\",\"list-item\":\"Nudimo i proizvodnju kablovskih sklopova po vašem zahtevu – od manjih kablova do velikih sklopova\",\"click-here\":{\"text\":\"Za više informacija\",\"span\":\"kliknite na sliku\"}}}}},\"connectors\":{\"title\":{\"text\":\"Konektori, terminali\",\"span\":\"i elektronske komponente\"},\"sub-section\":{\"connectors\":{\"title\":\"Konektori\",\"sub-title\":{\"text\":\"Konektori za \",\"span\":\"svaku konekciju\"},\"paragraph\":\"Široka lepeza konektora za različitu upotrebu\",\"description\":\"Pomoć pri pretrazi konektora\",\"description2\":\"Mogućnost ponude alternativnih modela\",\"list\":{\"title\":\"Proizvođači i konfiguracije\",\"list-item\":\"Veliki izbor konektora različitih svetskih proizvođača kao što su Molex, TE Connectivity, JST… \",\"list-item2\":\"U ponudi imamo konektore različitih rastera (razmaka između pinova) i konfiguracija pinova, napojne konektore, audio i video konektore, signalne konektore, data konektore\"},\"list2\":{\"title\":\"Krimp kontakti i kućišta za konektore\",\"list-item\":\"Uz svaki konektor nudimo i odgovarajuće pinove, tj. krimp kontakte za odgovarajuće preseke žica kao i plastična kućišta za pojedine konektore koji ih imaju\"},\"list3\":{\"title\":\"Alternative\",\"list-item\":\"Takođe, nudimo alternativne modele naših kineskih partnera ukoliko vam za vaš projekat odgovaraju povoljnije cene\"}},\"terminals\":{\"title\":\"Terminali\",\"sub-title\":{\"text\":\"Da kraj vaših žica\",\"span\":\"nikad ne bude sam\"},\"paragraph\":\"Lako montiranje\",\"description\":\"Veliki izbor terminala sa različitim karatkeristikama\",\"description2\":\"Jednostavna aplikacija\",\"wire-cable\":\"Terminali\",\"list\":{\"title\":\"Vrste terminala\",\"list-item\":\"Vrste terminala koje nudimo:\",\"list-item2\":\"Viljuškice (M3, M4, M5…)\",\"list-item3\":\"Ring terminali (prečnika 3mm, 4mm, 5mm...)\",\"list-item4\":\"Faston2.8mm, 4.8mm, 6.3mm\",\"list-item5\":\"and others...Bootlace ferrules\",\"list-item6\":\"Hilzne\",\"list-item7\":\"Čaure\",\"list-item8\":\"i još svašta!\"},\"list2\":{\"title\":\"Karakteristike\",\"list-item\":\"Svi terminali koje imamo u ponudi mogu biti sa PVC izolacijom i bez nje. Ponuđeni terminali su u skladu sa presekom žica koje želite da ukrimpate\"},\"list3\":{\"title\":\"Alternativa\",\"list-item\":\"Takođe, nudimo alternativne modele naših kineskih partnera ukoliko vam za vaš projekat odgovaraju povoljnije cene\"}},\"components\":{\"title\":\"Elektronske komponente\",\"sub-title\":{\"text\":\"Sve od elektronskih komponenata \",\"span\":\"na jednom mestu\"},\"paragraph\":\"Odabir različitih aktivnih i pasivnih komponenti\",\"description\":\"Elektronske komponente za aparate i uređaje\",\"description2\":\"Pomoć pri izboru\",\"list\":{\"title\":\"Veliki izbor\",\"list-item\":\"Širok dijapazon aktivnih i pasivnih komponenti\",\"list-item2\":\"Releji, LED indikatori, otpornici, osigurači…\"},\"list2\":{\"title\":\"Količine\",\"list-item\":\"Nabavka od nekoliko komada do nekoliko hiljada komada\"}}}},\"pcb\":{\"title\":\"pcbs\",\"sub-title\":{\"text\":\"PCB\",\"span\":\"dizajn\"},\"paragraph\":\"Projektovanje štampanih ploča\",\"paragraph2\":\"Brza izrada prototipa\",\"description\":\"Serijska proizvodnja\",\"list\":{\"title\":\"Pomoć pri dizajnu\",\"list-item\":\"Dizajn prema zahtevu korisnika\",\"list-item2\":\"Izrada dokumentacije\",\"list-item3\":\"Projektovanje elektronike\",\"list-item4\":\"Projektovanje štampanih ploča\",\"list-item5\":\"Brza izrada prototipa\"},\"list2\":{\"title\":\"Proizvodnja\",\"list-item\":\"Ručna i robotizovana serijska proizvodnja\",\"list-item2\":\"Kontrola i testiranje\",\"list-item3\":\"Garantovan kvalitet\",\"list-item4\":\"Pristupačne cene\"}},\"led\":{\"title\":\"led program\",\"sub-title\":{\"text\":\"Led\",\"span\":\"rasveta\"},\"paragraph\":\"Širok asortiman LED traka i modula\",\"paragraph2\":\"Mogućnost montiranja kablova i konektora na LED trake i module radi lakše konekcije\",\"paragraph3\":\"Jednostavno montiranje (3M traka)\",\"list\":{\"list-item\":\"Raznovstan asortiman LED traka i modula\",\"list-item2\":\"Trake sa različitim brojem LED-ova po metru (30LED/m, 60LED/m…)\",\"list-item3\":\"Jednobojne i RGB trake\",\"list-item4\":\"LED-ovi različitih dimenzija (3030, 3528, 5050 i mnogi drugi)\",\"list-item5\":\"Trake sa različitim sertifikatima IP zaštite (bez zaštite, otporne na udar, prašinu, vodu (silikonske) i mnoge druge)\"}},\"accessories\":{\"title\":\"Dodaci za kablove\",\"sub-title\":{\"text\":\"Sve što vam treba za\",\"span\":\"besprekornu asemblažu i izolaciju kablova\"},\"paragraph\":\"Širok izbor kablovskih vezica i držača\",\"paragraph2\":\"Ponuda izolacionih creva\",\"paragraph3\":\"Sve što je potrebno za uredno ožičavanje i obeležavanje na jednom mestu\",\"list\":{\"title\":\"Vezice i držači\",\"list-item\":\"Plastične vezice različitih dimenzija i boja za učvršćivanje kablovskih sklopova\",\"list-item2\":\"Držači i nosači kablova sa montirajućim patentom radi lakšeg manipulisanja kablovima\"},\"list2\":{\"title\":\"Izolacioni program\",\"list-item\":\"Termoskupljajući bužiri različitih preseka i razmera, za izolaciju provodnika i kablova\",\"list-item2\":\"PVC creva razčilitih preseka i dimenzija\",\"list-item3\":\"Rebrasta PVC creva, PVC lanci i drugo\"},\"list3\":{\"title\":\"Alternativne ponude\",\"list-item\":\"Takođe, nudimo alternativne modele naših kineskih partnera ukoliko vam za vaš projekat odgovaraju povoljnije cene\"}},\"hardware\":{\"title\":\"hardware\",\"sub-title\":{\"text\":\"Hardverske komponente\",\"span\":\"za vaše aparate i uređaje\"},\"paragraph\":\"Metalna kućišta\",\"paragraph2\":\"Napajanja\",\"list\":{\"list-item\":\"Mogućnost nabavke različitih delova za aparate kao što su ugradni ekrani, touch screen ekrani, LED paneli, napajanja, Bluetooth moduli, antene, pojačala, i sve drugo po vašem zahtevu.\",\"list-item2\":\"Nabavka na malo i veliko od evropskih i američkih distributera, kao i od kineskih partnera po dobrim cenama i sa kratkim rokovima isporuke\",\"list-item3\":\"Metalna kućišta, delovi od pleksiglasa i dr.\"}}}},\"contact-us\":{\"title\":{\"span\":\"nas\",\"text\":\"kontaktirajte\"},\"phone\":\"Telefon\",\"address\":\"Adresa\",\"button\":\"pošalju\",\"name\":\"Ime\",\"email\":\"Email\",\"country\":\"Zemlja\",\"phone-placeholder\":\"Telefon\",\"message\":\"Poruka\",\"upload\":\"Dodajte sliku\"}}");
 
 /***/ }),
 
@@ -75587,6 +75667,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _store_language_js__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./store/language.js */ "./resources/js/store/language.js");
 /* harmony import */ var _Root_vue__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./Root.vue */ "./resources/js/Root.vue");
 /* harmony import */ var _util_i18n_document__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./util/i18n/document */ "./resources/js/util/i18n/document.js");
+/* harmony import */ var _util_i18n_supported_locales__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./util/i18n/supported-locales */ "./resources/js/util/i18n/supported-locales.js");
+
 
 
 
@@ -75674,14 +75756,22 @@ router.beforeEach(function (to, from, next) {
   if (to.params.locale === _store_language_js__WEBPACK_IMPORTED_MODULE_16__["default"].state.language) {
     next();
     return;
-  } // console.log(store.state.language);
-  // console.log(to.params.locale);
-
+  }
 
   var locale = to.params.locale;
-  _store_language_js__WEBPACK_IMPORTED_MODULE_16__["default"].commit("changeLanguage", to.params.locale);
-  Object(_util_i18n_document__WEBPACK_IMPORTED_MODULE_18__["setDocumentLang"])(locale);
-  Object(_util_i18n_document__WEBPACK_IMPORTED_MODULE_18__["setDocumentDirectionPerLocale"])(locale);
+  var supportedLocales = Object(_util_i18n_supported_locales__WEBPACK_IMPORTED_MODULE_19__["getSupportedLocales"])();
+  var langCodeIsPresent = supportedLocales.some(function (el) {
+    return el.code === to.params.locale;
+  });
+
+  if (langCodeIsPresent) {
+    _store_language_js__WEBPACK_IMPORTED_MODULE_16__["default"].commit("changeLanguage", to.params.locale);
+    Object(_util_i18n_document__WEBPACK_IMPORTED_MODULE_18__["setDocumentLang"])(locale);
+    Object(_util_i18n_document__WEBPACK_IMPORTED_MODULE_18__["setDocumentDirectionPerLocale"])(locale);
+  } else {
+    window.location.href = "/";
+  }
+
   next();
 });
 /* harmony default export */ __webpack_exports__["default"] = (router);

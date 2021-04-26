@@ -1,6 +1,6 @@
 <template>
   <v-container fluid class="header-container">
-    <v-container class="pa-0 shrink-width">
+    <v-container class="shrink-width">
       <div class="language-selector">
         <select :value="$i18n.locale" @change.prevent="changeLanguage">
           <option
@@ -37,45 +37,7 @@
           sm="12"
           cols="12"
         >
-          <div class="header-container__collapse-menu">
-            <span @click="toggleMenu()"></span>
-          </div>
-          <ul
-            class="header-container__menu pl-0 pt-4 justify-center text-center"
-            :class="{ 'header-container__menu--active': isActive }"
-          >
-            <span class="header-container__menu-close" @click="toggleMenu()"
-              >X</span
-            >
-            <li class="header-container__menu-block" @click="toggleMenu()">
-              <LocalizedLink to="/">{{ $t("nav.home") }}</LocalizedLink>
-            </li>
-            <li class="header-container__menu-block" @click="toggleMenu()">
-              <LocalizedLink to="/wholesale">{{
-                $t("nav.wholesale")
-              }}</LocalizedLink>
-            </li>
-            <li class="header-container__menu-block" @click="toggleMenu()">
-              <LocalizedLink to="/gallery">{{
-                $t("nav.gallery")
-              }}</LocalizedLink>
-            </li>
-            <li class="header-container__menu-block" @click="toggleMenu()">
-              <LocalizedLink to="/wires-and-harness">{{
-                $t("nav.wires-and-harness")
-              }}</LocalizedLink>
-            </li>
-            <li class="header-container__menu-block" @click="toggleMenu()">
-              <LocalizedLink to="/about-us">{{
-                $t("nav.about-us")
-              }}</LocalizedLink>
-            </li>
-            <li class="header-container__menu-block" @click="toggleMenu()">
-              <LocalizedLink to="/contact-us">{{
-                $t("nav.contact-us")
-              }}</LocalizedLink>
-            </li>
-          </ul>
+          <MenuComponent></MenuComponent>
         </v-col>
       </v-row>
     </v-container>
@@ -84,20 +46,16 @@
 
 <script>
 import { getSupportedLocales } from "../../util/i18n/supported-locales";
-import LocalizedLink from "../LocalizedLink";
+import MenuComponent from "../MenuComponent";
 
 export default {
-  components: { LocalizedLink },
+  components: { MenuComponent },
   data: () => ({
-    isActive: false,
     defaultLanguage: null,
     locales: getSupportedLocales(),
     lang: "sr",
   }),
   methods: {
-    toggleMenu() {
-      this.isActive = !this.isActive;
-    },
     changeLanguage(e) {
       const locale = e.target.value;
       this.$i18n.locale = locale;

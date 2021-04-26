@@ -8,10 +8,7 @@
           </h1>
         </v-col>
         <v-col class="pb-11" lg="4" md="4" sm="6" cols="12">
-          <LocalizedLink
-            class="prefooter-container__block-link"
-            to="/wholesale/wires-cables"
-          >
+          <LocalizedLink class="round-block" to="/wholesale/wires-cables">
             <div class="round-block__img">
               <v-img
                 max-width="240px"
@@ -26,10 +23,7 @@
           </LocalizedLink>
         </v-col>
         <v-col class="pb-11" lg="4" md="4" sm="6" cols="12">
-          <LocalizedLink
-            class="prefooter-container__block-link"
-            to="/wholesale/connectors"
-          >
+          <LocalizedLink class="round-block" to="/wholesale/connectors">
             <div class="round-block__img">
               <v-img
                 max-width="240px"
@@ -46,10 +40,7 @@
           </router-link>
         </v-col>
         <v-col class="pb-11" lg="4" md="4" sm="6" cols="12">
-          <LocalizedLink
-            class="prefooter-container__block-link"
-            to="/wholesale/pcbs"
-          >
+          <LocalizedLink class="round-block" to="/wholesale/pcbs">
             <div class="round-block__img">
               <v-img
                 max-width="240px"
@@ -64,10 +55,7 @@
           </LocalizedLink>
         </v-col>
         <v-col class="pb-11" lg="4" md="4" sm="6" cols="12">
-          <LocalizedLink
-            class="prefooter-container__block-link"
-            to="/wholesale/led"
-          >
+          <LocalizedLink class="round-block" to="/wholesale/led">
             <div class="round-block__img">
               <v-img
                 max-width="240px"
@@ -82,10 +70,7 @@
           >
         </v-col>
         <v-col class="pb-11" lg="4" md="4" sm="6" cols="12">
-          <LocalizedLink
-            class="prefooter-container__block-link"
-            to="/wholesale/cable-accessories"
-          >
+          <LocalizedLink class="round-block" to="/wholesale/cable-accessories">
             <div class="round-block__img">
               <v-img
                 max-width="240px"
@@ -100,10 +85,7 @@
           >
         </v-col>
         <v-col class="pb-11" lg="4" md="4" sm="6" cols="12">
-          <LocalizedLink
-            class="prefooter-container__block-link"
-            to="/wholesale/hardware"
-          >
+          <LocalizedLink class="round-block" to="/wholesale/hardware">
             <div class="round-block__img">
               <v-img
                 max-width="240px"
