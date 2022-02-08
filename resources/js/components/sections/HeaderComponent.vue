@@ -22,15 +22,14 @@
           cols="12"
         >
           <v-img
-            max-width="150px"
+            max-width="120px"
             src="/images/logo-full.png"
             alt="logo"
           ></v-img>
         </v-col>
         <v-col
           :class="{
-            'pt-6': !$vuetify.breakpoint.xs,
-            'text-right pt-0 pb-0': $vuetify.breakpoint.xs,
+            'text-right pt-0 pb-0': $vuetify.breakpoint.xs
           }"
           lg="12"
           md="12"
@@ -41,6 +40,9 @@
         </v-col>
       </v-row>
     </v-container>
+    <a class="header-container--mail" href="mailto:ecomponentsdoo@gmail.com"
+      >ecomponentsdoo@gmail.com</a
+    >
   </v-container>
 </template>
 
@@ -53,7 +55,7 @@ export default {
   data: () => ({
     defaultLanguage: null,
     locales: getSupportedLocales(),
-    lang: "sr",
+    lang: "sr"
   }),
   methods: {
     changeLanguage(e) {
@@ -62,7 +64,7 @@ export default {
       this.$store.commit("changeLanguage", locale);
       this.lang = locale;
       this.$router.push(`/${locale}`);
-    },
-  },
+    }
+  }
 };
 </script>

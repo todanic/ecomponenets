@@ -24,6 +24,12 @@
           </p>
           <p class="mb-0">Cara Lazara 2</p>
           <p class="mb-0">Srbobran 21480 Serbia</p>
+          <a
+            style="color:#781212; font-size:20px; margin-top:10px;"
+            class="contact-us--mail"
+            href="mailto:ecomponentsdoo@gmail.com"
+            >ecomponentsdoo@gmail.com</a
+          >
         </v-col>
         <v-col
           class="contact-us-container__col"
@@ -162,7 +168,7 @@ export default {
       attachments: null,
       images: {},
       loading: false,
-      previewImages: [],
+      previewImages: []
     };
   },
   methods: {
@@ -185,17 +191,17 @@ export default {
 
       axios
         .post("/api/email", formData)
-        .then((response) => {
+        .then(response => {
           alert("Thank you for contacting us!");
           this.loading = false;
         })
-        .catch((error) => alert("Error accrued!"));
+        .catch(error => alert("Error accrued!"));
     },
     encodeImageFileAsURL(e) {
       var tempImages = [];
       var tempPreviewImages = [];
 
-      e.forEach(function (value, index) {
+      e.forEach(function(value, index) {
         tempImages.push(value);
         tempPreviewImages.push(URL.createObjectURL(value));
       });
@@ -207,7 +213,7 @@ export default {
       this.previewImages = "";
       this.images = {};
       this.$refs.fileUpload.value = null;
-    },
-  },
+    }
+  }
 };
 </script>

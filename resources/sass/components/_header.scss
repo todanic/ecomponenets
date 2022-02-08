@@ -1,5 +1,6 @@
 .header-container {
   background-color: #0e0e0e;
+  text-align: center;
 
   .container {
     position: relative;
@@ -41,5 +42,9 @@
   }
   .language-selector {
     bottom: 0;
+  }
+  .header-container--mail {
+    margin-top: 12px;
+    display: block;
   }
 }

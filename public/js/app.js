@@ -2234,6 +2234,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -4264,6 +4266,12 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -8617,7 +8625,7 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /*!
- * vue-i18n v8.24.2 
+ * vue-i18n v8.24.1 
  * (c) 2021 kazuya kawaguchi
  * Released under the MIT License.
  */
@@ -8922,16 +8930,6 @@ var mixin = {
           options.i18n.silentFallbackWarn = rootI18n.silentFallbackWarn;
           options.i18n.pluralizationRules = rootI18n.pluralizationRules;
           options.i18n.preserveDirectiveContent = rootI18n.preserveDirectiveContent;
-          this.$root.$once('hook:beforeDestroy', function () {
-            options.i18n.root = null;
-            options.i18n.formatter = null;
-            options.i18n.fallbackLocale = null;
-            options.i18n.formatFallbackMessages = null;
-            options.i18n.silentTranslationWarn = null;
-            options.i18n.silentFallbackWarn = null;
-            options.i18n.pluralizationRules = null;
-            options.i18n.preserveDirectiveContent = null;
-          });
         }
 
         // init locale messages via custom blocks
@@ -10825,7 +10823,7 @@ Object.defineProperty(VueI18n, 'availabilities', {
 });
 
 VueI18n.install = install;
-VueI18n.version = '8.24.2';
+VueI18n.version = '8.24.1';
 
 /* harmony default export */ __webpack_exports__["default"] = (VueI18n);
 
@@ -11316,7 +11314,7 @@ var render = function() {
                 [
                   _c("v-img", {
                     attrs: {
-                      "max-width": "150px",
+                      "max-width": "120px",
                       src: "/images/logo-full.png",
                       alt: "logo"
                     }
@@ -11329,7 +11327,6 @@ var render = function() {
                 "v-col",
                 {
                   class: {
-                    "pt-6": !_vm.$vuetify.breakpoint.xs,
                     "text-right pt-0 pb-0": _vm.$vuetify.breakpoint.xs
                   },
                   attrs: { lg: "12", md: "12", sm: "12", cols: "12" }
@@ -11342,6 +11339,15 @@ var render = function() {
           )
         ],
         1
+      ),
+      _vm._v(" "),
+      _c(
+        "a",
+        {
+          staticClass: "header-container--mail",
+          attrs: { href: "mailto:ecomponentsdoo@gmail.com" }
+        },
+        [_vm._v("ecomponentsdoo@gmail.com")]
       )
     ],
     1
@@ -15267,7 +15273,21 @@ var render = function() {
                   _vm._v(" "),
                   _c("p", { staticClass: "mb-0" }, [
                     _vm._v("Srbobran 21480 Serbia")
-                  ])
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "a",
+                    {
+                      staticClass: "contact-us--mail",
+                      staticStyle: {
+                        color: "#781212",
+                        "font-size": "20px",
+                        "margin-top": "10px"
+                      },
+                      attrs: { href: "mailto:ecomponentsdoo@gmail.com" }
+                    },
+                    [_vm._v("ecomponentsdoo@gmail.com")]
+                  )
                 ]
               ),
               _vm._v(" "),
@@ -76341,8 +76361,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\XAMPP\htdocs\eomponents\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\XAMPP\htdocs\eomponents\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\personal work\ecomponenets\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\personal work\ecomponenets\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
