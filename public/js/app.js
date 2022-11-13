@@ -2601,21 +2601,23 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
       images: [{
-        src: '/images/splash/splash2.jpg'
+        src: "/images/splash/splash2.jpg"
       }, {
-        src: '/images/splash/splash3.jpeg'
+        src: "/images/splash/splash3.jpeg"
       }, {
-        src: '/images/splash/splash4.jpeg'
+        src: "/images/splash/splash4.jpeg"
       }, {
-        src: '/images/splash/splash5.jpg'
+        src: "/images/splash/splash5.jpg"
       }, {
-        src: '/images/splash/splash6.jpg'
+        src: "/images/splash/splash6.jpg"
       }, {
-        src: '/images/splash/splash7.jpg'
+        src: "/images/splash/splash7.jpg"
       }]
     };
   }
@@ -12065,7 +12067,7 @@ var render = function() {
             fade: "",
             cycle: "",
             light: "",
-            height: "600",
+            height: "500",
             "hide-delimiter-background": "",
             "show-arrows": false
           }
