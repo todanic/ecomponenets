@@ -4418,6 +4418,16 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
  // import CubeSpin from 'vue-loading-spinner/src/components/Circle.vue'
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -15289,7 +15299,21 @@ var render = function() {
                       attrs: { href: "mailto:ecomponentsdoo@gmail.com" }
                     },
                     [_vm._v("ecomponentsdoo@gmail.com")]
-                  )
+                  ),
+                  _vm._v(" "),
+                  _c("iframe", {
+                    staticClass: "mt-5",
+                    staticStyle: { border: "0" },
+                    attrs: {
+                      src:
+                        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1625.8170758729048!2d19.792658357141008!3d45.547095862482195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475b462ba80f4d43%3A0xeacb4e96780bdc89!2sCara%20Lazara%202%2C%20Srbobran!5e0!3m2!1sen!2srs!4v1668537428212!5m2!1sen!2srs",
+                      width: "100%",
+                      height: "400",
+                      allowfullscreen: "",
+                      loading: "lazy",
+                      referrerpolicy: "no-referrer-when-downgrade"
+                    }
+                  })
                 ]
               ),
               _vm._v(" "),
