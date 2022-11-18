@@ -15,17 +15,26 @@
 
       <v-row class="align-center">
         <v-col
-          class="d-flex justify-center pa-0"
+          class="d-flex align-center pa-0 header-logo-container"
           lg="12"
           md="12"
           sm="12"
           cols="12"
         >
-          <v-img
-            max-width="120px"
-            src="/images/logo-full.png"
-            alt="logo"
-          ></v-img>
+          <LocalizedLink class="home-logo-link" to="/">
+            <v-img
+              max-width="100px"
+              src="/images/logo-full.png"
+              alt="logo"
+              class="header-logo"
+            ></v-img>
+            <v-img
+              class="mt-2"
+              max-width="130px"
+              src="/images/logo-name.png"
+              alt="logo"
+            ></v-img>
+          </LocalizedLink>
         </v-col>
         <v-col
           :class="{
@@ -48,10 +57,11 @@
 
 <script>
 import { getSupportedLocales } from "../../util/i18n/supported-locales";
+import LocalizedLink from "../LocalizedLink";
 import MenuComponent from "../MenuComponent";
 
 export default {
-  components: { MenuComponent },
+  components: { MenuComponent, LocalizedLink },
   data: () => ({
     defaultLanguage: null,
     locales: getSupportedLocales(),

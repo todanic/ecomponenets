@@ -1,364 +1,363 @@
 {
-    "app": "Ecomponents d.o.o",
-    "nav": {
-        "wholesale": "prodaja",
-        "home": "početna",
-        "about-us": "O nama",
-        "contact-us" : "Kontakt",
-        "gallery": "Galerija",
-        "wires-and-harness": "Ugradnja žice i kablova"
+  "app": "Ecomponents d.o.o",
+  "nav": {
+    "wholesale": "prodaja",
+    "home": "početna",
+    "about-us": "O nama",
+    "contact-us": "Kontakt",
+    "gallery": "Galerija",
+    "wires-and-harness": "Proizvodnja kablovskih sklopova"
+  },
+  "contact-fixed": {
+    "title": {
+      "text": "Imate",
+      "span": "pitanje?"
     },
-    "contact-fixed": {
+    "button": "Kontaktirajte nas"
+  },
+  "prefooter": {
+    "title-left": "Prodaja",
+    "title-right": "Pogledajte još",
+    "links-left": {
+      "wires-cables": "Žice i kablovi",
+      "connectors": "Konektori & elektronske komponenete",
+      "pcb": "PCBs",
+      "led": "LEDs",
+      "cables": "Dodaci za kablove",
+      "harware": "Hardware"
+    }
+  },
+  "about-us": {
+    "title": {
+      "text": "O",
+      "span": "nama"
+    },
+    "text1": "Dobrodošli u eComponents, vaš najbolji izvor svih stvari vezanih za elektroniku. Posvećeni smo tome da vam ponudimo najbolje od elektronskih komponenti, sa fokusom na uslugu i pomoć kupcima, pouzdane proizvode i jedinstvenost.",
+    "text2": "Naša strast i želja da pomognemo inovativnim ljudima u postizanju neverovatnih stvari su nas motivisale da napustimo svoje tadašnje poslove i dale nam podsticaj da pretvorimo naporan rad i inspiraciju u ovaj brzo-rastući poduhvat.",
+    "text3": "Sada snabdevamo naše klijente sa elektronskim komponentama – žicama i kablovima, konektorima, aktivnim i pasivnim komponentama najboljeg kvaliteta vodećih svetskih proizvođača, kao što su Molex, TE Connectivity, JST, MEDIKabel, HELUKABEL itd., po veoma kompetitivnim cenama. Sa lakoćom se snalazimo u okeanu elektronike, terminologije i tehničkih crteža – pa vi ne morate!",
+    "text4": "Takođe, ističemo se i proizvodnjom kablovskih veza i sklopova po vašim instrukcijama i zahtevima. Ono što vi zamislite, mi možemo da napravimo; vi sastavite sve delove, a mi ćemo se pobrinuti da oni ožive.",
+    "text5": "eComponents se nalazi u Srbiji, ali možemo da vršimo isporuke svuda u svetu. Uzbuđeni smo što smo deo rastuće grane elektronske industrije.",
+    "text6": "Ako imate neka pitanja ili komentare, molimo vas ne oklevajte da nas kontaktirate. Naše ljubazno osoblje će vam rado izaći u susret i u najkraćem roku odgovoriti na vaše upite. Radujemo se saradnji sa vama!",
+    "sincerely": "S poštovanjem",
+    "stamp": "eComponents tim"
+  },
+  "why-choose-us-home": {
+    "main-title": {
+      "text": "Zašto da izaberete",
+      "span": "eComponents d.o.o"
+    },
+    "title": "Brza ponuda",
+    "description": "Posvećeni smo tome da odgovorimo na sve upite u najkraćem vremenskom roku.",
+    "title2": "Ušteda novca",
+    "description2": "Uz naše kompetitivne cene i vešte radnike, klijenti mogu značajno uštedeti 'outsourcing-om' proizvodnje kablovskih veza eComponents-u.",
+    "title3": "Iskustvo",
+    "description3": "Već godinama, naš glavni cilj je da ponudimo uslugu najboljeg kvaliteta svojim mušterijama.",
+    "title4": "Isporuka na vreme",
+    "description4": "Sa našim sistemom isporuke, osiguravamo brzu isporuku širom sveta.",
+    "title5": "Poverenje",
+    "description5": "Mi smo pouzdan član domaćeg i globalnog lanca distribucije elektronskih komponenti.",
+    "title6": "Kvalitet",
+    "description6": "Nudimo usluge i proizvode vrhunskog kvaliteta sa sertifikatima."
+  },
+  "wire-and-cable-harness": {
+    "button": "Detaljnije",
+    "title": {
+      "text": "ugradnja žice",
+      "span": "i kablova"
+    },
+    "description": "Svojim klijentima i poslovnim partnerima u različitim industrijama nudimo rešenja ‘’po meri’’ u oblasti kablovskih veza i sklopova. Industrija kućnih aparata, gejming i vending aparata i mnoge druge industrije se oslanjaju na nas da udahnemo život u njihove dizajne. Bilo da je u pitanju jedna žica ili komplikovan kablovski sistem – možete računati na nas!",
+    "description2": "Nudimo usluge koje pokrivaju sve od izrade prototipa do serijske proizvodnje. Obzirom na to da je takođe dobavljač elektronskih komponenti, eComponents takođe nudi širok izbor kablovskih rešenja sa različitom kombinacijom konektora, provodnika, dodataka za kablove itd. Svi naši kablovski sklopovi suprilagođeni želji kupca po boji, dužini i posebnim pinovanjem.",
+    "description3": "eComponents nudi razvoj i proizvodnju kablovskih sklopova, kao što su:",
+    "description4": {
+      "title": "Izrada prototipa",
+      "text": "možemo da napravimo funkcionalne prototipe bazirane na vašem dizajnu – bilo da je to opis ili fotografija; ili tehnički crtež, obrnuti inženjering (reverse-engineering), uzorak kabela.Takođe, nudimo pomoć prilikom odabira konektora, provodnika i drugih delova vašeg proizvoda."
+    },
+    "description5": {
+      "title": "Dokumentovanje",
+      "text": "možemo da napravimo detaljnu dokumentaciju, koja uključuje crteže, liste materijala i druge informacije potrebne za proizvod. Kada definišemo kablovski sklop i dodelimo mu broj artikla, nakon toga možete sa lakoćom poručiti željeni artikal ili napraviti promene, odnosno revizije na kabelu u bilo kom trenutku, uz pomoć naših tehničara."
+    },
+    "description6": {
+      "title": "Proizvodnja",
+      "text": "nudimo vam proizvodnju kablovskih sklopova u velikim količinama bez gubitka u kvalitetu sa izuzetnom pažnjom na detalje. Ovo se odnosi na jednostavne kablove kao i na komplikovanije kablovske sisteme. Nudimo klasične plug-in kontakte sa (ili bez) kućišta na provodnicima različitih preseka, boja, kvaliteta, standarda i sertifikata."
+    },
+    "description7": {
+      "title": "Kontrola kvaliteta",
+      "text": "svaki kablovski sklop, pre samog slanja, prolazi kroz seriju detaljnih testiranja od strane naše kontrole kvaliteta. Ovo je za nas veoma važno, i znamo da je to jednako važno za našeklijente."
+    },
+    "description8": "Sa iskustvom i veštinama u kombinaciji sa profesionalnom opremom i posvećenosti u pomaganju našim klijentima da ostvare svoje ciljeve, u mogućnosti smo da stvorimo prilagođene i inovativne proizvodekako bismo ispunili sve potrebe naših klijenata.",
+    "description9": "Kontaktirajte nas putem naše kontakt forme već danas i … MAKE IT WORK!"
+  },
+  "wholesale": {
+    "text": "pro",
+    "span": "daja",
+    "pages": {
+      "wires": {
         "title": {
-            "text": "Imate",
-            "span": "pitanje?"
+          "text": "Žice i",
+          "span": "kablovi"
         },
-        "button": "Kontaktirajte nas"
-    },
-    "prefooter": {
-        "title-left": "Prodaja",
-        "title-right": "Pogledajte još",
-        "links-left": {
-            "wires-cables": "Žice i kablovi",
-            "connectors": "Konektori & elektronske komponenete",
-            "pcb": "PCBs",
-            "led": "LEDs",
-            "cables": "Dodaci za kablove",
-            "harware": "Hardware"
+        "sub-section": {
+          "wires": {
+            "title": "Žice",
+            "sub-title": {
+              "text": "Licnasti provodnici",
+              "span": "za elektorniku"
+            },
+            "paragraph": "Veliki izbor",
+            "description": "Pomoć pri odabiru. Mogućnost merenja provodnika na željenu dužinu",
+            "description2": "Mogućnost merenja provodnika na željenu dužinu",
+            "liy": "liy",
+            "list": {
+              "title": "Provodnici svih preseka",
+              "list-item": "Provodnici različitih poprečnih preseka za različitu upotrebu",
+              "list-item2": "0,14mm2; 0,25mm2; 0,34mm2........ 1mm2; 1,5mm2; 2,5mm2;..........10mm2.........."
+            },
+            "list2": {
+              "title": "Provodnici različitih boja ",
+              "list-item": "Širok spektar boja i nijansi",
+              "list-item2": "Dvobojne žice sa poprečnom i uzdužnom šarom"
+            },
+            "list3": {
+              "title": "Standard",
+              "list-item": "Provodnici po standardima za evropsko i američko tržište (VDE, UL, cUL...)",
+              "list-item2": "Provodnici različite strukture i materijala po propisanim standardima i testiranim za rad u izuzetnim okolnostima (visoka temperatura, vlaga, unutrašnja/spoljašnja upotreba...)"
+            },
+            "note": "za određene provodnike"
+          },
+          "cables": {
+            "title": "Kablovi",
+            "sub-title": {
+              "text": "PVC kablovi za",
+              "span": "sve vaše potrebe"
+            },
+            "paragraph": "Veliki izbor",
+            "description": "Pomoć pri odabiru. Mogućnost merenja provodnika na željenu dužinu",
+            "multi-core": "Višežilni, širmovani, signalni kablovi",
+            "list": {
+              "title": "Kablovi sa više jezgara",
+              "list-item": "Kablovi sa dva ili više jezgra sa različitim presecima jezgara i određenim bojama",
+              "list-item2": "U ponudi imamo kablove 2x0,25mm2 ; 2x0,34mm2… 5x0,25mm2, 5x0,34mm2….."
+            },
+            "list2": {
+              "title": "Naponski kablovi",
+              "list-item": "Sve vrste naponskih kablova za nizak, srednji ili visok napon"
+            },
+            "note": "za određene provodnike"
+          },
+          "ready-made": {
+            "title": "Gotovi kablovi koji su vam uvek potrebni",
+            "sub-title": {
+              "text": "Gotovi",
+              "span": "kablovi"
+            },
+            "description": "Širok asortiman gotovih kablova",
+            "description2": "Budite povezani u svakom trenutku",
+            "description3": "Mogućnost specijalne porudžbine",
+            "list": {
+              "title": "USB kablovi",
+              "list-item": "U ponudi imamo USB kablove različitih boja i dužina, sa kombinacijom konektora koji vam odgovaraju.",
+              "list-item2": {
+                "title": "Kombinacije",
+                "paragraph": "Type A male – Type A female (produžni USB type A kabl sa ili bez šrafova za montažu)",
+                "paragraph2": "Type A – Type B, Type B mini, Type B micro",
+                "paragraph3": "Type A – Type",
+                "paragraph4": "i drugi..."
+              },
+              "list-item3": "Konektori pod uglom"
+            },
+            "list2": {
+              "title": "Audio i video kablovi",
+              "list-item": "Monitor kablovi za sve tipove vaših ekrana (HDMI, DVI, DP, VGA…)",
+              "list-item2": "Audio kablovi (bananice)"
+            },
+            "list3": {
+              "title": "I drugi po vašem zahtevu...",
+              "list-item": "Nudimo i proizvodnju kablovskih sklopova po vašem zahtevu – od manjih kablova do velikih sklopova",
+              "click-here": {
+                "text": "Za više informacija",
+                "span": "kliknite na sliku"
+              }
+            }
+          }
         }
-    },
-    "about-us": {
-      "title": {
-        "text": "O",
-        "span": "nama"
       },
-      "text1": "Dobrodošli u eComponents, vaš najbolji izvor svih stvari vezanih za elektroniku. Posvećeni smo tome da vam ponudimo najbolje od elektronskih komponenti, sa fokusom na uslugu i pomoć kupcima, pouzdane proizvode i jedinstvenost.",
-      "text2": "Naša strast i želja da pomognemo inovativnim ljudima u postizanju neverovatnih stvari su nas motivisale da napustimo svoje tadašnje poslove i dale nam podsticaj da pretvorimo naporan rad i inspiraciju u ovaj brzo-rastući poduhvat.",
-      "text3": "Sada snabdevamo naše klijente sa elektronskim komponentama – žicama i kablovima, konektorima, aktivnim i pasivnim komponentama najboljeg kvaliteta vodećih svetskih proizvođača, kao što su Molex, TE Connectivity, JST, MEDIKabel, HELUKABEL itd., po veoma kompetitivnim cenama. Sa lakoćom se snalazimo u okeanu elektronike, terminologije i tehničkih crteža – pa vi ne morate!",
-      "text4": "Takođe, ističemo se i proizvodnjom kablovskih veza i sklopova po vašim instrukcijama i zahtevima. Ono što vi zamislite, mi možemo da napravimo; vi sastavite sve delove, a mi ćemo se pobrinuti da oni ožive.",
-      "text5": "eComponents se nalazi u Srbiji, ali možemo da vršimo isporuke svuda u svetu. Uzbuđeni smo što smo deo rastuće grane elektronske industrije.",
-      "text6": "Ako imate neka pitanja ili komentare, molimo vas ne oklevajte da nas kontaktirate. Naše ljubazno osoblje će vam rado izaći u susret i u najkraćem roku odgovoriti na vaše upite. Radujemo se saradnji sa vama!",
-      "sincerely": "S poštovanjem",
-      "stamp": "eComponents tim"
-    },
-    "why-choose-us-home": {
-      "main-title": {
-        "text": "Zašto da izaberete",
-        "span": "eComponents d.o.o"
-      },
-      "title": "Brza ponuda",
-      "description": "Posvećeni smo tome da odgovorimo na sve upite u najkraćem vremenskom roku.",
-      "title2": "Ušteda novca",
-      "description2": "Uz naše kompetitivne cene i vešte radnike, klijenti mogu značajno uštedeti 'outsourcing-om' proizvodnje kablovskih veza eComponents-u.",
-      "title3": "Iskustvo",
-      "description3": "Već godinama, naš glavni cilj je da ponudimo uslugu najboljeg kvaliteta svojim mušterijama.",
-      "title4": "Isporuka na vreme",
-      "description4": "Sa našim sistemom isporuke, osiguravamo brzu isporuku širom sveta.",
-      "title5": "Poverenje",
-      "description5": "Mi smo pouzdan član domaćeg i globalnog lanca distribucije elektronskih komponenti.",
-      "title6": "Kvalitet",
-      "description6": "Nudimo usluge i proizvode vrhunskog kvaliteta sa sertifikatima."
-    },
-    "wire-and-cable-harness": {
-      "button": "Detaljnije",
-      "title": {
-        "text": "ugradnja žice",
-        "span": "i kablova"
-      },
-      "description": "Svojim klijentima i poslovnim partnerima u različitim industrijama nudimo rešenja ‘’po meri’’ u oblasti kablovskih veza i sklopova. Industrija kućnih aparata, gejming i vending aparata i mnoge druge industrije se oslanjaju na nas da udahnemo život u njihove dizajne. Bilo da je u pitanju jedna žica ili komplikovan kablovski sistem – možete računati na nas!",
-      "description2": "Nudimo usluge koje pokrivaju sve od izrade prototipa do serijske proizvodnje. Obzirom na to da je takođe dobavljač elektronskih komponenti, eComponents takođe nudi širok izbor kablovskih rešenja sa različitom kombinacijom konektora, provodnika, dodataka za kablove itd. Svi naši kablovski sklopovi suprilagođeni želji kupca po boji, dužini i posebnim pinovanjem.",
-      "description3": "eComponents nudi razvoj i proizvodnju kablovskih sklopova, kao što su:",
-      "description4": {
-        "title":"Izrada prototipa",
-        "text": "možemo da napravimo funkcionalne prototipe bazirane na vašem dizajnu – bilo da je to opis ili fotografija; ili tehnički crtež, obrnuti inženjering (reverse-engineering), uzorak kabela.Takođe, nudimo pomoć prilikom odabira konektora, provodnika i drugih delova vašeg proizvoda."
-      },
-      "description5": {
-        "title":"Dokumentovanje",
-        "text": "možemo da napravimo detaljnu dokumentaciju, koja uključuje crteže, liste materijala i druge informacije potrebne za proizvod. Kada definišemo kablovski sklop i dodelimo mu broj artikla, nakon toga možete sa lakoćom poručiti željeni artikal ili napraviti promene, odnosno revizije na kabelu u bilo kom trenutku, uz pomoć naših tehničara."
-      },
-      "description6": {
-        "title":"Proizvodnja",
-        "text": "nudimo vam proizvodnju kablovskih sklopova u velikim količinama bez gubitka u kvalitetu sa izuzetnom pažnjom na detalje. Ovo se odnosi na jednostavne kablove kao i na komplikovanije kablovske sisteme. Nudimo klasične plug-in kontakte sa (ili bez) kućišta na provodnicima različitih preseka, boja, kvaliteta, standarda i sertifikata."
-      },
-      "description7": {
-        "title":"Kontrola kvaliteta",
-        "text": "svaki kablovski sklop, pre samog slanja, prolazi kroz seriju detaljnih testiranja od strane naše kontrole kvaliteta. Ovo je za nas veoma važno, i znamo da je to jednako važno za našeklijente."
-      },
-      "description8": "Sa iskustvom i veštinama u kombinaciji sa profesionalnom opremom i posvećenosti u pomaganju našim klijentima da ostvare svoje ciljeve, u mogućnosti smo da stvorimo prilagođene i inovativne proizvodekako bismo ispunili sve potrebe naših klijenata.",
-      "description9":"Kontaktirajte nas putem naše kontakt forme već danas i … MAKE IT WORK!"
-    },
-    "wholesale": {
-      "text": "pro",
-      "span": "daja",
-      "pages": {
-        "wires": {
-          "title": {
-            "text": "Žice i",
-            "span": "kablovi"
+      "connectors": {
+        "title": {
+          "text": "Konektori, terminali",
+          "span": "i elektronske komponente"
+        },
+        "sub-section": {
+          "connectors": {
+            "title": "Konektori",
+            "sub-title": {
+              "text": "Konektori za ",
+              "span": "svaku konekciju"
+            },
+            "paragraph": "Široka lepeza konektora za različitu upotrebu",
+            "description": "Pomoć pri pretrazi konektora",
+            "description2": "Mogućnost ponude alternativnih modela",
+            "list": {
+              "title": "Proizvođači i konfiguracije",
+              "list-item": "Veliki izbor konektora različitih svetskih proizvođača kao što su Molex, TE Connectivity, JST… ",
+              "list-item2": "U ponudi imamo konektore različitih rastera (razmaka između pinova) i konfiguracija pinova, napojne konektore, audio i video konektore, signalne konektore, data konektore"
+            },
+            "list2": {
+              "title": "Krimp kontakti i kućišta za konektore",
+              "list-item": "Uz svaki konektor nudimo i odgovarajuće pinove, tj. krimp kontakte za odgovarajuće preseke žica kao i plastična kućišta za pojedine konektore koji ih imaju"
+            },
+            "list3": {
+              "title": "Alternative",
+              "list-item": "Takođe, nudimo alternativne modele naših kineskih partnera ukoliko vam za vaš projekat odgovaraju povoljnije cene"
+            }
           },
-          "sub-section": {
-            "wires": {
-              "title": "Žice",
-              "sub-title": {
-                "text": "Licnasti provodnici",
-                "span": "za elektorniku"
-              },
-              "paragraph": "Veliki izbor",
-              "description": "Pomoć pri odabiru. Mogućnost merenja provodnika na željenu dužinu",
-              "description2": "Mogućnost merenja provodnika na željenu dužinu",
-              "liy": "liy",
-              "list": {
-                "title": "Provodnici svih preseka",
-                "list-item": "Provodnici različitih poprečnih preseka za različitu upotrebu",
-                "list-item2": "0,14mm2; 0,25mm2; 0,34mm2........ 1mm2; 1,5mm2; 2,5mm2;..........10mm2.........."
-              },
-              "list2": {
-                "title": "Provodnici različitih boja ",
-                "list-item": "Širok spektar boja i nijansi",
-                "list-item2": "Dvobojne žice sa poprečnom i uzdužnom šarom"
-              },
-              "list3": {
-                "title": "Standard",
-                "list-item": "Provodnici po standardima za evropsko i američko tržište (VDE, UL, cUL...)",
-                "list-item2": "Provodnici različite strukture i materijala po propisanim standardima i testiranim za rad u izuzetnim okolnostima (visoka temperatura, vlaga, unutrašnja/spoljašnja upotreba...)"
-              },
-              "note": "za određene provodnike"
+          "terminals": {
+            "title": "Terminali",
+            "sub-title": {
+              "text": "Da kraj vaših žica",
+              "span": "nikad ne bude sam"
             },
-            "cables": {
-              "title": "Kablovi",
-              "sub-title": {
-                "text": "PVC kablovi za",
-                "span": "sve vaše potrebe"
-              },
-              "paragraph": "Veliki izbor",
-              "description": "Pomoć pri odabiru. Mogućnost merenja provodnika na željenu dužinu",
-              "multi-core": "Višežilni, širmovani, signalni kablovi",
-              "list": {
-                "title": "Kablovi sa više jezgara",
-                "list-item": "Kablovi sa dva ili više jezgra sa različitim presecima jezgara i određenim bojama",
-                "list-item2": "U ponudi imamo kablove 2x0,25mm2 ; 2x0,34mm2… 5x0,25mm2, 5x0,34mm2….."
-              },
-              "list2": {
-                "title": "Naponski kablovi",
-                "list-item": "Sve vrste naponskih kablova za nizak, srednji ili visok napon"
-              },
-              "note": "za određene provodnike"
+            "paragraph": "Lako montiranje",
+            "description": "Veliki izbor terminala sa različitim karatkeristikama",
+            "description2": "Jednostavna aplikacija",
+            "wire-cable": "Terminali",
+            "list": {
+              "title": "Vrste terminala",
+              "list-item": "Vrste terminala koje nudimo:",
+              "list-item2": "Viljuškice (M3, M4, M5…)",
+              "list-item3": "Ring terminali (prečnika 3mm, 4mm, 5mm...)",
+              "list-item4": "Faston2.8mm, 4.8mm, 6.3mm",
+              "list-item5": "and others...Bootlace ferrules",
+              "list-item6": "Hilzne",
+              "list-item7": "Čaure",
+              "list-item8": "i još svašta!"
             },
-            "ready-made": {
-              "title": "Gotovi kablovi koji su vam uvek potrebni",
-              "sub-title": {
-                "text": "Gotovi",
-                "span": "kablovi"
-              },
-              "description": "Širok asortiman gotovih kablova",
-              "description2": "Budite povezani u svakom trenutku",
-              "description3": "Mogućnost specijalne porudžbine",
-              "list": {
-                "title": "USB kablovi",
-                "list-item": "U ponudi imamo USB kablove različitih boja i dužina, sa kombinacijom konektora koji vam odgovaraju.",
-                "list-item2": {
-                  "title": "Kombinacije",
-                  "paragraph": "Type A male – Type A female (produžni USB type A kabl sa ili bez šrafova za montažu)",
-                  "paragraph2": "Type A – Type B, Type B mini, Type B micro",
-                  "paragraph3": "Type A – Type",
-                  "paragraph4": "i drugi..."
-                },
-                "list-item3": "Konektori pod uglom"
-              },
-              "list2": {
-                "title": "Audio i video kablovi",
-                "list-item": "Monitor kablovi za sve tipove vaših ekrana (HDMI, DVI, DP, VGA…)",
-                "list-item2": "Audio kablovi (bananice)"
-              },
-              "list3": {
-                "title": "I drugi po vašem zahtevu...",
-                "list-item": "Nudimo i proizvodnju kablovskih sklopova po vašem zahtevu – od manjih kablova do velikih sklopova",
-                "click-here": {
-                  "text": "Za više informacija",
-                  "span": "kliknite na sliku"
-                }
-              }
+            "list2": {
+              "title": "Karakteristike",
+              "list-item": "Svi terminali koje imamo u ponudi mogu biti sa PVC izolacijom i bez nje. Ponuđeni terminali su u skladu sa presekom žica koje želite da ukrimpate"
+            },
+            "list3": {
+              "title": "Alternativa",
+              "list-item": "Takođe, nudimo alternativne modele naših kineskih partnera ukoliko vam za vaš projekat odgovaraju povoljnije cene"
+            }
+          },
+          "components": {
+            "title": "Elektronske komponente",
+            "sub-title": {
+              "text": "Sve od elektronskih komponenata ",
+              "span": "na jednom mestu"
+            },
+            "paragraph": "Odabir različitih aktivnih i pasivnih komponenti",
+            "description": "Elektronske komponente za aparate i uređaje",
+            "description2": "Pomoć pri izboru",
+            "list": {
+              "title": "Veliki izbor",
+              "list-item": "Širok dijapazon aktivnih i pasivnih komponenti",
+              "list-item2": "Releji, LED indikatori, otpornici, osigurači…"
+            },
+            "list2": {
+              "title": "Količine",
+              "list-item": "Nabavka od nekoliko komada do nekoliko hiljada komada"
             }
           }
+        }
+      },
+      "pcb": {
+        "title": "pcbs",
+        "sub-title": {
+          "text": "PCB",
+          "span": "dizajn"
         },
-        "connectors": {
-          "title": {
-            "text": "Konektori, terminali",
-            "span": "i elektronske komponente"
-          },
-          "sub-section": {
-            "connectors": {
-              "title": "Konektori",
-              "sub-title": {
-                "text": "Konektori za ",
-                "span": "svaku konekciju"
-              },
-              "paragraph": "Široka lepeza konektora za različitu upotrebu",
-              "description": "Pomoć pri pretrazi konektora",
-              "description2": "Mogućnost ponude alternativnih modela",
-              "list": {
-                "title": "Proizvođači i konfiguracije",
-                "list-item": "Veliki izbor konektora različitih svetskih proizvođača kao što su Molex, TE Connectivity, JST… ",
-                "list-item2": "U ponudi imamo konektore različitih rastera (razmaka između pinova) i konfiguracija pinova, napojne konektore, audio i video konektore, signalne konektore, data konektore"
-              },
-              "list2": {
-                "title": "Krimp kontakti i kućišta za konektore",
-                "list-item": "Uz svaki konektor nudimo i odgovarajuće pinove, tj. krimp kontakte za odgovarajuće preseke žica kao i plastična kućišta za pojedine konektore koji ih imaju"
-              },
-              "list3": {
-                "title": "Alternative",
-                "list-item": "Takođe, nudimo alternativne modele naših kineskih partnera ukoliko vam za vaš projekat odgovaraju povoljnije cene"
-              }
-            },
-            "terminals": {
-              "title": "Terminali",
-              "sub-title": {
-                "text": "Da kraj vaših žica",
-                "span": "nikad ne bude sam"
-              },
-              "paragraph": "Lako montiranje",
-              "description": "Veliki izbor terminala sa različitim karatkeristikama",
-              "description2": "Jednostavna aplikacija",
-              "wire-cable": "Terminali",
-              "list": {
-                "title": "Vrste terminala",
-                "list-item": "Vrste terminala koje nudimo:",
-                "list-item2": "Viljuškice (M3, M4, M5…)",
-                "list-item3": "Ring terminali (prečnika 3mm, 4mm, 5mm...)",
-                "list-item4": "Faston2.8mm, 4.8mm, 6.3mm",
-                "list-item5": "and others...Bootlace ferrules",
-                "list-item6": "Hilzne",
-                "list-item7": "Čaure",
-                "list-item8": "i još svašta!"
-              },
-              "list2": {
-                "title": "Karakteristike",
-                "list-item": "Svi terminali koje imamo u ponudi mogu biti sa PVC izolacijom i bez nje. Ponuđeni terminali su u skladu sa presekom žica koje želite da ukrimpate"
-              },
-              "list3": {
-                "title": "Alternativa",
-                "list-item": "Takođe, nudimo alternativne modele naših kineskih partnera ukoliko vam za vaš projekat odgovaraju povoljnije cene"
-              }
-            },
-            "components": {
-              "title": "Elektronske komponente",
-              "sub-title": {
-                "text": "Sve od elektronskih komponenata ",
-                "span": "na jednom mestu"
-              },
-              "paragraph": "Odabir različitih aktivnih i pasivnih komponenti",
-              "description": "Elektronske komponente za aparate i uređaje",
-              "description2": "Pomoć pri izboru",
-              "list": {
-                "title": "Veliki izbor",
-                "list-item": "Širok dijapazon aktivnih i pasivnih komponenti",
-                "list-item2":"Releji, LED indikatori, otpornici, osigurači…"
-              },
-              "list2": {
-                "title": "Količine",
-                "list-item": "Nabavka od nekoliko komada do nekoliko hiljada komada"
-              }
-            }
-          }
-        },
-        "pcb": {
-          "title": "pcbs",
-          "sub-title": {
-            "text": "PCB",
-            "span": "dizajn"
-          },
 
-          "paragraph": "Projektovanje štampanih ploča",
-          "paragraph2": "Brza izrada prototipa",
-          "description": "Serijska proizvodnja",
-          "list": {
-            "title": "Pomoć pri dizajnu",
-            "list-item": "Dizajn prema zahtevu korisnika",
-            "list-item2": "Izrada dokumentacije",
-            "list-item3": "Projektovanje elektronike",
-            "list-item4": "Projektovanje štampanih ploča",
-            "list-item5": "Brza izrada prototipa"
-          },
-          "list2": {
-            "title": "Proizvodnja",
-            "list-item": "Ručna i robotizovana serijska proizvodnja",
-            "list-item2": "Kontrola i testiranje",
-            "list-item3": "Garantovan kvalitet",
-            "list-item4": "Pristupačne cene"
-          }
+        "paragraph": "Projektovanje štampanih ploča",
+        "paragraph2": "Brza izrada prototipa",
+        "description": "Serijska proizvodnja",
+        "list": {
+          "title": "Pomoć pri dizajnu",
+          "list-item": "Dizajn prema zahtevu korisnika",
+          "list-item2": "Izrada dokumentacije",
+          "list-item3": "Projektovanje elektronike",
+          "list-item4": "Projektovanje štampanih ploča",
+          "list-item5": "Brza izrada prototipa"
         },
-        "led": {
-          "title": "led program",
-          "sub-title": {
-            "text": "Led",
-            "span": "rasveta"
-          },
-          "paragraph": "Širok asortiman LED traka i modula",
-          "paragraph2": "Mogućnost montiranja kablova i konektora na LED trake i module radi lakše konekcije",
-          "paragraph3":"Jednostavno montiranje (3M traka)",
-          "list": {
-            "list-item": "Raznovstan asortiman LED traka i modula",
-            "list-item2": "Trake sa različitim brojem LED-ova po metru (30LED/m, 60LED/m…)",
-            "list-item3": "Jednobojne i RGB trake",
-            "list-item4": "LED-ovi različitih dimenzija (3030, 3528, 5050 i mnogi drugi)",
-            "list-item5": "Trake sa različitim sertifikatima IP zaštite (bez zaštite, otporne na udar, prašinu, vodu (silikonske) i mnoge druge)"
-          }
+        "list2": {
+          "title": "Proizvodnja",
+          "list-item": "Ručna i robotizovana serijska proizvodnja",
+          "list-item2": "Kontrola i testiranje",
+          "list-item3": "Garantovan kvalitet",
+          "list-item4": "Pristupačne cene"
+        }
+      },
+      "led": {
+        "title": "led program",
+        "sub-title": {
+          "text": "Led",
+          "span": "rasveta"
         },
-        "accessories": {
-          "title": "Dodaci za kablove",
-          "sub-title": {
-            "text": "Sve što vam treba za",
-            "span": "besprekornu asemblažu i izolaciju kablova"
-          },
-          "paragraph": "Širok izbor kablovskih vezica i držača",
-          "paragraph2": "Ponuda izolacionih creva",
-          "paragraph3":"Sve što je potrebno za uredno ožičavanje i obeležavanje na jednom mestu",
-          "list": {
-            "title": "Vezice i držači",
-            "list-item": "Plastične vezice različitih dimenzija i boja za učvršćivanje kablovskih sklopova",
-            "list-item2": "Držači i nosači kablova sa montirajućim patentom radi lakšeg manipulisanja kablovima"
-          },
-          "list2": {
-            "title": "Izolacioni program",
-            "list-item": "Termoskupljajući bužiri različitih preseka i razmera, za izolaciju provodnika i kablova",
-            "list-item2": "PVC creva razčilitih preseka i dimenzija",
-            "list-item3": "Rebrasta PVC creva, PVC lanci i drugo"
-          },
-          "list3": {
-            "title": "Alternativne ponude",
-            "list-item": "Takođe, nudimo alternativne modele naših kineskih partnera ukoliko vam za vaš projekat odgovaraju povoljnije cene"
-          }
+        "paragraph": "Širok asortiman LED traka i modula",
+        "paragraph2": "Mogućnost montiranja kablova i konektora na LED trake i module radi lakše konekcije",
+        "paragraph3": "Jednostavno montiranje (3M traka)",
+        "list": {
+          "list-item": "Raznovstan asortiman LED traka i modula",
+          "list-item2": "Trake sa različitim brojem LED-ova po metru (30LED/m, 60LED/m…)",
+          "list-item3": "Jednobojne i RGB trake",
+          "list-item4": "LED-ovi različitih dimenzija (3030, 3528, 5050 i mnogi drugi)",
+          "list-item5": "Trake sa različitim sertifikatima IP zaštite (bez zaštite, otporne na udar, prašinu, vodu (silikonske) i mnoge druge)"
+        }
+      },
+      "accessories": {
+        "title": "Dodaci za kablove",
+        "sub-title": {
+          "text": "Sve što vam treba za",
+          "span": "besprekornu asemblažu i izolaciju kablova"
         },
-        "hardware": {
-          "title": "hardware",
-          "sub-title": {
-            "text": "Hardverske komponente",
-            "span": "za vaše aparate i uređaje"
-          },
-          "paragraph": "Metalna kućišta",
-          "paragraph2": "Napajanja",
-          "list": {
-            "list-item": "Mogućnost nabavke različitih delova za aparate kao što su ugradni ekrani, touch screen ekrani, LED paneli, napajanja, Bluetooth moduli, antene, pojačala, i sve drugo po vašem zahtevu.",
-            "list-item2": "Nabavka na malo i veliko od evropskih i američkih distributera, kao i od kineskih partnera po dobrim cenama i sa kratkim rokovima isporuke",
-            "list-item3": "Metalna kućišta, delovi od pleksiglasa i dr."
-          }
+        "paragraph": "Širok izbor kablovskih vezica i držača",
+        "paragraph2": "Ponuda izolacionih creva",
+        "paragraph3": "Sve što je potrebno za uredno ožičavanje i obeležavanje na jednom mestu",
+        "list": {
+          "title": "Vezice i držači",
+          "list-item": "Plastične vezice različitih dimenzija i boja za učvršćivanje kablovskih sklopova",
+          "list-item2": "Držači i nosači kablova sa montirajućim patentom radi lakšeg manipulisanja kablovima"
+        },
+        "list2": {
+          "title": "Izolacioni program",
+          "list-item": "Termoskupljajući bužiri različitih preseka i razmera, za izolaciju provodnika i kablova",
+          "list-item2": "PVC creva razčilitih preseka i dimenzija",
+          "list-item3": "Rebrasta PVC creva, PVC lanci i drugo"
+        },
+        "list3": {
+          "title": "Alternativne ponude",
+          "list-item": "Takođe, nudimo alternativne modele naših kineskih partnera ukoliko vam za vaš projekat odgovaraju povoljnije cene"
+        }
+      },
+      "hardware": {
+        "title": "hardware",
+        "sub-title": {
+          "text": "Hardverske komponente",
+          "span": "za vaše aparate i uređaje"
+        },
+        "paragraph": "Metalna kućišta",
+        "paragraph2": "Napajanja",
+        "list": {
+          "list-item": "Mogućnost nabavke različitih delova za aparate kao što su ugradni ekrani, touch screen ekrani, LED paneli, napajanja, Bluetooth moduli, antene, pojačala, i sve drugo po vašem zahtevu.",
+          "list-item2": "Nabavka na malo i veliko od evropskih i američkih distributera, kao i od kineskih partnera po dobrim cenama i sa kratkim rokovima isporuke",
+          "list-item3": "Metalna kućišta, delovi od pleksiglasa i dr."
         }
       }
-    },
-    "contact-us": {
-      "title": {
-        "span": "nas",
-        "text": "kontaktirajte"
-      },
-      "phone": "Telefon",
-      "address": "Adresa",
-      "button": "pošalju",
-      "name": "Ime",
-      "email": "Email",
-      "country": "Zemlja",
-      "phone-placeholder": "Telefon",
-      "message": "Poruka",
-      "upload": "Dodajte sliku"
     }
-
+  },
+  "contact-us": {
+    "title": {
+      "span": "nas",
+      "text": "kontaktirajte"
+    },
+    "phone": "Telefon",
+    "address": "Adresa",
+    "button": "pošalju",
+    "name": "Ime",
+    "email": "Email",
+    "country": "Zemlja",
+    "phone-placeholder": "Telefon",
+    "message": "Poruka",
+    "upload": "Dodajte sliku"
+  }
 }

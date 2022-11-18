@@ -6,11 +6,15 @@
     position: relative;
   }
 }
+.header-logo-container {
+  flex-flow: column;
+}
 .language-selector {
   position: absolute;
   right: 0;
   width: 90px;
   font-size: 14px;
+  margin-right: 15px;
   select {
     padding: 5px 13px;
     width: 90px;
@@ -35,10 +39,15 @@
     transition: all 0.3s linear;
   }
 }
-
+.header-logo {
+  margin: 0 auto;
+}
 @media screen and (max-width: 768px) {
-  .header-container .container {
-    padding-bottom: 44px;
+  .header-container {
+    padding: 0 0 15px 0;
+    .container {
+      padding-bottom: 44px;
+    }
   }
   .language-selector {
     bottom: 0;
