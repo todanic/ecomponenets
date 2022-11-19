@@ -1,6 +1,6 @@
 <template>
   <v-container fluid class="wire-harness-container pa-0">
-    <v-parallax src="/images/parallax.jpg">
+    <v-parallax height="100%" src="/images/parallax.jpg">
       <v-container class="shrink-width">
         <v-row>
           <v-col
@@ -63,6 +63,6 @@
 import LocalizedLink from "../LocalizedLink";
 export default {
   components: { LocalizedLink },
-  name: "WireAndHarnessComponent",
+  name: "WireAndHarnessComponent"
 };
 </script>
