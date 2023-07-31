@@ -13,6 +13,7 @@
     >
       <v-carousel-item
         dark
+        eager
         cover
         ba
         :src="image.src"

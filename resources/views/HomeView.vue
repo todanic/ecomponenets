@@ -1,6 +1,6 @@
 <template class="home-view">
   <div>
-    <splash></splash>
+    <!-- <splash></splash> -->
     <home-catagories></home-catagories>
     <!-- <v-divider></v-divider> -->
     <wire-and-harness></wire-and-harness>
@@ -12,6 +12,6 @@ export default {
   name: "HomeView",
   data() {
     return {};
-  },
+  }
 };
 </script>
