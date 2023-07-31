@@ -1,0 +1,12 @@
+.about-us-view-container {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(/images/about-us.webp);
+  background-size: cover;
+  h1,
+  p {
+    color: #fff;
+  }
+  p {
+    font-size: 1.8rem;
+  }
+}

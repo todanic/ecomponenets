@@ -23,18 +23,46 @@
   .v-btn:not(.v-btn--text):not(.v-btn--outlined).v-btn--active:before {
     opacity: 0.8;
   }
+
+  &__carousel-text {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    display: flex;
+    flex-flow: column;
+    padding-left: 20px;
+    h2 {
+      color: #fff;
+      font-size: 3.5rem;
+      font-weight: bold;
+    }
+    h3 {
+      margin-top: auto;
+      color: #fff;
+      font-size: 3.2rem;
+      font-weight: bold;
+    }
+  }
 }
 
 @media screen and (max-width: 768px) {
-
   .splash-container {
-
     &__carousel {
       height: 300px !important;
     }
 
     .v-image {
       height: 300px !important;
+    }
+    &__carousel-text {
+      h2 {
+        font-size: 2.5rem;
+      }
+      h3 {
+        font-size: 2rem;
+      }
     }
   }
 }
